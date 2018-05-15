@@ -24,9 +24,12 @@ class HANameToPos:
         assert len(self.ha_names_to_pos) > 0
 
     def map(self, sample):
-        if not sample.ha_name:
+        if not sample[HA_ID]:
             return
-        sample.pos = getOrNone(self.ha_names_to_pos, sample.ha_name.lower())
+        plate_pos = getOrNone(self.ha_names_to_pos, sample[HA_ID].lower())
+        if plate_pos:
+            sample[PLATE_NUM] = plate_pos[0]
+            sample[PLATE_POS] = plate_pos[1]
 
 
 class PosToBC:
@@ -43,7 +46,10 @@ class PosToBC:
         assert len(self.pos_to_bc) > 0
 
     def map(self, sample):
-        sample.bc = getOrNone(self.pos_to_bc, sample.pos)
+        sample[BC] = getOrNone(
+            self.pos_to_bc,
+            (sample[PLATE_NUM], sample[PLATE_POS])
+        )
 
 
 class BCToMetadata:
@@ -56,14 +62,14 @@ class BCToMetadata:
                 bc = tkns[1]
                 mdata = [tkns[0]] + tkns[2:]
                 mdata = {
-                    'city': mdata[0],
-                    'surface_material': mdata[1],
-                    'surface': mdata[2],
-                    'setting': mdata[3],
-                    'elevation': mdata[4],
-                    'traffic': mdata[5],
-                    'latitude': mdata[6],
-                    'longitude': mdata[7],
+                    CITY: mdata[0],
+                    SURFACE_MATERIAL: mdata[1],
+                    SURFACE: mdata[2],
+                    SETTING: mdata[3],
+                    ELEVATION: mdata[4],
+                    TRAFFIC_LEVEL: mdata[5],
+                    LAT: mdata[6],
+                    LON: mdata[7],
                 }
                 self.bc_to_meta[bc] = mdata
             except IndexError:
@@ -71,34 +77,34 @@ class BCToMetadata:
         assert len(self.bc_to_meta) > 0
 
     def map(self, sample):
-        vals = getOrNone(self.bc_to_meta, sample.bc)
+        vals = getOrNone(self.bc_to_meta, sample[BC])
         if vals:
             for key, val in vals.items():
-                sample.metadata[key] = val
+                sample[key] = val
 
 
 class MSubToCity:
     """Guess the city or city code from the MetaSUB name."""
 
     def map(self, sample):
-        if not sample.msub_name:
+        if not sample[METASUB_NAME]:
             return
 
-        if 'oly' in sample.msub_name.lower():
-            sample.metadata['city'] = 'rio_de_janeiro'
+        if 'oly' in sample[METASUB_NAME].lower():
+            sample[CITY] = 'rio_de_janeiro'
             return
-        if 'porto' in sample.msub_name.lower():
-            sample.metadata['city'] = 'porto'
+        if 'porto' in sample[METASUB_NAME].lower():
+            sample[CITY] = 'porto'
             return
-        if 'csd16' in sample.msub_name.lower():
-            tkns = sample.msub_name.split('-')
+        if 'csd16' in sample[METASUB_NAME].lower():
+            tkns = sample[METASUB_NAME].split('-')
             if len(tkns) == 3:
-                sample.metadata['city_code'] = tkns[1]
+                sample[CITY_CODE] = tkns[1]
             return
 
-        tkns = sample.msub_name.split('_')
+        tkns = sample[METASUB_NAME].split('_')
         if len(tkns) == 3:
-            sample.metadata['city'] = 'berlin'
+            sample[CITY] = 'berlin'
 
 
 class SLNameToHAName:
@@ -111,10 +117,10 @@ class SLNameToHAName:
         }
 
     def map(self, sample):
-        if not sample.sl_name:
+        if not sample[SL_NAME]:
             return
-        if sample.sl_name.lower() in self.tbl:
-            sample.ha_name = self.tbl[sample.sl_name.lower()]
+        if sample[SL_NAME].lower() in self.tbl:
+            sample[HA_ID] = self.tbl[sample[SL_NAME].lower()]
             return
 
 
@@ -131,50 +137,51 @@ class Handle5106HANames:
 
         self.mdata_tbl = {
             tkns[0]: [
-                ('city', 'london'),
-                ('setting', tkns[31]),
-                ('project', 'CSD17'),
-                ('latitude', tkns[26]),
-                ('longitude', tkns[27]),
-                ('surface_material', tkns[37]),
-                ('surface', tkns[33]),
-                ('elevation', tkns[32]),
+                (CITY, 'london'),
+                (SETTING, tkns[31]),
+                (PROJECT, CSD17_CODE),
+                (LAT, tkns[26]),
+                (LON, tkns[27]),
+                (SURFACE_MATERIAL, tkns[37]),
+                (SURFACE_MATERIAL, tkns[33]),
+                (ELEVATION, tkns[32]),
             ]
             for tkns in parse_csv(LONDON_METADATA_FILE)
         }
 
     def map(self, sample):
-        if not sample.ha_name:
+        if not sample[HA_ID]:
             return
-        if sample.ha_name.lower() not in self.conv_tbl:
-            if '5106-cem' in sample.ha_name.lower():
-                sample.metadata['city'] = 'new_york_city'
-                sample.metadata['project'] = PATHOMAP_WINTER_CODE
+        if sample[HA_ID].lower() not in self.conv_tbl:
+            if '5106-cem' in sample[HA_ID].lower():
+                sample[CITY] = 'new_york_city'
+                sample[PROJECT] = PATHOMAP_WINTER_CODE
             return
 
-        internal_name, pos = self.conv_tbl[sample.ha_name.lower()]
-        sample.pos = pos
+        internal_name, pos = self.conv_tbl[sample[HA_ID].lower()]
+        sample[PLATE_NUM] = pos[0]
+        sample[PLATE_POS] = pos[1]
         for k, v in self.mdata_tbl[internal_name]:
-            sample.metadata[k] = v
+            sample[k] = v
 
 
 class GuessProjFromMSUBName:
     """Use the MetaSUB name to guess the project."""
 
     def map(self, sample):
-        if sample.msub_name:
-            if 'oly' in sample.msub_name.lower():
-                sample.metadata['project'] = OLYMPIOME_CODE
+        if sample[METASUB_NAME]:
+            if 'oly' in sample[METASUB_NAME].lower():
+                sample[PROJECT] = OLYMPIOME_CODE
                 return
-            if 'csd16' in sample.msub_name.lower():
-                sample.metadata['project'] = CSD16_CODE
+            if 'csd16' in sample[METASUB_NAME].lower():
+                sample[PROJECT] = CSD16_CODE
                 return
-            if 'porto' in sample.msub_name.lower():
-                sample.metadata['project'] = CSD16_CODE
+            if 'porto' in sample[METASUB_NAME].lower():
+                sample[PROJECT] = CSD16_CODE
                 return
-            tkns = sample.msub_name.split('_')
+            tkns = sample[METASUB_NAME].split('_')
             if len(tkns) == 3:
-                sample.metadata['project'] = CSD16_CODE
+                sample[PROJECT] = CSD16_CODE
                 return
 
 
@@ -187,4 +194,3 @@ MAPPERS = [
     Handle5106HANames(),
     GuessProjFromMSUBName()
 ]
-
