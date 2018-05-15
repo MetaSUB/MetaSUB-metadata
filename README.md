@@ -33,8 +33,7 @@
 
 `upload_metadata_csd16.csv` Metadata for csd16 samples with fields that would be problematic for MGS removed. Based on `collated_metadata_csd16.csv`
 
-
-## Scripts
+## Unpackaged Scripts
 
 `clean_parse_alina_mdata_tbl.py` Alina F. generated a metadata table by dumping the output of Kobo toolbox into a file named `gCSD2017_metadata_joint-1.txt`. That table has several issues: city names are non canonical, na tokens are non canonical, barcodes were recorded as numbers so lost a leading zero, and fields 'wandered' between columns. This script produces a cleaned version of that table.
 
@@ -42,6 +41,20 @@
 
 ## Known Unknowns
 
+ - Metadata for NYC Winter
+ - Metadata for PathoMAP
+ - Metadata for Pilot
+ - Metadata for many gCSD16 samples
+ - Metadata for Olympiome
+
+## What are the MetaSUB sample collection projects?
+ - CSD-2016
+ - CSD-2017
+ - Tigress
+ - Pilot (Early 2016)
+ - NYC Winter
+ - Olympiome 2016
+ 
 ## Irregularities
 
 London did not use the Kobo Toolbox app in gCSD17
