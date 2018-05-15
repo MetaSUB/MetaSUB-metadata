@@ -16,10 +16,13 @@ def main():
 
 @main.command(name='best-effort')
 @click.option('--csv/--json', default=True)
-def best_effort(csv):
+@click.option('-s', '--sample-names', default=None)
+def best_effort(csv, sample_names):
     """Generate a metadata table from a list of sample names 
     and various sources of documentary evidence."""
-    with open(SAMPLE_NAMES_FILE) as f:
+    if not sample_names:
+        sample_names = SAMPLE_NAMES_FILE
+    with open(sample_names) as f:
         samples = [Sample.from_name(line.strip()) for line in f]
 
     for mapper in MAPPERS:

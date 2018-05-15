@@ -1,3 +1,16 @@
+# Overview
+
+This repository is a collection of raw MetaSUB metadata with annotation and scripts to produce cleaned metadata.
+
+To build a clean metadata table run the following commands
+
+`python setup.py develop` to install
+
+`metasub-generator best-effort --sample-names <list of names> > metadata.csv`
+to generate a metadata table.
+
+`--sample-names` may be omitted to use a default list of sample names `spreadsheets/sample_names.txt`
+
 ## Spreadsheets
 
 `city_names.csv` Canonical city names and countries. 
@@ -61,7 +74,7 @@
  - NYC Winter
  - Olympiome 2016
  
-## Irregularities
+## Known Irregularities
 
 London did not use the Kobo Toolbox app in gCSD17
 
