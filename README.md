@@ -1,5 +1,7 @@
 ## Spreadsheets
 
+`city_names.csv` Canonical city names and countries. 
+
 `metadata.MetaSUB_UK2017.xlsx` Clean metadata from the UK Tigress (Channel 4) sampling project. Includes IDs that match FASTQ files.
 
 `ha_to_msub_name_conversion_for_project_haib17CEM4890.xlsx` Table that maps H.A. names (`4890-CEM-[0-9]{4}`) to MetaSUB names for 576 samples from OLY and CSD16. Also includes info about DNA conc.
@@ -33,6 +35,10 @@
 
 `upload_metadata_csd16.csv` Metadata for csd16 samples with fields that would be problematic for MGS removed. Based on `collated_metadata_csd16.csv`
 
+`sample_names.txt` Fastq names currently on cluster
+
+`sample_names_types.tsv` Sample names with types.
+
 ## Unpackaged Scripts
 
 `clean_parse_alina_mdata_tbl.py` Alina F. generated a metadata table by dumping the output of Kobo toolbox into a file named `gCSD2017_metadata_joint-1.txt`. That table has several issues: city names are non canonical, na tokens are non canonical, barcodes were recorded as numbers so lost a leading zero, and fields 'wandered' between columns. This script produces a cleaned version of that table.
@@ -58,3 +64,17 @@
 ## Irregularities
 
 London did not use the Kobo Toolbox app in gCSD17
+
+## What are the MetaSUB sample extraction and sequencing batches?
+
+N.B. these were largely informal and are ongoing
+
+ - ~5k samples extracted at qiagen, then shipped to hudsonalpha (we have an inventory?)
+ - Some samples were sent to Hong Kong for extraction, library prep and sequencing (Hong Kong and Shanghai)
+ -  Some samples have been kept in Moscow for extraction, library prep and sequencing
+ -  London has shipped barcoded tubes from csd2017 to Shanghai. Then Shanghai has sent WCM the samples
+ -  UK sent samples to Zymo. Zymo does not have barcode reader so they're labeling by position (this is resolved)
+ -  Stockholm extracted samples from Stockholm and other cities and sent the extracted samples to hudsonalpha
+ -  We have <a number> of samples in our freezers
+
+
