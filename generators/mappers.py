@@ -98,13 +98,14 @@ class BCToMetadata:
             for key, val in vals.items():
                 sample[key] = val
 
+
 class CSD16_Metadata:
 
     def __init__(self):
         self.bc_to_meta = {}
         for tkns in parse_csv(CSD16_METADATA):
             try:
-                msub = tkns[31]
+                msub = tkns[31].lower()
                 mdata = {
                     CITY: tkns[14],
                     SURFACE_MATERIAL: tkns[36],
@@ -120,7 +121,9 @@ class CSD16_Metadata:
         assert len(self.bc_to_meta) > 0
 
     def map(self, sample):
-        vals = getOrNone(self.bc_to_meta, sample[METASUB_NAME])
+        if not sample[METASUB_NAME]:
+            return
+        vals = getOrNone(self.bc_to_meta, sample[METASUB_NAME].lower())
         if vals:
             for key, val in vals.items():
                 sample[key] = val
