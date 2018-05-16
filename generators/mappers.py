@@ -153,6 +153,32 @@ class MSubToCity:
             sample[CITY] = 'berlin'
 
 
+class TigressMetadata:
+
+    def __init__(self):
+        self.ha_to_meta = {}
+        for tkns in parse_csv(TIGRESS_FILE, skip=1):
+            haname = tkns[8].lower()
+            mdata = {
+                CITY: tkns[0],
+                LOCATION_TYPE: tkns[1],
+                LAT: tkns[2],
+                LON: tkns[3],
+                SETTING: tkns[4],
+                ELEVATION: tkns[5],
+                SURFACE: tkns[6],
+                SURFACE_MATERIAL: tkns[7],
+            }
+            self.ha_to_meta[haname] = mdata
+
+    def map(self, sample):
+        if not sample[HA_ID]:
+            return
+        if sample[HA_ID].lower() in self.ha_to_meta:
+            for k, v in self.ha_to_meta[sample[HA_ID].lower()].items():
+                sample[k] = v
+
+
 class CityCodeToCity:
 
     def map(self, sample):
@@ -297,4 +323,5 @@ MAPPERS = [
     GuessProjFromMSUBName(),
     CSD16_Metadata(),
     SampleType(),
+    TigressMetadata(),
 ]

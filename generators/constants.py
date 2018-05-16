@@ -22,6 +22,7 @@ SAMPLE_NAMES_FILE = join(METADATA_DIR, 'sample_names.txt')
 AIRSAMPLE_HA_ID = join(METADATA_DIR, 'airsamples_ha_id_to_msub_name.csv')
 CSD16_METADATA = join(METADATA_DIR, 'collated_metadata_csd16.csv')
 SAMPLE_TYPE_FILE = join(METADATA_DIR, 'sample_names_types.tsv')
+TIGRESS_FILE = join(METADATA_DIR, 'metadata.MetaSUB_UK2017.csv')
 
 CSD16_CODE = 'CSD16'
 CSD17_CODE = 'CSD17'
@@ -47,3 +48,5 @@ HA_ID = 'ha_id'
 SL_NAME = 'sl_name'
 PROJECT = 'project'
 SAMPLE_TYPE = 'sample_type'
+LOCATION_TYPE = 'location_type'
+
