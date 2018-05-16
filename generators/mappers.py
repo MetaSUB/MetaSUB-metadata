@@ -269,7 +269,6 @@ class SampleType:
             stype = tkns[1]
             if name and stype:
                 self.stype_map[name] = stype
-        print(self.stype_map)
 
     def map(self, sample):
 
