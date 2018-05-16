@@ -25,9 +25,10 @@ def best_effort(csv, sample_names):
     with open(sample_names) as f:
         samples = [Sample.from_name(line.strip()) for line in f]
 
-    for mapper in MAPPERS:
-        for sample in samples:
-            mapper.map(sample)
+    for _ in range(3):
+        for mapper in MAPPERS:
+            for sample in samples:
+                mapper.map(sample)
 
     if csv:
         tbl = pd.DataFrame([sample.to_son() for sample in samples])

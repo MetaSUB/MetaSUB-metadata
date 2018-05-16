@@ -221,9 +221,15 @@ class CityCodeToCity:
         }
         city_map = {v: k for k, v in code_map.items()}
         if sample[CITY_CODE] and not sample[CITY]:
-            sample[CITY] = code_map[sample[CITY_CODE]]
+            try:
+                sample[CITY] = code_map[sample[CITY_CODE]]
+            except KeyError:
+                pass
         elif sample[CITY] and not sample[CITY_CODE]:
-            sample[CITY_CODE] = city_map[sample[CITY]]
+            try:
+                sample[CITY_CODE] = city_map[sample[CITY]]
+            except KeyError:
+                pass
 
 
 class SLNameToHAName:
