@@ -25,7 +25,7 @@ def best_effort(csv, sample_names):
     with open(sample_names) as f:
         samples = [Sample.from_name(line.strip()) for line in f]
 
-    for _ in range(3):
+    for _ in range(10):
         for mapper in MAPPERS:
             for sample in samples:
                 mapper.map(sample)

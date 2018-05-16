@@ -1,7 +1,15 @@
 from .parsing import parse_csv
 from .constants import *
 from .utils import getOrNone
+from .table_mapper import Table, token_mapper
 
+
+ha_name_to_pos = Table(
+    HA_IDS_TO_PLATE_POS_FILE,
+    {HA_ID: 0, PLATE_NUM: 8, PLATE_POS: 14},
+    token_mapper(PLATE_NUM, PLATE_POS),
+    assert_len=15
+)
 
 class HANameToPos:
     '''Return a table mapping sample name to positions.
@@ -62,6 +70,7 @@ class AirsamplesHANameToMSUBName:
             return
         if sample[HA_ID] in self.ha_to_msub:
             sample[METASUB_NAME] = self.ha_to_msub[sample[HA_ID]]
+            sample[PROJECT] = CSD17_CODE
 
 
 class PosToBC:
@@ -121,7 +130,7 @@ class CSD16_Metadata:
         self.bc_to_meta = {}
         for tkns in parse_csv(CSD16_METADATA):
             try:
-                msub = tkns[31].lower()
+                msub = '-'.join(tkns[31].lower().split('_'))
                 mdata = {
                     CITY: tkns[14],
                     SURFACE_MATERIAL: tkns[36],
@@ -139,7 +148,8 @@ class CSD16_Metadata:
     def map(self, sample):
         if not sample[METASUB_NAME]:
             return
-        vals = getOrNone(self.bc_to_meta, sample[METASUB_NAME].lower())
+        msub_name = '-'.join(sample[METASUB_NAME].lower().split('_'))
+        vals = getOrNone(self.bc_to_meta, msub_name)
         if vals:
             for key, val in vals.items():
                 sample[key] = val
@@ -158,7 +168,7 @@ class MSubToCity:
         if 'porto' in sample[METASUB_NAME].lower():
             sample[CITY] = 'porto'
             return
-        if 'csd16' in sample[METASUB_NAME].lower():
+        if 'csd' in sample[METASUB_NAME].lower():
             tkns = sample[METASUB_NAME].split('-')
             if len(tkns) == 3:
                 sample[CITY_CODE] = tkns[1]
@@ -217,7 +227,7 @@ class CityCodeToCity:
             'RIO': 'rio_de_janeiro',
             'POR': 'porto',
             'BER': 'berlin',
-            'SAP': 'sao_paulo'
+            'SAP': 'sao_paulo',
         }
         city_map = {v: k for k, v in code_map.items()}
         if sample[CITY_CODE] and not sample[CITY]:
@@ -335,7 +345,7 @@ class SampleType:
 
 MAPPERS = [
     SLNameToHAName(),
-    HANameToPos(),
+    ha_name_to_pos,
     AirsampleSLToHA(),
     AirsamplesHANameToMSUBName(),
     PosToBC(),

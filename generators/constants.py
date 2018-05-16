@@ -7,10 +7,10 @@ from .parsing import parse_csv
 METADATA_DIR = join(dirname(dirname(__file__)), 'spreadsheets')
 
 CITY_NAMES_FILE = join(METADATA_DIR, 'city_names.csv')
-CITY_NAMES = [
+CITY_NAMES = set([
     tkns[0].lower()
     for tkns in parse_csv(CITY_NAMES_FILE, assert_len=2, skip=1)
-]
+])
 
 HA_IDS_TO_PLATE_POS_FILE = join(METADATA_DIR, 'HA Submissions-Grid view.csv')
 PLATE_POS_TO_BC_FILE = join(METADATA_DIR, 'CSD2017_DAVID.csv')
@@ -51,4 +51,4 @@ SL_NAME = 'sl_name'
 PROJECT = 'project'
 SAMPLE_TYPE = 'sample_type'
 LOCATION_TYPE = 'location_type'
-
+IDS = set([HA_ID, BC, METASUB_NAME, SL_NAME])
