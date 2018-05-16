@@ -32,6 +32,22 @@ class HANameToPos:
             sample[PLATE_POS] = plate_pos[1]
 
 
+class AirsamplesHANameToMSUBName:
+
+    def __init__(self):
+        self.ha_to_msub = {}
+        for tkns in parse_csv(AIRSAMPLE_HA_ID, assert_len=5, skip=1):
+            ha_name = tkns[1]
+            msub_name = tkns[4][1:]
+            self.ha_to_msub[ha_name] = msub_name
+
+    def map(self, sample):
+        if not sample[HA_ID]:
+            return
+        if sample[HA_ID] in self.ha_to_msub:
+            sample[METASUB_NAME] = self.ha_to_msub[sample[HA_ID]]
+
+
 class PosToBC:
     '''Return a table mapping position to a barcode.
 
@@ -82,6 +98,33 @@ class BCToMetadata:
             for key, val in vals.items():
                 sample[key] = val
 
+class CSD16_Metadata:
+
+    def __init__(self):
+        self.bc_to_meta = {}
+        for tkns in parse_csv(CSD16_METADATA):
+            try:
+                msub = tkns[31]
+                mdata = {
+                    CITY: tkns[14],
+                    SURFACE_MATERIAL: tkns[36],
+                    SURFACE: tkns[35],
+                    TRAFFIC_LEVEL: tkns[23],
+                    LAT: tkns[17],
+                    LON: tkns[20],
+
+                }
+                self.bc_to_meta[msub] = mdata
+            except IndexError:
+                pass
+        assert len(self.bc_to_meta) > 0
+
+    def map(self, sample):
+        vals = getOrNone(self.bc_to_meta, sample[METASUB_NAME])
+        if vals:
+            for key, val in vals.items():
+                sample[key] = val
+
 
 class MSubToCity:
     """Guess the city or city code from the MetaSUB name."""
@@ -105,6 +148,37 @@ class MSubToCity:
         tkns = sample[METASUB_NAME].split('_')
         if len(tkns) == 3:
             sample[CITY] = 'berlin'
+
+
+class CityCodeToCity:
+
+    def map(self, sample):
+        code_map = {
+            'FAI': 'fairbanks',
+            'NYC': 'new_york_city',
+            'OFA': 'ofa',
+            'AKL': 'auckland',
+            'HAM': 'hamilton',
+            'SAC': 'sacramento',
+            'SCL': 'santiago',
+            'BOG': 'bogota',
+            'ILR': 'ilorin',
+            'TOK': 'tokyo',
+            'LON': 'london',
+            'HKG': 'hong_kong',
+            'OSL': 'oslo',
+            'DEN': 'denver',
+            'STO': 'stockholm',
+            'RIO': 'rio_de_janeiro',
+            'POR': 'porto',
+            'BER': 'berlin',
+            'SAP': 'sao_paulo'
+        }
+        city_map = {v: k for k, v in code_map.items()}
+        if sample[CITY_CODE] and not sample[CITY]:
+            sample[CITY] = code_map[sample[CITY_CODE]]
+        elif sample[CITY] and not sample[CITY_CODE]:
+            sample[CITY_CODE] = city_map[sample[CITY]]
 
 
 class SLNameToHAName:
@@ -184,13 +258,41 @@ class GuessProjFromMSUBName:
                 sample[PROJECT] = CSD16_CODE
                 return
 
+from sys import stderr
+
+class SampleType:
+
+    def __init__(self):
+        self.stype_map = {}
+        for tkns in parse_csv(SAMPLE_TYPE_FILE, assert_len=2, sep='\t'):
+            name = tkns[0].lower()
+            stype = tkns[1]
+            if name and stype:
+                self.stype_map[name] = stype
+        print(self.stype_map)
+
+    def map(self, sample):
+
+        if sample[HA_ID] and sample[HA_ID].lower() in self.stype_map:
+            sample[SAMPLE_TYPE] = self.stype_map[sample[HA_ID].lower()]
+
+        elif sample[METASUB_NAME] and sample[METASUB_NAME].lower() in self.stype_map:
+            sample[SAMPLE_TYPE] = self.stype_map[sample[METASUB_NAME].lower()]
+
+        elif sample[SL_NAME] and  sample[SL_NAME].lower() in self.stype_map:
+            sample[SAMPLE_TYPE] = self.stype_map[sample[SL_NAME].lower()]
+
 
 MAPPERS = [
     SLNameToHAName(),
     HANameToPos(),
+    AirsamplesHANameToMSUBName(),
     PosToBC(),
     BCToMetadata(),
     MSubToCity(),
+    CityCodeToCity(),
     Handle5106HANames(),
-    GuessProjFromMSUBName()
+    GuessProjFromMSUBName(),
+    CSD16_Metadata(),
+    SampleType(),
 ]

@@ -19,6 +19,9 @@ SL_NAME_TO_HA_ID_FILE = join(METADATA_DIR, 'filenames_HCY5HCCXY.tsv')
 CONVERT_LONDON_IDS_FILE = join(METADATA_DIR, 'Conversion Tables-Table 1.csv')
 LONDON_METADATA_FILE = join(METADATA_DIR, 'Metadata-Table 1.csv')
 SAMPLE_NAMES_FILE = join(METADATA_DIR, 'sample_names.txt')
+AIRSAMPLE_HA_ID = join(METADATA_DIR, 'airsamples_ha_id_to_msub_name.csv')
+CSD16_METADATA = join(METADATA_DIR, 'collated_metadata_csd16.csv')
+SAMPLE_TYPE_FILE = join(METADATA_DIR, 'sample_names_types.tsv')
 
 CSD16_CODE = 'CSD16'
 CSD17_CODE = 'CSD17'
@@ -43,3 +46,4 @@ METASUB_NAME = 'metasub_name'
 HA_ID = 'ha_id'
 SL_NAME = 'sl_name'
 PROJECT = 'project'
+SAMPLE_TYPE = 'sample_type'
