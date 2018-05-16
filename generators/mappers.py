@@ -9,6 +9,7 @@ sl_name_to_ha_name = Table(
     join(METADATA_DIR, 'filenames_HCY5HCCXY.tsv'),
     {SL_NAME: 2, HA_ID: 3},
     token_mapper(HA_ID),
+    name_func=token_specific_val_func(**{SL_NAME: lambda x: x.lower()}),
     sep='\t'
 )
 
@@ -66,6 +67,15 @@ bc_to_meta = Table(
     )
 )
 
+
+def csd16_metadata_name_func(name, name_type):
+    name = name.lower()
+    name = '-'.join(name.split('_'))
+    if 'csd2016' in name:
+        name = 'csd16'.join(name.split('csd2016'))
+    return name
+
+
 csd16_metadata = Table(
     join(METADATA_DIR, 'collated_metadata_csd16.csv'),
     {
@@ -78,7 +88,7 @@ csd16_metadata = Table(
         LON: 20,
     },
     token_mapper(CITY, SURFACE, SURFACE_MATERIAL, TRAFFIC_LEVEL, LAT, LON),
-    name_func=lambda x, y: '-'.join(x.lower().split('_')),
+    name_func=csd16_metadata_name_func,
 )
 
 
@@ -109,13 +119,15 @@ class MSubToCity:
     def map(self, sample):
         if not sample[METASUB_NAME]:
             return
+        codes = {
+            'oly': 'rio_de_janeiro',
+            'porto': 'porto',
+        }
+        for code, city_name in codes.items():
+            if code in sample[METASUB_NAME].lower():
+                sample[CITY] = city_name
+                return
 
-        if 'oly' in sample[METASUB_NAME].lower():
-            sample[CITY] = 'rio_de_janeiro'
-            return
-        if 'porto' in sample[METASUB_NAME].lower():
-            sample[CITY] = 'porto'
-            return
         if 'csd' in sample[METASUB_NAME].lower():
             tkns = sample[METASUB_NAME].split('-')
             if len(tkns) == 3:
@@ -125,6 +137,7 @@ class MSubToCity:
         tkns = sample[METASUB_NAME].split('_')
         if len(tkns) == 3:
             sample[CITY] = 'berlin'
+
 
 class CityCodeToCity:
 
@@ -200,6 +213,11 @@ class Handle5106HANames:
             return
 
         internal_name, pos = self.conv_tbl[sample[HA_ID].lower()]
+        if '_pos' in internal_name.lower():
+            sample[CONTROL_STATUS] = POSITIVE_CONTROL
+        elif '_neg' in internal_name.lower():
+            sample[CONTROL_STATUS] = NEGATIVE_CONTROL
+
         sample[PLATE_NUM] = pos[0]
         sample[PLATE_POS] = pos[1]
         for k, v in self.mdata_tbl[internal_name]:

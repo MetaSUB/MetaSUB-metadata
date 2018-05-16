@@ -41,3 +41,7 @@ PROJECT = 'project'
 SAMPLE_TYPE = 'sample_type'
 LOCATION_TYPE = 'location_type'
 IDS = set([HA_ID, BC, METASUB_NAME, SL_NAME])
+CONTROL_STATUS = 'control_type'
+
+POSITIVE_CONTROL = 'positive_control'
+NEGATIVE_CONTROL = 'negative_control'
