@@ -12,19 +12,8 @@ CITY_NAMES = set([
     for tkns in parse_csv(CITY_NAMES_FILE, assert_len=2, skip=1)
 ])
 
-HA_IDS_TO_PLATE_POS_FILE = join(METADATA_DIR, 'HA Submissions-Grid view.csv')
-PLATE_POS_TO_BC_FILE = join(METADATA_DIR, 'CSD2017_DAVID.csv')
-CLEAN_KOBO_METADATA_CSD17_FILE = join(METADATA_DIR, 'cleaned_simplified_metadata.csv')
-SL_NAME_TO_HA_ID_FILE = join(METADATA_DIR, 'filenames_HCY5HCCXY.tsv')
-CONVERT_LONDON_IDS_FILE = join(METADATA_DIR, 'Conversion Tables-Table 1.csv')
-LONDON_METADATA_FILE = join(METADATA_DIR, 'Metadata-Table 1.csv')
-SAMPLE_NAMES_FILE = join(METADATA_DIR, 'sample_names.txt')
-AIRSAMPLE_SL_TO_HA = join(METADATA_DIR, 'air_samples.filenames_HK7G5CCXY.txt')
-AIRSAMPLE_HA_ID = join(METADATA_DIR, 'airsamples_ha_id_to_msub_name.csv')
-CSD16_METADATA = join(METADATA_DIR, 'collated_metadata_csd16.csv')
-SAMPLE_TYPE_FILE = join(METADATA_DIR, 'sample_names_types.tsv')
-TIGRESS_FILE = join(METADATA_DIR, 'metadata.MetaSUB_UK2017.csv')
 
+SAMPLE_NAMES_FILE = join(METADATA_DIR, 'sample_names.txt')
 
 CSD16_CODE = 'CSD16'
 CSD17_CODE = 'CSD17'
