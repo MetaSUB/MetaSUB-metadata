@@ -32,6 +32,22 @@ class HANameToPos:
             sample[PLATE_POS] = plate_pos[1]
 
 
+class AirsampleSLToHA:
+
+    def __init__(self):
+        self.hamap = {}
+        for tkns in parse_csv(AIRSAMPLE_SL_TO_HA, skip=2, sep='\t'):
+            slname = tkns[2].lower()
+            haname = tkns[3]
+            self.hamap[slname] = haname
+
+    def map(self, sample):
+        if not sample[SL_NAME]:
+            return
+        if sample[SL_NAME].lower() in self.hamap:
+            sample[HA_ID] = self.hamap[sample[SL_NAME].lower()]
+
+
 class AirsamplesHANameToMSUBName:
 
     def __init__(self):
@@ -314,6 +330,7 @@ class SampleType:
 MAPPERS = [
     SLNameToHAName(),
     HANameToPos(),
+    AirsampleSLToHA(),
     AirsamplesHANameToMSUBName(),
     PosToBC(),
     BCToMetadata(),
