@@ -92,6 +92,42 @@ csd16_metadata = Table(
 )
 
 
+akl_metadata_csd16 = Table(
+    join(METADATA_DIR, 'auckland_csd16.csv'),
+    {
+        METASUB_NAME: 5,
+        CITY: 32,
+        SURFACE_MATERIAL: 9,
+        SETTING: 8,
+        LAT: 30,
+        LON: 29,
+    },
+    token_mapper(CITY, SURFACE_MATERIAL, SETTING, LAT, LON),
+    name_func=lambda x, y: x.upper(),
+    skip=1
+)
+
+
+def fairbanks_metadata_csd16_val_func(val, token):
+    if token == SURFACE:
+        return '_'.join(val.split())
+    return val
+
+
+fairbanks_metadata_csd16 = Table(
+    join(METADATA_DIR, 'Fairbanks_corralled_CSD16.csv'),
+    {
+        METASUB_NAME: 0,
+        SURFACE_MATERIAL: 5,
+        SURFACE: 4,
+    },
+    token_mapper(SURFACE, SURFACE_MATERIAL),
+    name_func=lambda x, y: x.upper(),
+    val_func=fairbanks_metadata_csd16_val_func,
+    skip=1
+)
+
+
 tigress_metadata = Table(
     join(METADATA_DIR, 'metadata.MetaSUB_UK2017.csv'),
     {
@@ -302,6 +338,8 @@ MAPPERS = [
     Handle5106HANames(),
     GuessProjFromMSUBName(),
     csd16_metadata,
+    akl_metadata_csd16,
+    fairbanks_metadata_csd16,
     SampleType(),
     tigress_metadata,
 ]

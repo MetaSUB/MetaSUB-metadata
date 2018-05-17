@@ -1,0 +1,839 @@
+Sample_#,Date_Collected,Bus_Number,Bus_Line,Area,Material,Label
+CSD16-FAI-0714,20160301,,,Gate 2 women's rest room toilet,tile,Airport Gate 2 women's rest room toilet_tile
+CSD16-FAI-0715,20160301,,,Gate 1 floor,rubber,Airport Gate 1 floor_rubber
+CSD16-FAI-0716,20160301,,,Jetway 1 sample 2,rubber,Airport Jetway 1 sample 2_rubber
+CSD16-FAI-0717,20160301,,,Gate 1 seats,faux leather,Airport Gate 1 seats_faux leather
+CSD16-FAI-0718,20160301,,,Getway 2 women's restroom sink,marble-like,Airport Getway 2 women's restroom sink_marble-like
+CSD16-FAI-0719,20160301,,,Baggage Belt,metal,Airport Baggage Belt_metal
+CSD16-FAI-0720,20160301,,,handrail,metal,Airport handrail_metal
+CSD16-FAI-0721,20160301,,,Jetway wheelchair seat,faux leather,Airport Jetway wheelchair seat_faux leather
+CSD16-FAI-0722,20160301,,,Jetway 1 handrail,metal,Airport Jetway 1 handrail_metal
+CSD16-FAI-0723,20160301,,,Jetway 1 wheelchair foot,rubber,Airport Jetway 1 wheelchair foot_rubber
+CSD16-FAI-0724,20160301,,,Gate 2 seats,faux leather,Airport Gate 2 seats_faux leather
+CSD16-FAI-0725,20160301,,,Gate 1 ticket counter,ceramic,Airport Gate 1 ticket counter_ceramic
+CSD16-FAI-0726,20160301,,,Kiosk,plastic screen,Airport Kiosk_plastic screen
+CSD16-FAI-0727,20160301,,,Star bucks table,wood,Airport Star bucks table_wood
+CSD16-FAI-0728,20160301,,,Star bucks seat from chair,wood,Airport Star bucks seat from chair_wood
+CSD16-FAI-0729,20160301,,,Men's bathroom near gate 2 toilet seat,plastic,Airport Men's bathroom near gate 2 toilet seat_plastic
+CSD16-FAI-0730,20160301,,,Men's bathroom near gate 2 sink,plastic,Airport Men's bathroom near gate 2 sink_plastic
+CSD16-FAI-0731,20160301,,,Gate 1 pole,metal,Airport Gate 1 pole_metal
+CSD16-FAI-0732,20160311,,,star bucks table,wood,Airport star bucks table_wood
+CSD16-FAI-0733,20160311,,,star bucks chair,wood,Airport star bucks chair_wood
+CSD16-FAI-0734,20160311,,,Jetway 2 carpet,carpet,Airport Jetway 2 carpet_carpet
+CSD16-FAI-0735,20160311,,,Jetway 2 handrail,metal,Airport Jetway 2 handrail_metal
+CSD16-FAI-0736,20160311,,,Jetway 1 handrail  near plane,metal,Airport Jetway 1 handrail  near plane_metal
+CSD16-FAI-0737,20160311,,,Jetway 1 wheel chair foot rest right,rubber,Airport Jetway 1 wheel chair foot rest right_rubber
+CSD16-FAI-0738,20160311,,,Jetway Gate 4 handrail near plane,metal,Airport Jetway Gate 4 handrail near plane_metal
+CSD16-FAI-0739,20160311,,,Water fountain near bathroom,metal,Airport Water fountain near bathroom_metal
+CSD16-FAI-0740,20160311,,,seat in front of Jetway 1,faux leather,Airport seat in front of Jetway 1_faux leather
+CSD16-FAI-0741,20160311,,,jetway gate 4 near plane,carpet,Airport jetway gate 4 near plane_carpet
+CSD16-FAI-0742,20160311,,,escalator to exit,plastic,Airport escalator to exit_plastic
+CSD16-FAI-0743,20160311,,,bench by concourse inside,wood,Airport bench by concourse inside_wood
+CSD16-FAI-0744,20160311,,,wheelchair seta jetway 1,faux leather,Airport wheelchair seta jetway 1_faux leather
+CSD16-FAI-0745,20160311,,,gate 4 seat 3,faux leather,Airport gate 4 seat 3_faux leather
+CSD16-FAI-0746,20160311,,,"jetway 1 floor near plane, not carpet",black mat,"Airport jetway 1 floor near plane, not carpet_black mat"
+CSD16-FAI-0747,20160311,,,baggage belt 1,metal,Airport baggage belt 1_metal
+CSD16-FAI-0748,20160311,,,jetway 1 pole,metal,Airport jetway 1 pole_metal
+CSD16-FAI-0749,20160311,,,"jetway 2 floor by plane not carpet, black matt",bmat,"Airport jetway 2 floor by plane not carpet, black matt_bmat"
+CSD16-FAI-0750,20160311,,,jetway 1 carpet near plane,carpet,Airport jetway 1 carpet near plane_carpet
+CSD16-FAI-0751,20160311,,,women's rest room handicapped seat right side,faux leather,Airport women's rest room handicapped seat right side_faux leather
+CSD16-FAI-0752,20160311,,,women's rest room flush handle,metal,Airport women's rest room flush handle_metal
+CSD16-FAI-0753,20160301,,,Gate 4 Delta floor,rubber,Airport Gate 4 Delta floor_rubber
+CSD16-FAI-0754,20160301,,,Gate 4 Delta seat,faux leather,Airport Gate 4 Delta seat_faux leather
+CSD16-FAI-0203,20160807,,,Jetway 2 floor (as soon as step out of plane),rubber,Airport Jetway 2 floor (as soon as step out of plane)_rubber
+CSD16-FAI-0204,20160807,,,Jetway 2 floor (right after above area),carpet,Airport Jetway 2 floor (right after above area)_carpet
+CSD16-FAI-0205,20160807,,,Jetway 2 handrail,metal,Airport Jetway 2 handrail_metal
+CSD16-FAI-0206,20160807,,,Jetway 1 seats waiting area,(faux?) leather,Airport Jetway 1 seats waiting area_(faux?) leather
+CSD16-FAI-0207,20160807,,,Jetway 1 pole,metal,Airport Jetway 1 pole_metal
+CSD16-FAI-0208,20160807,,,Jetway 1 floor (next to rubber floor area),carpet,Airport Jetway 1 floor (next to rubber floor area)_carpet
+CSD16-FAI-0209,20160807,,,Jetway 1 floor (as soon as step out of plane),rubber,Airport Jetway 1 floor (as soon as step out of plane)_rubber
+CSD16-FAI-0210,20160807,,,In front of Gate 1 (by seating area),carpet,Airport In front of Gate 1 (by seating area)_carpet
+CSD16-FAI-0211,20160807,,,Handrail by Gate 1,metal,Airport Handrail by Gate 1_metal
+CSD16-FAI-0212,20160807,,,water fountain by gate 2,metal,Airport water fountain by gate 2_metal
+CSD16-FAI-0213,20160807,,,Jetway 4 floor (right by plane),rubber,Airport Jetway 4 floor (right by plane)_rubber
+CSD16-FAI-0214,20160807,,,Jetway 4 floor,carpet,Airport Jetway 4 floor_carpet
+CSD16-FAI-0215,20160807,,,Jetway 4 handrail (all along the long railway),metal,Airport Jetway 4 handrail (all along the long railway)_metal
+CSD16-FAI-0216,20160807,,,Gate 4 floor in front of jetway,carpet,Airport Gate 4 floor in front of jetway_carpet
+CSD16-FAI-0217,20160807,,,Gate 4 seats,(faux?) leather,Airport Gate 4 seats_(faux?) leather
+CSD16-FAI-0218,20160807,,,Starbucks table,wood,Airport Starbucks table_wood
+CSD16-FAI-0219,20160807,,,Starbucks chair,wood,Airport Starbucks chair_wood
+CSD16-FAI-0220,20160807,,,Women's Bathroom (handicapped stall) seat,plastic,Airport Women's Bathroom (handicapped stall) seat_plastic
+CSD16-FAI-0221,20160807,,,Women's bathroom (wash basin) and sink counter,metal and marble,Airport Women's bathroom (wash basin) and sink counter_metal and marble
+CSD16-FAI-0222,20160807,,,Family restroom sink counter,marble,Airport Family restroom sink counter_marble
+CSD16-FAI-0223,20160807,,,Family restroom baby changing area,plastic,Airport Family restroom baby changing area_plastic
+CSD16-FAI-0224,20160807,,,Family restroom wooden bench (pron used for bags or to sit kids),,Airport Family restroom wooden bench (pron used for bags or to sit kids)_
+CSD16-FAI-0225,20160807,,,Family restroom floor,tiles (ceramic?),Airport Family restroom floor_tiles (ceramic?)
+CSD16-FAI-0226,20160807,,,Men's bathroom urinal (composite of 3),ceramic,Airport Men's bathroom urinal (composite of 3)_ceramic
+CSD16-FAI-0227,20160807,,,Men's bathroom sink counter ,granite or marble?,Airport Men's bathroom sink counter _granite or marble?
+CSD16-FAI-0228,20160807,,,Men's bathroom toilet seat (non-handicapped stall),plastic,Airport Men's bathroom toilet seat (non-handicapped stall)_plastic
+CSD16-FAI-0229,20160807,,,Escalator going down to exit,rubber,Airport Escalator going down to exit_rubber
+CSD16-FAI-0230,20160807,,,Baggage belt (main one/there is only 1 main one),metal,Airport Baggage belt (main one/there is only 1 main one)_metal
+CSD16-FAI-0231,20160807,,,Bench by entrance/exit (indoors),wood,Airport Bench by entrance/exit (indoors)_wood
+CSD16-FAI-0232,20160807,,,Kiosk (composite of 3),computer screen,Airport Kiosk (composite of 3)_computer screen
+CSD16-FAI-0233,20160807,,,Air sample from 9:30p.m.-11:30p.m.,-,Airport Air sample from 9:30p.m.-11:30p.m._-
+CSD16-FAI-0234,20160812,,,negative control cup open to air on 08-10-2016,swabbed cup exposed to air for 1 full day in culturing lab room,Airport negative control cup open to air on 08-10-2016_swabbed cup exposed to air for 1 full day in culturing lab room
+CSD16-FAI-0235,20160812,,,negative control swabbed air 08-12-2016,air,Airport negative control swabbed air 08-12-2016_air
+CSD16-FAI-0236,20160812,,,negative control swabbed air 08-12-2016,air,Airport negative control swabbed air 08-12-2016_air
+CSD16-FAI-0237,20160812,,,negative control swabbed air 08-12-2016,air,Airport negative control swabbed air 08-12-2016_air
+CSD16-FAI-0238,20160812,,,positive control community standard (Zymogen) taken from tube that was thawed once before already,sterile urine cup,Airport positive control community standard (Zymogen) taken from tube that was thawed once before already_sterile urine cup
+CSD16-FAI-0815a,20160311,,,Baggage Belt 1,metal,Airport Baggage Belt 1_TSA_none_37
+CSD16-FAI-0815b,20160311,,,Baggage Belt 1,metal,Airport Baggage Belt 1_TSA_none_37
+CSD16-FAI-0816,20160311,,,Female bathroom flush button (handicapped stall),metal?,Airport Female bathroom flush button (handicapped stall)_R2A_none_23
+CSD16-FAI-0817,20160311,,,female bathroom handicapped stall (seat right side),plastic,Airport female bathroom handicapped stall (seat right side)_R2A_none_23
+CSD16-FAI-0818,20160311,,,Gate 1 metal pole near jetway,metal,Airport Gate 1 metal pole near jetway_R2A_none_23
+CSD16-FAI-0819,20160311,,,Gate 1 seat,faux leather,Airport Gate 1 seat_R2A_none_23
+CSD16-FAI-0820,20160311,,,Gate 4 seat,faux leather,Airport Gate 4 seat_R2A_none_23
+CSD16-FAI-0821,20160311,,,Jetway gate 1 floor black matted near plane,rubber,Airport Jetway gate 1 floor black matted near plane_R2A_none_23
+CSD16-FAI-0822,20160311,,,Jetway gate 1 floor carpet,carpet,Airport Jetway gate 1 floor carpet_LB_kan_37
+CSD16-FAI-0823,20160311,,,Jetway gate 1 floor carpet,carpet,Airport Jetway gate 1 floor carpet_LB_tet_37
+CSD16-FAI-0824,20160311,,,Jetway gate 1 floor carpet (carpet near plane),carpet,Airport Jetway gate 1 floor carpet (carpet near plane)_R2A_none_23
+CSD16-FAI-0825a,20160311,,,Jetway gate 1 floor carpet near plane,carpet,Airport Jetway gate 1 floor carpet near plane_LB_none_28
+CSD16-FAI-0825b,20160311,,,Jetway gate 1 floor carpet near plane,carpet,Airport Jetway gate 1 floor carpet near plane_LB_none_28
+CSD16-FAI-0826a,20160311,,,Jetway gate 1 floor carpet near plane,carpet,Airport Jetway gate 1 floor carpet near plane_LB_none_37
+CSD16-FAI-0826b,20160311,,,Jetway gate 1 floor carpet near plane,carpet,Airport Jetway gate 1 floor carpet near plane_LB_none_37
+CSD16-FAI-0827a,20160311,,,Jetway gate 1 floor carpet near plane,carpet,Airport Jetway gate 1 floor carpet near plane_carpet_TSA_none
+CSD16-FAI-0827b,20160311,,,Jetway gate 1 floor carpet near plane,carpet,Airport Jetway gate 1 floor carpet near plane_carpet_TSA_none
+CSD16-FAI-0828a,20160311,,,Jetway gate 1 floor carpet near plane,carpet,Airport Jetway gate 1 floor carpet near plane_carpet_TSA_none
+CSD16-FAI-0828b,20160311,,,Jetway gate 1 floor carpet near plane,carpet,Airport Jetway gate 1 floor carpet near plane_carpet_TSA_none
+CSD16-FAI-0828c,20160311,,,Jetway gate 1 floor carpet near plane,carpet,Airport Jetway gate 1 floor carpet near plane_carpet_TSA_none
+CSD16-FAI-0829,20160311,,,Jetway gate 1 handrail near plane,metal,Airport Jetway gate 1 handrail near plane_metal_R2A_
+CSD16-FAI-0830,20160311,,,Jetway gate 1 wheelchair (blue seat),faux leather,Airport Jetway gate 1 wheelchair (blue seat)_faux leather_LB_none
+CSD16-FAI-0831,20160311,,,Jetway gate 1 wheelchair (blue seat),faux leather,Airport Jetway gate 1 wheelchair (blue seat)_faux leather_R2A_
+CSD16-FAI-0832,20160311,,,Jetway gate 2 floor by plane black matted,rubber,Airport Jetway gate 2 floor by plane black matted_rubber_LB_kan
+CSD16-FAI-0833a,20160311,,,Jetway gate 2 floor by plane black matted,rubber,Airport Jetway gate 2 floor by plane black matted_rubber_LB_none
+CSD16-FAI-0833b,20160311,,,Jetway gate 2 floor by plane black matted,rubber,Airport Jetway gate 2 floor by plane black matted_rubber_LB_none
+CSD16-FAI-0834,20160311,,,Jetway gate 2 floor by plane black matted,rubber,Airport Jetway gate 2 floor by plane black matted_rubber_LB_strep
+CSD16-FAI-0835,20160311,,,Jetway gate 2 floor by plane black matted,rubber,Airport Jetway gate 2 floor by plane black matted_rubber_R2A_
+CSD16-FAI-0836a,20160311,,,Jetway gate 2 floor by plane black matted,rubber,Airport Jetway gate 2 floor by plane black matted_rubber_TSA_none
+CSD16-FAI-0836b,20160311,,,Jetway gate 2 floor by plane black matted,rubber,Airport Jetway gate 2 floor by plane black matted_rubber_TSA_none
+CSD16-FAI-0837a,20160311,,,Jetway gate 2 floor by plane black matted,rubber,Airport Jetway gate 2 floor by plane black matted_rubber_TSA_none
+CSD16-FAI-0837b,20160311,,,Jetway gate 2 floor by plane black matted,rubber,Airport Jetway gate 2 floor by plane black matted_rubber_TSA_none
+CSD16-FAI-0837c,20160311,,,Jetway gate 2 floor by plane black matted,rubber,Airport Jetway gate 2 floor by plane black matted_rubber_TSA_none
+CSD16-FAI-0837d,20160311,,,Jetway gate 2 floor by plane black matted,rubber,Airport Jetway gate 2 floor by plane black matted_rubber_TSA_none
+CSD16-FAI-0838a,20160311,,,Jetway gate 2 floor by plane black matted,rubber,Airport Jetway gate 2 floor by plane black matted_rubber_TSA_strep
+CSD16-FAI-0838b,20160311,,,Jetway gate 2 floor by plane black matted,rubber,Airport Jetway gate 2 floor by plane black matted_rubber_TSA_strep
+CSD16-FAI-0839,20160311,,,Jetway gate 2 floor by plane black matted,rubber,Airport Jetway gate 2 floor by plane black matted_rubber_TSA_tet
+CSD16-FAI-0840a,20160311,,,Jetway gate 2 floor carpet,carpet,Airport Jetway gate 2 floor carpet_carpet_R2A_
+CSD16-FAI-0840b,20160311,,,Jetway gate 2 floor carpet,carpet,Airport Jetway gate 2 floor carpet_carpet_R2A_
+CSD16-FAI-0841,20160311,,,Jetway gate 2 handrail,metal,Airport Jetway gate 2 handrail_metal_R2A_
+CSD16-FAI-0842,20160311,,,Starbucks wooden chair,wood,Airport Starbucks wooden chair_wood_R2A_
+CSD16-FAI-0843,20160311,,,Starbucks wooden table ,wood,Airport Starbucks wooden table _wood_R2A_
+CSD16-FAI-0844,20160311,,,Water fountain button near gate 1 and 2,metal,Airport Water fountain button near gate 1 and 2_metal_LB_none
+CSD16-FAI-0845,20160311,,,Water fountain button near gate 1 and 2,metal,Airport Water fountain button near gate 1 and 2_metal_LB_tet
+CSD16-FAI-0846,20160311,,,Water fountain button near gate 1 and 2,metal,Airport Water fountain button near gate 1 and 2_metal_LB_tet
+CSD16-FAI-0847,20160311,,,Water fountain button near gate 1 and 2,metal,Airport Water fountain button near gate 1 and 2_metal_R2A_
+CSD16-FAI-0848,20160311,,,Water fountain button near gate 1 and 2,metal,Airport Water fountain button near gate 1 and 2_metal_TSA_kan
+CSD16-FAI-0849,20160311,,,Water fountain button near gate 1 and 2,metal,Airport Water fountain button near gate 1 and 2_metal_TSA_none
+CSD16-FAI-0850,20160311,,,Water fountain button near gate 1 and 2,metal,Airport Water fountain button near gate 1 and 2_metal_TSA_none
+CSD16-FAI-0851,20160311,,,Wheelchair footrest (right),rubber (black matted),Airport Wheelchair footrest (right)_rubber (black matted)_R2A_
+CSD16-FAI-0852,20160311,,,Wooden bench by concourse 1 (outside secure area),wood,Airport Wooden bench by concourse 1 (outside secure area)_wood_R2A_
+CSD16-FAI-0853,20160311,,,Jetway gate 1 floor carpet near plane,carpet,Airport Jetway gate 1 floor carpet near plane_carpet_LB_none
+CSD16-FAI-0854,20160720,,,negative control suggested by Chris,lab air ,Optionalnegative control suggested by Chris_lab air _LB_none
+CSD16-FAI-0855,20161204,,,TN sample,none,Airport TN sample_none_none_none
+CSD16-FAI-0856,20161204,,,JRN sample,none,Airport JRN sample_none_none_none
+CSD16-FAI-0857,20161204,,,EMV sample,none,Airport EMV sample_none_none_none
+CSD16-FAI-0239,,,,Jetway 2 floor (as soon as step out of plane),,Airport Jetway 2 floor (as soon as step out of plane)_RT (~22C)_R2A_None
+CSD16-FAI-0240,,,,Jetway 2 handrail,,Airport Jetway 2 handrail_RT (~22C)_R2A_None
+CSD16-FAI-0241,,,,Jetway 1 seats waiting area,,Airport Jetway 1 seats waiting area_RT (~22C)_R2A_None
+CSD16-FAI-0242,,,,Jetway 1 floor (next to rubber floor area),,Airport Jetway 1 floor (next to rubber floor area)_RT (~22C)_R2A_None
+CSD16-FAI-0243,,,,Jetway 1 floor (as soon as step out of plane),,Airport Jetway 1 floor (as soon as step out of plane)_RT (~22C)_R2A_None
+CSD16-FAI-0244,,,,In front of Gate 1 carpet (by seating area),,Airport In front of Gate 1 carpet (by seating area)_RT (~22C)_R2A_None
+CSD16-FAI-0245,,,,water fountain by gate 2,,Airport water fountain by gate 2_RT (~22C)_R2A_None
+CSD16-FAI-0246,,,,Starbucks table,,Airport Starbucks table_RT (~22C)_R2A_None
+CSD16-FAI-0247,,,,Starbucks chair,,Airport Starbucks chair_RT (~22C)_R2A_None
+CSD16-FAI-0248,,,,Women's Bathroom (handicapped stall) seat,,Airport Women's Bathroom (handicapped stall) seat_RT (~22C)_R2A_None
+CSD16-FAI-0249,,,,Women's bathroom (wash basin) and sink counter,,Airport Women's bathroom (wash basin) and sink counter_RT (~22C)_R2A_None
+CSD16-FAI-0250,,,,Family restroom sink counter,,Airport Family restroom sink counter_RT (~22C)_R2A_None
+CSD16-FAI-0251,,,,Family restroom wooden bench (prob used for bags or to sit kids),,Airport Family restroom wooden bench (prob used for bags or to sit kids)_RT (~22C)_R2A_None
+CSD16-FAI-0252,,,,Family restroom floor,,Airport Family restroom floor_RT (~22C)_R2A_None
+CSD16-FAI-0253,,,,Men's bathroom urinal (composite of 3),,Airport Men's bathroom urinal (composite of 3)_RT (~22C)_R2A_None
+CSD16-FAI-0254,,,,Jetway 2 floor (right after above area),,Airport Jetway 2 floor (right after above area)_RT (~22C)_R2A_None
+CSD16-FAI-0255,,,,Escalator going down to exit,,Airport Escalator going down to exit_RT (~22C)_R2A_None
+CSD16-FAI-0256,,,,Baggage belt (main one/there is only 1 main one),,Airport Baggage belt (main one/there is only 1 main one)_RT (~22C)_R2A_None
+CSD16-FAI-0257,,,,Bench by entrance/exit (indoors),,Airport Bench by entrance/exit (indoors)_RT (~22C)_R2A_None
+CSD16-FAI-0258,,,,Kiosk (composite of 3),,Airport Kiosk (composite of 3)_RT (~22C)_R2A_None
+CSD16-FAI-0578,,,,Family restroom sink counter,,Airport Family restroom sink counter_37_LB_amp
+CSD16-FAI-0579,,,,Kiosk (composite of 3),,Airport Kiosk (composite of 3)_37_LB_tet
+CSD16-FAI-0580,,,,Family restroom floor,,Airport Family restroom floor_37_TSA_amp
+CSD16-FAI-0581,,,,Kiosk (composite of 3),,Airport Kiosk (composite of 3)_37_TSA_strep
+CSD16-FAI-0582,,,,Jetway 1 floor (as soon as step out of plane),,Airport Jetway 1 floor (as soon as step out of plane)_28_LB_tet
+CSD16-FAI-0583,,,,Jetway 2 floor (right after above area),,Airport Jetway 2 floor (right after above area)_28_LB_strep
+CSD16-FAI-0584,,,,Kiosk (composite of 3),,Airport Kiosk (composite of 3)_28_LB_kan
+CSD16-FAI-0585,,,,Family restroom floor,,Airport Family restroom floor_37_LB_kan
+CSD16-FAI-0586,,,,Family restroom floor,,Airport Family restroom floor_37_LB_strep
+CSD16-FAI-0587,,,,Family restroom floor,,Airport Family restroom floor_28_LB_amp
+CSD16-FAI-0588,,,,Family restroom floor,,Airport Family restroom floor_28_LB_kan
+CSD16-FAI-0589,,,,Family restroom floor,,Airport Family restroom floor_28_LB_strep
+CSD16-FAI-0590,,,,Family restroom floor,,Airport Family restroom floor_28_LB_tet
+CSD16-FAI-0591,,,,Men's bathroom urinal (composite of 3),,Airport Men's bathroom urinal (composite of 3)_28_LB_strep
+CSD16-FAI-0592,,,,Bench by entrance/exit (indoors),,Airport Bench by entrance/exit (indoors)_28_LB_none
+CSD16-FAI-0593,,,,Bench by entrance/exit (indoors),,Airport Bench by entrance/exit (indoors)_28_LB_amp
+CSD16-FAI-0594,,,,Bench by entrance/exit (indoors),,Airport Bench by entrance/exit (indoors)_28_LB_kan
+CSD16-FAI-0595,,,,Family restroom floor,,Airport Family restroom floor_28_TSA_none
+CSD16-FAI-0596,,,,Family restroom floor,,Airport Family restroom floor_28_TSA_amp
+CSD16-FAI-0597,,,,Family restroom floor,,Airport Family restroom floor_28_TSA_kan
+CSD16-FAI-0598,,,,Family restroom floor,,Airport Family restroom floor_28_TSA_strep
+CSD16-FAI-0599,,,,Family restroom floor,,Airport Family restroom floor_28_TSA_tet
+CSD16-FAI-0600,,,,Men's bathroom sink counter ,,Airport Men's bathroom sink counter _28_LB_kan
+CSD16-FAI-0260,,,,Jetway 2 floor (as soon as step out of plane),,Airport Jetway 2 floor (as soon as step out of plane)_37_LB_none
+CSD16-FAI-0261,,,,Jetway 2 floor (as soon as step out of plane),,Airport Jetway 2 floor (as soon as step out of plane)_37_LB_amp
+CSD16-FAI-0262,,,,Jetway 2 floor (as soon as step out of plane),,Airport Jetway 2 floor (as soon as step out of plane)_37_LB_kan
+CSD16-FAI-0263,,,,Jetway 2 floor (as soon as step out of plane),,Airport Jetway 2 floor (as soon as step out of plane)_37_LB_strep
+CSD16-FAI-0264,,,,Jetway 2 floor (as soon as step out of plane),,Airport Jetway 2 floor (as soon as step out of plane)_37_LB_tet
+CSD16-FAI-0265,,,,Jetway 2 handrail,,Airport Jetway 2 handrail_37_LB_none
+CSD16-FAI-0266,,,,Jetway 2 handrail,,Airport Jetway 2 handrail_37_LB_amp
+CSD16-FAI-0267,,,,Jetway 2 handrail,,Airport Jetway 2 handrail_37_LB_kan
+CSD16-FAI-0268,,,,Jetway 2 handrail,,Airport Jetway 2 handrail_37_LB_tet
+CSD16-FAI-0269,,,,Jetway 1 seats waiting area,,Airport Jetway 1 seats waiting area_37_LB_none
+CSD16-FAI-0270,,,,Jetway 1 seats waiting area,,Airport Jetway 1 seats waiting area_37_LB_kan
+CSD16-FAI-0271,,,,Jetway 1 seats waiting area,,Airport Jetway 1 seats waiting area_37_LB_strep
+CSD16-FAI-0272,,,,Jetway 1 seats waiting area,,Airport Jetway 1 seats waiting area_37_LB_tet
+CSD16-FAI-0273,,,,Jetway 1 floor (next to rubber floor area),,Airport Jetway 1 floor (next to rubber floor area)_37_LB_none
+CSD16-FAI-0274,,,,Jetway 1 floor (next to rubber floor area),,Airport Jetway 1 floor (next to rubber floor area)_37_LB_kan
+CSD16-FAI-0275,,,,Jetway 1 floor (as soon as step out of plane),,Airport Jetway 1 floor (as soon as step out of plane)_37_LB_none
+CSD16-FAI-0276,,,,Jetway 1 floor (as soon as step out of plane),,Airport Jetway 1 floor (as soon as step out of plane)_37_LB_amp
+CSD16-FAI-0277,,,,Jetway 1 floor (as soon as step out of plane),,Airport Jetway 1 floor (as soon as step out of plane)_37_LB_kan
+CSD16-FAI-0278,,,,Jetway 1 floor (as soon as step out of plane),,Airport Jetway 1 floor (as soon as step out of plane)_37_LB_tet
+CSD16-FAI-0279,,,,In front of Gate 1 carpet (by seating area),,Airport In front of Gate 1 carpet (by seating area)_37_LB_none
+CSD16-FAI-0280,,,,In front of Gate 1 carpet (by seating area),,Airport In front of Gate 1 carpet (by seating area)_37_LB_kan
+CSD16-FAI-0281,,,,In front of Gate 1 carpet (by seating area),,Airport In front of Gate 1 carpet (by seating area)_37_LB_strep
+CSD16-FAI-0282,,,,water fountain by gate 2,,Airport water fountain by gate 2_37_LB_none
+CSD16-FAI-0283,,,,water fountain by gate 2,,Airport water fountain by gate 2_37_LB_amp
+CSD16-FAI-0284,,,,water fountain by gate 2,,Airport water fountain by gate 2_37_LB_kan
+CSD16-FAI-0285,,,,water fountain by gate 2,,Airport water fountain by gate 2_37_LB_strep
+CSD16-FAI-0286,,,,water fountain by gate 2,,Airport water fountain by gate 2_37_LB_tet
+CSD16-FAI-0287,,,,Starbucks table,,Airport Starbucks table_37_LB_none
+CSD16-FAI-0288,,,,Starbucks table,,Airport Starbucks table_37_LB_amp
+CSD16-FAI-0289,,,,Starbucks table,,Airport Starbucks table_37_LB_kan
+CSD16-FAI-0290,,,,Starbucks table,,Airport Starbucks table_37_LB_tet
+CSD16-FAI-0291,,,,Starbucks chair,,Airport Starbucks chair_37_LB_none
+CSD16-FAI-0292,,,,Starbucks chair,,Airport Starbucks chair_37_LB_amp
+CSD16-FAI-0293,,,,Starbucks chair,,Airport Starbucks chair_37_LB_kan
+CSD16-FAI-0294,,,,Starbucks chair,,Airport Starbucks chair_37_LB_tet
+CSD16-FAI-0295,,,,Women's Bathroom (handicapped stall) seat,,Airport Women's Bathroom (handicapped stall) seat_37_LB_none
+CSD16-FAI-0296,,,,Women's Bathroom (handicapped stall) seat,,Airport Women's Bathroom (handicapped stall) seat_37_LB_strep
+CSD16-FAI-0297,,,,Women's bathroom (wash basin) and sink counter,,Airport Women's bathroom (wash basin) and sink counter_37_LB_none
+CSD16-FAI-0298,,,,Women's bathroom (wash basin) and sink counter,,Airport Women's bathroom (wash basin) and sink counter_37_LB_amp
+CSD16-FAI-0299,,,,Women's bathroom (wash basin) and sink counter,,Airport Women's bathroom (wash basin) and sink counter_37_LB_kan
+CSD16-FAI-0300,,,,Women's bathroom (wash basin) and sink counter,,Airport Women's bathroom (wash basin) and sink counter_37_LB_strep
+CSD16-FAI-0301,,,,Women's bathroom (wash basin) and sink counter,,Airport Women's bathroom (wash basin) and sink counter_37_LB_tet
+CSD16-FAI-0302,,,,Family restroom sink counter,,Airport Family restroom sink counter_37_LB_none
+CSD16-FAI-0303,,,,Family restroom sink counter,,Airport Family restroom sink counter_37_LB_kan
+CSD16-FAI-0304,,,,Family restroom sink counter,,Airport Family restroom sink counter_37_LB_strep
+CSD16-FAI-0305,,,,Family restroom sink counter,,Airport Family restroom sink counter_37_LB_tet
+CSD16-FAI-0306,,,,Family restroom wooden bench (prob used for bags or to sit kids),,Airport Family restroom wooden bench (prob used for bags or to sit kids)_37_LB_none
+CSD16-FAI-0307,,,,Family restroom wooden bench (prob used for bags or to sit kids),,Airport Family restroom wooden bench (prob used for bags or to sit kids)_37_LB_kan
+CSD16-FAI-0308,,,,Family restroom wooden bench (prob used for bags or to sit kids),,Airport Family restroom wooden bench (prob used for bags or to sit kids)_37_LB_tet
+CSD16-FAI-0309,,,,Family restroom floor,,Airport Family restroom floor_37_LB_none
+CSD16-FAI-0310,,,,Family restroom floor,,Airport Family restroom floor_37_LB_amp
+CSD16-FAI-0311,,,,Family restroom floor,,Airport Family restroom floor_37_LB_tet
+CSD16-FAI-0312,,,,Men's bathroom urinal (composite of 3),,Airport Men's bathroom urinal (composite of 3)_37_LB_none
+CSD16-FAI-0313,,,,Men's bathroom urinal (composite of 3),,Airport Men's bathroom urinal (composite of 3)_37_LB_amp
+CSD16-FAI-0314,,,,Men's bathroom urinal (composite of 3),,Airport Men's bathroom urinal (composite of 3)_37_LB_kan
+CSD16-FAI-0315,,,,Men's bathroom urinal (composite of 3),,Airport Men's bathroom urinal (composite of 3)_37_LB_strep
+CSD16-FAI-0316,,,,Men's bathroom urinal (composite of 3),,Airport Men's bathroom urinal (composite of 3)_37_LB_tet
+CSD16-FAI-0317,,,,Family restroom wooden bench (prob used for bags or to sit kids),,Airport Family restroom wooden bench (prob used for bags or to sit kids)_37_LB_amp
+CSD16-FAI-0318,,,,Jetway 2 floor (right after above area),,Airport Jetway 2 floor (right after above area)_37_LB_none
+CSD16-FAI-0319,,,,Jetway 2 floor (right after above area),,Airport Jetway 2 floor (right after above area)_37_LB_tet
+CSD16-FAI-0320,,,,Escalator going down to exit,,Airport Escalator going down to exit_37_LB_none
+CSD16-FAI-0321,,,,Escalator going down to exit,,Airport Escalator going down to exit_37_LB_kan
+CSD16-FAI-0322,,,,Baggage belt (main one/there is only 1 main one),,Airport Baggage belt (main one/there is only 1 main one)_37_LB_none
+CSD16-FAI-0323,,,,Baggage belt (main one/there is only 1 main one),,Airport Baggage belt (main one/there is only 1 main one)_37_LB_kan
+CSD16-FAI-0324,,,,Bench by entrance/exit (indoors),,Airport Bench by entrance/exit (indoors)_37_LB_none
+CSD16-FAI-0325,,,,Bench by entrance/exit (indoors),,Airport Bench by entrance/exit (indoors)_37_LB_amp
+CSD16-FAI-0326,,,,Bench by entrance/exit (indoors),,Airport Bench by entrance/exit (indoors)_37_LB_kan
+CSD16-FAI-0327,,,,Bench by entrance/exit (indoors),,Airport Bench by entrance/exit (indoors)_37_LB_tet
+CSD16-FAI-0328,,,,Kiosk (composite of 3),,Airport Kiosk (composite of 3)_37_LB_none
+CSD16-FAI-0329,,,,Kiosk (composite of 3),,Airport Kiosk (composite of 3)_37_LB_amp
+CSD16-FAI-0330,,,,Kiosk (composite of 3),,Airport Kiosk (composite of 3)_37_LB_kan
+CSD16-FAI-0331,,,,Kiosk (composite of 3),,Airport Kiosk (composite of 3)_37_LB_strep
+CSD16-FAI-0332,,,,Men's bathroom sink counter ,,Airport Men's bathroom sink counter _37_LB_none
+CSD16-FAI-0333,,,,Men's bathroom sink counter ,,Airport Men's bathroom sink counter _37_LB_chloram
+CSD16-FAI-0334,,,,Men's bathroom sink counter ,,Airport Men's bathroom sink counter _37_LB_kan
+CSD16-FAI-0335,,,,Jetway 2 floor (as soon as step out of plane),,Airport Jetway 2 floor (as soon as step out of plane)_28_LB_none
+CSD16-FAI-0336,,,,Jetway 2 floor (as soon as step out of plane),,Airport Jetway 2 floor (as soon as step out of plane)_28_LB_tet
+CSD16-FAI-0337,,,,Jetway 2 handrail,,Airport Jetway 2 handrail_28_LB_none
+CSD16-FAI-0338,,,,Jetway 2 handrail,,Airport Jetway 2 handrail_28_LB_kan
+CSD16-FAI-0339,,,,Jetway 2 handrail,,Airport Jetway 2 handrail_28_LB_tet
+CSD16-FAI-0340,,,,Jetway 1 seats waiting area,,Airport Jetway 1 seats waiting area_28_LB_none
+CSD16-FAI-0341,,,,Jetway 1 floor (next to rubber floor area),,Airport Jetway 1 floor (next to rubber floor area)_28_LB_none
+CSD16-FAI-0342,,,,Jetway 1 floor (next to rubber floor area),,Airport Jetway 1 floor (next to rubber floor area)_28_LB_amp
+CSD16-FAI-0343,,,,Jetway 1 floor (as soon as step out of plane),,Airport Jetway 1 floor (as soon as step out of plane)_28_LB_none
+CSD16-FAI-0344,,,,Jetway 1 floor (as soon as step out of plane),,Airport Jetway 1 floor (as soon as step out of plane)_28_LB_kan
+CSD16-FAI-0345,,,,In front of Gate 1 carpet (by seating area),,Airport In front of Gate 1 carpet (by seating area)_28_LB_none
+CSD16-FAI-0346,,,,water fountain by gate 2,,Airport water fountain by gate 2_28_LB_none
+CSD16-FAI-0347,,,,water fountain by gate 2,,Airport water fountain by gate 2_28_LB_amp
+CSD16-FAI-0348,,,,water fountain by gate 2,,Airport water fountain by gate 2_28_LB_kan
+CSD16-FAI-0349,,,,water fountain by gate 2,,Airport water fountain by gate 2_28_LB_strep
+CSD16-FAI-0350,,,,Starbucks table,,Airport Starbucks table_28_LB_none
+CSD16-FAI-0351,,,,Starbucks table,,Airport Starbucks table_28_LB_amp
+CSD16-FAI-0352,,,,Starbucks table,,Airport Starbucks table_28_LB_kan
+CSD16-FAI-0353,,,,Starbucks table,,Airport Starbucks table_28_LB_tet
+CSD16-FAI-0354,,,,Starbucks chair,,Airport Starbucks chair_28_LB_none
+CSD16-FAI-0355,,,,Starbucks chair,,Airport Starbucks chair_28_LB_amp
+CSD16-FAI-0356,,,,Starbucks chair,,Airport Starbucks chair_28_LB_kan
+CSD16-FAI-0357,,,,Women's Bathroom (handicapped stall) seat,,Airport Women's Bathroom (handicapped stall) seat_28_LB_none
+CSD16-FAI-0358,,,,Women's Bathroom (handicapped stall) seat,,Airport Women's Bathroom (handicapped stall) seat_28_LB_kan
+CSD16-FAI-0359,,,,Women's Bathroom (handicapped stall) seat,,Airport Women's Bathroom (handicapped stall) seat_28_LB_strep
+CSD16-FAI-0360,,,,Women's Bathroom (handicapped stall) seat,,Airport Women's Bathroom (handicapped stall) seat_28_LB_tet
+CSD16-FAI-0361,,,,Women's bathroom (wash basin) and sink counter,,Airport Women's bathroom (wash basin) and sink counter_28_LB_none
+CSD16-FAI-0362,,,,Women's bathroom (wash basin) and sink counter,,Airport Women's bathroom (wash basin) and sink counter_28_LB_amp
+CSD16-FAI-0363,,,,Women's bathroom (wash basin) and sink counter,,Airport Women's bathroom (wash basin) and sink counter_28_LB_kan
+CSD16-FAI-0364,,,,Women's bathroom (wash basin) and sink counter,,Airport Women's bathroom (wash basin) and sink counter_28_LB_strep
+CSD16-FAI-0365,,,,Women's bathroom (wash basin) and sink counter,,Airport Women's bathroom (wash basin) and sink counter_28_LB_tet
+CSD16-FAI-0366,,,,Family restroom sink counter,,Airport Family restroom sink counter_28_LB_none
+CSD16-FAI-0367,,,,Family restroom sink counter,,Airport Family restroom sink counter_28_LB_amp
+CSD16-FAI-0368,,,,Family restroom sink counter,,Airport Family restroom sink counter_28_LB_kan
+CSD16-FAI-0369,,,,Family restroom sink counter,,Airport Family restroom sink counter_28_LB_strep
+CSD16-FAI-0370,,,,Family restroom wooden bench (prob used for bags or to sit kids),,Airport Family restroom wooden bench (prob used for bags or to sit kids)_28_LB_none
+CSD16-FAI-0371,,,,Family restroom wooden bench (prob used for bags or to sit kids),,Airport Family restroom wooden bench (prob used for bags or to sit kids)_28_LB_kan
+CSD16-FAI-0372,,,,Family restroom wooden bench (prob used for bags or to sit kids),,Airport Family restroom wooden bench (prob used for bags or to sit kids)_28_LB_strep
+CSD16-FAI-0373,,,,Family restroom wooden bench (prob used for bags or to sit kids),,Airport Family restroom wooden bench (prob used for bags or to sit kids)_28_LB_tet
+CSD16-FAI-0374,,,,Family restroom floor,,Airport Family restroom floor_28_LB_none
+CSD16-FAI-0375,,,,Men's bathroom urinal (composite of 3),,Airport Men's bathroom urinal (composite of 3)_28_LB_none
+CSD16-FAI-0376,,,,Men's bathroom urinal (composite of 3),,Airport Men's bathroom urinal (composite of 3)_28_LB_amp
+CSD16-FAI-0377,,,,Men's bathroom urinal (composite of 3),,Airport Men's bathroom urinal (composite of 3)_28_LB_kan
+CSD16-FAI-0378,,,,Men's bathroom urinal (composite of 3),,Airport Men's bathroom urinal (composite of 3)_28_LB_tet
+CSD16-FAI-0379,,,,Jetway 2 floor (right after above area),,Airport Jetway 2 floor (right after above area)_28_LB_none
+CSD16-FAI-0380,,,,Jetway 2 floor (right after above area),,Airport Jetway 2 floor (right after above area)_28_LB_amp
+CSD16-FAI-0381,,,,Jetway 2 floor (right after above area),,Airport Jetway 2 floor (right after above area)_28_LB_kan
+CSD16-FAI-0382,,,,Jetway 2 floor (right after above area),,Airport Jetway 2 floor (right after above area)_28_LB_tet
+CSD16-FAI-0383,,,,Escalator going down to exit,,Airport Escalator going down to exit_28_LB_none
+CSD16-FAI-0384,,,,Escalator going down to exit,,Airport Escalator going down to exit_28_LB_kan
+CSD16-FAI-0385,,,,Baggage belt (main one/there is only 1 main one),,Airport Baggage belt (main one/there is only 1 main one)_28_LB_none
+CSD16-FAI-0386,,,,Baggage belt (main one/there is only 1 main one),,Airport Baggage belt (main one/there is only 1 main one)_28_LB_tet
+CSD16-FAI-0387,,,,Bench by entrance/exit (indoors),,Airport Bench by entrance/exit (indoors)_28_LB_tet
+CSD16-FAI-0388,,,,Kiosk (composite of 3),,Airport Kiosk (composite of 3)_28_LB_none
+CSD16-FAI-0389,,,,Men's bathroom sink counter ,,Airport Men's bathroom sink counter _28_LB_amp
+CSD16-FAI-0390,,,,Men's bathroom sink counter ,,Airport Men's bathroom sink counter _28_LB_chloram
+CSD16-FAI-0391,,,,Men's bathroom sink counter ,,Airport Men's bathroom sink counter _28_LB_strep
+CSD16-FAI-0392,,,,Jetway 2 floor (as soon as step out of plane),,Airport Jetway 2 floor (as soon as step out of plane)_37_TSA_none
+CSD16-FAI-0393,,,,Jetway 2 floor (as soon as step out of plane),,Airport Jetway 2 floor (as soon as step out of plane)_37_TSA_amp
+CSD16-FAI-0394,,,,Jetway 2 floor (as soon as step out of plane),,Airport Jetway 2 floor (as soon as step out of plane)_37_TSA_strep
+CSD16-FAI-0395,,,,Jetway 2 floor (as soon as step out of plane),,Airport Jetway 2 floor (as soon as step out of plane)_37_TSA_tet
+CSD16-FAI-0396,,,,Jetway 2 handrail,,Airport Jetway 2 handrail_37_TSA_kan
+CSD16-FAI-0397,,,,Jetway 2 handrail,,Airport Jetway 2 handrail_37_TSA_strep
+CSD16-FAI-0398,,,,Jetway 1 seats waiting area,,Airport Jetway 1 seats waiting area_37_TSA_none
+CSD16-FAI-0399,,,,Jetway 1 seats waiting area,,Airport Jetway 1 seats waiting area_37_TSA_amp
+CSD16-FAI-0400,,,,Jetway 1 seats waiting area,,Airport Jetway 1 seats waiting area_37_TSA_kan
+CSD16-FAI-0401,,,,Jetway 1 seats waiting area,,Airport Jetway 1 seats waiting area_37_TSA_tet
+CSD16-FAI-0402,,,,Jetway 1 floor (as soon as step out of plane),,Airport Jetway 1 floor (as soon as step out of plane)_37_TSA_none
+CSD16-FAI-0403,,,,Jetway 1 floor (as soon as step out of plane),,Airport Jetway 1 floor (as soon as step out of plane)_37_TSA_amp
+CSD16-FAI-0404,,,,Jetway 1 floor (as soon as step out of plane),,Airport Jetway 1 floor (as soon as step out of plane)_37_TSA_kan
+CSD16-FAI-0405,,,,Jetway 1 floor (as soon as step out of plane),,Airport Jetway 1 floor (as soon as step out of plane)_37_TSA_strep
+CSD16-FAI-0406,,,,In front of Gate 1 carpet (by seating area),,Airport In front of Gate 1 carpet (by seating area)_37_TSA_none
+CSD16-FAI-0407,,,,In front of Gate 1 carpet (by seating area),,Airport In front of Gate 1 carpet (by seating area)_37_TSA_amp
+CSD16-FAI-0408,,,,In front of Gate 1 carpet (by seating area),,Airport In front of Gate 1 carpet (by seating area)_37_TSA_kan
+CSD16-FAI-0409,,,,water fountain by gate 2,,Airport water fountain by gate 2_37_TSA_none
+CSD16-FAI-0410,,,,water fountain by gate 3,,Airport water fountain by gate 3_37_TSA_amp
+CSD16-FAI-0411,,,,water fountain by gate 4,,Airport water fountain by gate 4_37_TSA_kan
+CSD16-FAI-0412,,,,water fountain by gate 5,,Airport water fountain by gate 5_37_TSA_tet
+CSD16-FAI-0413,,,,Starbucks table,,Airport Starbucks table_37_TSA_none
+CSD16-FAI-0414,,,,Starbucks table,,Airport Starbucks table_37_TSA_amp
+CSD16-FAI-0415,,,,Starbucks table,,Airport Starbucks table_37_TSA_kan
+CSD16-FAI-0416,,,,Starbucks table,,Airport 20160919_CSD16-FAI-0416_Starbucks table_37
+CSD16-FAI-0417,,,,Starbuck chair,,Airport 20160919_CSD16-FAI-0417_Starbuck chair_37
+CSD16-FAI-0418,,,,Starbuck chair,,Airport Starbucks table_37_TSA_strep
+CSD16-FAI-0419,,,,Starbuck chair,,Airport Starbuck chair_37_TSA_none
+CSD16-FAI-0420,,,,Starbuck chair,,Airport Starbuck chair_37_TSA_amp
+CSD16-FAI-0421,,,,Women's Bathroom (handicapped stall) seat,,Airport Starbuck chair_37_TSA_kan
+CSD16-FAI-0422,,,,Women's Bathroom (handicapped stall) seat,,Airport Starbuck chair_37_TSA_strep
+CSD16-FAI-0423,,,,Women's Bathroom (handicapped stall) seat,,Airport Women's Bathroom (handicapped stall) seat_37_TSA_none
+CSD16-FAI-0424,,,,Women's bathroom (wash basin) and sink counter,,Airport Women's Bathroom (handicapped stall) seat_37_TSA_strep
+CSD16-FAI-0425,,,,Women's bathroom (wash basin) and sink counter,,Airport Women's Bathroom (handicapped stall) seat_37_TSA_tet
+CSD16-FAI-0426,,,,Women's bathroom (wash basin) and sink counter,,Airport Women's bathroom (wash basin) and sink counter_37_TSA_none
+CSD16-FAI-0427,,,,Women's bathroom (wash basin) and sink counter,,Airport Women's bathroom (wash basin) and sink counter_37_TSA_amp
+CSD16-FAI-0428,,,,Women's bathroom (wash basin) and sink counter,,Airport Women's bathroom (wash basin) and sink counter_37_TSA_kan
+CSD16-FAI-0429,,,,Family restroom sink counter,,Airport Women's bathroom (wash basin) and sink counter_37_TSA_strep
+CSD16-FAI-0430,,,,Family restroom sink counter,,Airport Women's bathroom (wash basin) and sink counter_37_TSA_tet
+CSD16-FAI-0431,,,,Family restroom sink counter,,Airport Family restroom sink counter_37_TSA_none
+CSD16-FAI-0432,,,,Family restroom sink counter,,Airport Family restroom sink counter_37_TSA_amp
+CSD16-FAI-0433,,,,Family restroom sink counter,,Airport Family restroom sink counter_37_TSA_kan
+CSD16-FAI-0434,,,,Family restroom wooden bench (prob used for bags or to sit kids),,Airport Family restroom sink counter_37_TSA_strep
+CSD16-FAI-0435,,,,Family restroom wooden bench (prob used for bags or to sit kids),,Airport Family restroom sink counter_37_TSA_tet
+CSD16-FAI-0436,,,,Family restroom floor,,Airport Family restroom wooden bench (prob used for bags or to sit kids)_37_TSA_none
+CSD16-FAI-0437,,,,Family restroom floor,,Airport Family restroom wooden bench (prob used for bags or to sit kids)_37_TSA_strep
+CSD16-FAI-0438,,,,Family restroom floor,,Airport Family restroom floor_37_TSA_kan
+CSD16-FAI-0439,,,,Men's bathroom urinal (composite of 3),,Airport Family restroom floor_37_TSA_strep
+CSD16-FAI-0440,,,,Men's bathroom urinal (composite of 3),,Airport Family restroom floor_37_TSA_tet
+CSD16-FAI-0441,,,,Men's bathroom urinal (composite of 3),,Airport Men's bathroom urinal (composite of 3)_37_TSA_none
+CSD16-FAI-0442,,,,Men's bathroom urinal (composite of 3),,Airport Men's bathroom urinal (composite of 3)_37_TSA_kan
+CSD16-FAI-0443,,,,Jetway 2 floor (right after above area),,Airport Men's bathroom urinal (composite of 3)_37_TSA_strep
+CSD16-FAI-0444,,,,Jetway 2 floor (right after above area),,Airport Men's bathroom urinal (composite of 3)_37_TSA_tet
+CSD16-FAI-0445,,,,Escalator going down to exit,,Airport Jetway 2 floor (right after above area)_37_TSA_none
+CSD16-FAI-0446,,,,Escalator going down to exit,,Airport Jetway 2 floor (right after above area)_37_TSA_kan
+CSD16-FAI-0447,,,,Baggage belt (main one/there is only 1 main one),,Airport Escalator going down to exit_37_TSA_none
+CSD16-FAI-0448,,,,Bench by entrance/exit (indoors),,Airport Escalator going down to exit_37_TSA_kan
+CSD16-FAI-0449,,,,Bench by entrance/exit (indoors),,Airport Baggage belt (main one/there is only 1 main one)_37_TSA_none
+CSD16-FAI-0450,,,,Bench by entrance/exit (indoors),,Airport Bench by entrance/exit (indoors)_37_TSA_none
+CSD16-FAI-0451,,,,Bench by entrance/exit (indoors),,Airport Bench by entrance/exit (indoors)_37_TSA_kan
+CSD16-FAI-0452,,,,Kiosk (composite of 3),,Airport Bench by entrance/exit (indoors)_37_TSA_strep
+CSD16-FAI-0453,,,,Kiosk (composite of 3),,Airport Bench by entrance/exit (indoors)_37_TSA_tet
+CSD16-FAI-0454,,,,Kiosk (composite of 3),,Airport Kiosk (composite of 3)_37_TSA_none
+CSD16-FAI-0455,,,,Jetway 2 floor (as soon as step out of plane),,Airport Kiosk (composite of 3)_37_TSA_kan
+CSD16-FAI-0456,,,,Jetway 2 floor (as soon as step out of plane),,Airport Kiosk (composite of 3)_37_TSA_tet
+CSD16-FAI-0457,,,,Jetway 2 floor (as soon as step out of plane),,Airport Jetway 2 floor (as soon as step out of plane)_28_TSA_none
+CSD16-FAI-0458,,,,Jetway 2 floor (as soon as step out of plane),,Airport Jetway 2 floor (as soon as step out of plane)_28_TSA_kan
+CSD16-FAI-0459,,,,Jetway 2 handrail,,Airport Jetway 2 floor (as soon as step out of plane)_28_TSA_strep
+CSD16-FAI-0460,,,,Jetway 1 seats waiting area,,Airport Jetway 2 floor (as soon as step out of plane)_28_TSA_tet
+CSD16-FAI-0461,,,,Jetway 1 floor (next to rubber floor area),,Airport Jetway 2 handrail_28_TSA_strep
+CSD16-FAI-0462,,,,Jetway 1 floor (next to rubber floor area),,Airport Jetway 1 seats waiting area_28_TSA_kan
+CSD16-FAI-0463,,,,Jetway 1 floor (as soon as step out of plane),,Airport Jetway 1 floor (next to rubber floor area)_28_TSA_none
+CSD16-FAI-0464,,,,In front of Gate 1 carpet (by seating area),,Airport Jetway 1 floor (next to rubber floor area)_28_TSA_tet
+CSD16-FAI-0465,,,,In front of Gate 1 carpet (by seating area),,Airport Jetway 1 floor (as soon as step out of plane)_28_TSA_none
+CSD16-FAI-0466,,,,water fountain by gate 2,,Airport In front of Gate 1 carpet (by seating area)_28_TSA_none
+CSD16-FAI-0467,,,,water fountain by gate 3,,Airport In front of Gate 1 carpet (by seating area)_28_TSA_kan
+CSD16-FAI-0468,,,,water fountain by gate 4,,Airport water fountain by gate 2_28_TSA_none
+CSD16-FAI-0469,,,,water fountain by gate 5,,Airport water fountain by gate 3_28_TSA_amp
+CSD16-FAI-0470,,,,water fountain by gate 6,,Airport water fountain by gate 4_28_TSA_kan
+CSD16-FAI-0471,,,,Starbucks table,,Airport water fountain by gate 5_28_TSA_strep
+CSD16-FAI-0472,,,,Starbucks table,,Airport water fountain by gate 6_28_TSA_tet
+CSD16-FAI-0473,,,,Starbucks table,,Airport Starbucks table_28_TSA_none
+CSD16-FAI-0474,,,,Starbucks chair,,Airport Starbucks table_28_TSA_amp
+CSD16-FAI-0475,,,,Starbucks chair,,Airport Starbucks table_28_TSA_strep
+CSD16-FAI-0476,,,,Starbucks chair,,Airport Starbucks chair_28_TSA_none
+CSD16-FAI-0477,,,,Starbucks chair,,Airport Starbucks chair_28_TSA_amp
+CSD16-FAI-0478,,,,Women's Bathroom (handicapped stall) seat,,Airport Starbucks chair_28_TSA_kan
+CSD16-FAI-0479,,,,Women's Bathroom (handicapped stall) seat,,Airport Starbucks chair_28_TSA_tet
+CSD16-FAI-0480,,,,Women's bathroom (wash basin) and sink counter,,Airport Women's Bathroom (handicapped stall) seat_28_TSA_none
+CSD16-FAI-0481,,,,Women's bathroom (wash basin) and sink counter,,Airport Women's Bathroom (handicapped stall) seat_28_TSA_tet
+CSD16-FAI-0482,,,,Women's bathroom (wash basin) and sink counter,,Airport Women's bathroom (wash basin) and sink counter_28_TSA_none
+CSD16-FAI-0483,,,,Women's bathroom (wash basin) and sink counter,,Airport Women's bathroom (wash basin) and sink counter_28_TSA_amp
+CSD16-FAI-0484,,,,Women's bathroom (wash basin) and sink counter,,Airport Women's bathroom (wash basin) and sink counter_28_TSA_kan
+CSD16-FAI-0485,,,,Family restroom wooden bench (prob used for bags or to sit kids),,Airport Women's bathroom (wash basin) and sink counter_28_TSA_strep
+CSD16-FAI-0486,,,,Family restroom wooden bench (prob used for bags or to sit kids),,Airport Women's bathroom (wash basin) and sink counter_28_TSA_tet
+CSD16-FAI-0487,,,,Family restroom wooden bench (prob used for bags or to sit kids),,Airport Family restroom wooden bench (prob used for bags or to sit kids)_28_TSA_amp
+CSD16-FAI-0488,,,,Men's bathroom urinal (composite of 3),,Airport Family restroom wooden bench (prob used for bags or to sit kids)_28_TSA_kan
+CSD16-FAI-0489,,,,Men's bathroom urinal (composite of 3),,Airport Family restroom wooden bench (prob used for bags or to sit kids)_28_TSA_strep
+CSD16-FAI-0490,,,,Men's bathroom urinal (composite of 3),,Airport Men's bathroom urinal (composite of 3)_28_TSA_none
+CSD16-FAI-0491,,,,Men's bathroom urinal (composite of 3),,Airport Men's bathroom urinal (composite of 3)_28_TSA_amp
+CSD16-FAI-0492,,,,Men's bathroom urinal (composite of 3),,Airport Men's bathroom urinal (composite of 3)_28_TSA_kan
+CSD16-FAI-0493,,,,Jetway 2 floor (right after above area),,Airport Men's bathroom urinal (composite of 3)_28_TSA_strep
+CSD16-FAI-0494,,,,Jetway 2 floor (right after above area),,Airport Men's bathroom urinal (composite of 3)_28_TSA_tet
+CSD16-FAI-0495,,,,Jetway 2 floor (right after above area),,Airport Jetway 2 floor (right after above area)_28_TSA_none
+CSD16-FAI-0496,,,,Jetway 2 floor (right after above area),,Airport Jetway 2 floor (right after above area)_28_TSA_kan
+CSD16-FAI-0497,,,,Escalator going down to exit,,Airport 28_TSA_none
+CSD16-FAI-0498,,,,Escalator going down to exit,,Airport 28_TSA_kan
+CSD16-FAI-0499,,,,Escalator going down to exit,,Airport 28_TSA_strep
+CSD16-FAI-0500,,,,Baggage belt (main one/there is only 1 main one),,Airport 28_TSA_tet
+CSD16-FAI-0501,,,,Bench by entrance/exit (indoors),,Airport 28_TSA_none
+CSD16-FAI-0502,,,,Kiosk (composite of 3),,Airport 28_TSA_none
+CSD16-FAI-0503,,,,Bench by entrance/exit (indoors),,Airport 37_LB_strep
+CSD16-FAI-0504,,,,Jetway 2 floor (as soon as step out of plane),,Airport 28_LB_amp
+CSD16-FAI-0505,,,,Jetway 2 floor (as soon as step out of plane),,Airport 28_LB_kan
+CSD16-FAI-0506,,,,Jetway 1 floor (as soon as step out of plane),,Airport 28_LB_strep
+CSD16-FAI-0507,,,,In front of Gate 1 carpet (by seating area),,Airport 28_LB_amp
+CSD16-FAI-0508,,,,In front of Gate 1 carpet (by seating area),,Airport 28_LB_kan
+CSD16-FAI-0509,,,,Starbucks chair,,Airport 28_LB_tet
+CSD16-FAI-0510,,,,Family restroom sink counter,,Airport 28_LB_tet
+CSD16-FAI-0511,,,,Baggage belt (main one/there is only 1 main one),,Airport 28_LB_strep
+CSD16-FAI-0512,,,,Bench by entrance/exit (indoors),,Airport 28_LB_strep
+CSD16-FAI-0513,,,,Jetway 2 handrail,,Airport 37_TSA_none
+CSD16-FAI-0514,,,,In front of Gate 1 carpet (by seating area),,Airport 37_TSA_strep
+CSD16-FAI-0515,,,,In front of Gate 1 carpet (by seating area),,Airport 37_TSA_tet
+CSD16-FAI-0516,,,,Family restroom floor,,Airport 37_TSA_none
+CSD16-FAI-0517,,,,Kiosk (composite of 3),,Airport 37_TSA_amp
+CSD16-FAI-0518,,,,Jetway 2 handrail,,Airport 28_TSA_none
+CSD16-FAI-0519,,,,Jetway 2 handrail,,Airport 28_TSA_tet
+CSD16-FAI-0520,,,,Jetway 1 seats waiting area,,Airport 28_TSA_none
+CSD16-FAI-0521,,,,In front of Gate 1 carpet (by seating area),,Airport 28_TSA_tet
+CSD16-FAI-0522,,,,Starbucks chair,,Airport 28_TSA_strep
+CSD16-FAI-0523,,,,Family restroom wooden bench (prob used for bags or to sit kids),,Airport 28_TSA_none
+CSD16-FAI-0524,,,,Jetway 2 floor (right after above area),,Airport 28_TSA_amp
+CSD16-FAI-0525,,,,Baggage belt (main one/there is only 1 main one),,Airport 28_TSA_none
+CSD16-FAI-0526,,,,Baggage belt (main one/there is only 1 main one),,Airport 28_TSA_kan
+CSD16-FAI-0527,,,,Jetway 2 floor (as soon as step out of plane),,Airport 28_LB_strep
+CSD16-FAI-0528,,,,Jetway 2 handrail,,Airport 28_LB_strep
+CSD16-FAI-0529,,,,Jetway 1 seats waiting area,,Airport 28_LB_kan
+CSD16-FAI-0530,,,,Jetway 1 seats waiting area,,Airport 28_LB_tet
+CSD16-FAI-0531,,,,Jetway 1 floor (next to rubber floor area),,Airport 28_LB_kan
+CSD16-FAI-0532,,,,Jetway 1 floor (next to rubber floor area),,Airport 28_LB_tet
+CSD16-FAI-0533,,,,Jetway 1 floor (as soon as step out of plane),,Airport 28_LB_amp
+CSD16-FAI-0534,,,,In front of Gate 1 carpet (by seating area),,Airport 28_LB_strep
+CSD16-FAI-0535,,,,Baggage belt (main one/there is only 1 main one),,Airport 28_LB_amp
+CSD16-FAI-0536,,,,Kiosk (composite of 3),,Airport 28_LB_amp
+CSD16-FAI-0537,,,,Kiosk (composite of 3),,Airport 28_LB_tet
+CSD16-FAI-0538,,,,Men's bathroom sink counter ,,Airport 28_LB_tet
+CSD16-FAI-0539,,,,Jetway 2 floor (as soon as step out of plane),,Airport 28_TSA_amp
+CSD16-FAI-0540,,,,Jetway 1 floor (next to rubber floor area),,Airport 28_TSA_amp
+CSD16-FAI-0541,,,,Jetway 1 floor (next to rubber floor area),,Airport 28_TSA_kan
+CSD16-FAI-0542,,,,Jetway 1 floor (next to rubber floor area),,Airport 28_TSA_strep
+CSD16-FAI-0543,,,,Jetway 1 floor (as soon as step out of plane),,Airport 28_TSA_amp
+CSD16-FAI-0544,,,,Jetway 1 floor (as soon as step out of plane),,Airport 28_TSA_kan
+CSD16-FAI-0545,,,,Jetway 1 floor (as soon as step out of plane),,Airport 28_TSA_strep
+CSD16-FAI-0546,,,,In front of Gate 1 carpet (by seating area),,Airport 28_TSA_amp
+CSD16-FAI-0547,,,,In front of Gate 1 carpet (by seating area),,Airport 28_TSA_strep
+CSD16-FAI-0548,,,,Baggage belt (main one/there is only 1 main one),,Airport 28_TSA_strep
+CSD16-FAI-0549,,,,Bench by entrance/exit (indoors),,Airport 28_TSA_strep
+CSD16-FAI-0550,,,,BRD,,Airport RT_bread_none
+CSD16-FAI-0551,,,,Jetway 1 seats waiting area,,Airport 28_TSA_amp
+CSD16-FAI-0552,,,,Jetway 1 seats waiting area,,Airport 28_TSA_tet
+CSD16-FAI-0553,,,,Jetway 1 floor (as soon as step out of plane),,Airport 28_TSA_tet
+CSD16-FAI-0554,,,,Starbucks table,,Airport 28_TSA_kan
+CSD16-FAI-0555,,,,Family restroom sink counter,,Airport 28_TSA_none
+CSD16-FAI-0556,,,,Family restroom sink counter,,Airport 28_TSA_amp
+CSD16-FAI-0557,,,,Family restroom sink counter,,Airport 28_TSA_kan
+CSD16-FAI-0558,,,,Family restroom sink counter,,Airport 28_TSA_strep
+CSD16-FAI-0559,,,,Bench by entrance/exit (indoors),,Airport 28_TSA_kan
+CSD16-FAI-0560,,,,Kiosk (composite of 3),,Airport 28_TSA_strep
+CSD16-FAI-0561,,,,Jetway 2 handrail,,Airport 28_LB_amp
+CSD16-FAI-0562,,,,Jetway 1 seats waiting area,,Airport 28_LB_amp
+CSD16-FAI-0563,,,,Jetway 1 seats waiting area,,Airport 28_LB_strep
+CSD16-FAI-0564,,,,Jetway 1 floor (next to rubber floor area),,Airport 28_LB_strep
+CSD16-FAI-0565,,,,water fountain by gate 2,,Airport 28_LB_tet
+CSD16-FAI-0566,,,,Starbucks table,,Airport 28_LB_strep
+CSD16-FAI-0567,,,,Women's Bathroom (handicapped stall) seat,,Airport 28_TSA_amp
+CSD16-FAI-0568,,,,Jetway 2 handrail,,Airport 28_TSA_kan
+CSD16-FAI-0569,,,,Jetway 1 seats waiting area,,Airport 28_TSA_strep
+CSD16-FAI-0570,,,,Family restroom sink counter,,Airport 28_TSA_tet
+CSD16-FAI-0571,,,,Family restroom wooden bench (prob used for bags or to sit kids),,Airport 28_TSA_tet
+CSD16-FAI-0572,,,,Baggage belt (main one/there is only 1 main one),,Airport 28_TSA_amp
+CSD16-FAI-0573,,,,Bench by entrance/exit (indoors),,Airport 28_TSA_amp
+CSD16-FAI-0574,,,,Bench by entrance/exit (indoors),,Airport 28_TSA_tet
+CSD16-FAI-0575,,,,Kiosk (composite of 3),,Airport 28_TSA_amp
+CSD16-FAI-0576,,,,Kiosk (composite of 3),,Airport 28_TSA_kan
+CSD16-FAI-0577,,,,Kiosk (composite of 3),,Airport 28_TSA_tet
+CSD16-FAI-0601,20160226,78,yellow,pole,,Bus 78_yellow_pole
+CSD16-FAI-0602,20160226,78,yellow,seat,,Bus 78_yellow_seat
+CSD16-FAI-0603,20160226,78,yellow,front bar,,Bus 78_yellow_front bar
+CSD16-FAI-0604,20160226,71,blue,pole,,Bus 71_blue_pole
+CSD16-FAI-0605,20160226,71,blue,seat,,Bus 71_blue_seat
+CSD16-FAI-0606,20160226,71,blue,front bar,,Bus 71_blue_front bar
+CSD16-FAI-0607,20160226,77,gold,pole,,Bus 77_gold_pole
+CSD16-FAI-0608,20160226,77,gold,seat,,Bus 77_gold_seat
+CSD16-FAI-0609,20160226,77,gold,front bar,,Bus 77_gold_front bar
+CSD16-FAI-0610,20160226,141,red,pole (right side of door),,Bus 141_red_pole (right side of door)
+CSD16-FAI-0611,20160226,141,red,seat,,Bus 141_red_seat
+CSD16-FAI-0612,20160226,141,red,front bar,,Bus 141_red_front bar
+CSD16-FAI-0613,20160226,141,red,yellow tape,,Bus 141_red_yellow tape
+CSD16-FAI-0614,20160226,73,purple,pole,,Bus 73_purple_pole
+CSD16-FAI-0615,20160226,73,purple,seat,,Bus 73_purple_seat
+CSD16-FAI-0616,20160226,73,purple,front bar,,Bus 73_purple_front bar
+CSD16-FAI-0617,20160226,73,purple,yellow tape,,Bus 73_purple_yellow tape
+CSD16-FAI-0618,20160226,73,purple,Purrell box,,Bus 73_purple_Purrell box
+CSD16-FAI-0619,20160226,75,yellow/red,pole,,Bus 75_yellow/red_pole
+CSD16-FAI-0620,20160226,75,yellow/red,seat,,Bus 75_yellow/red_seat
+CSD16-FAI-0621,20160226,75,yellow/red,front bar,,Bus 75_yellow/red_front bar
+CSD16-FAI-0622,20160226,76,orange,pole,,Bus 76_orange_pole
+CSD16-FAI-0623,20160226,76,orange,seat,,Bus 76_orange_seat
+CSD16-FAI-0624,20160226,76,orange,front bar,,Bus 76_orange_front bar
+CSD16-FAI-0625,20160226,143,green,pole,,Bus 143_green_pole
+CSD16-FAI-0626,20160226,143,green,seat,,Bus 143_green_seat
+CSD16-FAI-0627,20160226,143,green,front bar,,Bus 143_green_front bar
+CSD16-FAI-0628,20160226,73,purple,front bar,,Bus 73_purple_front bar
+CSD16-FAI-0629,20160226,73,purple,seat ,,Bus 73_purple_seat
+CSD16-FAI-0630,20160226,141,red,front bar ,,Bus 141_red_front bar
+CSD16-FAI-0631,20160226,141,red ,Purell box,,Bus 141_red _Purell box
+CSD16-FAI-0632,20160226,141,red,Purrell box,,Bus 141_red_Purrell box
+CSD16-FAI-0633,20160226,73,purple,yellow tape,,Bus 73_purple_yellow tape
+CSD16-FAI-0634,20160226,141,red,pole,,Bus 141_red_pole
+CSD16-FAI-0635,20160226,141,red,yellow tape,,Bus 141_red_yellow tape
+CSD16-FAI-0636,20160226,73,purple,Purrell box,,Bus 73_purple_Purrell box
+CSD16-FAI-0637,20160226,71,blue,seat,,Bus 71_blue_seat
+CSD16-FAI-0638,20160226,141,red,seat,,Bus 141_red_seat
+CSD16-FAI-0639,20160226,71,blue,front bar,,Bus 71_blue_front bar
+CSD16-FAI-0640,20160226,bus stop,Wood Center,bench,,Bus bus stop_Wood Center_bench
+CSD16-FAI-0641,20160226,bus stop,Wood Center,bench,,Bus bus stop_Wood Center_bench
+CSD16-FAI-0642,20160226,bus stop,Pioneer Park,bench,,Bus bus stop_Pioneer Park_bench
+CSD16-FAI-0643,20160226,bus stop,Pioneer Park,bench,,Bus bus stop_Pioneer Park_bench
+CSD16-FAI-0644,20160226,bus stop,Noel Library,bench,,Bus bus stop_Noel Library_bench
+CSD16-FAI-0645,20160226,bus stop,Noel Library,bench,,Bus bus stop_Noel Library_bench
+CSD16-FAI-0181,20160720,71,red,seat,fabric,Bus 71_red_seat_fabric
+CSD16-FAI-0182,20160720,71,red,plastic bag area,plastic,Bus 71_red_plastic bag area_plastic
+CSD16-FAI-0183,20160720,71,red,floor,rubber,Bus 71_red_floor_rubber
+CSD16-FAI-0184,20160720,71,red,yellow tape,plastic,Bus 71_red_yellow tape_plastic
+CSD16-FAI-0185,20160720,71,red,Purrell Box,plastic,Bus 71_red_Purrell Box_plastic
+CSD16-FAI-0186,20160720,141,blue,seat,fabric,Bus 141_blue_seat_fabric
+CSD16-FAI-0187,20160720,141,blue,plastic bag area,plastic,Bus 141_blue_plastic bag area_plastic
+CSD16-FAI-0188,20160720,141,blue,floor,rubber,Bus 141_blue_floor_rubber
+CSD16-FAI-0189,20160720,141,blue,yellow tape,plastic,Bus 141_blue_yellow tape_plastic
+CSD16-FAI-0190,20160720,141,blue,Purrell Box,plastic,Bus 141_blue_Purrell Box_plastic
+CSD16-FAI-0191,20160720,71,red,air sample,air,Bus 71_red_air sample_air
+CSD16-FAI-0192,20160720,141,blue,air sample,air,Bus 141_blue_air sample_air
+CSD16-FAI-0193,20160720,Pioneer Park,bus stop,air sample,air,Bus Pioneer Park_bus stop_air sample_air
+CSD16-FAI-0194,20160720,McDonald's,bus stop,air sample,air,Bus McDonald's_bus stop_air sample_air
+CSD16-FAI-0195,20160720,Pioneer Park,bus stop,bench,wood,Bus Pioneer Park_bus stop_bench_wood
+CSD16-FAI-0196,20160720,McDonald's (Geist Rd.),bust stop,bench,wood,Bus McDonald's (Geist Rd.)_bust stop_bench_wood
+CSD16-FAI-0197,20160721,,,,air,Bus ___air
+CSD16-FAI-0198,20160720,,,neg control cup,plastic,Bus __neg control cup_plastic
+CSD16-FAI-0199,20160720,,,neg control (eSwab lab air 1),air,Bus __neg control (eSwab lab air 1)_air
+CSD16-FAI-0200,20160720,,,neg control (eSwab lab air 2),air,Bus __neg control (eSwab lab air 2)_air
+CSD16-FAI-0201,20160720,,,neg control (eSwab lab air 3),air,Bus __neg control (eSwab lab air 3)_air
+CSD16-FAI-0202,20160720,,,pos control Zymo microb community stnd,air,Bus __pos control Zymo microb community stnd_air
+CSD16-FAI-0001,20160620,76,purple/brown,handrail by entrance,,Bus 76_purple/brown_handrail by entrance
+CSD16-FAI-0002,20160620,76,purple/brown,coin drop,,Bus 76_purple/brown_coin drop
+CSD16-FAI-0003,20160620,76,purple/brown,backseat,,Bus 76_purple/brown_backseat
+CSD16-FAI-0004,20160620,76,purple/brown,yellow tape,,Bus 76_purple/brown_yellow tape
+CSD16-FAI-0005,20160620,76,purple/brown,Purrell box,,Bus 76_purple/brown_Purrell box
+CSD16-FAI-0006,20160620,79,yellow,coin drop,,Bus 79_yellow_coin drop
+CSD16-FAI-0007,20160620,79,yellow,door handle,,Bus 79_yellow_door handle
+CSD16-FAI-0008,20160620,79,yellow,Purrel box,,Bus 79_yellow_Purrel box
+CSD16-FAI-0009,20160620,79,yellow,seat,,Bus 79_yellow_seat
+CSD16-FAI-0010,20160620,79,yellow,yellow tape,,Bus 79_yellow_yellow tape
+CSD16-FAI-0011,20160620,710,red/blue,door handle,,Bus 710_red/blue_door handle
+CSD16-FAI-0012,20160620,710,red/blue,coin drop,,Bus 710_red/blue_coin drop
+CSD16-FAI-0013,20160620,710,red/blue,seat,,Bus 710_red/blue_seat
+CSD16-FAI-0014,20160620,710,red/blue,Purrel box,,Bus 710_red/blue_Purrel box
+CSD16-FAI-0015,20160620,710,red/blue,yellow tape,,Bus 710_red/blue_yellow tape
+CSD16-FAI-0016,20160620,78,orange,door handle,,Bus 78_orange_door handle
+CSD16-FAI-0017,20160620,78,orange,coin drop,,Bus 78_orange_coin drop
+CSD16-FAI-0018,20160620,78,orange,yellow tape,,Bus 78_orange_yellow tape
+CSD16-FAI-0019,20160620,78,orange,seat,,Bus 78_orange_seat
+CSD16-FAI-0020,20160620,78,orange,Purrel box,,Bus 78_orange_Purrel box
+CSD16-FAI-0021,20160620,71,blue,door handle,,Bus 71_blue_door handle
+CSD16-FAI-0022,20160620,71,blue,coin drop,,Bus 71_blue_coin drop
+CSD16-FAI-0023,20160620,71,blue,yellow tape,,Bus 71_blue_yellow tape
+CSD16-FAI-0024,20160620,71,blue,seat,,Bus 71_blue_seat
+CSD16-FAI-0025,20160620,71,blue,Purrell box,,Bus 71_blue_Purrell box
+CSD16-FAI-0026,20160620,72,red,Purrel box,,Bus 72_red_Purrel box
+CSD16-FAI-0027,20160620,72,red,coin drop,,Bus 72_red_coin drop
+CSD16-FAI-0028,20160620,72,red,door handle,,Bus 72_red_door handle
+CSD16-FAI-0029,20160620,72,red,yellow tape,,Bus 72_red_yellow tape
+CSD16-FAI-0030,20160620,72,red,seat,,Bus 72_red_seat
+CSD16-FAI-0031,20160620,142,green,coin drop,,Bus 142_green_coin drop
+CSD16-FAI-0032,20160620,142,green,door handle,,Bus 142_green_door handle
+CSD16-FAI-0033,20160620,142,green,seat,,Bus 142_green_seat
+CSD16-FAI-0034,20160620,142,green,yellow tape,,Bus 142_green_yellow tape
+CSD16-FAI-0035,20160620,142,green,Purrell box,,Bus 142_green_Purrell box
+CSD16-FAI-0036,20160620,142,green,floor,,Bus 142_green_floor
+CSD16-FAI-0037,20160620,75,gold,coin drop,,Bus 75_gold_coin drop
+CSD16-FAI-0038,20160620,75,gold,door handle,,Bus 75_gold_door handle
+CSD16-FAI-0039,20160620,75,gold,Purrell box,,Bus 75_gold_Purrell box
+CSD16-FAI-0040,20160620,75,gold,seat,,Bus 75_gold_seat
+CSD16-FAI-0041,20160620,75,gold,yellow tape,,Bus 75_gold_yellow tape
+CSD16-FAI-0042,20160620,73,purple,seat,,Bus 73_purple_seat
+CSD16-FAI-0043,20160620,73,purple,coin drop,,Bus 73_purple_coin drop
+CSD16-FAI-0044,20160620,73,purple,yellow tape,,Bus 73_purple_yellow tape
+CSD16-FAI-0045,20160620,73,purple,Purrell box,,Bus 73_purple_Purrell box
+CSD16-FAI-0046,20160620,73,purple,door handle,,Bus 73_purple_door handle
+CSD16-FAI-0047,20160620,141,blue,coin drop,,Bus 141_blue_coin drop
+CSD16-FAI-0048,20160620,141,,seat,,Bus 141__seat
+CSD16-FAI-0049,20160620,141,,door handle,,Bus 141__door handle
+CSD16-FAI-0050,20160620,141,,floor,,Bus 141__floor
+CSD16-FAI-0051,20160620,141,blue,Purrell box,,Bus 141_blue_Purrell box
+CSD16-FAI-0052,20160620,141,blue,yellow tape,,Bus 141_blue_yellow tape
+CSD16-FAI-0053,20160620,141,blue,around the bus (outside),,Bus 141_blue_around the bus (outside)
+CSD16-FAI-0054,20160620,T12,grey,door handle,,Bus T12_grey_door handle
+CSD16-FAI-0055,20160620,T12,grey,seat,,Bus T12_grey_seat
+CSD16-FAI-0056,20160620,T12,grey,stiring wheel,,Bus T12_grey_stiring wheel
+CSD16-FAI-0057,20160621,Wood Center,,bench,,Bus Stop_Wood Center__bench
+CSD16-FAI-0058,20160621,Wien Elementary School,,wooden pillar,,Bus Stop_Wien Elementary School__wooden pillar
+CSD16-FAI-0059,20160621,Thompson Visitor Center,,metal bench,,Bus Stop_Thompson Visitor Center__metal bench
+CSD16-FAI-0060,20160621,Noel Library-northbound,,metal bench,,Bus Stop_Noel Library-northbound__metal bench
+CSD16-FAI-0061,20160621,Pioneer Park,,wood bench,,Bus Stop_Pioneer Park__wood bench
+CSD16-FAI-0062,20160621,McDonald's (Geist Rd),,metal bench,,Bus Stop_McDonald's (Geist Rd)__metal bench
+CSD16-FAI-0063,20160620,710,red/blue line,air only-neg control,,Bus_710_red/blue line_air only-neg control
+CSD16-FAI-0064,20160620,71,blue,plastic bag area in fornt of bus,,Bus_71_blue_plastic bag area in fornt of bus
+CSD16-FAI-0065,,71,,door handle,,Bus 71_door handle_TSA_amp
+CSD16-FAI-0066,,71,,door handle,,Bus 71_door handle_R2A_none
+CSD16-FAI-0067,,71,,coin drop,,Bus 71_coin drop_TSA_none
+CSD16-FAI-0068,,71,,coin drop,,Bus 71_coin drop_TSA_chloram
+CSD16-FAI-0069,,71,,coin drop,,Bus 71_coin drop_TSA_kan
+CSD16-FAI-0070,,71,,coin drop,,Bus 71_coin drop_TSA_tet
+CSD16-FAI-0071,,71,,coin drop,,Bus 71_coin drop_R2A_none
+CSD16-FAI-0072,,71,,Bag area (plastic),,Bus 71_Bag area (plastic)_TSA_none
+CSD16-FAI-0073,,71,,Bag area (plastic),,Bus 71_Bag area (plastic)_TSA_amp
+CSD16-FAI-0074,,71,,Bag area (plastic),,Bus 71_Bag area (plastic)_TSA_chloram
+CSD16-FAI-0075,,71,,Bag area (plastic),,Bus 71_Bag area (plastic)_TSA_kan
+CSD16-FAI-0076,,71,,Bag area (plastic),,Bus 71_Bag area (plastic)_TSA_strep
+CSD16-FAI-0077,,71,,Bag area (plastic),,Bus 71_Bag area (plastic)_TSA_tet
+CSD16-FAI-0079,,71,,yellow tape,,Bus 71_yellow tape_TSA_none
+CSD16-FAI-0080,,71,,yellow tape (change 80 to 79),,Bus 71_yellow tape (change 80 to 79)_TSA_chloram
+CSD16-FAI-0081,,71,,yellow tape (change 81 to 80),,Bus 71_yellow tape (change 81 to 80)_TSA_tet
+CSD16-FAI-0082,,71,,yellow tape,,Bus 71_yellow tape_R2A_none
+CSD16-FAI-0083a,,71,,seat ,,Bus 71_seat _TSA_none
+CSD16-FAI-0083b,,71,,seat ,,Bus 71_seat _TSA_none
+CSD16-FAI-0084,,71,,seat ,,Bus 71_seat _TSA_amp
+CSD16-FAI-0085,,71,,seat,,Bus 71_seat_TSA_chloram
+CSD16-FAI-0086,,71,,seat,,Bus 71_seat_TSA_strep
+CSD16-FAI-0087,,71,,seat,,Bus 71_seat_TSA_tet
+CSD16-FAI-0088,,71,,seat,,Bus 71_seat_R2A_none
+CSD16-FAI-0089,,71,,Purrell Box,,Bus 71_Purrell Box_TSA_none
+CSD16-FAI-0090,,71,,Purrell Box,,Bus 71_Purrell Box_TSA_amp
+CSD16-FAI-0091,,71,,Purrell Box,,Bus 71_Purrell Box_TSA_chloram
+CSD16-FAI-0092,,71,,Purrell Box,,Bus 71_Purrell Box_R2A_none
+CSD16-FAI-0093,,73,,door handle,,Bus 73_door handle_R2A_none
+CSD16-FAI-0094,,73,,coin drop,,Bus 73_coin drop_TSA_none
+CSD16-FAI-0095,,73,,coin drop,,Bus 73_coin drop_TSA_amp
+CSD16-FAI-0096,,73,,coin drop,,Bus 73_coin drop_TSA_chloram
+CSD16-FAI-0097,,73,,coin drop,,Bus 73_coin drop_R2A_none
+CSD16-FAI-0098,,73,,seats,,Bus 73_seats_TSA_none
+CSD16-FAI-0099,,73,,seats,,Bus 73_seats_TSA_amp
+CSD16-FAI-0100,,73,,seats,,Bus 73_seats_TSA_chloram
+CSD16-FAI-0101,,73,,seats,,Bus 73_seats_TSA_kan
+CSD16-FAI-0102,,73,,seats,,Bus 73_seats_TSA_strep
+CSD16-FAI-0103,,73,,seats,,Bus 73_seats_TSA_tet
+CSD16-FAI-0104,,73,,seats,,Bus 73_seats_R2A_none
+CSD16-FAI-0105,,73,,floor,,Bus 73_floor_TSA_none
+CSD16-FAI-0106,,73,,floor,,Bus 73_floor_TSA_amp
+CSD16-FAI-0107,,73,,floor,,Bus 73_floor_TSA_chloram
+CSD16-FAI-0108,,73,,floor,,Bus 73_floor_TSA_kan
+CSD16-FAI-0109,,73,,floor,,Bus 73_floor_TSA_strep
+CSD16-FAI-0110,,73,,floor,,Bus 73_floor_TSA_tet
+CSD16-FAI-0111,,73,,floor,,Bus 73_floor_R2A_none
+CSD16-FAI-0112a,,141,,floor,,Bus 141_floor_TSA_none
+CSD16-FAI-0112b,,141,,floor,,Bus 141_floor_TSA_none
+CSD16-FAI-0113,,141,,floor,,Bus 141_floor_TSA_amp
+CSD16-FAI-0114,,141,,floor,,Bus 141_floor_TSA_chloram
+CSD16-FAI-0115,,141,,floor,,Bus 141_floor_TSA_kan
+CSD16-FAI-0116,,141,,floor,,Bus 141_floor_TSA_strep
+CSD16-FAI-0117,,141,,floor,,Bus 141_floor_TSA_tet
+CSD16-FAI-0118,,MISSING TUBE OR NUMBER!!!,,,,Bus MISSING TUBE OR NUMBER!!!___
+CSD16-FAI-0119a,,141,,around the bus,,Bus 141_around the bus_TSA_none
+CSD16-FAI-0119b,,141,,around the bus,,Bus 141_around the bus_TSA_none
+CSD16-FAI-0120a,,141,,around the bus,,Bus 141_around the bus_TSA_amp
+CSD16-FAI-0120b,,141,,around the bus,,Bus 141_around the bus_TSA_amp
+CSD16-FAI-0121,,141,,around the bus,,Bus 141_around the bus_TSA_chloram
+CSD16-FAI-0122,,141,,around the bus,,Bus 141_around the bus_TSA_kan
+CSD16-FAI-0123,,141,,around the bus,,Bus 141_around the bus_TSA_strep
+CSD16-FAI-0124,,141,,around the bus,,Bus 141_around the bus_R2A_none
+CSD16-FAI-0125,,710,,door handle,,Bus 710_door handle_TSA_none
+CSD16-FAI-0126,,710,,door handle,,Bus 710_door handle_TSA_chloram
+CSD16-FAI-0127,,710,,door handle,,Bus 710_door handle_TSA_strep
+CSD16-FAI-0128,,710,,door handle,,Bus 710_door handle_R2A_none
+CSD16-FAI-0129,,710,,coin drop,,Bus 710_coin drop_TSA_none
+CSD16-FAI-0130,,710,,coin drop,,Bus 710_coin drop_TSA_amp
+CSD16-FAI-0131,,710,,coin drop,,Bus 710_coin drop_TSA_chloram
+CSD16-FAI-0132,,710,,coin drop,,Bus 710_coin drop_TSA_kan
+CSD16-FAI-0133,,710,,coin drop,,Bus 710_coin drop_TSA_strep
+CSD16-FAI-0134,,710,,coin drop,,Bus 710_coin drop_R2A_none
+CSD16-FAI-0135,,710,,yellow tape,,Bus 710_yellow tape_TSA_none
+CSD16-FAI-0136,,710,,yellow tape,,Bus 710_yellow tape_TSA_tet
+CSD16-FAI-0137,,710,,yellow tape,,Bus 710_yellow tape_R2A_none
+CSD16-FAI-0138,,710,,seat,,Bus 710_seat_TSA_none
+CSD16-FAI-0139,,710,,seat,,Bus 710_seat_TSA_chloram
+CSD16-FAI-0703,20160227,141,red,Purrell Box,plastic,Bus 141_red_Purrell Box_plastic_TSA_none
+CSD16-FAI-0704,20160227,141,red,seat,fabric,Bus 141_red_seat_fabric_LB_none
+CSD16-FAI-0705a,20160227,141,red,seat,fabric,Bus 141_red_seat_fabric_TSA_none
+CSD16-FAI-0705b,20160227,141,red,seat,fabric,Bus 141_red_seat_fabric_TSA_none
+CSD16-FAI-0706,20160227,141,red,seat,fabric,Bus 141_red_seat_fabric_TSA_tet
+CSD16-FAI-0707,20160227,141,red,seat,fabric,Bus 141_red_seat_fabric_TSA_tet
+CSD16-FAI-0708a,20160227,141,red,yellow tape,plastic,Bus 141_red_yellow tape_plastic_TSA_none
+CSD16-FAI-0708b,20160227,141,red,yellow tape,plastic,Bus 141_red_yellow tape_plastic_TSA_none
+CSD16-FAI-0709,20160227,Noel Library,none,bench,metal,Bus Noel Library_none_bench_metal_TSA_none
+CSD16-FAI-0710a,20160227,Pioneer Park,none,bench,wood,Bus Pioneer Park_none_bench_wood_TSA_none
+CSD16-FAI-0710b,20160227,Pioneer Park,none,bench,wood,Bus Pioneer Park_none_bench_wood_TSA_none
+CSD16-FAI-0711,20160227,Wood Center,none,bench,wood,Bus Wood Center_none_bench_wood_TSA_none
+CSD16-FAI-0712,20160227,73,purple,N/A,,Bus 73_purple_N/A__LB_tet
+CSD16-FAI-0713,20160227,71,blue,front bar,metal,Bus 71_blue_front bar_metal_LB_kan
+CSD16-FAI-0140,20160620,710,orange,seat,fabric,Bus 710_orange_seat_fabric
+CSD16-FAI-0141,20160620,710,orange,seat,fabric,Bus 710_orange_seat_fabric
+CSD16-FAI-0142,20160620,710,orange,Purrell Box,plastic,Bus 710_orange_Purrell Box_plastic
+CSD16-FAI-0143,20160620,710,orange,Purrell Box,plastic,Bus 710_orange_Purrell Box_plastic
+CSD16-FAI-0144,20160621,Wood Center,none,wood bench,wood,Bus Wood Center_none_wood bench_wood
+CSD16-FAI-0145,20160621,Wood Center,none,wood bench,wood,Bus Wood Center_none_wood bench_wood
+CSD16-FAI-0146,20160621,Wood Center,none,wood bench,wood,Bus Wood Center_none_wood bench_wood
+CSD16-FAI-0147,20160621,Wood Center,none,wood bench,wood,Bus Wood Center_none_wood bench_wood
+CSD16-FAI-0148,20160621,Wood Center,none,wood bench,wood,Bus Wood Center_none_wood bench_wood
+CSD16-FAI-0149,20160621,Wood Center,none,wood bench,wood,Bus Wood Center_none_wood bench_wood
+CSD16-FAI-0150,20160621,Elem School,none,wood pillars,wood,Bus Elem School_none_wood pillars_wood
+CSD16-FAI-0151,20160621,Elem School,none,wood pillars,wood,Bus Elem School_none_wood pillars_wood
+CSD16-FAI-0152,20160621,Elem School,none,wood pillars,wood,Bus Elem School_none_wood pillars_wood
+CSD16-FAI-0153,20160621,Elem School,none,wood pillars,wood,Bus Elem School_none_wood pillars_wood
+CSD16-FAI-0154,20160621,Elem School,none,wood pillars,wood,Bus Elem School_none_wood pillars_wood
+CSD16-FAI-0156,20160621,Thompson Center,none,metal bench,metal,Bus Thompson Center_none_metal bench_metal
+CSD16-FAI-0157,20160621,Thompson Center,none,metal bench,metal,Bus Thompson Center_none_metal bench_metal
+CSD16-FAI-0158,20160621,Thompson Center,none,metal bench,metal,Bus Thompson Center_none_metal bench_metal
+CSD16-FAI-0159,20160621,Thompson Center,none,metal bench,metal,Bus Thompson Center_none_metal bench_metal
+CSD16-FAI-0160,20160621,Thompson Center,none,metal bench,metal,Bus Thompson Center_none_metal bench_metal
+CSD16-FAI-0161,20160621,Thompson Center,none,metal bench,metal,Bus Thompson Center_none_metal bench_metal
+CSD16-FAI-0162,20160621,Thompson Center,none,metal bench,metal,Bus Thompson Center_none_metal bench_metal
+CSD16-FAI-0163,20160621,Wien Library,none,metal bench,metal,Bus Wien Library_none_metal bench_metal
+CSD16-FAI-0164,20160621,Wien Library,none,metal bench,metal,Bus Wien Library_none_metal bench_metal
+CSD16-FAI-0165,20160621,Wien Library,none,metal bench,metal,Bus Wien Library_none_metal bench_metal
+CSD16-FAI-0166,20160621,Pioneer Park,none,wood bench,wood,Bus Pioneer Park_none_wood bench_wood
+CSD16-FAI-0167,20160621,Pioneer Park,none,wood bench,wood,Bus Pioneer Park_none_wood bench_wood
+CSD16-FAI-0168,20160621,Pioneer Park,none,wood bench,wood,Bus Pioneer Park_none_wood bench_wood
+CSD16-FAI-0169,20160621,Pioneer Park,none,wood bench,wood,Bus Pioneer Park_none_wood bench_wood
+CSD16-FAI-0170,20160621,Pioneer Park,none,wood bench,wood,Bus Pioneer Park_none_wood bench_wood
+CSD16-FAI-0171,20160621,Pioneer Park,none,wood bench,wood,Bus Pioneer Park_none_wood bench_wood
+CSD16-FAI-0172,20160621,McDonald's,none,metal bench,metal,Bus McDonald's_none_metal bench_metal
+CSD16-FAI-0173,20160621,McDonald's,none,metal bench,metal,Bus McDonald's_none_metal bench_metal
+CSD16-FAI-0174,20160621,McDonald's,none,metal bench,metal,Bus McDonald's_none_metal bench_metal
+CSD16-FAI-0175,20160621,McDonald's,none,metal bench,metal,Bus McDonald's_none_metal bench_metal
+CSD16-FAI-0176,20160620,71,red,Bag area (plastic),plastic,Bus 71_red_Bag area (plastic)_plastic
+CSD16-FAI-0177,20160620,141,blue,(rubber) floor,rubber,Bus 141_blue_(rubber) floor_rubber
+CSD16-FAI-0178,20160620,141,blue,(metal) around the bus,metal,Bus 141_blue_(metal) around the bus_metal
+CSD16-FAI-0179,20160620,71,red,Bag area (plastic),plastic,Bus 71_red_Bag area (plastic)_plastic
+CSD16-FAI-0180,20160621,Wood Center,none,wood bench,wood,Bus Wood Center_none_wood bench_wood
+CSD16-FAI-0646,20160227,71,blue,front bar,,Bus 71_blue_front bar_LB_none_37
+CSD16-FAI-0647a,20160227,71,blue,seat,,Bus 71_blue_seat_LB_kan_37
+CSD16-FAI-0647b,20160227,71,blue,seat,,Bus 71_blue_seat_LB_kan_37
+CSD16-FAI-0647c,20160227,71,blue,seat,,Bus 71_blue_seat_LB_kan_37
+CSD16-FAI-0648,20160227,71,blue,seat,,Bus 71_blue_seat_LB_none_37
+CSD16-FAI-0649a,20160227,71,blue,seat,,Bus 71_blue_seat_LB_tet_37
+CSD16-FAI-0649b,20160227,71,blue,seat,,Bus 71_blue_seat_LB_tet_37
+CSD16-FAI-0649c,20160227,71,blue,seat,,Bus 71_blue_seat_LB_tet_37
+CSD16-FAI-0650,20160227,71,blue,seat,,Bus 71_blue_seat_TSA_tet_37
+CSD16-FAI-0651,20160227,73,purple,yellow tape or seat?! (Elena not sure),,Bus 73_purple_yellow tape or seat?! (Elena not sure)_LB_none_37
+CSD16-FAI-0652a,20160226,141,red,front bar,,Bus 141_red_front bar_LB_none_37
+CSD16-FAI-0652b,20160227,141,red,front bar,,Bus 141_red_front bar_LB_none_37
+CSD16-FAI-0653,20160227,141,red,Purrell Box,,Bus 141_red_Purrell Box_LB_none_37
+CSD16-FAI-0654,20160227,141,red,seat,,Bus 141_red_seat_LB_amp_37
+CSD16-FAI-0655a,20160227,141,red,seat,,Bus 141_red_seat_LB_kan_N/A
+CSD16-FAI-0655b,20160227,141,red,seat,,Bus 141_red_seat_LB_kan_N/A
+CSD16-FAI-0656,20160227,141,red,seat,,Bus 141_red_seat_LB_none_37
+CSD16-FAI-0657a,20160227,141,red,seat,,Bus 141_red_seat_LB_tet_37
+CSD16-FAI-0657b,20160227,141,red,seat,,Bus 141_red_seat_LB_tet_37
+CSD16-FAI-0658,20160226,141,red,seat,,Bus 141_red_seat_TSA_none_28
+CSD16-FAI-0659,20160227,141,red,yellow tape,,Bus 141_red_yellow tape_LB_kan_37
+CSD16-FAI-0660,20160227,141,red,yellow tape,,Bus 141_red_yellow tape_LB?? not written!_none_37
+CSD16-FAI-0661a,20160227,141,red,yellow tape,,Bus 141_red_yellow tape_LB_tet_37
+CSD16-FAI-0661b,20160227,141,red,yellow tape,,Bus 141_red_yellow tape_LB_tet_37
+CSD16-FAI-0661c,20160227,141,red,yellow tape,,Bus 141_red_yellow tape_LB_tet_37
+CSD16-FAI-0662,20160227,Noel Library,,bench,,Bus Noel Library__bench_LB_amp_37
+CSD16-FAI-0663,20160227,Noel Library,,bench,,Bus Noel Library__bench_LB_kan_37
+CSD16-FAI-0664,20160227,Noel Library,,bench,,Bus Noel Library__bench_LB_none_37
+CSD16-FAI-0665,20160227,Pioneer Park,,bench,,Bus Pioneer Park__bench_LB_amp_37
+CSD16-FAI-0666,20160227,Pioneer Park,,bench,,Bus Pioneer Park__bench_LB_kan_37
+CSD16-FAI-0667,20160227,Pioneer Park,,bench,,Bus Pioneer Park__bench_LB_none_37
+CSD16-FAI-0668,20160227,Pioneer Park,,bench,,Bus Pioneer Park__bench_LB_tet_37
+CSD16-FAI-0669a,20160227,Wood Center,,bench,,Bus Wood Center__bench_LB_kan_37
+CSD16-FAI-0669b,20160227,Wood Center,,bench,,Bus Wood Center__bench_LB_kan_37
+CSD16-FAI-0670,20160227,Wood Center,,bench,,Bus Wood Center__bench_LB_amp_37
+CSD16-FAI-0671,20160227,Wood Center,,bench,,Bus Wood Center__bench_LB_none_37
+CSD16-FAI-0672a,20160227,Wood center,,bench,,Bus Wood center__bench_LB_tet_37
+CSD16-FAI-0672b,20160227,Wood Center,,bench,,Bus Wood Center__bench_LB_tet_37
+CSD16-FAI-0673,,71,blue,front bar,,Bus 71_blue_front bar_LB_amp_37
+CSD16-FAI-0674,,71,blue,front bar,,Bus 71_blue_front bar_TSA_none_28
+CSD16-FAI-0675a,,71,blue,seat,,Bus 71_blue_seat_TSA_none_28
+CSD16-FAI-0675b,,71,blue,seat,,Bus 71_blue_seat_TSA_none_28
+CSD16-FAI-0676a,,73,purple,front bar,,Bus 73_purple_front bar_LB_amp_??
+CSD16-FAI-0676b,,73,purple,front bar,,Bus 73_purple_front bar_LB_amp_??
+CSD16-FAI-0677a,,73,purple,front bar,,Bus 73_purple_front bar_LB_none_N/A
+CSD16-FAI-0677b,,73,purple,front bar,,Bus 73_purple_front bar_LB_none_N/A
+CSD16-FAI-0678a,,73,purple,front bar,,Bus 73_purple_front bar_N/A__37
+CSD16-FAI-0678b,,73,purple,front bar,,Bus 73_purple_front bar_TSA_none_37
+CSD16-FAI-0679,,73,purple,front bar,,Bus 73_purple_front bar_TSA_none_28
+CSD16-FAI-0680,,73,purple,Purrell Box,,Bus 73_purple_Purrell Box_LB_none_28
+CSD16-FAI-0681a,,73,purple,Purrell Box,,Bus 73_purple_Purrell Box_TSA_none_28
+CSD16-FAI-0681b,,73,purple,Purrell Box,,Bus 73_purple_Purrell Box_TSA_none_28
+CSD16-FAI-0682,,73,purple,Purrell Box,,Bus 73_purple_Purrell Box_TSA_tet_37
+CSD16-FAI-0683a,,73,purple,seat,,Bus 73_purple_seat_LB_amp_37
+CSD16-FAI-0683b,,73,purple,seat,,Bus 73_purple_seat_LB_amp_37
+CSD16-FAI-0683c,,73,purple,seat,,Bus 73_purple_seat_LB_amp_37
+CSD16-FAI-0684a,,73,purple,seat,,Bus 73_purple_seat_LB_kan_37
+CSD16-FAI-0684b,,73,purple,seat,,Bus 73_purple_seat_LB_kan_37
+CSD16-FAI-0685a,,73,purple,seat,,Bus 73_purple_seat_LB_none_37
+CSD16-FAI-0685b,,73,purple,seat,,Bus 73_purple_seat_LB_none_37
+CSD16-FAI-0686a,,73,purple,seat,,Bus 73_purple_seat_LB_tet_37
+CSD16-FAI-0686b,,73,purple,seat,,Bus 73_purple_seat_LB_tet_37
+CSD16-FAI-0687a,,73,purple,seat,,Bus 73_purple_seat_TSA_none_28
+CSD16-FAI-0687b,,73,purple,seat,,Bus 73_purple_seat_TSA_none_28
+CSD16-FAI-0688a,,73,purple,seat,,Bus 73_purple_seat_TSA_none_37
+CSD16-FAI-0688b,,73,purple,seat,,Bus 73_purple_seat_TSA_none_37
+CSD16-FAI-0689,,73,purple,seat,,Bus 73_purple_seat_TSA_none_37
+CSD16-FAI-0690,,73,purple,seat,,Bus 73_purple_seat_TSA_tet_37
+CSD16-FAI-0691,,73,purple,yellow tape,,Bus 73_purple_yellow tape_LB_amp_37
+CSD16-FAI-0692,,73,purple,yellow tape,,Bus 73_purple_yellow tape_LB_kan_37
+CSD16-FAI-0693,,73,purple,yellow tape,,Bus 73_purple_yellow tape_LB_tet_37
+CSD16-FAI-0694,,73,purple,yellow tape,,Bus 73_purple_yellow tape_TSA_none_28
+CSD16-FAI-0695,,141,red,front bar,,Bus 141_red_front bar_LB_amp_37
+CSD16-FAI-0696,,141,red,front bar,,Bus 141_red_front bar_LB_kan_37
+CSD16-FAI-0697,,141,red,front bar,,Bus 141_red_front bar_TSA_none_37
+CSD16-FAI-0698,,141,red,Purrell Box,,Bus 141_red_Purrell Box_LB_amp_37
+CSD16-FAI-0699,,141,red,Purrell Box,,Bus 141_red_Purrell Box_LB_kan_37
+CSD16-FAI-0700,,141,red,Purrell Box,,Bus 141_red_Purrell Box_LB_none_28
+CSD16-FAI-0701,,141,red,Purrell Box,,Bus 141_red_Purrell Box_LB_tet_37
+CSD16-FAI-0702a,,141,red,Purrell Box,,Bus 141_red_Purrell Box_TSA_none_28
+CSD16-FAI-0702b,,141,red,Purrell Box,,Bus 141_red_Purrell Box_TSA_none_28
