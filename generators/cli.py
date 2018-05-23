@@ -6,7 +6,7 @@ import pandas as pd
 
 from .mappers import MAPPERS
 from .sample import Sample
-from .constants import SAMPLE_NAMES_FILE, NA_TOKEN
+from .constants import SAMPLE_NAMES_FILE, NA_TOKEN, IDS
 
 
 @click.group()
@@ -35,6 +35,32 @@ def best_effort(csv, sample_names):
         print(tbl.to_csv())
     else:
         stdout.write(dumps([sample.to_son() for sample in samples]))
+
+
+@main.command(name='uploadable')
+@click.argument('metadata_table', type=str)
+@click.argument('sample_names', type=click.File('r'))
+def uploadable(metadata_table, sample_names):
+    sample_names = {line.strip() for line in sample_names}
+    mdata = pd.read_csv(metadata_table, dtype=str, index_col=False)
+    tbl = {}
+    for rowname, row in mdata.iterrows():
+        for idcol in IDS:
+            try:
+                if row[idcol] in sample_names:
+                    rowid = row[idcol]
+                    break
+            except KeyError:
+                pass
+        tbl[rowid] = {
+            col: val
+            for col, val in row.iteritems()
+            if col not in IDS
+        }
+
+    tbl = pd.DataFrame.from_dict(tbl, orient='index')
+    print(tbl.to_csv())
+
 
 
 if __name__ == '__main__':
