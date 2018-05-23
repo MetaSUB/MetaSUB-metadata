@@ -6,7 +6,7 @@ import pandas as pd
 
 from .mappers import MAPPERS
 from .sample import Sample
-from .constants import SAMPLE_NAMES_FILE, NA_TOKEN, IDS
+from .constants import *
 
 
 @click.group()
@@ -52,15 +52,26 @@ def uploadable(metadata_table, sample_names):
                     break
             except KeyError:
                 pass
+        allowed_cols = set([
+            CITY,
+            CITY_CODE,
+            SURFACE_MATERIAL,
+            SURFACE,
+            SETTING,
+            ELEVATION,
+            TRAFFIC_LEVEL,
+            SAMPLE_TYPE,
+            LOCATION_TYPE,
+            PROJECT,
+        ])
         tbl[rowid] = {
             col: val
             for col, val in row.iteritems()
-            if col not in IDS
+            if col in allowed_cols
         }
 
     tbl = pd.DataFrame.from_dict(tbl, orient='index')
     print(tbl.to_csv())
-
 
 
 if __name__ == '__main__':
