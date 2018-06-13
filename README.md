@@ -54,6 +54,8 @@ to generate a metadata table.
 
 `airsamples_ha_id_to_msub_name.csv` H.A. sample submission mapping H.A. IDs to MetaSUB names.
 
+`samples_oly_meta_all_information_e.xlsx` Metadata for OLY16 samples from Brazil team.
+
 ## Unpackaged Scripts
 
 `clean_parse_alina_mdata_tbl.py` Alina F. generated a metadata table by dumping the output of Kobo toolbox into a file named `gCSD2017_metadata_joint-1.txt`. That table has several issues: city names are non canonical, na tokens are non canonical, barcodes were recorded as numbers so lost a leading zero, and fields 'wandered' between columns. This script produces a cleaned version of that table.

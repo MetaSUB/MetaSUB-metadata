@@ -3,6 +3,7 @@ from json import loads, dumps
 import click
 from sys import stdout, stdin
 import pandas as pd
+from os import makedirs, path
 
 from .mappers import MAPPERS
 from .sample import Sample
@@ -72,6 +73,20 @@ def uploadable(metadata_table, sample_names):
 
     tbl = pd.DataFrame.from_dict(tbl, orient='index')
     print(tbl.to_csv())
+
+
+@main.command(name='by-city')
+@click.argument('dirname')
+@click.argument('metadata_table')
+def split_metadata_by_city(dirname, metadata_table):
+    makedirs(dirname, exist_ok=True)
+    mdata = pd.read_csv(metadata_table, dtype=str, index_col=False)
+    cities = getattr(mdata, CITY).unique()
+    for city in cities:
+        city_tbl = mdata[mdata[CITY] == city]
+        city = '_'.join(city.split())
+        fname = path.join(dirname, f'{city}_metadata.csv')
+        city_tbl.to_csv(fname)
 
 
 if __name__ == '__main__':
