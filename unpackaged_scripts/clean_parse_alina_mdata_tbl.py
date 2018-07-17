@@ -174,6 +174,8 @@ def traffic_search(tkns):
 
 
 def clean_token(tkn):
+    if tkn is None:
+        tkn = NA_TOKEN
     tkn = tkn.lower().strip()
     if tkn in ['n/a', 'na']:
         tkn = NA_TOKEN
@@ -203,7 +205,7 @@ def handle_tkns(tkns):
         lon,
         sample_name,
     ]
-    if bc and city:
+    if (bc and city) or (sample_name != NA_TOKEN):
         tkn_list = [clean_token(tkn) for tkn in tkn_list]
         msg = '{},' * len(tkn_list)
         msg = msg[:-1]
