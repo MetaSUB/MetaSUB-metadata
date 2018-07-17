@@ -18,6 +18,7 @@ LONG_COL = 20
 MATERIAL_COL = 30  # AE
 TRAFFIC_COL = 38  # AM
 SAMPLING_PLACE_COL = 26  # AA
+SAMPLE_NAME_COL = 23  # X
 SETTING_COL = 24  # Y
 GROUND_LEVEL_COL = 25  # Z
 BC_COL = 46
@@ -83,6 +84,16 @@ city_map = {
 null_cities = set([
     'n/a'
 ])
+
+
+def sample_name_search(tkns):
+    try:
+        sname = tkns[SAMPLE_NAME_COL]
+        if 'CSD' in sname.upper() and len(sname.split('-')) == 3:
+            return sname
+    except IndexError:
+        pass
+    return NA_TOKEN
 
 
 def uppercase_city(city):
@@ -178,6 +189,7 @@ def handle_tkns(tkns):
     lat, lon = latlong_search(tkns)
     ground_level = ground_level_search(tkns)
     traffic = traffic_search(tkns)
+    sample_name = sample_name_search(tkns)
 
     tkn_list = [
         city,
@@ -188,7 +200,8 @@ def handle_tkns(tkns):
         ground_level,
         traffic,
         lat,
-        lon
+        lon,
+        sample_name,
     ]
     if bc and city:
         tkn_list = [clean_token(tkn) for tkn in tkn_list]
