@@ -60,10 +60,11 @@ bc_to_meta = Table(
         TRAFFIC_LEVEL: 6,
         LAT: 7,
         LON: 8,
+        METASUB_NAME: 9,
     },
     token_mapper(
         CITY, SURFACE_MATERIAL, SURFACE, SETTING,
-        ELEVATION, TRAFFIC_LEVEL, LAT, LON
+        ELEVATION, TRAFFIC_LEVEL, LAT, LON, METASUB_NAME
     )
 )
 
