@@ -17,6 +17,8 @@ LAT_COL = 19
 LONG_COL = 20
 MATERIAL_COL = 30  # AE
 TRAFFIC_COL = 38  # AM
+STATION_COL = 16  # Q
+LINE_COL = 17  # R
 SAMPLING_PLACE_COL = 26  # AA
 SAMPLE_NAME_COL = 23  # X
 SETTING_COL = 24  # Y
@@ -117,27 +119,9 @@ def city_search(tkns):
     return city
 
 
-def material_search(tkns):
+def generic_search(tkns, col):
     try:
-        return tkns[MATERIAL_COL]
-    except KeyError:
-        return NA_TOKEN
-    except IndexError:
-        return NA_TOKEN
-
-
-def sample_place_search(tkns):
-    try:
-        return tkns[SAMPLING_PLACE_COL]
-    except KeyError:
-        return NA_TOKEN
-    except IndexError:
-        return NA_TOKEN
-
-
-def setting_search(tkns):
-    try:
-        return tkns[SETTING_COL]
+        return tkns[col]
     except KeyError:
         return NA_TOKEN
     except IndexError:
@@ -155,24 +139,6 @@ def latlong_search(tkns):
         return NA_TOKEN, NA_TOKEN
 
 
-def ground_level_search(tkns):
-    try:
-        return tkns[GROUND_LEVEL_COL]
-    except KeyError:
-        return NA_TOKEN
-    except IndexError:
-        return NA_TOKEN
-
-
-def traffic_search(tkns):
-    try:
-        return tkns[TRAFFIC_COL]
-    except KeyError:
-        return NA_TOKEN
-    except IndexError:
-        return NA_TOKEN
-
-
 def clean_token(tkn):
     if tkn is None:
         tkn = NA_TOKEN
@@ -185,25 +151,22 @@ def clean_token(tkn):
 def handle_tkns(tkns):
     bc = bc_search(tkns, BC_COL)
     city = city_search(tkns)
-    material = material_search(tkns)
-    sample_place = sample_place_search(tkns)
-    setting = setting_search(tkns)
     lat, lon = latlong_search(tkns)
-    ground_level = ground_level_search(tkns)
-    traffic = traffic_search(tkns)
     sample_name = sample_name_search(tkns)
 
     tkn_list = [
         city,
         bc,
-        material,
-        sample_place,
-        setting,
-        ground_level,
-        traffic,
+        generic_search(tkns, MATERIAL_COL),
+        generic_search(tkns, SAMPLING_PLACE_COL),
+        generic_search(tkns, SETTING_COL),
+        generic_search(tkns, GROUND_LEVEL_COL),
+        generic_search(tkns, TRAFFIC_COL),
         lat,
         lon,
         sample_name,
+        generic_search(tkns, STATION_COL),
+        generic_search(tkns, LINE_COL),
     ]
     if (bc and city) or (sample_name != NA_TOKEN):
         tkn_list = [clean_token(tkn) for tkn in tkn_list]
