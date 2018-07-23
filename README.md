@@ -56,6 +56,12 @@ to generate a metadata table.
 
 `samples_oly_meta_all_information_e.xlsx` Metadata for OLY16 samples from Brazil team.
 
+`CSD Sample IDs -2.xlsx` 3 letter codes for all metasub cities
+
+`PathoMap-3.xlsx` PathoMap metadata from Ebrahim
+
+`Winter2014_metadata-3.xlsx` Winter PathoMap metadata from Ebrahim
+
 ## Unpackaged Scripts
 
 `clean_parse_alina_mdata_tbl.py` Alina F. generated a metadata table by dumping the output of Kobo toolbox into a file named `gCSD2017_metadata_joint-1.txt`. That table has several issues: city names are non canonical, na tokens are non canonical, barcodes were recorded as numbers so lost a leading zero, and fields 'wandered' between columns. This script produces a cleaned version of that table.
