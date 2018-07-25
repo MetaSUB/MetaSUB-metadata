@@ -28,7 +28,7 @@ def parse_csv_str(csv_str, sep=','):
 
 
 def parse_csv(fname, assert_len=-1, skip=0, sep=','):
-    csv_str = open(fname).read()
+    csv_str = open(fname, encoding='utf-8').read()
     for i, tkns in enumerate(parse_csv_str(csv_str, sep=sep)):
         if i < skip:
             continue
