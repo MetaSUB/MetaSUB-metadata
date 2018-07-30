@@ -1,7 +1,7 @@
 
 from json import loads, dumps
 import click
-from sys import stdout, stdin
+from sys import stdout, stdin, stderr
 import pandas as pd
 from os import makedirs, path
 
@@ -36,6 +36,24 @@ def best_effort(csv, sample_names):
         print(tbl.to_csv())
     else:
         stdout.write(dumps([sample.to_son() for sample in samples]))
+
+
+@main.command(name='name-map')
+@click.argument('metadata_table', type=str)
+@click.argument('sample_names', type=click.File('r'))
+def name_map(metadata_table, sample_names):
+    sample_names = {line.strip().lower() for line in sample_names}
+    mdata = pd.read_csv(metadata_table, dtype=str, index_col=False)
+    for _, row in mdata.iterrows():
+        for id_col_name in IDS:
+            try:
+                if str(row[id_col_name]).lower() in sample_names:
+                    if row[METASUB_NAME]:
+                        sname, msub_name = row[id_col_name].upper(), row[METASUB_NAME]
+                        print(f'{sname},{msub_name}')
+                        break
+            except KeyError:
+                pass
 
 
 @main.command(name='uploadable')
