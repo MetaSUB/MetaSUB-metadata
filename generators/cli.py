@@ -57,9 +57,9 @@ def name_map(metadata_table, sample_names):
 
 
 @main.command(name='uploadable')
+@click.option('-s', '--sample-names', default=SAMPLE_NAMES_FILE, type=click.File('r'))
 @click.argument('metadata_table', type=str)
-@click.argument('sample_names', type=click.File('r'))
-def uploadable(metadata_table, sample_names):
+def uploadable(sample_names, metadata_table):
     sample_names = {line.strip() for line in sample_names}
     mdata = pd.read_csv(metadata_table, dtype=str, index_col=False)
     tbl = {}
@@ -90,7 +90,9 @@ def uploadable(metadata_table, sample_names):
         }
 
     tbl = pd.DataFrame.from_dict(tbl, orient='index')
-    print(tbl.to_csv())
+    tbl_csv_str = tbl.to_csv()
+    tbl_csv_str = '-'.join(tbl_csv_str.split('.'))
+    print(tbl_csv_str)
 
 
 @main.command(name='by-city')
