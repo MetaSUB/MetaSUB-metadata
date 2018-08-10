@@ -65,28 +65,35 @@ def name_map(metadata_table, sample_names):
 @click.argument('metadata_table', type=str)
 def uploadable(sample_names, metadata_table):
     sample_names = {line.strip() for line in sample_names}
+    allowed_cols = set([
+        CITY,
+        CITY_CODE,
+        SURFACE_MATERIAL,
+        SURFACE,
+        SETTING,
+        ELEVATION,
+        TRAFFIC_LEVEL,
+        SAMPLE_TYPE,
+        LOCATION_TYPE,
+        PROJECT,
+    ])
+
     mdata = pd.read_csv(metadata_table, dtype=str, index_col=False)
     tbl = {}
     for rowname, row in mdata.iterrows():
         for idcol in IDS:
             try:
-                if row[idcol] in sample_names:
-                    rowid = row[idcol]
+                if str(row[idcol]) in sample_names:
+                    rowid = str(row[idcol])
+                    break
+                elif str(row[idcol]).lower() in sample_names:
+                    rowid = str(row[idcol]).lower()
+                    break
+                elif str(row[idcol]).upper() in sample_names:
+                    rowid = str(row[idcol]).upper()
                     break
             except KeyError:
                 pass
-        allowed_cols = set([
-            CITY,
-            CITY_CODE,
-            SURFACE_MATERIAL,
-            SURFACE,
-            SETTING,
-            ELEVATION,
-            TRAFFIC_LEVEL,
-            SAMPLE_TYPE,
-            LOCATION_TYPE,
-            PROJECT,
-        ])
         tbl[rowid] = {
             col: val
             for col, val in row.iteritems()
