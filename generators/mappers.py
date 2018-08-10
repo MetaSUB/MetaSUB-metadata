@@ -194,7 +194,7 @@ oslo_air_metadata_csd16 = Table(
         SETTING,
         TRAFFIC_LEVEL,
     ),
-    name_func=token_specific_val_func(**{METASUB_NAME: lambda x: x[1:]}),
+    val_func=token_specific_val_func(**{METASUB_NAME: lambda x: x[1:]}),
     skip=1
 )
 
