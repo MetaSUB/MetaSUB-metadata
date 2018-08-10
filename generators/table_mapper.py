@@ -13,11 +13,16 @@ def token_specific_val_func(**tokens):
     return val_func
 
 
-def token_mapper(*tokens):
+def token_mapper(*tokens, strict=True):
 
     def map_func(sample, sample_id, vec):
         for tkn in tokens:
-            sample[tkn] = vec[tkn]
+            try:
+                sample[tkn] = vec[tkn]
+            except KeyError:
+                if strict:
+                    print(f'Sample {sample} Sample ID {sample_id} Vec {vec}', file=stderr)
+                    raise
 
     return map_func
 

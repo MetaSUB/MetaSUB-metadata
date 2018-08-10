@@ -32,9 +32,9 @@ sl_name_to_bc_hmc2kccxy = Table(
 sl_name_to_bc_hmcmjccxy = Table(
     join(METADATA_DIR, 'filenames_HMCMJCCXY.tsv'),
     {SL_NAME: 2, HA_ID: 3, BC: 5},
-    token_mapper(HA_ID, BC),
+    token_mapper(HA_ID, BC, strict=False),
     name_func=token_specific_val_func(**{SL_NAME: lambda x: x.lower()}),
-    #val_func=token_specific_val_func(**{BC: remove_leading_zero}),
+    val_func=token_specific_val_func(**{BC: remove_leading_zero}),
     sep='\t',
 )
 
