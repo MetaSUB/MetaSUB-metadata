@@ -13,13 +13,20 @@ sl_name_to_ha_name = Table(
     sep='\t'
 )
 
+
+def remove_leading_zero(val):
+    if val[0] == '0':
+        return val[1:]
+    return val
+
+
 sl_name_to_bc_hmc2kccxy = Table(
     join(METADATA_DIR, 'filenames_HMC2KCCXY.tsv'),
     {SL_NAME: 2, HA_ID: 3, BC: 5},
     token_mapper(HA_ID, BC),
     name_func=token_specific_val_func(**{SL_NAME: lambda x: x.lower()}),
-    val_func=token_specific_val_func(**{BC: lambda x: x[1:]}),
-    sep='\t'
+    val_func=token_specific_val_func(**{BC: remove_leading_zero}),
+    sep='\t',
 )
 
 sl_name_to_bc_hmcmjccxy = Table(
@@ -27,7 +34,8 @@ sl_name_to_bc_hmcmjccxy = Table(
     {SL_NAME: 2, HA_ID: 3, BC: 5},
     token_mapper(HA_ID, BC),
     name_func=token_specific_val_func(**{SL_NAME: lambda x: x.lower()}),
-    sep='\t'
+    #val_func=token_specific_val_func(**{BC: remove_leading_zero}),
+    sep='\t',
 )
 
 ha_name_to_pos = Table(

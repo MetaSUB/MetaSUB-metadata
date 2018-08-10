@@ -29,7 +29,11 @@ def best_effort(csv, sample_names):
     for _ in range(10):
         for mapper in MAPPERS:
             for sample in samples:
-                mapper.map(sample)
+                try:
+                    mapper.map(sample)
+                except:
+                    print(f'Mapper: {mapper.filename} Sample: {sample}', file=stderr)
+                    raise
 
     if csv:
         tbl = pd.DataFrame([sample.to_son() for sample in samples])
