@@ -13,6 +13,21 @@ sl_name_to_ha_name = Table(
     sep='\t'
 )
 
+sl_name_to_bc_hmc2kccxy = Table(
+    join(METADATA_DIR, 'filenames_HMC2KCCXY.tsv'),
+    {SL_NAME: 2, HA_ID: 3, BC: 5},
+    token_mapper(HA_ID, BC),
+    name_func=token_specific_val_func(**{SL_NAME: lambda x: x.lower()}),
+    sep='\t'
+)
+
+sl_name_to_bc_hmcmjccxy = Table(
+    join(METADATA_DIR, 'filenames_HMCMJCCXY.tsv'),
+    {SL_NAME: 2, HA_ID: 3, BC: 5},
+    token_mapper(HA_ID, BC),
+    name_func=token_specific_val_func(**{SL_NAME: lambda x: x.lower()}),
+    sep='\t'
+)
 
 ha_name_to_pos = Table(
     join(METADATA_DIR, 'HA Submissions-Grid view.csv'),
@@ -346,6 +361,8 @@ class SampleType:
 
 MAPPERS = [
     sl_name_to_ha_name,
+    sl_name_to_bc_hmc2kccxy,
+    sl_name_to_bc_hmcmjccxy,
     ha_name_to_pos,
     airsample_sl_to_ha,
     airsample_ha_to_msub,
