@@ -18,6 +18,7 @@ sl_name_to_bc_hmc2kccxy = Table(
     {SL_NAME: 2, HA_ID: 3, BC: 5},
     token_mapper(HA_ID, BC),
     name_func=token_specific_val_func(**{SL_NAME: lambda x: x.lower()}),
+    val_func=token_specific_val_func(**{BC: lambda x: x[1:]}),
     sep='\t'
 )
 
@@ -26,6 +27,7 @@ sl_name_to_bc_hmcmjccxy = Table(
     {SL_NAME: 2, HA_ID: 3, BC: 5},
     token_mapper(HA_ID, BC),
     name_func=token_specific_val_func(**{SL_NAME: lambda x: x.lower()}),
+    val_func=token_specific_val_func(**{BC: lambda x: x[1:]}),
     sep='\t'
 )
 
@@ -160,6 +162,34 @@ fairbanks_metadata_csd16 = Table(
     skip=1
 )
 
+
+oslo_air_metadata_csd16 = Table(
+    join(METADATA_DIR, 'oslo_air_sample_metadata.csv'),
+    {
+        METASUB_NAME: 0,
+        CITY: 1,
+        STATION: 3,
+        LAT: 4,
+        LON: 5,
+        LINE: 6,
+        ELEVATION: 8,
+        SETTING: 9,
+        TRAFFIC_LEVEL: 10,
+    },
+    token_mapper(
+        METASUB_NAME,
+        CITY,
+        STATION,
+        LAT,
+        LON,
+        LINE,
+        ELEVATION,
+        SETTING,
+        TRAFFIC_LEVEL,
+    ),
+    name_func=lambda x, y: x.upper(),
+    skip=1
+)
 
 tigress_metadata = Table(
     join(METADATA_DIR, 'metadata.MetaSUB_UK2017.csv'),
@@ -375,6 +405,7 @@ MAPPERS = [
     csd16_metadata,
     akl_metadata_csd16,
     fairbanks_metadata_csd16,
+    oslo_air_metadata_csd16,
     olympiome_metadata,
     SampleType(),
     tigress_metadata,
