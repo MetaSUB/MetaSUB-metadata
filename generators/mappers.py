@@ -27,7 +27,6 @@ sl_name_to_bc_hmcmjccxy = Table(
     {SL_NAME: 2, HA_ID: 3, BC: 5},
     token_mapper(HA_ID, BC),
     name_func=token_specific_val_func(**{SL_NAME: lambda x: x.lower()}),
-    val_func=token_specific_val_func(**{BC: lambda x: x[1:]}),
     sep='\t'
 )
 
@@ -187,7 +186,7 @@ oslo_air_metadata_csd16 = Table(
         SETTING,
         TRAFFIC_LEVEL,
     ),
-    name_func=lambda x, y: x.upper(),
+    name_func=token_specific_val_func(**{METASUB_NAME: lambda x: x[1:]}),
     skip=1
 )
 
