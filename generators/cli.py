@@ -1,8 +1,9 @@
 
 from json import loads, dumps
 import click
-from sys import stdout, stdin
+from sys import stdout, stdin, stderr
 import pandas as pd
+from os import makedirs, path
 
 from .mappers import MAPPERS
 from .sample import Sample
@@ -37,10 +38,28 @@ def best_effort(csv, sample_names):
         stdout.write(dumps([sample.to_son() for sample in samples]))
 
 
-@main.command(name='uploadable')
+@main.command(name='name-map')
 @click.argument('metadata_table', type=str)
 @click.argument('sample_names', type=click.File('r'))
-def uploadable(metadata_table, sample_names):
+def name_map(metadata_table, sample_names):
+    sample_names = {line.strip().lower() for line in sample_names}
+    mdata = pd.read_csv(metadata_table, dtype=str, index_col=False)
+    for _, row in mdata.iterrows():
+        for id_col_name in IDS:
+            try:
+                if str(row[id_col_name]).lower() in sample_names:
+                    if row[METASUB_NAME]:
+                        sname, msub_name = row[id_col_name].upper(), row[METASUB_NAME]
+                        print(f'{sname},{msub_name}')
+                        break
+            except KeyError:
+                pass
+
+
+@main.command(name='uploadable')
+@click.option('-s', '--sample-names', default=SAMPLE_NAMES_FILE, type=click.File('r'))
+@click.argument('metadata_table', type=str)
+def uploadable(sample_names, metadata_table):
     sample_names = {line.strip() for line in sample_names}
     mdata = pd.read_csv(metadata_table, dtype=str, index_col=False)
     tbl = {}
@@ -71,7 +90,23 @@ def uploadable(metadata_table, sample_names):
         }
 
     tbl = pd.DataFrame.from_dict(tbl, orient='index')
-    print(tbl.to_csv())
+    tbl_csv_str = tbl.to_csv()
+    tbl_csv_str = '-'.join(tbl_csv_str.split('.'))
+    print(tbl_csv_str)
+
+
+@main.command(name='by-city')
+@click.argument('dirname')
+@click.argument('metadata_table')
+def split_metadata_by_city(dirname, metadata_table):
+    makedirs(dirname, exist_ok=True)
+    mdata = pd.read_csv(metadata_table, dtype=str, index_col=False)
+    cities = getattr(mdata, CITY).unique()
+    for city in cities:
+        city_tbl = mdata[mdata[CITY] == city]
+        city = '_'.join(city.split())
+        fname = path.join(dirname, f'{city}_metadata.csv')
+        city_tbl.to_csv(fname)
 
 
 if __name__ == '__main__':

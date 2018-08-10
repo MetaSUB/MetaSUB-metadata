@@ -27,10 +27,12 @@ class Table:
     def __init__(self, filename, col_inds, mapper,
                  sep=',', skip=0, assert_len=-1,
                  name_func=lambda x, y: x, val_func=lambda x, y: x,
-                 strict=False):
+                 strict=False, debug=False):
+        self.filename = filename
         self.mapper = mapper
         self.name_func = name_func
         self.store = {}
+        self.debug = debug
         for tkns in parse_csv(filename,
                               sep=sep, skip=skip, assert_len=assert_len):
             vec = {}
@@ -45,6 +47,8 @@ class Table:
                 if id_token in vec:
                     key = self.name_func(vec[id_token], id_token)
                     self.store[key] = vec
+        if self.debug:
+            print(self.store, file=stderr)
 
     def map(self, sample):
         for id_token in IDS:
@@ -52,5 +56,7 @@ class Table:
                 continue
             sample_id = self.name_func(sample[id_token], id_token)
             if sample_id and sample_id in self.store:
+                if self.debug:
+                    print(f'{self.filename} {sample_id} {id_token}', file=stderr)
                 self.mapper(sample, sample_id, self.store[sample_id])
                 return

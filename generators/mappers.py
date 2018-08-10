@@ -47,6 +47,20 @@ airsample_ha_to_msub = Table(
 
 )
 
+olympiome_metadata = Table(
+    join(METADATA_DIR, 'samples_oly_meta_all_information_e.csv'),
+    {
+        METASUB_NAME: 0,
+        PROJECT: 5,
+        STATION: 6,
+        LAT: 7,
+        LON: 8,
+        SURFACE: 9,
+    },
+    token_mapper(PROJECT, STATION, LAT, LON, SURFACE),
+    name_func=lambda x, y: x.upper()
+)
+
 
 bc_to_meta = Table(
     join(METADATA_DIR, 'cleaned_simplified_metadata.csv'),
@@ -60,10 +74,14 @@ bc_to_meta = Table(
         TRAFFIC_LEVEL: 6,
         LAT: 7,
         LON: 8,
+        METASUB_NAME: 9,
+        STATION: 10,
+        LINE: 11,
     },
     token_mapper(
         CITY, SURFACE_MATERIAL, SURFACE, SETTING,
-        ELEVATION, TRAFFIC_LEVEL, LAT, LON
+        ELEVATION, TRAFFIC_LEVEL, LAT, LON, METASUB_NAME,
+        STATION, LINE
     )
 )
 
@@ -340,6 +358,7 @@ MAPPERS = [
     csd16_metadata,
     akl_metadata_csd16,
     fairbanks_metadata_csd16,
+    olympiome_metadata,
     SampleType(),
     tigress_metadata,
 ]
