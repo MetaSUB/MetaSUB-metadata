@@ -71,6 +71,7 @@ def uploadable(sample_names, metadata_table):
         SURFACE_MATERIAL,
         SURFACE,
         SETTING,
+        STATION,
         ELEVATION,
         TRAFFIC_LEVEL,
         SAMPLE_TYPE,
