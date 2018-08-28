@@ -13,7 +13,7 @@ CITY_NAMES = set([
 ])
 
 
-SAMPLE_NAMES_FILE = join(METADATA_DIR, 'sample_names.txt')
+SAMPLE_NAMES_FILE = join(METADATA_DIR, 'new_sample_names.txt')
 
 CSD16_CODE = 'CSD16'
 CSD17_CODE = 'CSD17'

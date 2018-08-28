@@ -411,7 +411,7 @@ class HAUIDSplitter:
 
     def map(self, sample):
         if not sample[HAUID]:
-            continue
+            return
         ha_proj, ha_flowcell, sl_name = sample[HAUID].split('_')
         sample[HA_PROJ] = ha_proj
         sample[HA_FLOWCELL] = ha_flowcell
