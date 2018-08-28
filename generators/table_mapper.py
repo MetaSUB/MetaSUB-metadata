@@ -19,9 +19,6 @@ def token_mapper(*tokens, strict=True):
     def map_func(sample, sample_id, vec):
         for tkn in tokens:
             try:
-                if False and (sample[tkn] is not None):  # Turn off this check for now
-                    assert sample[tkn].lower() == vec[tkn].lower(), \
-                        f'\nToken {tkn}\nSample {sample[tkn]}\nSample ID {sample_id}\nVec {vec[tkn]}'
                 sample[tkn] = vec[tkn]
             except KeyError:
                 if strict:

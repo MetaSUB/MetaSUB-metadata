@@ -295,11 +295,12 @@ class CityCodeToCity:
             'POR': 'porto',
             'BER': 'berlin',
             'SAP': 'sao_paulo',
+            'KL': 'kuala_lumpur'
         }
         city_map = {v: k for k, v in code_map.items()}
         if sample[CITY_CODE] and not sample[CITY]:
             try:
-                sample[CITY] = code_map[sample[CITY_CODE]]
+                sample[CITY] = code_map[sample[CITY_CODE].strip()]
             except KeyError:
                 pass
         elif sample[CITY] and not sample[CITY_CODE]:
