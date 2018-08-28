@@ -1,4 +1,5 @@
 
+
 def getOrNone(tbl, key, default=None):
     if key is None:
         return default
@@ -6,3 +7,17 @@ def getOrNone(tbl, key, default=None):
         return tbl[key]
     except KeyError:
         return default
+
+
+def remove_leading_char(char, ignore_case=True):
+    def remover(val):
+        leader = val[0]
+        my_char = char
+        if ignore_case:
+            leader = leader.upper()
+            my_char = my_char.upper()
+        if leader == my_char:
+            #print(f'{leader} {char} {val[1:]}', file=stderr)
+            return val[1:]
+        return val
+    return remover

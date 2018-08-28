@@ -1,66 +1,35 @@
 from .parsing import parse_csv
 from .constants import *
-from .utils import getOrNone
-from .table_mapper import Table, token_mapper, token_specific_val_func
+from .utils import getOrNone, remove_leading_char
+from .table_mapper import (
+    Table,
+    token_mapper,
+    token_specific_val_func,
+    ha_filename_table
+)
 from sys import stderr
 
 
-sl_name_to_ha_name = Table(
-    join(METADATA_DIR, 'filenames_HCY5HCCXY.tsv'),
-    {SL_NAME: 2, HA_ID: 3},
-    token_mapper(HA_ID),
-    name_func=token_specific_val_func(**{SL_NAME: lambda x: x.lower()}),
-    sep='\t'
-)
+ha_filename_tables = [
+    ('filenames_HCY5HCCXY.tsv', {}),
+    ('filenames_HMC2KCCXY.tsv', {'description_key': BC}),
+    ('filenames_HMCMJCCXY.tsv', {'description_key': BC, 'strict': False}),
+    ('air_samples.filenames_HK7G5CCXY.txt', {'skip': 2}),
+]
+ha_filename_tables = [
+    ha_filename_table(
+        join(METADATA_DIR, filename),
+        **kwargs
+    )
+    for filename, kwargs in ha_filename_tables
+]
 
-
-def remove_leading_char(char, ignore_case=True):
-    def remover(val):
-        leader = val[0]
-        my_char = char
-        if ignore_case:
-            leader = leader.upper()
-            my_char = my_char.upper()
-        if leader == my_char:
-            #print(f'{leader} {char} {val[1:]}', file=stderr)
-            return val[1:]
-        return val
-    return remover
-
-
-sl_name_to_bc_hmc2kccxy = Table(
-    join(METADATA_DIR, 'filenames_HMC2KCCXY.tsv'),
-    {SL_NAME: 2, HA_ID: 3, BC: 5},
-    token_mapper(HA_ID, BC),
-    name_func=token_specific_val_func(**{SL_NAME: lambda x: x.lower()}),
-    val_func=token_specific_val_func(**{BC: remove_leading_char('0')}),
-    sep='\t',
-)
-
-sl_name_to_bc_hmcmjccxy = Table(
-    join(METADATA_DIR, 'filenames_HMCMJCCXY.tsv'),
-    {SL_NAME: 2, HA_ID: 3, BC: 5},
-    token_mapper(HA_ID, BC, strict=False),
-    name_func=token_specific_val_func(**{SL_NAME: lambda x: x.lower()}),
-    val_func=token_specific_val_func(**{BC: remove_leading_char('0')}),
-    sep='\t',
-)
 
 ha_name_to_pos = Table(
     join(METADATA_DIR, 'HA Submissions-Grid view.csv'),
     {HA_ID: 0, PLATE_NUM: 8, PLATE_POS: 14},
     token_mapper(PLATE_NUM, PLATE_POS),
     assert_len=15
-)
-
-
-airsample_sl_to_ha = Table(
-    join(METADATA_DIR, 'air_samples.filenames_HK7G5CCXY.txt'),
-    {SL_NAME: 2, HA_ID: 3},
-    token_mapper(HA_ID),
-    name_func=token_specific_val_func(**{SL_NAME: lambda x: x.lower()}),
-    skip=2,
-    sep='\t'
 )
 
 
@@ -411,7 +380,7 @@ class HAUIDSplitter:
 
     def map(self, sample):
         if not sample[HAUID]:
-            continue
+            return
         ha_proj, ha_flowcell, sl_name = sample[HAUID].split('_')
         sample[HA_PROJ] = ha_proj
         sample[HA_FLOWCELL] = ha_flowcell
@@ -420,11 +389,7 @@ class HAUIDSplitter:
 
 MAPPERS = [
     HAUIDSplitter(),
-    sl_name_to_ha_name,
-    sl_name_to_bc_hmc2kccxy,
-    sl_name_to_bc_hmcmjccxy,
     ha_name_to_pos,
-    airsample_sl_to_ha,
     airsample_ha_to_msub,
     PosToBC(),
     bc_to_meta,
@@ -439,4 +404,4 @@ MAPPERS = [
     olympiome_metadata,
     SampleType(),
     tigress_metadata,
-]
+] + ha_filename_tables

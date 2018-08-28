@@ -13,7 +13,7 @@ CITY_NAMES = set([
 ])
 
 
-SAMPLE_NAMES_FILE = join(METADATA_DIR, 'sample_names.txt')
+SAMPLE_NAMES_FILE = join(METADATA_DIR, 'new_sample_names.txt')
 
 CSD16_CODE = 'CSD16'
 CSD17_CODE = 'CSD17'
@@ -47,6 +47,7 @@ IDS = set([HAUID, HA_ID, BC, METASUB_NAME, SL_NAME])
 CONTROL_STATUS = 'control_type'
 STATION = 'station'
 LINE = 'line'
+INDEX_SEQ = 'index_sequence'
 
 POSITIVE_CONTROL = 'positive_control'
 NEGATIVE_CONTROL = 'negative_control'
