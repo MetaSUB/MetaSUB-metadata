@@ -6,6 +6,7 @@ import pandas as pd
 from os import makedirs, path
 
 from .mappers import MAPPERS
+from .cleaners import CLEANERS
 from .sample import Sample
 from .constants import *
 
@@ -34,6 +35,10 @@ def best_effort(csv, sample_names):
                 except:
                     print(f'\nMapper: {mapper}\nSample: {sample}', file=stderr)
                     raise
+
+    for cleaner in CLEANERS:
+        for sample in samples:
+            cleaner(sample)
 
     if csv:
         tbl = pd.DataFrame([sample.to_son() for sample in samples])

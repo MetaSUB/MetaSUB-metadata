@@ -1,4 +1,5 @@
 from .constants import *
+from sys import stderr
 
 
 def guess_name_kind(name):
@@ -38,7 +39,7 @@ class Sample:
         self.no_check = set([CITY])
 
     def to_son(self):
-        rough = {k: clean_token(v) for k, v in self.props.items() if v}
+        rough = {k: v for k, v in self.props.items() if v}
         to_upper = [HA_ID, METASUB_NAME, PROJECT, CITY_CODE]
         for k in to_upper:
             if k in rough:
@@ -61,6 +62,7 @@ class Sample:
         val = str(val).strip()
         if val:
             self.props[key] = val
+
 
     @classmethod
     def from_name(cls, name):
