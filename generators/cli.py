@@ -6,6 +6,7 @@ import pandas as pd
 from os import makedirs, path
 
 from .mappers import MAPPERS
+from .cleaners import CLEANERS
 from .sample import Sample
 from .constants import *
 
@@ -29,10 +30,19 @@ def best_effort(csv, sample_names):
     for _ in range(10):
         for mapper in MAPPERS:
             for sample in samples:
-                mapper.map(sample)
+                try:
+                    mapper.map(sample)
+                except:
+                    print(f'\nMapper: {mapper}\nSample: {sample}', file=stderr)
+                    raise
+
+    for cleaner in CLEANERS:
+        for sample in samples:
+            cleaner(sample)
 
     if csv:
         tbl = pd.DataFrame([sample.to_son() for sample in samples])
+        tbl = tbl.set_index(HAUID)
         print(tbl.to_csv())
     else:
         stdout.write(dumps([sample.to_son() for sample in samples]))
@@ -61,28 +71,36 @@ def name_map(metadata_table, sample_names):
 @click.argument('metadata_table', type=str)
 def uploadable(sample_names, metadata_table):
     sample_names = {line.strip() for line in sample_names}
+    allowed_cols = set([
+        CITY,
+        CITY_CODE,
+        SURFACE_MATERIAL,
+        SURFACE,
+        SETTING,
+        STATION,
+        ELEVATION,
+        TRAFFIC_LEVEL,
+        SAMPLE_TYPE,
+        LOCATION_TYPE,
+        PROJECT,
+    ])
+
     mdata = pd.read_csv(metadata_table, dtype=str, index_col=False)
     tbl = {}
     for rowname, row in mdata.iterrows():
         for idcol in IDS:
             try:
-                if row[idcol] in sample_names:
-                    rowid = row[idcol]
+                if str(row[idcol]) in sample_names:
+                    rowid = str(row[idcol])
+                    break
+                elif str(row[idcol]).lower() in sample_names:
+                    rowid = str(row[idcol]).lower()
+                    break
+                elif str(row[idcol]).upper() in sample_names:
+                    rowid = str(row[idcol]).upper()
                     break
             except KeyError:
                 pass
-        allowed_cols = set([
-            CITY,
-            CITY_CODE,
-            SURFACE_MATERIAL,
-            SURFACE,
-            SETTING,
-            ELEVATION,
-            TRAFFIC_LEVEL,
-            SAMPLE_TYPE,
-            LOCATION_TYPE,
-            PROJECT,
-        ])
         tbl[rowid] = {
             col: val
             for col, val in row.iteritems()

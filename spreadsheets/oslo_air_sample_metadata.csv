@@ -1,0 +1,73 @@
+﻿MetaSUB-ID,City,Sampler,Location,Latitude,Longitude,Station line,Station/car/interchange,Ground level,Sampling place,,,Samplig date,Start,Stop
+gCSD17-OSL-AS1,Oslo,SASS 3100,Vestli,59.97204,10.92944,Line04,Bus/subway interchange,Underground (or underwater),Platform,Suburban,1-10,6/21/17,08:55,09:25
+gCSD17-OSL-AS2,Oslo,SASS 3100,Romsås,59.96260,10.89248,Line04,Bus/subway interchange,Underground (or underwater),Platform,Suburban,10-50,6/21/17,09:35,10:05
+gCSD17-OSL-AS3,Oslo,SASS 3100,Carl Berners plass,59.92566,10.77959,Line05,Bus/subway interchange,Underground (or underwater),Platform,Urban,10-50,6/21/17,10:35,11:05
+gCSD17-OSL-AS4,Oslo,SASS 3100,Grønland,59.91278,10.76009,Line01,Bus/subway interchange,Underground (or underwater),Platform,Urban,10-50,6/21/17,11:10,11:40
+gCSD17-OSL-AS5,Oslo,SASS 3100,Jernbanetorget,59.91226,10.75027,Line01,Bus/subway interchange,Underground (or underwater),Platform,Urban,>50,6/21/17,11:46,12:16
+gCSD17-OSL-AS6,Oslo,SASS 3100,Stortinget,59.91343,10.74329,Line01,Bus/subway interchange,Underground (or underwater),Platform,Urban,10-50,6/21/17,12:20,12:50
+gCSD17-OSL-AS7,Oslo,SASS 3100,Nationaltheateret,59.91546,10.73209,Line01,Bus/subway interchange,Underground (or underwater),Platform,Urban,>50,6/21/17,12:57,13:27
+gCSD17-OSL-AS8,Oslo,SASS 3100,Montebello,59.93482,10.66640,Line03,Station/busstop,Aboveground (open area),Platform,Suburban,1-10,6/21/17,13:45,14:15
+gCSD17-OSL-AS9,Oslo,SASS 3100,Ellingsrudåsen,59.93651,10.91664,Line02,Station/busstop,Underground (or underwater),Platform,Suburban,1-10,6/21/17,09:00,09:30
+gCSD17-OSL-AS10,Oslo,SASS 3100,Lindeberg,59.93276,10.88167,Line02,Station/busstop,Underground (or underwater),Platform,Suburban,10-50,6/21/17,09:40,10:10
+gCSD17-OSL-AS11,Oslo,SASS 3100,Helsfyr,59.91259,10.80139,Line01,Bus/subway interchange,Underground (or underwater),Platform,Urban,10-50,6/21/17,10:27,10:57
+gCSD17-OSL-AS12,Oslo,SASS 3100,Tøyen,59.91558,10.77580,Line01,Bus/subway interchange,Underground (or underwater),Platform,Urban,10-50,6/21/17,11:07,11:37
+gCSD17-OSL-AS13,Oslo,SASS 3100,Majorstua,59.93016,10.71473,Line01,Bus/subway interchange,Aboveground (open area),Platform,Urban,10-50,6/21/17,11:53,12:23
+gCSD17-OSL-AS14,Oslo,SASS 3100,Forskningsparken,59.94370,10.72088,Line04,Bus/subway interchange,Aboveground (open area),Platform,Suburban,10-50,6/21/17,12:35,13:05
+gCSD17-OSL-AS15,Oslo,SASS 3100,Nydalen,59.94940,10.76592,Line04,Bus/subway interchange,Underground (or underwater),Platform,Urban,10-50,6/21/17,13:18,13:48
+gCSD17-OSL-AS16,Oslo,SASS 3100,Løren,59.93010,10.78959,Line04,Station/busstop,Underground (or underwater),Platform,Suburban,1-10,6/21/17,14:10,14:40
+gCSD17-OSL-AS17,Oslo,SASS 3100,Vestli,59.97204,10.92944,Line04,Bus/subway interchange,Underground (or underwater),Platform,Suburban,1-10,6/23/17,13:44,14:14
+gCSD17-OSL-AS18,Oslo,SASS 3100,Romsås,59.96260,10.89248,Line04,Bus/subway interchange,Underground (or underwater),Platform,Suburban,10-50,6/23/17,12:58,13:28
+gCSD17-OSL-AS19,Oslo,SASS 3100,Carl Berners plass,59.92566,10.77959,Line05,Bus/subway interchange,Underground (or underwater),Platform,Urban,10-50,6/23/17,12:12,12:42
+gCSD17-OSL-AS20,Oslo,SASS 3100,Grønland,59.91278,10.76009,Line01,Bus/subway interchange,Underground (or underwater),Platform,Urban,10-50,6/23/17,11:34,12:04
+gCSD17-OSL-AS21,Oslo,SASS 3100,Jernbanetorget,59.91226,10.75027,Line01,Bus/subway interchange,Underground (or underwater),Platform,Urban,>50,6/23/17,10:57,11:27
+gCSD17-OSL-AS22,Oslo,SASS 3100,Stortinget,59.91343,10.74329,Line01,Bus/subway interchange,Underground (or underwater),Platform,Urban,10-50,6/23/17,10:21,10:51
+gCSD17-OSL-AS23,Oslo,SASS 3100,Nationaltheateret,59.91546,10.73209,Line01,Bus/subway interchange,Underground (or underwater),Platform,Urban,10-50,6/23/17,09:46,10:16
+gCSD17-OSL-AS24,Oslo,SASS 3100,Montebello,59.93482,10.66640,Line03,Station/busstop,Aboveground (open area),Platform,Suburban,1-10,6/23/17,08:50,09:20
+gCSD17-OSL-AS25,Oslo,SASS 3100,Ellingsrudåsen,59.93651,10.91664,Line02,Station/busstop,Underground (or underwater),Platform,Suburban,1-10,6/23/17,14:00,14:30
+gCSD17-OSL-AS26,Oslo,SASS 3100,Lindeberg,59.93276,10.88167,Line02,Station/busstop,Underground (or underwater),Platform,Suburban,10-50,6/23/17,13:20,13:50
+gCSD17-OSL-AS27,Oslo,SASS 3100,Helsfyr,59.91259,10.80139,Line01,Bus/subway interchange,Underground (or underwater),Platform,Urban,10-50,6/23/17,12:30,13:00
+gCSD17-OSL-AS28,Oslo,SASS 3100,Tøyen,59.91558,10.77580,Line01,Bus/subway interchange,Underground (or underwater),Platform,Urban,10-50,6/23/17,11:50,12:20
+gCSD17-OSL-AS29,Oslo,SASS 3100,Majorstua,59.93016,10.71473,Line01,Bus/subway interchange,Aboveground (open area),Platform,Urban,>50,6/23/17,11:00,11:30
+gCSD17-OSL-AS30,Oslo,SASS 3100,Forskningsparken,59.94370,10.72088,Line04,Bus/subway interchange,Aboveground (open area),Platform,Suburban,1-10,6/23/17,10:20,10:50
+gCSD17-OSL-AS31,Oslo,SASS 3100,Nydalen,59.94940,10.76592,Line04,Bus/subway interchange,Underground (or underwater),Platform,Suburban,10-50,6/23/17,09:40,10:10
+gCSD17-OSL-AS32,Oslo,SASS 3100,Løren,59.93010,10.78959,Line04,Station/busstop,Underground (or underwater),Platform,Suburban,10-50,6/23/17,08:56,09:26
+gCSD17-OSL-AS33,Oslo,SASS 3100,Vestli,59.97204,10.92944,Line04,Bus/subway interchange,Underground (or underwater),Platform,Suburban,1-10,6/26/17,08:53,09:23
+gCSD17-OSL-AS34,Oslo,SASS 3100,Romsås,59.96260,10.89248,Line04,Bus/subway interchange,Underground (or underwater),Platform,Suburban,1-10,6/26/17,09:35,10:05
+gCSD17-OSL-AS35,Oslo,SASS 3100,Carl Berners plass,59.92566,10.77959,Line05,Bus/subway interchange,Underground (or underwater),Platform,Urban,10-50,6/26/17,10:36,11:06
+gCSD17-OSL-AS36,Oslo,SASS 3100,Grønland,59.91278,10.76009,Line01,Bus/subway interchange,Underground (or underwater),Platform,Urban,10-50,6/26/17,11:21,11:51
+gCSD17-OSL-AS37,Oslo,SASS 3100,Jernbanetorget,59.91226,10.75027,Line01,Bus/subway interchange,Underground (or underwater),Platform,Urban,>50,6/26/17,12:10,12:40
+gCSD17-OSL-AS38,Oslo,SASS 3100,Stortinget,59.91343,10.74329,Line01,Bus/subway interchange,Underground (or underwater),Platform,Urban,10-50,6/26/17,12:48,13:18
+gCSD17-OSL-AS39,Oslo,SASS 3100,Nationaltheateret,59.91546,10.73209,Line01,Bus/subway interchange,Underground (or underwater),Platform,Urban,10-50,6/26/17,13:24,13:54
+gCSD17-OSL-AS40,Oslo,SASS 3100,Montebello,59.93482,10.66640,Line03,Station/busstop,Aboveground (open area),Platform,Suburban,1-10,6/26/17,14:14,14:44
+gCSD17-OSL-AS41,Oslo,SASS 3100,Ellingsrudåsen,59.93651,10.91664,Line02,Station/busstop,Underground (or underwater),Platform,Suburban,1-10,6/26/17,08:55,09:25
+gCSD17-OSL-AS42,Oslo,SASS 3100,Lindeberg,59.93276,10.88167,Line02,Station/busstop,Underground (or underwater),Platform,Suburban,10-50,6/26/17,09:45,10:15
+gCSD17-OSL-AS43,Oslo,SASS 3100,Helsfyr,59.91259,10.80139,Line01,Bus/subway interchange,Underground (or underwater),Platform,Urban,10-50,6/26/17,10:40,11:10
+gCSD17-OSL-AS44,Oslo,SASS 3100,Tøyen,59.91558,10.77580,Line01,Bus/subway interchange,Underground (or underwater),Platform,Urban,>50,6/26/17,11:20,11:50
+gCSD17-OSL-AS45,Oslo,SASS 3100,Majorstua,59.93016,10.71473,Line01,Bus/subway interchange,Aboveground (open area),Platform,Urban,>50,6/26/17,12:15,12:45
+gCSD17-OSL-AS46,Oslo,SASS 3100,Forskningsparken,59.94370,10.72088,Line04,Bus/subway interchange,Aboveground (open area),Platform,Suburban,1-10,6/26/17,12:55,13:25
+gCSD17-OSL-AS47,Oslo,SASS 3100,Nydalen,59.94940,10.76592,Line04,Bus/subway interchange,Underground (or underwater),Platform,Suburban,10-50,6/26/17,13:39,14:09
+gCSD17-OSL-AS48,Oslo,SASS 3100,Løren,59.93010,10.78959,Line04,Station/busstop,Underground (or underwater),Platform,Suburban,10-50,6/26/17,14:20,14:50
+gCSD17-OSL-AS49,Oslo,SASS 3100,Vestli,59.97204,10.92944,Line04,Bus/subway interchange,Underground (or underwater),Platform,Suburban,1-10,6/27/17,14:00,14:30
+gCSD17-OSL-AS50,Oslo,SASS 3100,Romsås,59.96260,10.89248,Line04,Bus/subway interchange,Underground (or underwater),Platform,Suburban,1-10,6/27/17,13:11,13:41
+gCSD17-OSL-AS51,Oslo,SASS 3100,Carl Berners plass,59.92566,10.77959,Line05,Bus/subway interchange,Underground (or underwater),Platform,Urban,10-50,6/27/17,12:15,12:45
+gCSD17-OSL-AS52,Oslo,SASS 3100,Grønland,59.91278,10.76009,Line01,Bus/subway interchange,Underground (or underwater),Platform,Urban,10-50,6/27/17,11:28,11:58
+gCSD17-OSL-AS53,Oslo,SASS 3100,Jernbanetorget,59.91226,10.75027,Line01,Bus/subway interchange,Underground (or underwater),Platform,Urban,>50,6/27/17,10:55,11:25
+gCSD17-OSL-AS54,Oslo,SASS 3100,Stortinget,59.91343,10.74329,Line01,Bus/subway interchange,Underground (or underwater),Platform,Urban,10-50,6/27/17,10:20,10:50
+gCSD17-OSL-AS55,Oslo,SASS 3100,Nationaltheateret,59.91546,10.73209,Line01,Bus/subway interchange,Underground (or underwater),Platform,Urban,10-50,6/27/17,09:45,10:15
+gCSD17-OSL-AS56,Oslo,SASS 3100,Montebello,59.93482,10.66640,Line03,Station/busstop,Aboveground (open area),Platform,Suburban,1-10,6/27/17,08:54,09:24
+gCSD17-OSL-AS57,Oslo,SASS 3100,Ellingsrudåsen,59.93651,10.91664,Line02,Station/busstop,Underground (or underwater),Platform,Suburban,10-50,6/27/17,14:35,15:05
+gCSD17-OSL-AS58,Oslo,SASS 3100,Lindeberg,59.93276,10.88167,Line02,Station/busstop,Underground (or underwater),Platform,Suburban,10-50,6/27/17,13:45,14:15
+gCSD17-OSL-AS59,Oslo,SASS 3100,Helsfyr,59.91259,10.80139,Line01,Bus/subway interchange,Underground (or underwater),Platform,Urban,>50,6/27/17,12:45,13:15
+gCSD17-OSL-AS60,Oslo,SASS 3100,Tøyen,59.91558,10.77580,Line01,Bus/subway interchange,Underground (or underwater),Platform,Urban,>50,6/27/17,12:08,12:38
+gCSD17-OSL-AS61,Oslo,SASS 3100,Majorstua,59.93016,10.71473,Line01,Bus/subway interchange,Aboveground (open area),Platform,Urban,>50,6/27/17,11:15,11:45
+gCSD17-OSL-AS62,Oslo,SASS 3100,Forskningsparken,59.94370,10.72088,Line04,Bus/subway interchange,Aboveground (open area),Platform,Suburban,1-10,6/27/17,10:40,11:10
+gCSD17-OSL-AS63,Oslo,SASS 3100,Nydalen,59.94940,10.76592,Line04,Bus/subway interchange,Underground (or underwater),Platform,Urban,10-50,6/27/17,10:00,10:30
+gCSD17-OSL-AS64,Oslo,SASS 3100,Løren,59.93010,10.78959,Line04,Station/busstop,Underground (or underwater),Platform,Suburban,10-50,6/27/17,09:10,09:40
+gCSD17-OSL-AS65,Oslo,BOBCAT ACD-200,Ellingsrudåsen,59.93651,10.91664,Line02,Station/busstop,Underground (or underwater),Platform,Suburban,1-10,6/21/17,09:00,09:30
+gCSD17-OSL-AS66 ,Oslo,BOBCAT ACD-200,Lindeberg,59.93276,10.88167,Line02,Station/busstop,Underground (or underwater),Platform,Suburban,10-50,6/21/17,09:40,10:10
+gCSD17-OSL-AS67,Oslo,BOBCAT ACD-200,Helsfyr,59.91259,10.80139,Line01,Bus/subway interchange,Underground (or underwater),Platform,Suburban,10-50,6/21/17,10:27,10:57
+gCSD17-OSL-AS68,Oslo,BOBCAT ACD-200,Tøyen,59.91558,10.77580,Line01,Bus/subway interchange,Underground (or underwater),Platform,Urban,10-50,6/21/17,11:07,11:37
+gCSD17-OSL-AS69,Oslo,BOBCAT ACD-200,Majorstua,59.93016,10.71473,Line01,Bus/subway interchange,Aboveground (open area),Platform,Urban,10-50,6/21/17,11:53,12:23
+gCSD17-OSL-AS70,Oslo,BOBCAT ACD-200,Forskningsparken,59.94370,10.72088,Line04,Bus/subway interchange,Aboveground (open area),Platform,Suburban,10-50,6/21/17,12:35,13:05
+gCSD17-OSL-AS71,Oslo,BOBCAT ACD-200,Nydalen,59.94940,10.76592,Line04,Bus/subway interchange,Underground (or underwater),Platform,Urban,10-50,6/21/17,13:18,13:48
+gCSD17-OSL-AS72,Oslo,BOBCAT ACD-200,Løren,59.93010,10.78959,Line04,Station/busstop,Underground (or underwater),Platform,Suburban,1-10,6/21/17,14:10,14:40

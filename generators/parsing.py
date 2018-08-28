@@ -41,7 +41,7 @@ def parse_csv(fname, assert_len=-1, skip=0, sep=','):
                       """.format(assert_len, len(tkns), tkns)
                 assert len(tkns) == assert_len, msg
             except AssertionError as ae:
-                print(ae, file=stderr)
+                #print(ae, file=stderr)
                 continue
         if len(tkns) > 0:
             yield tkns

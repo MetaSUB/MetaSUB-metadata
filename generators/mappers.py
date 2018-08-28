@@ -1,34 +1,93 @@
 from .parsing import parse_csv
 from .constants import *
-from .utils import getOrNone
-from .table_mapper import Table, token_mapper, token_specific_val_func
+from .utils import getOrNone, remove_leading_char
+from .table_mapper import (
+    Table,
+    token_mapper,
+    token_specific_val_func,
+    ha_filename_table
+)
 from sys import stderr
 
 
-sl_name_to_ha_name = Table(
-    join(METADATA_DIR, 'filenames_HCY5HCCXY.tsv'),
-    {SL_NAME: 2, HA_ID: 3},
-    token_mapper(HA_ID),
-    name_func=token_specific_val_func(**{SL_NAME: lambda x: x.lower()}),
-    sep='\t'
-)
+ha_filename_tables = [
+    ('filenames_HCY5HCCXY.tsv', {}),
+    ('filenames_HMC2KCCXY.tsv', {'description_key': BC}),
+    ('filenames_HMCMJCCXY.tsv', {'description_key': BC, 'strict': False}),
+    ('air_samples.filenames_HK7G5CCXY.txt', {}),
+
+
+    ('haib17CEM4890_filenames_H2NYMCCXY.txt', {'description_key': METASUB_NAME}),
+    ('haib17CEM4890_filenames_H3KHWCCXY.txt', {'description_key': METASUB_NAME}),
+    ('haib17CEM4890_filenames_H75CGCCXY.txt', {'description_key': METASUB_NAME}),
+    ('haib17CEM4890_filenames_H7KYMCCXY.txt', {'description_key': METASUB_NAME}),
+    ('haib17CEM4890_filenames_HKC32ALXX.txt', {'description_key': METASUB_NAME}),
+    ('haib17CEM4890_filenames_HMCMJCCXY.txt', {'description_key': METASUB_NAME}),
+
+    ('haib17CEM5080_filenames_H7VL7CCXY.txt', {}),
+
+    ('haib17CEM5106_filenames_HCCGHCCXY.txt', {}),
+    ('haib17CEM5106_filenames_HCV72CCXY.txt', {}),
+    ('haib17CEM5106_filenames_HCVMTCCXY.txt', {}),
+    ('haib17CEM5106_filenames_HCY5HCCXY.txt', {}),
+    ('haib17CEM5106_filenames_HCY5JCCXY.txt', {}),
+
+    ('haib17CEM5241_filenames_HMCMJCCXY.txt', {}),
+    ('haib17CEM5241_filenames_HMGTJCCXY.txt', {
+        'description_key': BC,
+        'token_val_funcs': {BC: lambda x: x.split('_')[-1]}
+    }),  # kyiv, ukraine_2_235114675
+    ('haib17CEM5241_filenames_HMGW3CCXY.txt', {
+        'description_key': BC,
+        'token_val_funcs': {BC: lambda x: x.split('_')[-1]}
+    }),  # kyiv, ukraine_2_235114675
+
+    ('haib17DB4959_filenames_H3MGVCCXY.txt', {}),
+    ('haib17DB4959_filenames_HMCMJCCXY.txt', {}),
+    ('haib17DB4959_filenames_HMGTJCCXY.txt', {}),  # Inbound5_B_2
+    ('haib17DB4959_filenames_HMGW3CCXY.txt', {}),  # Inbound2_A_7
+
+    ('haib17KIU4866_filenames_H7HJMCCXY.txt', {}),  # standard DNA prep with sequencing on the X
+    ('haib17KIU4866_filenames_HMCMJCCXY.txt', {}),  # standard DNA prep with sequencing on the X
+
+    ('haib18CEM5332_filenames_HK7G5CCXY.txt', {'description_key': METASUB_NAME}),  # gCSD17-HKG-AS1
+    ('haib18CEM5332_filenames_HMCMJCCXY.txt', {'description_key': METASUB_NAME}),  # gCSD17-OSL-AS17
+    ('haib18CEM5332_filenames_HMGTJCCXY.txt', {'description_key': METASUB_NAME}),  # gCSD17-NYC-AS01
+    ('haib18CEM5332_filenames_HMGW3CCXY.txt', {'description_key': METASUB_NAME}),  # gCSD17-NYC-AS01
+
+    ('haib18CEM5453_filenames_HMC2KCCXY.txt', {'description_key': BC}),  # 0235023170
+    ('haib18CEM5453_filenames_HMCMJCCXY.txt', {}),
+    ('haib18CEM5453_filenames_HMGTJCCXY.txt', {'description_key': BC}),  # 235185269
+    ('haib18CEM5453_filenames_HMGW3CCXY.txt', {'description_key': BC}),  # 0235075616
+
+    ('haib18CEM5526_filenames_HMGTJCCXY.txt', {'description_key': BC}),  # 232023295
+    ('haib18CEM5526_filenames_HMGW3CCXY.txt', {'description_key': BC}),  # 232023295
+]
+ha_filename_tables = [
+    ha_filename_table(
+        join(METADATA_DIR, filename),
+        **kwargs
+    )
+    for filename, kwargs in ha_filename_tables
+]
+
+
+def normalize_plate_num(raw):
+    raw = raw.lower()
+    if 'zymo plate' in raw:
+        plate_num = raw.split()[2]
+        while len(plate_num) < 4:
+            plate_num = '0' + plate_num
+        return f'plate_{plate_num}'
+    return raw
 
 
 ha_name_to_pos = Table(
     join(METADATA_DIR, 'HA Submissions-Grid view.csv'),
     {HA_ID: 0, PLATE_NUM: 8, PLATE_POS: 14},
     token_mapper(PLATE_NUM, PLATE_POS),
+    val_func=token_specific_val_func(**{PLATE_NUM: normalize_plate_num}),
     assert_len=15
-)
-
-
-airsample_sl_to_ha = Table(
-    join(METADATA_DIR, 'air_samples.filenames_HK7G5CCXY.txt'),
-    {SL_NAME: 2, HA_ID: 3},
-    token_mapper(HA_ID),
-    name_func=token_specific_val_func(**{SL_NAME: lambda x: x.lower()}),
-    skip=2,
-    sep='\t'
 )
 
 
@@ -81,8 +140,10 @@ bc_to_meta = Table(
     token_mapper(
         CITY, SURFACE_MATERIAL, SURFACE, SETTING,
         ELEVATION, TRAFFIC_LEVEL, LAT, LON, METASUB_NAME,
-        STATION, LINE
-    )
+        STATION, LINE, strict=False
+    ),
+    name_func=token_specific_val_func(**{METASUB_NAME: remove_leading_char('g')}),
+    val_func=token_specific_val_func(**{METASUB_NAME: remove_leading_char('g')}),
 )
 
 
@@ -145,6 +206,35 @@ fairbanks_metadata_csd16 = Table(
     skip=1
 )
 
+
+oslo_air_metadata_csd16 = Table(
+    join(METADATA_DIR, 'oslo_air_sample_metadata.csv'),
+    {
+        METASUB_NAME: 0,
+        CITY: 1,
+        STATION: 3,
+        LAT: 4,
+        LON: 5,
+        LINE: 6,
+        ELEVATION: 8,
+        SETTING: 9,
+        TRAFFIC_LEVEL: 10,
+    },
+    token_mapper(
+        METASUB_NAME,
+        CITY,
+        STATION,
+        LAT,
+        LON,
+        LINE,
+        ELEVATION,
+        SETTING,
+        TRAFFIC_LEVEL,
+    ),
+    name_func=token_specific_val_func(**{METASUB_NAME: remove_leading_char('g')}),
+    val_func=token_specific_val_func(**{METASUB_NAME: remove_leading_char('g')}),
+    skip=1
+)
 
 tigress_metadata = Table(
     join(METADATA_DIR, 'metadata.MetaSUB_UK2017.csv'),
@@ -216,13 +306,19 @@ class CityCodeToCity:
             'POR': 'porto',
             'BER': 'berlin',
             'SAP': 'sao_paulo',
+            'KL':  'kuala_lumpur',
+            'TPE': 'taipei',
+            'SIN': 'singapore',
+            'VIE': 'vienna',
+            'DOH': 'doha',
+            'MRS': 'marseille',
         }
         city_map = {v: k for k, v in code_map.items()}
-        if sample[CITY_CODE] and not sample[CITY]:
+        if sample[CITY_CODE]: #and not sample[CITY]:
             try:
-                sample[CITY] = code_map[sample[CITY_CODE]]
+                sample[CITY] = code_map[sample[CITY_CODE].strip().upper()]
             except KeyError:
-                pass
+                raise
         elif sample[CITY] and not sample[CITY_CODE]:
             try:
                 sample[CITY_CODE] = city_map[sample[CITY]]
@@ -251,7 +347,7 @@ class Handle5106HANames:
                 (LAT, tkns[26]),
                 (LON, tkns[27]),
                 (SURFACE_MATERIAL, tkns[37]),
-                (SURFACE_MATERIAL, tkns[33]),
+                (SURFACE, tkns[33]),
                 (ELEVATION, tkns[32]),
             ]
             for tkns in parse_csv(join(METADATA_DIR, 'Metadata-Table 1.csv'))
@@ -344,10 +440,20 @@ class SampleType:
             sample[SAMPLE_TYPE] = self.stype_map[sample[SL_NAME].lower()]
 
 
+class HAUIDSplitter:
+
+    def map(self, sample):
+        if not sample[HAUID]:
+            return
+        ha_proj, ha_flowcell, sl_name = sample[HAUID].split('_')
+        sample[HA_PROJ] = ha_proj
+        sample[HA_FLOWCELL] = ha_flowcell
+        sample[SL_NAME] = sl_name
+
+
 MAPPERS = [
-    sl_name_to_ha_name,
-    ha_name_to_pos,
-    airsample_sl_to_ha,
+    HAUIDSplitter(),
+    #ha_name_to_pos,
     airsample_ha_to_msub,
     PosToBC(),
     bc_to_meta,
@@ -358,7 +464,8 @@ MAPPERS = [
     csd16_metadata,
     akl_metadata_csd16,
     fairbanks_metadata_csd16,
+    oslo_air_metadata_csd16,
     olympiome_metadata,
     SampleType(),
     tigress_metadata,
-]
+] + ha_filename_tables
