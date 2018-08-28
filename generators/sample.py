@@ -2,6 +2,8 @@ from .constants import *
 
 
 def guess_name_kind(name):
+    if name[:4] == 'haib':
+        return HAUID
     if name[:2] == 'SL':
         return SL_NAME
     if 'cem' in name.lower():

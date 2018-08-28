@@ -407,7 +407,19 @@ class SampleType:
             sample[SAMPLE_TYPE] = self.stype_map[sample[SL_NAME].lower()]
 
 
+class HAUIDSplitter:
+
+    def map(self, sample):
+        if not sample[HAUID]:
+            continue
+        ha_proj, ha_flowcell, sl_name = sample[HAUID].split('_')
+        sample[HA_PROJ] = ha_proj
+        sample[HA_FLOWCELL] = ha_flowcell
+        sample[SL_NAME] = sl_name
+
+
 MAPPERS = [
+    HAUIDSplitter(),
     sl_name_to_ha_name,
     sl_name_to_bc_hmc2kccxy,
     sl_name_to_bc_hmcmjccxy,
