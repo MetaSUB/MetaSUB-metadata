@@ -37,6 +37,7 @@ def best_effort(csv, sample_names):
 
     if csv:
         tbl = pd.DataFrame([sample.to_son() for sample in samples])
+        tbl = tbl.set_index(HAUID)
         print(tbl.to_csv())
     else:
         stdout.write(dumps([sample.to_son() for sample in samples]))
