@@ -33,6 +33,9 @@ class Sample:
 
     def __init__(self):
         self.props = {}
+        self.setby = {}
+        self.check_overwrite = True
+        self.no_check = set([CITY])
 
     def to_son(self):
         rough = {k: clean_token(v) for k, v in self.props.items() if v}
@@ -52,7 +55,12 @@ class Sample:
             return None
 
     def __setitem__(self, key, val):
-        self.props[key] = val
+        if self.check_overwrite and (key in self.props) and (key not in self.no_check):
+            assert self.props[key].lower() == val.lower(), \
+                f'{self.props[HAUID]} {key} CUR: {self.props[key]} NEW: {val}'
+        val = str(val).strip()
+        if val:
+            self.props[key] = val
 
     @classmethod
     def from_name(cls, name):

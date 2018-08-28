@@ -72,10 +72,21 @@ ha_filename_tables = [
 ]
 
 
+def normalize_plate_num(raw):
+    raw = raw.lower()
+    if 'zymo plate' in raw:
+        plate_num = raw.split()[2]
+        while len(plate_num) < 4:
+            plate_num = '0' + plate_num
+        return f'plate_{plate_num}'
+    return raw
+
+
 ha_name_to_pos = Table(
     join(METADATA_DIR, 'HA Submissions-Grid view.csv'),
     {HA_ID: 0, PLATE_NUM: 8, PLATE_POS: 14},
     token_mapper(PLATE_NUM, PLATE_POS),
+    val_func=token_specific_val_func(**{PLATE_NUM: normalize_plate_num}),
     assert_len=15
 )
 
@@ -295,14 +306,19 @@ class CityCodeToCity:
             'POR': 'porto',
             'BER': 'berlin',
             'SAP': 'sao_paulo',
-            'KL': 'kuala_lumpur'
+            'KL':  'kuala_lumpur',
+            'TPE': 'taipei',
+            'SIN': 'singapore',
+            'VIE': 'vienna',
+            'DOH': 'doha',
+            'MRS': 'marseille',
         }
         city_map = {v: k for k, v in code_map.items()}
-        if sample[CITY_CODE] and not sample[CITY]:
+        if sample[CITY_CODE]: #and not sample[CITY]:
             try:
-                sample[CITY] = code_map[sample[CITY_CODE].strip()]
+                sample[CITY] = code_map[sample[CITY_CODE].strip().upper()]
             except KeyError:
-                pass
+                raise
         elif sample[CITY] and not sample[CITY_CODE]:
             try:
                 sample[CITY_CODE] = city_map[sample[CITY]]
@@ -331,7 +347,7 @@ class Handle5106HANames:
                 (LAT, tkns[26]),
                 (LON, tkns[27]),
                 (SURFACE_MATERIAL, tkns[37]),
-                (SURFACE_MATERIAL, tkns[33]),
+                (SURFACE, tkns[33]),
                 (ELEVATION, tkns[32]),
             ]
             for tkns in parse_csv(join(METADATA_DIR, 'Metadata-Table 1.csv'))
@@ -437,7 +453,7 @@ class HAUIDSplitter:
 
 MAPPERS = [
     HAUIDSplitter(),
-    ha_name_to_pos,
+    #ha_name_to_pos,
     airsample_ha_to_msub,
     PosToBC(),
     bc_to_meta,

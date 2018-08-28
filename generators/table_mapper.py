@@ -95,6 +95,9 @@ class Table:
         if self.debug:
             print(self.store, file=stderr)
 
+    def __str__(self):
+        return self.filename
+
     def map(self, sample):
         for id_token in IDS:
             if not sample[id_token]:

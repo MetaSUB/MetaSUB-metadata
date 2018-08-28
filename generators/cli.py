@@ -32,7 +32,7 @@ def best_effort(csv, sample_names):
                 try:
                     mapper.map(sample)
                 except:
-                    print(f'Mapper: {mapper.filename} Sample: {sample}', file=stderr)
+                    print(f'\nMapper: {mapper}\nSample: {sample}', file=stderr)
                     raise
 
     if csv:
