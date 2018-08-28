@@ -47,6 +47,7 @@ IDS = set([HAUID, HA_ID, BC, METASUB_NAME, SL_NAME])
 CONTROL_STATUS = 'control_type'
 STATION = 'station'
 LINE = 'line'
+INDEX_SEQ = 'index_sequence'
 
 POSITIVE_CONTROL = 'positive_control'
 NEGATIVE_CONTROL = 'negative_control'
