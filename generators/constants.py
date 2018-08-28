@@ -13,7 +13,7 @@ CITY_NAMES = set([
 ])
 
 
-SAMPLE_NAMES_FILE = join(METADATA_DIR, 'sample_names.txt')
+SAMPLE_NAMES_FILE = join(METADATA_DIR, 'new_sample_names.txt')
 
 CSD16_CODE = 'CSD16'
 CSD17_CODE = 'CSD17'
@@ -35,15 +35,19 @@ TRAFFIC_LEVEL = 'traffic'
 LAT = 'latitude'
 LON = 'longitude'
 METASUB_NAME = 'metasub_name'
+HAUID = 'hudson_alpha_uid'
+HA_PROJ = 'hudson_alpha_project'
+HA_FLOWCELL = 'hudson_alpha_flowcell'
 HA_ID = 'ha_id'
 SL_NAME = 'sl_name'
 PROJECT = 'project'
 SAMPLE_TYPE = 'sample_type'
 LOCATION_TYPE = 'location_type'
-IDS = set([HA_ID, BC, METASUB_NAME, SL_NAME])
+IDS = set([HAUID, HA_ID, BC, METASUB_NAME, SL_NAME])
 CONTROL_STATUS = 'control_type'
 STATION = 'station'
 LINE = 'line'
+INDEX_SEQ = 'index_sequence'
 
 POSITIVE_CONTROL = 'positive_control'
 NEGATIVE_CONTROL = 'negative_control'

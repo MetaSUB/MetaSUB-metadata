@@ -6,6 +6,7 @@ import pandas as pd
 from os import makedirs, path
 
 from .mappers import MAPPERS
+from .cleaners import CLEANERS
 from .sample import Sample
 from .constants import *
 
@@ -32,11 +33,16 @@ def best_effort(csv, sample_names):
                 try:
                     mapper.map(sample)
                 except:
-                    print(f'Mapper: {mapper.filename} Sample: {sample}', file=stderr)
+                    print(f'\nMapper: {mapper}\nSample: {sample}', file=stderr)
                     raise
+
+    for cleaner in CLEANERS:
+        for sample in samples:
+            cleaner(sample)
 
     if csv:
         tbl = pd.DataFrame([sample.to_son() for sample in samples])
+        tbl = tbl.set_index(HAUID)
         print(tbl.to_csv())
     else:
         stdout.write(dumps([sample.to_son() for sample in samples]))
