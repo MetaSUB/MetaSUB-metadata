@@ -34,13 +34,21 @@ def token_mapper(*tokens, strict=True):
     return map_func
 
 
-def ha_filename_table(filename, skip=0, description_key=None, strict=True, token_val_funcs=None):
+def ha_filename_table(filename, description_key=None, strict=True, token_val_funcs=None):
+    skip = 0
+    if filename[:-4] == '.txt':
+        skip = 2
     token_positions = {INDEX_SEQ: 1, SL_NAME: 2, HA_ID: 3}
     if description_key:
         token_positions[description_key] = 5
 
-    if description_key == BC and token_val_funcs is None:
+    if token_val_funcs is not None:
+        pass
+    elif description_key == BC:
         token_val_funcs = {BC: remove_leading_char('0')}
+    elif description_key == METASUB_NAME:
+        token_val_funcs = {METASUB_NAME: remove_leading_char('g')}
+
 
     val_func = lambda x, y: x
     if token_val_funcs:
