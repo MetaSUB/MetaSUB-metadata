@@ -1,6 +1,6 @@
 from .parsing import parse_csv
 from .constants import *
-from .utils import getOrNone, remove_leading_char
+from .utils import getOrNone, remove_leading_char, remove_trailing_char
 from .table_mapper import (
     Table,
     token_mapper,
@@ -81,6 +81,7 @@ haid_to_barcode_4959DB = Table(
     join(METADATA_DIR, '4959DB_barcodes.csv'),
     {HA_ID: 0, BC: 1},
     token_mapper(BC),
+    name_func=lambda x, y: remove_trailing_char('R')(x.lower()),
     skip=1,
 )
 

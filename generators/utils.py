@@ -21,3 +21,17 @@ def remove_leading_char(char, ignore_case=True):
             return val[1:]
         return val
     return remover
+
+
+def remove_trailing_char(char, ignore_case=True):
+    def remover(val):
+        trailer = val[-1]
+        my_char = char
+        if ignore_case:
+            trailer = trailer.upper()
+            my_char = my_char.upper()
+        if trailer == my_char:
+            #print(f'{leader} {char} {val[1:]}', file=stderr)
+            return val[:-1]
+        return val
+    return remover
