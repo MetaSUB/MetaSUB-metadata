@@ -41,6 +41,10 @@ ha_filename_tables = [
         'description_key': BC,
         'token_val_funcs': {BC: lambda x: x.split('_')[-1]}
     }),  # kyiv, ukraine_2_235114675
+    ('haib17CEM5241_filenames_HMGMHCCXY.txt', {
+        'description_key': BC,
+        'token_val_funcs': {BC: lambda x: x.split('_')[-1]}
+    }),  # kyiv, ukraine_2_235114672
 
     ('haib17DB4959_filenames_H3MGVCCXY.txt', {}),
     ('haib17DB4959_filenames_HMCMJCCXY.txt', {}),
@@ -62,6 +66,7 @@ ha_filename_tables = [
 
     ('haib18CEM5526_filenames_HMGTJCCXY.txt', {'description_key': BC}),  # 232023295
     ('haib18CEM5526_filenames_HMGW3CCXY.txt', {'description_key': BC}),  # 232023295
+    ('haib18CEM5526_filenames_HMGMHCCXY.txt', {'description_key': BC}),  # 235040613
 ]
 ha_filename_tables = [
     ha_filename_table(
