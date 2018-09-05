@@ -77,6 +77,14 @@ ha_filename_tables = [
 ]
 
 
+haid_to_barcode_4959DB = Table(
+    join(METADATA_DIR, '4959DB_barcodes.csv'),
+    {HA_ID: 0, BC: 1},
+    token_mapper(BC),
+    skip=1,
+)
+
+
 def normalize_plate_num(raw):
     raw = raw.lower()
     if 'zymo plate' in raw:
@@ -85,7 +93,6 @@ def normalize_plate_num(raw):
             plate_num = '0' + plate_num
         return f'plate_{plate_num}'
     return raw
-
 
 ha_name_to_pos = Table(
     join(METADATA_DIR, 'HA Submissions-Grid view.csv'),
@@ -321,6 +328,8 @@ class CityCodeToCity:
             'VIE': 'vienna',
             'DOH': 'doha',
             'MRS': 'marseille',
+            'MSP': 'minneapolis',
+            'BNE': 'brisbane',
         }
         city_map = {v: k for k, v in code_map.items()}
         if sample[CITY_CODE]: #and not sample[CITY]:
@@ -463,6 +472,7 @@ class HAUIDSplitter:
 MAPPERS = [
     HAUIDSplitter(),
     #ha_name_to_pos,
+    haid_to_barcode_4959DB,
     airsample_ha_to_msub,
     PosToBC(),
     bc_to_meta,
