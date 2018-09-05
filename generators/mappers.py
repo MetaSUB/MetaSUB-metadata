@@ -273,10 +273,14 @@ class MSubToCity:
                 return
 
         if 'csd' in sample[METASUB_NAME].lower():
+            if 'csd_denver' in sample[METASUB_NAME].lower():
+                sample[CITY_CODE] = 'DEN'
+                return
             tkns = sample[METASUB_NAME].split('-')
             if len(tkns) == 3:
                 sample[CITY_CODE] = tkns[1]
             return
+
 
         tkns = sample[METASUB_NAME].split('_')
         if len(tkns) == 3:
