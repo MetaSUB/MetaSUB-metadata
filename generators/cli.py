@@ -83,6 +83,7 @@ def uploadable(sample_names, metadata_table):
         SAMPLE_TYPE,
         LOCATION_TYPE,
         PROJECT,
+        CONTROL_STATUS,
     ])
 
     mdata = pd.read_csv(metadata_table, dtype=str, index_col=False)
