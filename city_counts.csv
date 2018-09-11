@@ -1,3 +1,4 @@
+city,count
 bristol,2
 other,2
 ofa,3
@@ -47,5 +48,5 @@ fairbanks,100
 porto,112
 hong_kong,381
 new_york_city,496
-unknown,580
+control or unknown,580
 london,658
