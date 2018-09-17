@@ -59,6 +59,9 @@ ha_filename_tables = [
     ('haib18CEM5453_filenames_HMCMJCCXY.txt', {}),
     ('haib18CEM5453_filenames_HMGTJCCXY.txt', {'description_key': BC}),  # 235185269
     ('haib18CEM5453_filenames_HMGW3CCXY.txt', {'description_key': BC}),  # 0235075616
+    ('haib18CEM5453_filenames_HNGH3CCXY.txt', {'description_key': BC}),  
+    ('haib18CEM5453_filenames_HMGN5CCXY.txt', {'description_key': BC}),
+    ('haib18CEM5453_filenames_HNHKFCCXY.txt', {'description_key': BC}),          
 
     ('haib18CEM5526_filenames_HMGTJCCXY.txt', {'description_key': BC}),  # 232023295
     ('haib18CEM5526_filenames_HMGW3CCXY.txt', {'description_key': BC}),  # 232023295
