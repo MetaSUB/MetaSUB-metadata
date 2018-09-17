@@ -33,7 +33,7 @@ def best_effort(csv, sample_names):
                 try:
                     mapper.map(sample)
                 except:
-                    print(f'\nMapper: {mapper}\nSample: {sample}', file=stderr)
+                    print(f'\nMapper: {mapper.__class__.__name__}\nSample: {sample}', file=stderr)
                     raise
 
     for cleaner in CLEANERS:

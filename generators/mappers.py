@@ -334,13 +334,15 @@ class CityCodeToCity:
             'MRS': 'marseille',
             'MSP': 'minneapolis',
             'BNE': 'brisbane',
+            'SEL': 'seoul',
         }
         city_map = {v: k for k, v in code_map.items()}
-        if sample[CITY_CODE]: #and not sample[CITY]:
+        if sample[CITY_CODE]:  #and not sample[CITY]:
             try:
                 sample[CITY] = code_map[sample[CITY_CODE].strip().upper()]
             except KeyError:
-                raise
+                if sample[CITY_CODE].lower() != 'csd':
+                    raise
         elif sample[CITY] and not sample[CITY_CODE]:
             try:
                 sample[CITY_CODE] = city_map[sample[CITY]]
