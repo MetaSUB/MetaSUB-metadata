@@ -1,6 +1,6 @@
 from .parsing import parse_csv
 from .constants import *
-from .utils import getOrNone, remove_leading_char
+from .utils import getOrNone, remove_leading_char, remove_trailing_char
 from .table_mapper import (
     Table,
     token_mapper,
@@ -41,6 +41,10 @@ ha_filename_tables = [
         'description_key': BC,
         'token_val_funcs': {BC: lambda x: x.split('_')[-1]}
     }),  # kyiv, ukraine_2_235114675
+    ('haib17CEM5241_filenames_HMGMHCCXY.txt', {
+        'description_key': BC,
+        'token_val_funcs': {BC: lambda x: x.split('_')[-1]}
+    }),  # kyiv, ukraine_2_235114672
 
     ('haib17DB4959_filenames_H3MGVCCXY.txt', {}),
     ('haib17DB4959_filenames_HMCMJCCXY.txt', {}),
@@ -65,6 +69,7 @@ ha_filename_tables = [
 
     ('haib18CEM5526_filenames_HMGTJCCXY.txt', {'description_key': BC}),  # 232023295
     ('haib18CEM5526_filenames_HMGW3CCXY.txt', {'description_key': BC}),  # 232023295
+    ('haib18CEM5526_filenames_HMGMHCCXY.txt', {'description_key': BC}),  # 235040613
 ]
 ha_filename_tables = [
     ha_filename_table(
@@ -75,6 +80,15 @@ ha_filename_tables = [
 ]
 
 
+haid_to_barcode_4959DB = Table(
+    join(METADATA_DIR, '4959DB_barcodes.csv'),
+    {HA_ID: 0, BC: 1},
+    token_mapper(BC),
+    name_func=lambda x, y: remove_trailing_char('R')(x.lower()),
+    skip=1,
+)
+
+
 def normalize_plate_num(raw):
     raw = raw.lower()
     if 'zymo plate' in raw:
@@ -83,7 +97,6 @@ def normalize_plate_num(raw):
             plate_num = '0' + plate_num
         return f'plate_{plate_num}'
     return raw
-
 
 ha_name_to_pos = Table(
     join(METADATA_DIR, 'HA Submissions-Grid view.csv'),
@@ -319,6 +332,8 @@ class CityCodeToCity:
             'VIE': 'vienna',
             'DOH': 'doha',
             'MRS': 'marseille',
+            'MSP': 'minneapolis',
+            'BNE': 'brisbane',
         }
         city_map = {v: k for k, v in code_map.items()}
         if sample[CITY_CODE]: #and not sample[CITY]:
@@ -461,6 +476,7 @@ class HAUIDSplitter:
 MAPPERS = [
     HAUIDSplitter(),
     #ha_name_to_pos,
+    haid_to_barcode_4959DB,
     airsample_ha_to_msub,
     PosToBC(),
     bc_to_meta,

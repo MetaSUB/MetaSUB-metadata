@@ -31,7 +31,7 @@ def token_mapper(*tokens, strict=True):
     return map_func
 
 
-def ha_filename_table(filename, description_key=None, strict=True, token_val_funcs=None):
+def ha_filename_table(filename, description_key=None, strict=False, token_val_funcs=None):
     skip = 0
     if filename[:-4] == '.txt':
         skip = 2
@@ -64,6 +64,7 @@ def ha_filename_table(filename, description_key=None, strict=True, token_val_fun
         val_func=val_func,
         sep='\t',
         skip=skip,
+        strict=strict,
     )
 
 
