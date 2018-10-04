@@ -10,6 +10,10 @@ from .table_mapper import (
 from sys import stderr
 
 
+def mdata_dir(fname):
+    return join(METADATA_DIR, fname)
+
+
 ha_filename_tables = [
     ('filenames_HCY5HCCXY.tsv', {}),
     ('filenames_HMC2KCCXY.tsv', {'description_key': BC}),
@@ -73,7 +77,7 @@ ha_filename_tables = [
 ]
 ha_filename_tables = [
     ha_filename_table(
-        join(METADATA_DIR, filename),
+        mdata_dir(filename),
         **kwargs
     )
     for filename, kwargs in ha_filename_tables
@@ -81,7 +85,7 @@ ha_filename_tables = [
 
 
 haid_to_barcode_4959DB = Table(
-    join(METADATA_DIR, '4959DB_barcodes.csv'),
+    mdata_dir('4959DB_barcodes.csv'),
     {HA_ID: 0, BC: 1},
     token_mapper(BC),
     name_func=lambda x, y: remove_trailing_char('R')(x.lower()),
@@ -99,7 +103,7 @@ def normalize_plate_num(raw):
     return raw
 
 ha_name_to_pos = Table(
-    join(METADATA_DIR, 'HA Submissions-Grid view.csv'),
+    mdata_dir('HA Submissions-Grid view.csv'),
     {HA_ID: 0, PLATE_NUM: 8, PLATE_POS: 14},
     token_mapper(PLATE_NUM, PLATE_POS),
     val_func=token_specific_val_func(**{PLATE_NUM: normalize_plate_num}),
@@ -113,7 +117,7 @@ def airsample_ha_to_msub_mapper(sample, sample_id, vec):
 
 
 airsample_ha_to_msub = Table(
-    join(METADATA_DIR, 'airsamples_ha_id_to_msub_name.csv'),
+    mdata_dir('airsamples_ha_id_to_msub_name.csv'),
     {HA_ID: 1, METASUB_NAME: 4},
     airsample_ha_to_msub_mapper,
     val_func=token_specific_val_func(**{METASUB_NAME: lambda x: x[1:]}),
@@ -123,7 +127,7 @@ airsample_ha_to_msub = Table(
 )
 
 olympiome_metadata = Table(
-    join(METADATA_DIR, 'samples_oly_meta_all_information_e.csv'),
+    mdata_dir('samples_oly_meta_all_information_e.csv'),
     {
         METASUB_NAME: 0,
         PROJECT: 5,
@@ -138,7 +142,7 @@ olympiome_metadata = Table(
 
 
 bc_to_meta = Table(
-    join(METADATA_DIR, 'cleaned_simplified_metadata.csv'),
+    mdata_dir('cleaned_simplified_metadata.csv'),
     {
         CITY: 0,
         BC: 1,
@@ -172,7 +176,7 @@ def csd16_metadata_name_func(name, name_type):
 
 
 csd16_metadata = Table(
-    join(METADATA_DIR, 'collated_metadata_csd16.csv'),
+    mdata_dir('collated_metadata_csd16.csv'),
     {
         METASUB_NAME: 31,
         CITY: 14,
@@ -188,7 +192,7 @@ csd16_metadata = Table(
 
 
 akl_metadata_csd16 = Table(
-    join(METADATA_DIR, 'auckland_csd16.csv'),
+    mdata_dir('auckland_csd16.csv'),
     {
         METASUB_NAME: 5,
         CITY: 32,
@@ -210,7 +214,7 @@ def fairbanks_metadata_csd16_val_func(val, token):
 
 
 fairbanks_metadata_csd16 = Table(
-    join(METADATA_DIR, 'Fairbanks_corralled_CSD16.csv'),
+    mdata_dir('Fairbanks_corralled_CSD16.csv'),
     {
         METASUB_NAME: 0,
         SURFACE_MATERIAL: 5,
@@ -224,7 +228,7 @@ fairbanks_metadata_csd16 = Table(
 
 
 oslo_air_metadata_csd16 = Table(
-    join(METADATA_DIR, 'oslo_air_sample_metadata.csv'),
+    mdata_dir('oslo_air_sample_metadata.csv'),
     {
         METASUB_NAME: 0,
         CITY: 1,
@@ -253,7 +257,7 @@ oslo_air_metadata_csd16 = Table(
 )
 
 tigress_metadata = Table(
-    join(METADATA_DIR, 'metadata.MetaSUB_UK2017.csv'),
+    mdata_dir('metadata.MetaSUB_UK2017.csv'),
     {
         HA_ID: 8,
         CITY: 0,
@@ -270,6 +274,70 @@ tigress_metadata = Table(
         SURFACE_MATERIAL
     ),
     name_func=lambda x, y: '-'.join(x.lower().split('_')),
+)
+
+
+tokyo_metadata = Table(
+    mdata_dir('Tokyo_MetaSUB_2016_SA_HS_NM_.csv'),
+    {
+        METASUB_NAME: 0,
+        LAT: 8,
+        LON: 9,
+        SURFACE_MATERIAL: 11,
+        TEMPERATURE: 12,
+    },
+    token_mapper(
+        METASUB_NAME, LAT, LON, SURFACE_MATERIAL, TEMPERATURE
+    )
+)
+
+
+boston_metadata = Table(
+    mdata_dir('Boston_MetaSUB_2016_SA_TH_BGY_TH.csv'),
+    {
+        METASUB_NAME: 0,
+        LINE: 9,
+        LAT: 11,
+        LON: 12,
+        SURFACE_MATERIAL: 14,
+        TEMPERATURE: 15,
+    },
+    token_mapper(
+        METASUB_NAME, LINE, LAT, LON, SURFACE_MATERIAL, TEMPERATURE
+    )
+)
+
+
+zurich_metadata = Table(
+    mdata_dir('Zurich_MetaSUB_2016_SA.csv'),
+    {
+        METASUB_NAME: 0,
+        LINE: 7,
+        LAT: 10,
+        LON: 11,
+        SURFACE_MATERIAL: 13,
+        TEMPERATURE: 14,
+    },
+    token_mapper(
+        METASUB_NAME, LINE, LAT, LON, SURFACE_MATERIAL, TEMPERATURE
+    )
+)
+
+
+csd16_metadata_bgy = Table(
+    mdata_dir('MASTER_MetaSUB_Metadata_BGY_csd16.csv'),
+    {
+        METASUB_NAME: 0,
+        LINE: 8,
+        LAT: 10,
+        LON: 11,
+        SURFACE: 12,
+        SURFACE_MATERIAL: 13,
+        TEMPERATURE: 14,
+    },
+    token_mapper(
+        METASUB_NAME, LINE, LAT, LON, SURFACE_MATERIAL, TEMPERATURE
+    )
 )
 
 
@@ -359,7 +427,7 @@ class Handle5106HANames:
         self.conv_tbl = {
             tkns[5]: (tkns[0], (tkns[1], tkns[2]))
             for tkns in parse_csv(
-                join(METADATA_DIR, 'Conversion Tables-Table 1.csv')
+                mdata_dir('Conversion Tables-Table 1.csv')
             )
         }
 
@@ -374,7 +442,7 @@ class Handle5106HANames:
                 (SURFACE, tkns[33]),
                 (ELEVATION, tkns[32]),
             ]
-            for tkns in parse_csv(join(METADATA_DIR, 'Metadata-Table 1.csv'))
+            for tkns in parse_csv(mdata_dir('Metadata-Table 1.csv'))
         }
 
     def map(self, sample):
@@ -407,7 +475,7 @@ class PosToBC:
     def __init__(self):
         self.pos_to_bc = {
             (tkns[2], tkns[3]): tkns[4]
-            for tkns in parse_csv(join(METADATA_DIR, 'CSD2017_DAVID.csv'))
+            for tkns in parse_csv(mdata_dir('CSD2017_DAVID.csv'))
         }
         assert len(self.pos_to_bc) > 0
 
@@ -445,7 +513,7 @@ class SampleType:
     def __init__(self):
         self.stype_map = {}
         parsed = parse_csv(
-            join(METADATA_DIR, 'sample_names_types.tsv'),
+            mdata_dir('sample_names_types.tsv'),
             assert_len=2,
             sep='\t'
         )
@@ -493,4 +561,8 @@ MAPPERS = [
     olympiome_metadata,
     SampleType(),
     tigress_metadata,
+    boston_metadata,
+    tokyo_metadata,
+    zurich_metadata,
+    csd16_metadata_bgy,
 ] + ha_filename_tables
