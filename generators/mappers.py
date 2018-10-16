@@ -371,6 +371,22 @@ class MSubToCity:
             sample[CITY] = 'berlin'
 
 
+class MetaSUBNameToProject:
+
+    def map(self, sample):
+        code_map = {
+            'CSD-16': CSD16_CODE,
+            'CSD16': CSD16_CODE,
+            'CSD17': CSD17_CODE,
+            'CSD-17': CSD17_CODE,
+        }
+        if sample[METASUB_NAME]:
+            for key, val in code_map.items():
+                if key.lower() in sample[METASUB_NAME].lower():
+                    sample[PROJECT] = val
+                    break
+
+
 class CityCodeToCity:
 
     def map(self, sample):
@@ -560,6 +576,7 @@ MAPPERS = [
     oslo_air_metadata_csd16,
     olympiome_metadata,
     SampleType(),
+    MetaSUBNameToProject(),
     tigress_metadata,
     boston_metadata,
     tokyo_metadata,
