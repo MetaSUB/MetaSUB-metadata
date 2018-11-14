@@ -35,7 +35,7 @@ class Sample:
     def __init__(self):
         self.props = {}
         self.setby = {}
-        self.check_overwrite = True
+        self.check_overwrite = False
         self.no_check = set([CITY])
 
     def to_son(self):

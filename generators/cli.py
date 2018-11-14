@@ -128,5 +128,34 @@ def split_metadata_by_city(dirname, metadata_table):
         city_tbl.to_csv(fname)
 
 
+@main.command('eval')
+@click.argument('metadata')
+@click.argument('columns', nargs=-1)
+def eval_metadata_table(metadata, columns):
+    metadata = pd.read_csv(metadata, dtype=str, index_col=0)
+    nfilled, nempty, ntotal, by_col = 0, 0, 0, {col_name: 0 for col_name in columns}
+    for rowname, row in metadata.iterrows():
+        ntotal += 1
+        all_filled, any_filled = True, False
+        for col_name in columns:
+            val = str(row[col_name]).strip().lower()
+            if not val or val == 'nan':
+                all_filled = False
+            else:
+                any_filled = True
+                by_col[col_name] += 1
+
+        if all_filled:
+            nfilled += 1
+        if not any_filled:
+            nempty += 1
+
+    print(f'{ntotal} rows in total')
+    print(f'{nfilled} rows have all specified columns filled')
+    print(f'{nempty} rows have none of the specified columns filled')
+    for col_name, count in by_col.items():
+        print(f' - {count} rows have {col_name} filled')
+
+
 if __name__ == '__main__':
     main()

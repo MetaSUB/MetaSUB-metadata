@@ -14,7 +14,7 @@ def token_specific_val_func(**tokens):
     return val_func
 
 
-def token_mapper(*tokens, strict=True):
+def token_mapper(*tokens, strict=False):
 
     def map_func(sample, sample_id, vec):
         for tkn in tokens:

@@ -48,6 +48,7 @@ CONTROL_STATUS = 'control_type'
 STATION = 'station'
 LINE = 'line'
 INDEX_SEQ = 'index_sequence'
+TEMPERATURE = 'temperature'
 
 POSITIVE_CONTROL = 'positive_control'
 NEGATIVE_CONTROL = 'negative_control'
