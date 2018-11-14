@@ -7,6 +7,10 @@ def guess_name_kind(name):
         return HAUID
     if name[:2] == 'SL':
         return SL_NAME
+    if name[:6].lower() == 'pilot_':
+        return OTHER_PROJ_UID
+    if name[:10].lower() == 'sossowski_':
+        return OTHER_PROJ_UID
     if 'cem' in name.lower():
         return HA_ID
     if 'db' in name.lower():

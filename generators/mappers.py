@@ -441,6 +441,11 @@ class CityCodeToCity:
             'MSP': 'minneapolis',
             'BNE': 'brisbane',
             'SEL': 'seoul',
+            'LSB': 'lisbon',
+            'MXC': 'mexico_city',
+            'MVD': 'montevideo',
+            'SHG': 'shanghai',
+            'BCN': 'barcelona',
         }
         city_map = {v: k for k, v in code_map.items()}
         if sample[CITY_CODE]:  #and not sample[CITY]:
@@ -503,6 +508,43 @@ class Handle5106HANames:
         for k, v in self.mdata_tbl[internal_name]:
             sample[k] = v
 
+
+class OtherProjUidToMetaSubName:
+
+    def map(self, sample):
+        if not sample[OTHER_PROJ_UID]:
+            return
+        uid = sample[OTHER_PROJ_UID].lower()
+        if 'csd16' in uid.lower():
+            msub = 'csd16' + uid.split('csd16')[1].split('_')[0]
+            msub = '-'.join(msub.split('-')[:3])
+            sample[METASUB_NAME] = msub
+
+
+class OtherProjUidToCity:
+
+    def map(self, sample):
+        if not sample[OTHER_PROJ_UID]:
+            return
+        uid = sample[OTHER_PROJ_UID].lower()
+        if 'pilot' not in uid:
+            return
+        pilot_cities = [
+            ('hong_kong', 'HKG'),
+            ('lisbon', 'LSB'),
+            ('mexico_city', 'MXC'),
+            ('montevideo', 'MVD'),
+            ('oslo', 'OSL'),
+            ('sacramento', 'SAC'),
+            ('seoul', 'SEL'),
+            ('shanghai', 'SHG')
+        ]
+        for city_name, city_code in pilot_cities:
+            city_name_viz = ''.join(city_name.split('_'))
+            if city_name_viz in uid:
+                sample[CITY] = city_name
+                sample[CITY_CODE] = city_code
+                break
 
 class PosToBC:
     '''Return a table mapping position to a barcode.
@@ -605,4 +647,6 @@ MAPPERS = [
     zurich_metadata,
     csd16_metadata_bgy,
     ben_young_master_metadata,
+    OtherProjUidToMetaSubName(),
+    OtherProjUidToCity(),
 ] + ha_filename_tables
