@@ -8,15 +8,21 @@ def turn_off_checking(sample):
 
 def uppercase_token(token):
     def do_the_case(sample):
+        if not isinstance(sample[token], str):
+            return
         sample[token] = sample[token].upper()
     return do_the_case
 
 
 def case_ha_proj(sample):
+    if not isinstance(sample[HA_PROJ], str):
+        return
     sample[HA_PROJ] = 'haib' + sample[HA_PROJ].split('haib')[1].upper()
 
 
 def case_hauid(sample):
+    if not isinstance(sample[HAUID], str):
+        return
     hauid = sample[HAUID].split('_')
     haib = 'haib' + hauid[0].split('haib')[1].upper()
     flow = hauid[1].upper()

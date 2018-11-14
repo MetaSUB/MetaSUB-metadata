@@ -69,7 +69,8 @@ ha_filename_tables = [
     ('haib18CEM5453_filenames_HMGW3CCXY.txt', {'description_key': BC}),  # 0235075616
     ('haib18CEM5453_filenames_HNGH3CCXY.txt', {'description_key': BC}),  
     ('haib18CEM5453_filenames_HMGN5CCXY.txt', {'description_key': BC}),
-    ('haib18CEM5453_filenames_HNHKFCCXY.txt', {'description_key': BC}),          
+    ('haib18CEM5453_filenames_HNHKFCCXY.txt', {'description_key': BC}),
+    ('haib18CEM5453_filenames_HT5YVCCXY.txt', {'description_key': BC}),         
 
     ('haib18CEM5526_filenames_HMGTJCCXY.txt', {'description_key': BC}),  # 232023295
     ('haib18CEM5526_filenames_HMGW3CCXY.txt', {'description_key': BC}),  # 232023295
@@ -164,6 +165,27 @@ bc_to_meta = Table(
     ),
     name_func=token_specific_val_func(**{METASUB_NAME: remove_leading_char('g')}),
     val_func=token_specific_val_func(**{METASUB_NAME: remove_leading_char('g')}),
+)
+
+positions = {
+    CITY: 0,
+    BC: 1,
+    HAUID: 2,
+    SL_NAME: 8,
+    INDEX_SEQ: 6,
+    STATION: 9,
+    SETTING: 10,
+    ELEVATION: 11,
+    TRAFFIC_LEVEL: 12,
+    LAT: 13,
+    LON: 14,
+    SURFACE_MATERIAL: 15,
+    SURFACE: 16,
+}
+ben_young_master_metadata = Table(
+    mdata_dir('MASTER_MetaSUB_Metadata_W_YIELDS.csv'),
+    positions,
+    token_mapper(*list(positions.keys())),
 )
 
 
@@ -582,4 +604,5 @@ MAPPERS = [
     tokyo_metadata,
     zurich_metadata,
     csd16_metadata_bgy,
+    ben_young_master_metadata,
 ] + ha_filename_tables

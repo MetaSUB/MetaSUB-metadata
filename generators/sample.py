@@ -59,6 +59,8 @@ class Sample:
         if self.check_overwrite and (key in self.props) and (key not in self.no_check):
             assert self.props[key].lower() == val.lower(), \
                 f'{self.props[HAUID]} {key} CUR: {self.props[key]} NEW: {val}'
+        if val is None:
+            return
         val = str(val).strip()
         if val:
             self.props[key] = val
