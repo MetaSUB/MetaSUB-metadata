@@ -623,6 +623,13 @@ class GuessProj:
             sample[PROJECT] = CSD17_CODE
             return
 
+class AirSamplingProj:
+    """Use the MetaSUB name to guess the project."""
+
+    def map(self, sample):
+        msub = sample[METASUB_NAME]
+        if msub and 'csd17' in msub.lower() and '-as' in msub.lower():
+            sample[PROJECT] = CSD17_AIR_CODE
 
 class SampleType:
 
@@ -687,4 +694,5 @@ MAPPERS = [
     OtherProjUidToMetaSubName(),
     OtherProjUidToCity(),
     GuessProj(),
+    AirSamplingProj(),
 ] + ha_filename_tables
