@@ -373,6 +373,28 @@ csd16_metadata_bgy = Table(
     )
 )
 
+positions = {
+    HA_ID: 1,
+    METASUB_NAME: 2,
+}
+haid_to_csdid = Table(
+    mdata_dir('collated_sample_sheets_ea_v3.csv'),
+    positions,
+    token_mapper(*list(positions.keys())),
+    name_func=lambda x, y: x.upper(),
+)
+
+positions = {
+    METASUB_NAME: 0,
+    SURFACE: 2,
+    STATION: 1,
+}
+pathomap_winter = Table(
+    mdata_dir('PathoMAP_Winter2014_metadata.csv'),
+    positions,
+    token_mapper(*list(positions.keys())),
+)
+
 
 class MSubToCity:
     """Guess the city or city code from the MetaSUB name."""
@@ -691,6 +713,8 @@ MAPPERS = [
     zurich_metadata,
     csd16_metadata_bgy,
     ben_young_master_metadata,
+    haid_to_csdid,
+    pathomap_winter,
     OtherProjUidToMetaSubName(),
     OtherProjUidToCity(),
     GuessProj(),

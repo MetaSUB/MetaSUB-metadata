@@ -28,7 +28,11 @@ def parse_csv_str(csv_str, sep=','):
 
 
 def parse_csv(fname, assert_len=-1, skip=0, sep=','):
-    csv_str = open(fname, encoding='utf-8').read()
+    codec = 'utf-8'
+    try:
+        csv_str = open(fname, encoding=codec).read()
+    except UnicodeDecodeError:
+        raise Exception(f'Cannot parse {fname} with {codec}')
     for i, tkns in enumerate(parse_csv_str(csv_str, sep=sep)):
         if i < skip:
             continue
