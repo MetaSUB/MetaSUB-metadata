@@ -608,7 +608,7 @@ class GuessProj:
         if sample[OTHER_PROJ_UID] and 'pilot_' in sample[OTHER_PROJ_UID]:
             sample[PROJECT] = PILOT_CODE
             return
-        if sample[METASUB_NAME] and 'PORTO_' in sample[METASUB_NAME]:
+        if sample[METASUB_NAME] and 'porto_' in sample[METASUB_NAME].lower():
             sample[PROJECT] = CSD16_CODE
             return
         if sample[HA_ID] and '5080-cem' in sample[HA_ID]:
