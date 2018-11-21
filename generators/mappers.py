@@ -611,7 +611,7 @@ class GuessProj:
         if sample[METASUB_NAME] and 'PORTO_' in sample[METASUB_NAME]:
             sample[PROJECT] = CSD16_CODE
             return
-        if sample[HA_ID] and '5080-CEM' in sample[HA_ID]:
+        if sample[HA_ID] and '5080-cem' in sample[HA_ID]:
             ha_num = int(sample[HA_ID].split('-')[2])
             if 1 <= ha_num <= 79:
                 sample[PROJECT] = TIGRESS_CODE
