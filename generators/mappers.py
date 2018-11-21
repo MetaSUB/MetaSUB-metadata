@@ -168,6 +168,17 @@ bc_to_meta = Table(
 )
 
 positions = {
+    HA_ID: 0,
+    CONTROL_STATUS: 1,
+    BC: 2,
+}
+promega_conrol_plate = Table(
+    mdata_dir('CSD17_control_plate_promega.csv'),
+    positions,
+    token_mapper(*list(positions.keys())),
+)
+
+positions = {
     CITY: 0,
     BC: 1,
     HAUID: 2,
@@ -588,6 +599,28 @@ class GuessProjFromMSUBName:
             return
 
 
+class GuessProj:
+    """Use the MetaSUB name to guess the project."""
+
+    def map(self, sample):
+        if sample[PROJECT]:
+            return  # use this as a last resort
+        if sample[OTHER_PROJ_UID] and 'pilot_' in sample[OTHER_PROJ_UID]:
+            sample[PROJECT] = PILOT_CODE
+            return
+        if sample[METASUB_NAME] and 'PORTO_' in sample[METASUB_NAME]:
+            sample[PROJECT] = CSD16_CODE
+            return
+        if sample[HA_ID] and '5080-CEM' in sample[HA_ID]:
+            ha_num = int(sample[HA_ID].split('-')[2])
+            if 1 <= ha_num <= 79:
+                sample[PROJECT] = TIGRESS_CODE
+                return
+        if sample[BC]:
+            sample[PROJECT] = CSD17_CODE
+            return
+
+
 class SampleType:
 
     def __init__(self):
@@ -638,6 +671,7 @@ MAPPERS = [
     akl_metadata_csd16,
     fairbanks_metadata_csd16,
     oslo_air_metadata_csd16,
+    promega_conrol_plate,
     olympiome_metadata,
     SampleType(),
     MetaSUBNameToProject(),
@@ -649,4 +683,5 @@ MAPPERS = [
     ben_young_master_metadata,
     OtherProjUidToMetaSubName(),
     OtherProjUidToCity(),
+    GuessProj(),
 ] + ha_filename_tables
