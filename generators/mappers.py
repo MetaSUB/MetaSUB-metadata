@@ -609,6 +609,9 @@ class GuessProj:
             sample[PROJECT] = PILOT_CODE
             return
         if sample[METASUB_NAME] and 'porto_' in sample[METASUB_NAME].lower():
+            sample[PROJECT] = PILOT_CODE
+            return
+        if sample[METASUB_NAME] and 'csd_denver' in sample[METASUB_NAME].lower():
             sample[PROJECT] = CSD16_CODE
             return
         if sample[HA_ID] and '5080-cem' in sample[HA_ID]:
