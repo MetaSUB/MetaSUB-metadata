@@ -14,11 +14,13 @@ def token_specific_val_func(**tokens):
     return val_func
 
 
-def token_mapper(*tokens, strict=False):
+def token_mapper(*tokens, strict=False, last_resort=False):
 
     def map_func(sample, sample_id, vec):
         for tkn in tokens:
             try:
+                if last_resort and sample[tkn]:
+                    return
                 sample[tkn] = vec[tkn]
             except KeyError:
                 if strict:

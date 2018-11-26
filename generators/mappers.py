@@ -376,6 +376,7 @@ csd16_metadata_bgy = Table(
 positions = {
     HA_ID: 1,
     METASUB_NAME: 2,
+    CITY: 3,
 }
 haid_to_csdid = Table(
     mdata_dir('collated_sample_sheets_ea_v3.csv'),
@@ -392,7 +393,7 @@ positions = {
 pathomap_winter = Table(
     mdata_dir('PathoMAP_Winter2014_metadata.csv'),
     positions,
-    token_mapper(*list(positions.keys())),
+    token_mapper(*list(positions.keys()), last_resort=True),
 )
 
 
