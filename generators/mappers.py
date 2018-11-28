@@ -179,6 +179,16 @@ promega_conrol_plate = Table(
 )
 
 positions = {
+    HA_ID: 3,
+    METASUB_NAME: 4,
+}
+kiu_samples = Table(
+    mdata_dir('KIU_samples_Shipment_Finallistwith_ID_June2017.csv'),
+    positions,
+    token_mapper(*list(positions.keys())),
+)
+
+positions = {
     CITY: 0,
     BC: 1,
     HAUID: 2,
@@ -480,6 +490,7 @@ class CityCodeToCity:
             'MVD': 'montevideo',
             'SHG': 'shanghai',
             'BCN': 'barcelona',
+            'LIS': 'lisbon',
         }
         city_map = {v: k for k, v in code_map.items()}
         if sample[CITY_CODE]:  #and not sample[CITY]:
@@ -706,6 +717,7 @@ MAPPERS = [
     oslo_air_metadata_csd16,
     promega_conrol_plate,
     olympiome_metadata,
+    kiu_samples,
     SampleType(),
     MetaSUBNameToProject(),
     tigress_metadata,

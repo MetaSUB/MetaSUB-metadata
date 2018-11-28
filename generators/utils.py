@@ -35,3 +35,7 @@ def remove_trailing_char(char, ignore_case=True):
             return val[:-1]
         return val
     return remover
+
+
+def clean_ha_id(ha_id):
+    return ha_id.lower().split('r')[0]

@@ -1,0 +1,961 @@
+﻿Plate,Row,Column,Sample Name,Original sample name,Our label of the plate,Volume (ul),Concentration (ng/ul),Organism,Sex,Sample Description,Method of quantification,Purpose
+3,C,7,4866-KIU-0001,CSD16-ILR-001,CSD16-3,~30,26.54005693,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,C,8,4866-KIU-0002,CSD16-ILR-002,CSD16-3,~30,32.70669517,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,C,9,4866-KIU-0003,CSD16-ILR-003,CSD16-3,~30,25.52675374,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,C,10,4866-KIU-0004,CSD16-ILR-004,CSD16-3,~30,83.83620737,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,C,11,4866-KIU-0005,CSD16-ILR-005,CSD16-3,~30,22.23725304,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,C,12,4866-KIU-0006,CSD16-ILR-006,CSD16-3,~30,54.72889195,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,D,1,4866-KIU-0007,CSD16-ILR-007,CSD16-3,~30,22.5811597,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,D,2,4866-KIU-0008,CSD16-ILR-008,CSD16-3,~30,14.50409747,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,D,3,4866-KIU-0009,CSD16-ILR-009,CSD16-3,~30,8.566033602,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,D,4,4866-KIU-0010,CSD16-ILR-010,CSD16-3,~30,20.1390877,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,D,5,4866-KIU-0011,CSD16-ILR-011,CSD16-3,~30,15.2910951,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,D,6,4866-KIU-0012,CSD16-ILR-012,CSD16-3,~30,32.25481252,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,D,7,4866-KIU-0013,CSD16-ILR-013,CSD16-3,~30,29.67887582,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,D,8,4866-KIU-0014,CSD16-ILR-014,CSD16-3,~30,38.50094271,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,D,9,4866-KIU-0015,CSD16-ILR-015,CSD16-3,~30,63.01084149,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,D,10,4866-KIU-0016,CSD16-ILR-016,CSD16-3,~30,3.042424087,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,D,11,4866-KIU-0017,CSD16-ILR-017,CSD16-3,~30,17.38606916,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,D,12,4866-KIU-0018,CSD16-ILR-018,CSD16-3,~30,16.17820768,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,E,1,4866-KIU-0019,CSD16-ILR-019,CSD16-3,~30,29.63502482,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,E,2,4866-KIU-0020,CSD16-ILR-020,CSD16-3,~30,8.097812465,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,E,3,4866-KIU-0021,CSD16-ILR-021,CSD16-3,~30,42.92877234,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,E,4,4866-KIU-0022,CSD16-ILR-022,CSD16-3,~30,13.74227283,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,E,5,4866-KIU-0023,CSD16-ILR-023,CSD16-3,~30,40.9543018,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,E,6,4866-KIU-0024,CSD16-ILR-024,CSD16-3,~30,5.22239552,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,E,7,4866-KIU-0025,CSD16-ILR-025,CSD16-3,~30,34.2753742,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,E,8,4866-KIU-0026,CSD16-ILR-026,CSD16-3,~30,54.87959102,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,E,9,4866-KIU-0027,CSD16-ILR-027,CSD16-3,~30,7.699782151,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,E,10,4866-KIU-0028,CSD16-ILR-028,CSD16-3,~30,47.84825895,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,E,11,4866-KIU-0029,CSD16-ILR-029,CSD16-3,~30,24.30197071,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,E,12,4866-KIU-0030,CSD16-ILR-030,CSD16-3,~30,44.16711298,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,F,1,4866-KIU-0031,CSD16-ILR-031,CSD16-3,~30,54.25570529,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,F,2,4866-KIU-0032,CSD16-ILR-032,CSD16-3,~30,12.6790986,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,F,3,4866-KIU-0033,CSD16-ILR-033,CSD16-3,~30,39.39633602,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,F,4,4866-KIU-0034,CSD16-ILR-034,CSD16-3,~30,33.49924883,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,F,5,4866-KIU-0035,CSD16-ILR-035,CSD16-3,~30,35.51337944,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,F,6,4866-KIU-0036,CSD16-ILR-036,CSD16-3,~30,33.43669075,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,F,7,4866-KIU-0037,CSD16-ILR-037,CSD16-3,~30,27.92921338,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,F,8,4866-KIU-0038,CSD16-ILR-038,CSD16-3,~30,29.60677676,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,F,9,4866-KIU-0039,CSD16-ILR-039,CSD16-3,~30,14.62795869,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,F,10,4866-KIU-0040,CSD16-ILR-040,CSD16-3,~30,12.42706345,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,F,11,4866-KIU-0041,CSD16-ILR-041,CSD16-3,~30,40.5506033,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,F,12,4866-KIU-0042,CSD16-ILR-042,CSD16-3,~30,11.42755629,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,G,1,4866-KIU-0043,CSD16-ILR-043,CSD16-3,~30,18.11782151,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,G,2,4866-KIU-0044,CSD16-ILR-044,CSD16-3,~30,15.43451678,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,G,3,4866-KIU-0045,CSD16-ILR-045,CSD16-3,~30,2.395226224,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,G,4,4866-KIU-0046,CSD16-ILR-046,CSD16-3,~30,13.49452685,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,G,5,4866-KIU-0047,CSD16-ILR-047,CSD16-3,~30,23.68449797,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,G,6,4866-KIU-0048,CSD16-ILR-048,CSD16-3,~30,5.006018599,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,G,7,4866-KIU-0049,CSD16-ILR-049,CSD16-3,~30,2.050071829,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,G,8,4866-KIU-0050,CSD16-ILR-050,CSD16-3,~30,11.4136312,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,G,9,4866-KIU-0051,CSD16-ILR-051,CSD16-3,~30,24.18174094,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,G,10,4866-KIU-0052,CSD16-ILR-052,CSD16-3,~30,122.9420653,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,G,11,4866-KIU-0053,CSD16-ILR-053,CSD16-3,~30,53.48639655,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,G,12,4866-KIU-0054,CSD16-ILR-054,CSD16-3,~30,21.20123188,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,H,1,4866-KIU-0055,CSD16-ILR-055,CSD16-3,~30,41.46632975,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,H,2,4866-KIU-0056,CSD16-ILR-056,CSD16-3,~30,32.97308699,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,H,3,4866-KIU-0057,CSD16-ILR-057,CSD16-3,~30,67.25964178,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,H,4,4866-KIU-0058,CSD16-ILR-058,CSD16-3,~30,52.71894076,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,H,5,4866-KIU-0059,CSD16-ILR-059,CSD16-3,~30,26.66816215,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,H,6,4866-KIU-0060,CSD16-ILR-060,CSD16-3,~30,13.69170837,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,H,7,4866-KIU-0061,CSD16-ILR-061,CSD16-3,~30,28.92731069,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,H,8,4866-KIU-0062,CSD16-ILR-062,CSD16-3,~30,9.101533782,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,H,9,4866-KIU-0063,CSD16-ILR-063,CSD16-3,~30,8.996881878,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,H,10,4866-KIU-0064,CSD16-ILR-064,CSD16-3,~30,125.2741111,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,H,11,4866-KIU-0065,CSD16-ILR-065,CSD16-3,~30,28.56269188,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,H,12,4866-KIU-0066,CSD16-ILR-066,CSD16-3,~30,19.21267842,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,A,1,4866-KIU-0067,CSD16-ILR-067,CSD16-4,~30,37.76808744,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,A,2,4866-KIU-0068,CSD16-ILR-068,CSD16-4,~30,17.80382825,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,A,3,4866-KIU-0069,CSD16-ILR-069,CSD16-4,~30,44.89648144,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,A,4,4866-KIU-0070,CSD16-ILR-070,CSD16-4,~30,29.24328055,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,A,5,4866-KIU-0071,CSD16-ILR-071,CSD16-4,~30,26.66191284,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,A,6,4866-KIU-0072,CSD16-ILR-072,CSD16-4,~30,1.518486569,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,A,7,4866-KIU-0073,CSD16-ILR-073,CSD16-4,~30,26.51050673,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,A,8,4866-KIU-0074,CSD16-ILR-074,CSD16-4,~30,36.49975843,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,A,9,4866-KIU-0075,CSD16-ILR-075,CSD16-4,~30,4.959248939,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,A,10,4866-KIU-0076,CSD16-ILR-076,CSD16-4,~30,5.211870292,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,A,11,4866-KIU-0077,CSD16-ILR-077,CSD16-4,~30,7.950577404,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,A,12,4866-KIU-0078,CSD16-ILR-078,CSD16-4,~30,33.86918244,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,B,1,4866-KIU-0079,CSD16-ILR-079,CSD16-4,~30,74.7868281,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,B,2,4866-KIU-0080,CSD16-ILR-080,CSD16-4,~30,68.00262031,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,B,3,4866-KIU-0081,CSD16-ILR-081,CSD16-4,~30,17.2641965,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,B,4,4866-KIU-0082,CSD16-ILR-082,CSD16-4,~30,22.53479459,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,B,5,4866-KIU-0083,CSD16-ILR-083,CSD16-4,~30,30.21856666,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,B,6,4866-KIU-0084,CSD16-ILR-084,CSD16-4,~30,37.96605951,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,B,7,4866-KIU-0085,CSD16-ILR-085,CSD16-4,~30,21.38778191,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,B,8,4866-KIU-0086,CSD16-ILR-086,CSD16-4,~30,0.389645845,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,B,9,4866-KIU-0087,CSD16-ILR-087,CSD16-4,~30,11.627794,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,B,10,4866-KIU-0088,CSD16-ILR-088,CSD16-4,~30,16.55679323,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,B,11,4866-KIU-0089,CSD16-ILR-089,CSD16-4,~30,22.44778558,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,B,12,4866-KIU-0090,CSD16-ILR-090,CSD16-4,~30,34.05179376,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,C,1,4866-KIU-0091,CSD16-ILR-091,CSD16-4,~30,25.4838973,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,C,2,4866-KIU-0092,CSD16-ILR-092,CSD16-4,~30,20.17218754,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,C,3,4866-KIU-0093,CSD16-ILR-093,CSD16-4,~30,11.7229447,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,C,4,4866-KIU-0094,CSD16-ILR-094,CSD16-4,~30,5.551433174,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,C,5,4866-KIU-0095,CSD16-ILR-095,CSD16-4,~30,6.973373971,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,C,6,4866-KIU-0096,CSD16-ILR-096,CSD16-4,~30,3.741293889,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,C,7,4866-KIU-0097,CSD16-ILR-097,CSD16-4,~30,9.954614505,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,C,8,4866-KIU-0098,CSD16-ILR-098,CSD16-4,~30,-0.000311644,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,C,9,4866-KIU-0099,CSD16-ILR-099,CSD16-4,~30,54.65614714,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,C,10,4866-KIU-0100,CSD16-ILR-100,CSD16-4,~30,21.06607082,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,C,11,4866-KIU-0101,CSD16-ILR-101,CSD16-4,~30,69.7528555,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,C,12,4866-KIU-0102,CSD16-ILR-102,CSD16-4,~30,64.50083668,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,D,1,4866-KIU-0103,CSD16-ILR-103,CSD16-4,~30,95.50947984,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,D,2,4866-KIU-0104,CSD16-ILR-104,CSD16-4,~30,41.86753471,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,D,3,4866-KIU-0105,CSD16-ILR-105,CSD16-4,~30,23.99254464,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,D,4,4866-KIU-0106,CSD16-ILR-106,CSD16-4,~30,35.86312456,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,D,5,4866-KIU-0107,CSD16-ILR-107,CSD16-4,~30,49.51650269,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,D,6,4866-KIU-0108,CSD16-ILR-108,CSD16-4,~30,36.99932221,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,D,7,4866-KIU-0109,CSD16-ILR-109,CSD16-4,~30,33.65444487,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,D,8,4866-KIU-0110,CSD16-ILR-110,CSD16-4,~30,28.79491247,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,D,9,4866-KIU-0111,CSD16-ILR-111,CSD16-4,~30,49.3319885,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,D,10,4866-KIU-0112,CSD16-ILR-112,CSD16-4,~30,13.52340595,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,D,11,4866-KIU-0113,CSD16-ILR-113,CSD16-4,~30,11.88962082,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,D,12,4866-KIU-0114,CSD16-ILR-114,CSD16-4,~30,37.76842993,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,E,1,4866-KIU-0115,CSD16-ILR-115,CSD16-4,~30,36.00189434,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,E,2,4866-KIU-0116,CSD16-ILR-116,CSD16-4,~30,23.9485088,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,E,3,4866-KIU-0117,CSD16-ILR-117,CSD16-4,~30,21.40335857,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,E,4,4866-KIU-0118,CSD16-ILR-118,CSD16-4,~30,24.83863388,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,E,5,4866-KIU-0119,CSD16-ILR-119,CSD16-4,~30,13.13444161,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,E,6,4866-KIU-0120,CSD16-ILR-120,CSD16-4,~30,15.43793792,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,E,7,4866-KIU-0121,CSD16-ILR-121,CSD16-4,~30,13.44976335,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,E,8,4866-KIU-0122,CSD16-ILR-122,CSD16-4,~30,20.45388795,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,E,9,4866-KIU-0123,CSD16-ILR-123,CSD16-4,~30,8.347228479,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,E,10,4866-KIU-0124,CSD16-ILR-124,CSD16-4,~30,26.57923533,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,E,11,4866-KIU-0125,CSD16-ILR-125,CSD16-4,~30,37.05391947,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,E,12,4866-KIU-0126,CSD16-ILR-126,CSD16-4,~30,3.603875624,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,F,1,4866-KIU-0127,CSD16-ILR-127,CSD16-4,~30,0.088381656,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,F,2,4866-KIU-0128,CSD16-ILR-128,CSD16-4,~30,8.769806284,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,F,3,4866-KIU-0129,CSD16-ILR-129,CSD16-4,~30,58.82418367,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,F,4,4866-KIU-0130,CSD16-ILR-130,CSD16-4,~30,19.84702585,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,F,6,4866-KIU-0131,Negative control-ILR,CSD16-4,~30,2.644770549,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,F,5,4866-KIU-0132,Positive control-ILR,CSD16-4,~30,2.165302365,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,F,7,4866-KIU-0133,"""-VE control swab 1""",CSD16-4,~30,0.781095186,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,F,8,4866-KIU-0134,"""-VE control swab 2""",CSD16-4,~30,0.143307805,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,F,9,4866-KIU-0135,"""-VE control swab 3""",CSD16-4,~30,0.197348521,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,A,1,4866-KIU-0136,CSD16-DOH-001,CSD16-2,~30,0.369964657,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,A,2,4866-KIU-0137,CSD16-DOH-002,CSD16-2,~30,0.61288378,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,A,3,4866-KIU-0138,CSD16-DOH-005,CSD16-2,~30,59.22384497,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,A,4,4866-KIU-0139,CSD16-DOH-006,CSD16-2,~30,3.851524617,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,A,5,4866-KIU-0140,CSD16-DOH-007,CSD16-2,~30,9.904105545,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,A,6,4866-KIU-0141,CSD16-DOH-008,CSD16-2,~30,96.8938753,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,A,7,4866-KIU-0142,CSD16-DOH-009,CSD16-2,~30,69.68682115,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,A,8,4866-KIU-0143,CSD16-DOH-011,CSD16-2,~30,1.688871774,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,A,9,4866-KIU-0144,CSD16-DOH-012,CSD16-2,~30,24.3168366,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,A,10,4866-KIU-0145,CSD16-DOH-013,CSD16-2,~30,242.7539405,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,A,11,4866-KIU-0146,CSD16-DOH-014,CSD16-2,~30,45.03661418,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,A,12,4866-KIU-0147,CSD16-DOH-015,CSD16-2,~30,101.8354391,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,B,1,4866-KIU-0148,CSD16-DOH-016,CSD16-2,~30,0.173331212,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,B,2,4866-KIU-0149,CSD16-DOH-019,CSD16-2,~30,0.184356152,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,B,3,4866-KIU-0150,CSD16-DOH-020,CSD16-2,~30,182.4284727,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,B,4,4866-KIU-0151,CSD16-DOH-021,CSD16-2,~30,6.442268184,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,B,5,4866-KIU-0152,CSD16-DOH-022,CSD16-2,~30,60.35245074,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,B,6,4866-KIU-0153,CSD16-DOH-023,CSD16-2,~30,358.89774,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,B,7,4866-KIU-0154,CSD16-DOH-026,CSD16-2,~30,243.8134831,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,B,8,4866-KIU-0155,CSD16-DOH-027,CSD16-2,~30,61.43749928,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,B,9,4866-KIU-0156,CSD16-DOH-028,CSD16-2,~30,90.67907264,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,B,10,4866-KIU-0157,CSD16-DOH-029,CSD16-2,~30,12.08920274,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,B,11,4866-KIU-0158,CSD16-DOH-030,CSD16-2,~30,67.49256099,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,B,12,4866-KIU-0159,CSD16-DOH-031,CSD16-2,~30,43.06895876,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,C,1,4866-KIU-0160,CSD16-DOH-032,CSD16-2,~30,0.057514427,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,C,2,4866-KIU-0161,CSD16-DOH-033,CSD16-2,~30,0.249236745,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,C,3,4866-KIU-0162,CSD16-DOH-034,CSD16-2,~30,28.81114444,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,C,4,4866-KIU-0163,CSD16-DOH-035,CSD16-2,~30,13.41821576,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,C,5,4866-KIU-0164,CSD16-DOH-036,CSD16-2,~30,26.40846432,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,C,6,4866-KIU-0165,CSD16-DOH-037,CSD16-2,~30,10.09775814,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,C,7,4866-KIU-0166,CSD16-DOH-038,CSD16-2,~30,0.009936955,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,C,8,4866-KIU-0167,CSD16-DOH-039,CSD16-2,~30,-0.018256777,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,C,9,4866-KIU-0168,CSD16-DOH-040,CSD16-2,~30,0.032430899,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,C,10,4866-KIU-0169,CSD16-DOH-041,CSD16-2,~30,0.059126242,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,C,11,4866-KIU-0170,CSD16-DOH-042,CSD16-2,~30,0.160065715,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,C,12,4866-KIU-0171,CSD16-DOH-043,CSD16-2,~30,0.107296893,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,D,1,4866-KIU-0172,CSD16-DOH-044,CSD16-2,~30,0.303108147,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,D,2,4866-KIU-0173,CSD16-DOH-045,CSD16-2,~30,0.090158531,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,D,3,4866-KIU-0174,CSD16-DOH-047,CSD16-2,~30,0.252177956,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,D,4,4866-KIU-0175,CSD16-DOH-049,CSD16-2,~30,-0.079782252,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,D,5,4866-KIU-0176,CSD16-DOH-050,CSD16-2,~30,0.45659968,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,D,6,4866-KIU-0177,CSD16-DOH-051,CSD16-2,~30,-0.037962822,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,D,7,4866-KIU-0178,CSD16-DOH-052,CSD16-2,~30,0.062636152,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,D,8,4866-KIU-0179,CSD16-DOH-053,CSD16-2,~30,0.293346909,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,D,9,4866-KIU-0180,CSD16-DOH-054,CSD16-2,~30,-0.058019858,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,D,10,4866-KIU-0181,CSD16-DOH-055,CSD16-2,~30,0.02790426,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,D,11,4866-KIU-0182,CSD16-DOH-056,CSD16-2,~30,-0.074002346,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,D,12,4866-KIU-0183,CSD16-DOH-057,CSD16-2,~30,0.137272285,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,E,1,4866-KIU-0184,CSD16-DOH-058,CSD16-2,~30,-0.096558285,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,E,2,4866-KIU-0185,CSD16-DOH-059,CSD16-2,~30,0.140292906,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,E,3,4866-KIU-0186,CSD16-DOH-060,CSD16-2,~30,-0.116285314,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,E,4,4866-KIU-0187,CSD16-DOH-061,CSD16-2,~30,-0.078629132,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,E,5,4866-KIU-0188,CSD16-DOH-062,CSD16-2,~30,-0.073778208,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,E,6,4866-KIU-0189,CSD16-DOH-063,CSD16-2,~30,1.905134674,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,E,7,4866-KIU-0190,CSD16-DOH-065,CSD16-2,~30,0.542847128,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,E,8,4866-KIU-0191,CSD16-DOH-066,CSD16-2,~30,0.097850657,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,E,9,4866-KIU-0192,CSD16-DOH-067,CSD16-2,~30,0.004811342,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,E,10,4866-KIU-0193,CSD16-DOH-069,CSD16-2,~30,-0.083756653,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,E,11,4866-KIU-0194,CSD16-DOH-070,CSD16-2,~30,-0.132524369,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,E,12,4866-KIU-0195,CSD16-DOH-071,CSD16-2,~30,-0.12326889,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,F,1,4866-KIU-0196,CSD16-DOH-072,CSD16-2,~30,-0.016717376,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,F,2,4866-KIU-0197,CSD16-DOH-074,CSD16-2,~30,-0.083486733,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,F,3,4866-KIU-0198,CSD16-DOH-075,CSD16-2,~30,-0.085296053,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,F,4,4866-KIU-0199,CSD16-DOH-078,CSD16-2,~30,-0.049689545,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,F,5,4866-KIU-0200,CSD16-DOH-079,CSD16-2,~30,-0.090895695,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,F,6,4866-KIU-0201,CSD16-DOH-080,CSD16-2,~30,-0.132571104,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,A,1,4866-KIU-0202,CSD16-MRS-0001,CSD16-7,~30,0.047376119,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,A,2,4866-KIU-0203,CSD16-MRS-0002,CSD16-7,~30,0.191588861,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,A,3,4866-KIU-0204,CSD16-MRS-0003,CSD16-7,~30,-0.01,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,A,4,4866-KIU-0205,CSD16-MRS-0004,CSD16-7,~30,0.63,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,A,5,4866-KIU-0206,CSD16-MRS-0005,CSD16-7,~30,0.27,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,A,6,4866-KIU-0207,CSD16-MRS-0006,CSD16-7,~30,0.68,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,A,7,4866-KIU-0208,CSD16-MRS-0007,CSD16-7,~30,-0.02,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,A,8,4866-KIU-0209,CSD16-MRS-0008,CSD16-7,~30,0.02,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,A,9,4866-KIU-0210,CSD16-MRS-0009,CSD16-7,~30,0.13,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,A,10,4866-KIU-0211,CSD16-MRS-0010,CSD16-7,~30,0.13,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,A,11,4866-KIU-0212,CSD16-MRS-0011,CSD16-7,~30,-0.01,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,A,12,4866-KIU-0213,CSD16-MRS-0012,CSD16-7,~30,-0.01,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,B,1,4866-KIU-0214,CSD16-MRS-0013,CSD16-7,~30,0.077330507,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,B,2,4866-KIU-0215,CSD16-MRS-0014,CSD16-7,~30,0.081507253,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,B,3,4866-KIU-0216,CSD16-MRS-0015,CSD16-7,~30,0.01,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,B,4,4866-KIU-0217,CSD16-MRS-0146,CSD16-7,~30,0.08,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,B,5,4866-KIU-0218,CSD16-MRS-0017,CSD16-7,~30,0.00,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,B,6,4866-KIU-0219,CSD16-MRS-0018,CSD16-7,~30,0.13,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,B,7,4866-KIU-0220,CSD16-MRS-0019,CSD16-7,~30,0.00,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,B,8,4866-KIU-0221,CSD16-MRS-0020,CSD16-7,~30,0.02,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,B,9,4866-KIU-0222,CSD16-MRS-0021,CSD16-7,~30,0.02,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,B,10,4866-KIU-0223,CSD16-MRS-0022,CSD16-7,~30,0.08,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,B,11,4866-KIU-0224,CSD16-MRS-0023,CSD16-7,~30,0.03,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,B,12,4866-KIU-0225,CSD16-MRS-0024,CSD16-7,~30,0.12,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,C,1,4866-KIU-0226,CSD16-MRS-0025,CSD16-7,~30,0.223664487,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,C,2,4866-KIU-0227,CSD16-MRS-0026,CSD16-7,~30,0.202713762,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,C,3,4866-KIU-0228,CSD16-MRS-0027,CSD16-7,~30,0.06,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,C,4,4866-KIU-0229,CSD16-MRS-0028,CSD16-7,~30,0.45,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,C,5,4866-KIU-0230,CSD16-MRS-0029,CSD16-7,~30,0.33,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,C,6,4866-KIU-0231,CSD16-MRS-0030,CSD16-7,~30,0.40,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,C,7,4866-KIU-0232,CSD16-MRS-0031,CSD16-7,~30,0.04,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,C,8,4866-KIU-0233,CSD16-MRS-0032,CSD16-7,~30,0.03,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,C,9,4866-KIU-0234,CSD16-MRS-0033,CSD16-7,~30,0.01,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,C,10,4866-KIU-0235,CSD16-MRS-0034,CSD16-7,~30,0.17,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,C,11,4866-KIU-0236,CSD16-MRS-0035,CSD16-7,~30,0.06,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,C,12,4866-KIU-0237,CSD16-MRS-0036,CSD16-7,~30,0.07,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,D,1,4866-KIU-0238,CSD16-MRS-0037,CSD16-7,~30,0.446851952,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,D,2,4866-KIU-0239,CSD16-MRS-0038,CSD16-7,~30,0.426674248,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,D,3,4866-KIU-0240,CSD16-MRS-0039,CSD16-7,~30,0.20,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,D,4,4866-KIU-0241,CSD16-MRS-0040,CSD16-7,~30,0.31,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,D,5,4866-KIU-0242,CSD16-MRS-0041,CSD16-7,~30,0.36,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,D,6,4866-KIU-0243,CSD16-MRS-0042,CSD16-7,~30,0.33,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,D,7,4866-KIU-0244,CSD16-MRS-0043,CSD16-7,~30,0.05,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,D,8,4866-KIU-0245,CSD16-MRS-0044,CSD16-7,~30,0.06,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,D,9,4866-KIU-0246,CSD16-MRS-0045,CSD16-7,~30,0.04,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,D,10,4866-KIU-0247,CSD16-MRS-0046,CSD16-7,~30,0.15,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,D,11,4866-KIU-0248,CSD16-MRS-0047,CSD16-7,~30,0.25,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,D,12,4866-KIU-0249,CSD16-MRS-0049,CSD16-7,~30,0.09,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,E,1,4866-KIU-0250,CSD16-MRS-0050,CSD16-7,~30,-0.01,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,E,2,4866-KIU-0251,CSD16-MRS-0051,CSD16-7,~30,0.01,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,E,3,4866-KIU-0252,CSD16-MRS-0052,CSD16-7,~30,0.16,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,E,4,4866-KIU-0253,CSD16-MRS-0053,CSD16-7,~30,-0.01,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,E,5,4866-KIU-0254,CSD16-MRS-0054,CSD16-7,~30,0.08,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,E,6,4866-KIU-0255,CSD16-MRS-0055,CSD16-7,~30,0.08,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,E,7,4866-KIU-0256,CSD16-MRS-0056,CSD16-7,~30,-0.01,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,E,8,4866-KIU-0257,CSD16-MRS-0057,CSD16-7,~30,0.00,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,E,9,4866-KIU-0258,CSD16-MRS-0058,CSD16-7,~30,0.04,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,E,10,4866-KIU-0259,CSD16-MRS-0059,CSD16-7,~30,0.04,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,E,11,4866-KIU-0260,CSD16-MRS-0060,CSD16-7,~30,0.08,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,E,12,4866-KIU-0261,CSD16-MRS-0061,CSD16-7,~30,0.00,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,F,1,4866-KIU-0262,CSD16-MRS-0062,CSD16-7,~30,-0.02,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,F,2,4866-KIU-0263,CSD16-MRS-0063,CSD16-7,~30,0.00,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,F,3,4866-KIU-0264,CSD16-MRS-0064,CSD16-7,~30,0.23,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,F,4,4866-KIU-0265,CSD16-MRS-0065,CSD16-7,~30,0.24,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,F,5,4866-KIU-0266,CSD16-MRS-0066,CSD16-7,~30,1.07,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,F,6,4866-KIU-0267,CSD16-MRS-0067,CSD16-7,~30,0.03,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,F,7,4866-KIU-0268,CSD16-MRS-0068,CSD16-7,~30,0.01,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,F,8,4866-KIU-0269,CSD16-MRS-0069,CSD16-7,~30,0.01,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,F,9,4866-KIU-0270,CSD16-MRS-0070,CSD16-7,~30,0.08,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,F,10,4866-KIU-0271,CSD16-MRS-0071,CSD16-7,~30,0.19,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,F,11,4866-KIU-0272,CSD16-MRS-0072,CSD16-7,~30,0.07,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,F,12,4866-KIU-0273,CSD16-MRS-0073,CSD16-7,~30,0.07,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,G,1,4866-KIU-0274,CSD16-MRS-0074,CSD16-7,~30,0.03,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,G,2,4866-KIU-0275,CSD16-MRS-0075,CSD16-7,~30,0.05,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,G,3,4866-KIU-0276,CSD16-MRS-0076,CSD16-7,~30,0.14,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,G,4,4866-KIU-0277,CSD16-MRS-0077,CSD16-7,~30,0.56,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,G,5,4866-KIU-0278,CSD16-MRS-0078,CSD16-7,~30,0.24,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,G,6,4866-KIU-0279,CSD16-MRS-0079,CSD16-7,~30,0.01,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,G,7,4866-KIU-0280,CSD16-MRS-0080,CSD16-7,~30,0.03,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,G,8,4866-KIU-0281,CSD16-MRS-0081,CSD16-7,~30,0.11,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,G,9,4866-KIU-0282,CSD16-MRS-0082,CSD16-7,~30,0.11,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,G,10,4866-KIU-0283,CSD16-MRS-0083,CSD16-7,~30,0.04,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,G,11,4866-KIU-0284,CSD16-MRS-0084,CSD16-7,~30,0.05,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,G,12,4866-KIU-0285,CSD16-MRS-0085,CSD16-7,~30,0.11,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,H,1,4866-KIU-0286,CSD16-MRS-0086,CSD16-7,~30,0.12,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,H,2,4866-KIU-0287,CSD16-MRS-0087,CSD16-7,~30,0.09,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,H,3,4866-KIU-0288,CSD16-MRS-0088,CSD16-7,~30,0.12,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,H,4,4866-KIU-0289,CSD16-MRS-0089,CSD16-7,~30,0.19,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,H,5,4866-KIU-0290,CSD16-MRS-0090,CSD16-7,~30,0.352954635,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,H,6,4866-KIU-0291,CSD16-MRS-0091,CSD16-7,~30,0.191628341,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,H,7,4866-KIU-0292,CSD16-MRS-0092,CSD16-7,~30,0.26800617,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,H,8,4866-KIU-0293,CSD16-MRS-0093,CSD16-7,~30,0.200485002,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,H,9,4866-KIU-0294,CSD16-MRS-0094,CSD16-7,~30,0.109709167,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,H,10,4866-KIU-0295,CSD16-MRS-0095,CSD16-7,~30,0.474765742,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,H,11,4866-KIU-0296,CSD16-MRS-0096,CSD16-7,~30,0.239707655,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+7,H,12,4866-KIU-0297,CSD16-MRS-0097,CSD16-7,~30,1.112082409,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,F,10,4866-KIU-0298,CSD16 - PXO - 001,CSD16 -4,~30,9.806228437,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,F,11,4866-KIU-0299,CSD16 - PXO - 002,CSD16 -4,~30,6.779239781,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,F,12,4866-KIU-0300,CSD16 - PXO - 003,CSD16 -4,~30,0.730665169,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,G,1,4866-KIU-0301,CSD16 - PXO - 004,CSD16 -4,~30,11.24504474,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,G,2,4866-KIU-0302,CSD16 - PXO - 005,CSD16 -4,~30,9.467043754,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,G,3,4866-KIU-0303,CSD16 - PXO - 006,CSD16 -4,~30,3.460254692,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,G,4,4866-KIU-0304,CSD16 - PXO - 007,CSD16 -4,~30,33.31843114,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,G,5,4866-KIU-0305,CSD16 - PXO - 008,CSD16 -4,~30,8.184566099,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,G,6,4866-KIU-0306,CSD16 - PXO - 009,CSD16 -4,~30,13.70016111,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,G,7,4866-KIU-0307,CSD16 - PXO - 010,CSD16 -4,~30,5.084821384,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,G,8,4866-KIU-0308,CSD16 - PXO - 011,CSD16 -4,~30,10.20773938,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,G,9,4866-KIU-0309,CSD16 - PXO - 012,CSD16 -4,~30,25.49936726,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,G,10,4866-KIU-0310,CSD16 - PXO - 013,CSD16 -4,~30,30.66861736,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,G,11,4866-KIU-0311,CSD16 - PXO - 014,CSD16 -4,~30,9.760335708,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,G,12,4866-KIU-0312,CSD16 - PXO - 015,CSD16 -4,~30,20.9902632,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,H,1,4866-KIU-0313,CSD16 - PXO - 016,CSD16 -4,~30,8.464978856,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,H,2,4866-KIU-0314,CSD16 - PXO - 017,CSD16 -4,~30,17.37947337,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,H,3,4866-KIU-0315,CSD16 - PXO - 018,CSD16 -4,~30,1.971161315,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,H,4,4866-KIU-0316,CSD16 - PXO - 019,CSD16 -4,~30,8.74221844,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,H,5,4866-KIU-0317,CSD16 - PXO - 020,CSD16 -4,~30,5.140359513,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,H,6,4866-KIU-0318,CSD16 - PXO - 021,CSD16 -4,~30,2.142290002,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,H,7,4866-KIU-0319,CSD16 - PXO - 022,CSD16 -4,~30,14.69626305,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,H,8,4866-KIU-0320,CSD16 - PXO - 023,CSD16 -4,~30,32.78240146,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,H,9,4866-KIU-0321,CSD16 - PXO - 024,CSD16 -4,~30,2.460028884,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,H,10,4866-KIU-0322,CSD16 - PXO - 025,CSD16 -4,~30,11.14799934,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,H,11,4866-KIU-0323,CSD16 - PXO - 026,CSD16 -4,~30,11.74989331,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+4,H,12,4866-KIU-0324,CSD16 - PXO - 027,CSD16 -4,~30,6.256644549,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,A,1,4866-KIU-0325,CSD16 - PXO - 028,CSD16 -5,~30,76.12758713,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,A,2,4866-KIU-0326,CSD16 - PXO - 029,CSD16 -5,~30,41.8989797,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,A,3,4866-KIU-0327,CSD16 - PXO - 030,CSD16 -5,~30,9.66478671,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,A,4,4866-KIU-0328,CSD16 - PXO - 031,CSD16 -5,~30,18.43786145,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,A,5,4866-KIU-0329,CSD16 - PXO - 032,CSD16 -5,~30,13.99045812,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,A,6,4866-KIU-0330,CSD16 - PXO - 033,CSD16 -5,~30,54.1734872,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,A,7,4866-KIU-0331,CSD16 - PXO - 034,CSD16 -5,~30,10.83364367,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,A,8,4866-KIU-0332,CSD16 - PXO - 035,CSD16 -5,~30,11.93800889,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,A,9,4866-KIU-0333,CSD16 - PXO - 036,CSD16 -5,~30,5.922756715,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,A,10,4866-KIU-0334,CSD16 - PXO - 037,CSD16 -5,~30,34.32389778,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,A,11,4866-KIU-0335,CSD16 - PXO - 038,CSD16 -5,~30,18.43522007,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,A,12,4866-KIU-0336,CSD16 - PXO - 039,CSD16 -5,~30,140.4806282,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,B,1,4866-KIU-0337,CSD16 - PXO - 040,CSD16 -5,~30,26.22943684,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,B,2,4866-KIU-0338,CSD16 - PXO - 041,CSD16 -5,~30,34.78854676,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,B,3,4866-KIU-0339,CSD16 - PXO - 042,CSD16 -5,~30,6.233952098,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,B,4,4866-KIU-0340,CSD16 - PXO - 043,CSD16 -5,~30,64.76104287,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,B,5,4866-KIU-0341,CSD16 - PXO - 044,CSD16 -5,~30,22.02226546,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,B,6,4866-KIU-0342,CSD16 - PXO - 045,CSD16 -5,~30,94.74677246,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,B,7,4866-KIU-0343,CSD16 - PXO - 046,CSD16 -5,~30,42.13791173,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,B,8,4866-KIU-0344,CSD16 - PXO - 047,CSD16 -5,~30,51.98824002,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,B,9,4866-KIU-0345,CSD16 - PXO - 049,CSD16 -5,~30,21.47813561,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,B,10,4866-KIU-0346,CSD16 - PXO - 050,CSD16 -5,~30,20.92845561,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,B,11,4866-KIU-0347,CSD16 - PXO - 051,CSD16 -5,~30,10.64681671,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,B,12,4866-KIU-0348,CSD16 - PXO - 052,CSD16 -5,~30,153.1567038,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,C,1,4866-KIU-0349,CSD16 - PXO - 053,CSD16 -5,~30,33.46718947,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,C,2,4866-KIU-0350,CSD16 - PXO - 054,CSD16 -5,~30,1.396106652,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,C,3,4866-KIU-0351,CSD16 - PXO - 055,CSD16 -5,~30,4.829479933,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,C,4,4866-KIU-0352,CSD16 - PXO - 056,CSD16 -5,~30,15.55006383,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,C,5,4866-KIU-0353,CSD16 - PXO - 057,CSD16 -5,~30,1.905578109,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,C,6,4866-KIU-0354,CSD16 - PXO - 058,CSD16 -5,~30,10.7284511,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,C,7,4866-KIU-0355,CSD16 - PXO - 059,CSD16 -5,~30,89.16815208,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,C,8,4866-KIU-0356,CSD16 - PXO - 060,CSD16 -5,~30,21.75538765,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,C,9,4866-KIU-0357,CSD16 - PXO - 061,CSD16 -5,~30,19.09479057,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,C,10,4866-KIU-0358,CSD16 - PXO - 062,CSD16 -5,~30,0.82441257,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,C,11,4866-KIU-0359,CSD16 - PXO - 063,CSD16 -5,~30,1.175721495,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,C,12,4866-KIU-0360,CSD16 - PXO - 064,CSD16 -5,~30,11.64940763,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,D,1,4866-KIU-0361,CSD16 - PXO - 065,CSD16 -5,~30,221.2516635,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,D,2,4866-KIU-0362,CSD16 - PXO - 066,CSD16 -5,~30,15.36283275,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,D,3,4866-KIU-0363,CSD16 - PXO - 067,CSD16 -5,~30,1.954769105,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,D,4,4866-KIU-0364,CSD16 - PXO - 068,CSD16 -5,~30,2.262418351,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,D,5,4866-KIU-0365,CSD16 - PXO - 069,CSD16 -5,~30,19.72953491,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,D,6,4866-KIU-0366,CSD16 - PXO - 070,CSD16 -5,~30,11.69624043,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,D,7,4866-KIU-0367,CSD16 - PXO - 071,CSD16 -5,~30,7.610446256,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,D,8,4866-KIU-0368,CSD16 - PXO - 072,CSD16 -5,~30,6.079416572,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,D,9,4866-KIU-0369,CSD16 - PXO - 074,CSD16 -5,~30,2.926545562,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,D,10,4866-KIU-0370,CSD16 - PXO - 075,CSD16 -5,~30,2.31409426,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,D,11,4866-KIU-0371,CSD16 - PXO - 076,CSD16 -5,~30,12.75905486,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,D,12,4866-KIU-0372,CSD16 - PXO - 077,CSD16 -5,~30,14.13642421,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,E,1,4866-KIU-0373,CSD16 - PXO - 078,CSD16 -5,~30,6.552964121,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,E,2,4866-KIU-0374,CSD16 - PXO - 079,CSD16 -5,~30,9.102671418,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,E,3,4866-KIU-0375,CSD16 - PXO - 080,CSD16 -5,~30,28.28121233,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,E,4,4866-KIU-0376,CSD16 - PXO - 081,CSD16 -5,~30,2.607156764,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,E,5,4866-KIU-0377,CSD16 - PXO - 082,CSD16 -5,~30,77.68411168,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,E,6,4866-KIU-0378,CSD16 - PXO - 083,CSD16 -5,~30,13.44618479,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,E,7,4866-KIU-0379,CSD16 - PXO - 084,CSD16 -5,~30,9.713122476,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,E,8,4866-KIU-0380,CSD16 - PXO - 085,CSD16 -5,~30,10.1776628,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,E,9,4866-KIU-0381,CSD16 - PXO - 086,CSD16 -5,~30,93.26068266,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,E,10,4866-KIU-0382,CSD16 - PXO - 087,CSD16 -5,~30,7.689589896,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,E,11,4866-KIU-0383,CSD16 - PXO - 088,CSD16 -5,~30,57.25653568,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,E,12,4866-KIU-0384,CSD16 - PXO - 089,CSD16 -5,~30,126.7519874,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,F,1,4866-KIU-0385,CSD16 - PXO - 090,CSD16 -5,~30,1.168722615,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,F,2,4866-KIU-0386,CSD16 - PXO - 091,CSD16 -5,~30,28.12031379,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,F,3,4866-KIU-0387,CSD16 - PXO - 092,CSD16 -5,~30,149.563691,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,F,4,4866-KIU-0388,CSD16 - PXO - 093,CSD16 -5,~30,1.441065272,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,F,5,4866-KIU-0389,CSD16 - PXO - 094,CSD16 -5,~30,3.414091812,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,F,6,4866-KIU-0390,CSD16 - PXO - 095,CSD16 -5,~30,79.19011844,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,F,7,4866-KIU-0391,CSD16 - PXO - 096,CSD16 -5,~30,14.02962548,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,F,8,4866-KIU-0392,CSD16 - PXO - 097,CSD16 -5,~30,0.468228909,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,F,9,4866-KIU-0393,CSD16 - PXO - 102,CSD16 -5,~30,9.852448572,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,F,10,4866-KIU-0394,CSD16 - PXO - 103,CSD16 -5,~30,4.584712711,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,F,11,4866-KIU-0395,CSD16 - PXO - 104,CSD16 -5,~30,11.88603792,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,F,12,4866-KIU-0396,CSD16 - PXO - 105,CSD16 -5,~30,0.001555589,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,G,1,4866-KIU-0397,CSD16 - PXO - 106,CSD16 -5,~30,1.881599838,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,G,2,4866-KIU-0398,CSD16 - PXO - 108,CSD16 -5,~30,53.11393101,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,G,3,4866-KIU-0399,CSD16 - PXO - 109,CSD16 -5,~30,178.5110663,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,G,4,4866-KIU-0400,CSD16 - PXO - 110,CSD16 -5,~30,16.60235264,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,G,5,4866-KIU-0401,CSD16 - PXO - 111,CSD16 -5,~30,2.953530885,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,G,6,4866-KIU-0402,CSD16 - PXO - 119,CSD16 -5,~30,58.92229238,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,G,7,4866-KIU-0403,CSD16 - PXO - 120,CSD16 -5,~30,44.97882495,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,G,8,4866-KIU-0404,CSD16 - PXO - 121,CSD16 -5,~30,155.2989809,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,G,9,4866-KIU-0405,CSD16 - PXO - 122,CSD16 -5,~30,59.50065253,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,G,10,4866-KIU-0406,CSD16 - PXO - 123,CSD16 -5,~30,25.29559684,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,G,11,4866-KIU-0407,CSD16 - PXO - 124,CSD16 -5,~30,20.13810228,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,G,12,4866-KIU-0408,CSD16 - PXO - 125,CSD16 -5,~30,26.46918601,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,H,1,4866-KIU-0409,CSD16 - PXO - 126,CSD16 -5,~30,10.20987912,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,H,2,4866-KIU-0410,CSD16 - PXO - 128,CSD16 -5,~30,20.86700782,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,H,3,4866-KIU-0411,CSD16 - PXO - 129,CSD16 -5,~30,37.48540751,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,H,4,4866-KIU-0412,CSD16 - PXO - 130,CSD16 -5,~30,2.051606334,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,H,5,4866-KIU-0413,CSD16 - PXO - 131,CSD16 -5,~30,112.5834231,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,H,6,4866-KIU-0414,CSD16 - PXO - 132,CSD16 -5,~30,36.40822703,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,H,7,4866-KIU-0415,CSD16 - PXO - 133,CSD16 -5,~30,12.40718087,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,H,8,4866-KIU-0416,CSD16 - PXO - 134,CSD16 -5,~30,54.02919391,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,H,9,4866-KIU-0417,CSD16 - PXO - 135,CSD16 -5,~30,68.70746349,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,H,10,4866-KIU-0418,CSD16 - PXO - 136,CSD16 -5,~30,35.4809811,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,H,11,4866-KIU-0419,CSD16 - PXO - 137,CSD16 -5,~30,23.57052233,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+5,H,12,4866-KIU-0420,CSD16 - PXO - 138,CSD16 -5,~30,100.2607734,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,A,1,4866-KIU-0421,CSD16 - PXO - 139,CSD16 -6,~30,40.00285526,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,A,2,4866-KIU-0422,CSD16 - PXO - 140,CSD16 -6,~30,18.72919014,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,A,3,4866-KIU-0423,CSD16 - PXO - 141,CSD16 -6,~30,26.04412512,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,A,4,4866-KIU-0424,CSD16 - PXO - 142,CSD16 -6,~30,49.41886443,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,A,5,4866-KIU-0425,CSD16 - PXO - 143,CSD16 -6,~30,40.64756421,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,A,6,4866-KIU-0426,CSD16 - PXO - 144,CSD16 -6,~30,52.97850571,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,A,7,4866-KIU-0427,CSD16 - PXO - 145,CSD16 -6,~30,13.80299015,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,A,8,4866-KIU-0428,CSD16 - PXO - 146,CSD16 -6,~30,36.19213664,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,A,9,4866-KIU-0429,CSD16 - PXO - 147,CSD16 -6,~30,4.753946678,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,A,10,4866-KIU-0430,CSD16 - PXO - 148,CSD16 -6,~30,4.345530593,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,A,11,4866-KIU-0431,CSD16 - PXO - 149,CSD16 -6,~30,35.80006892,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,A,12,4866-KIU-0432,CSD16 - PXO - 150,CSD16 -6,~30,7.490540891,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,B,1,4866-KIU-0433,CSD16 - PXO - 151,CSD16 -6,~30,4.59369965,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,B,2,4866-KIU-0434,CSD16 - PXO - 152,CSD16 -6,~30,12.36436968,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,B,3,4866-KIU-0435,CSD16 - PXO - 153,CSD16 -6,~30,20.29010682,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,B,4,4866-KIU-0436,CSD16 - PXO - 154,CSD16 -6,~30,45.16056862,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,B,5,4866-KIU-0437,CSD16 - PXO - 155,CSD16 -6,~30,16.51716056,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,B,6,4866-KIU-0438,CSD16 - PXO - 156,CSD16 -6,~30,46.4598967,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,B,7,4866-KIU-0439,CSD16 - PXO - 157,CSD16 -6,~30,25.55865393,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,B,8,4866-KIU-0440,CSD16 - PXO - 158,CSD16 -6,~30,12.03693504,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,B,9,4866-KIU-0441,CSD16 - PXO - 159,CSD16 -6,~30,76.8436105,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,B,10,4866-KIU-0442,CSD16 - PXO - 160,CSD16 -6,~30,7.27100913,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,B,11,4866-KIU-0443,CSD16 - PXO - 161,CSD16 -6,~30,2.938086988,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,B,12,4866-KIU-0444,CSD16 - PXO - 162,CSD16 -6,~30,2.150811391,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,C,1,4866-KIU-0445,CSD16 - PXO - 163,CSD16 -6,~30,21.88875471,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,C,2,4866-KIU-0446,CSD16 - PXO - 164,CSD16 -6,~30,17.21558013,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,C,3,4866-KIU-0447,CSD16 - PXO - 165,CSD16 -6,~30,25.68421572,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,C,4,4866-KIU-0448,CSD16 - PXO - 166,CSD16 -6,~30,2.955002406,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,C,5,4866-KIU-0449,CSD16 - PXO - 167,CSD16 -6,~30,22.46775762,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,C,6,4866-KIU-0450,CSD16 - PXO - 168,CSD16 -6,~30,23.43025417,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,C,7,4866-KIU-0451,CSD16 - PXO - 169,CSD16 -6,~30,11.27089237,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,C,8,4866-KIU-0452,CSD16 - PXO - 170,CSD16 -6,~30,34.6281957,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,C,9,4866-KIU-0453,CSD16 - PXO - 171,CSD16 -6,~30,24.60563244,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,C,10,4866-KIU-0454,CSD16 - PXO - 172,CSD16 -6,~30,7.464277992,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,C,11,4866-KIU-0455,CSD16 - PXO - 173,CSD16 -6,~30,24.59860615,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,C,12,4866-KIU-0456,CSD16 - PXO - 174,CSD16 -6,~30,60.83244455,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,D,1,4866-KIU-0457,CSD16 - PXO - 176,CSD16 -6,~30,14.38470927,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,D,2,4866-KIU-0458,CSD16 - PXO - 177,CSD16 -6,~30,96.01389966,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,D,3,4866-KIU-0459,CSD16 - PXO - 178,CSD16 -6,~30,4.379627387,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,D,4,4866-KIU-0460,CSD16 - PXO - 179,CSD16 -6,~30,23.30828824,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,D,5,4866-KIU-0461,CSD16 - PXO - 180,CSD16 -6,~30,17.41081593,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,D,6,4866-KIU-0462,CSD16 - PXO - 181,CSD16 -6,~30,0.805791363,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,D,7,4866-KIU-0463,CSD16 - PXO - 182,CSD16 -6,~30,77.80479023,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,D,8,4866-KIU-0464,CSD16 - PXO - 183,CSD16 -6,~30,6.098842376,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,D,9,4866-KIU-0465,CSD16 - PXO - 184,CSD16 -6,~30,0.551057889,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,D,10,4866-KIU-0466,CSD16 - PXO - 185,CSD16 -6,~30,3.707031964,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,D,11,4866-KIU-0467,CSD16 - PXO - 186,CSD16 -6,~30,13.37280057,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,D,12,4866-KIU-0468,CSD16 - PXO - 187,CSD16 -6,~30,0.257266299,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,E,1,4866-KIU-0469,CSD16 - PXO - 188,CSD16 -6,~30,104.5597048,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,E,2,4866-KIU-0470,CSD16 - PXO - 189,CSD16 -6,~30,10.36730679,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,E,3,4866-KIU-0471,CSD16 - PXO - 190,CSD16 -6,~30,1.977129428,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,E,4,4866-KIU-0472,CSD16 - PXO - 191,CSD16 -6,~30,1.303536659,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,E,5,4866-KIU-0473,CSD16 - PXO - 192,CSD16 -6,~30,124.6869499,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,E,6,4866-KIU-0474,CSD16 - PXO - 193,CSD16 -6,~30,0.490593867,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,E,7,4866-KIU-0475,CSD16 - PXO - 194,CSD16 -6,~30,1.536562049,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,E,8,4866-KIU-0476,CSD16 - PXO - 195,CSD16 -6,~30,9.308282295,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,E,9,4866-KIU-0477,CSD16 - PXO - 196,CSD16 -6,~30,1.818842809,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,E,10,4866-KIU-0478,CSD16 - PXO - 197,CSD16 -6,~30,171.1756764,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,E,11,4866-KIU-0479,CSD16 - PXO - 198,CSD16 -6,~30,205.1799209,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,E,12,4866-KIU-0480,CSD16 - PXO - 199,CSD16 -6,~30,85.56216221,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,F,1,4866-KIU-0481,CSD16 - PXO - 200,CSD16 -6,~30,86.52839517,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,F,2,4866-KIU-0482,CSD16 - PXO - 201,CSD16 -6,~30,61.32974874,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,F,3,4866-KIU-0483,CSD16 - PXO - 202,CSD16 -6,~30,60.3499973,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,F,4,4866-KIU-0484,CSD16 - PXO - 203,CSD16 -6,~30,111.1224414,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,F,5,4866-KIU-0485,CSD16 - PXO - 204,CSD16 -6,~30,141.0768327,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,F,6,4866-KIU-0486,CSD16 - PXO - 205,CSD16 -6,~30,61.53035526,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,F,7,4866-KIU-0487,CSD16 - PXO - 207,CSD16 -6,~30,194.6562954,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,F,8,4866-KIU-0488,CSD16 - PXO - 208,CSD16 -6,~30,207.8122911,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,F,9,4866-KIU-0489,CSD16 - PXO - 209,CSD16 -6,~30,109.9252156,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,F,10,4866-KIU-0490,CSD16 - PXO - 210,CSD16 -6,~30,237.008998,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,F,11,4866-KIU-0491,CSD16 - PXO - 211,CSD16 -6,~30,48.62135969,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,F,12,4866-KIU-0492,CSD16 - PXO - 212,CSD16 -6,~30,62.35015947,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,G,1,4866-KIU-0493,CSD16 - PXO - 213,CSD16 -6,~30,64.67919601,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,G,2,4866-KIU-0494,CSD16 - PXO - 214,CSD16 -6,~30,45.86199085,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,G,3,4866-KIU-0495,CSD16 - PXO - 215,CSD16 -6,~30,86.62025261,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,G,4,4866-KIU-0496,CSD16 - PXO - 216,CSD16 -6,~30,81.69330373,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,G,5,4866-KIU-0497,CSD16 - PXO - 217,CSD16 -6,~30,68.41327821,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,G,6,4866-KIU-0498,CSD16 - PXO - 233,CSD16 -6,~30,115.3712881,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,G,7,4866-KIU-0499,CSD16 - PXO - 234,CSD16 -6,~30,78.90521566,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,G,8,4866-KIU-0500,CSD16 - PXO - 235,CSD16 -6,~30,53.14289209,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,G,9,4866-KIU-0501,CSD16 - PXO - 236,CSD16 -6,~30,96.85866853,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,G,10,4866-KIU-0502,CSD16 - PXO - 237,CSD16 -6,~30,100.1184855,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,G,11,4866-KIU-0503,CSD16 - PXO - 238,CSD16 -6,~30,166.2006625,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,G,12,4866-KIU-0504,CSD16 - PXO - 239,CSD16 -6,~30,272.7883732,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,H,1,4866-KIU-0505,CSD16 - PXO - 240,CSD16 -6,~30,81.52752701,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,H,2,4866-KIU-0506,CSD16 - PXO - 241,CSD16 -6,~30,67.72755404,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,H,3,4866-KIU-0507,CSD16 - PXO - 242,CSD16 -6,~30,85.52294301,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,H,4,4866-KIU-0508,CSD16 - PXO - 243,CSD16 -6,~30,119.1082007,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,H,5,4866-KIU-0509,CSD16 - PXO - 244,CSD16 -6,~30,61.76003346,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,H,6,4866-KIU-0510,CSD16 - PXO - 245,CSD16 -6,~30,216.6276562,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,H,7,4866-KIU-0511,CSD16 - PXO - 246,CSD16 -6,~30,168.0596286,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,H,8,4866-KIU-0512,CSD16 - PXO - 247,CSD16 -6,~30,79.75085247,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,H,9,4866-KIU-0513,CSD16 - PXO - 248,CSD16 -6,~30,180.4659056,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,H,10,4866-KIU-0514,CSD16 - PXO - 249,CSD16 -6,~30,230.4154145,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,H,11,4866-KIU-0515,CSD16 - PXO - 250,CSD16 -6,~30,151.2681176,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+6,H,12,4866-KIU-0516,Control Negativ 1-PXO ,CSD16 -6,~30,254.8778457,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,A,1,4866-KIU-0517,CSD16 - LIS - 001,CSD16 -1,~30,6.497895666,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,A,2,4866-KIU-0518,CSD16 - LIS - 002,CSD16 -1,~30,90.92133073,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,A,3,4866-KIU-0519,CSD16 - LIS - 003,CSD16 -1,~30,14.54693287,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,A,4,4866-KIU-0520,CSD16 - LIS - 004,CSD16 -1,~30,1.170053642,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,A,5,4866-KIU-0521,CSD16 - LIS - 005,CSD16 -1,~30,10.5659089,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,A,6,4866-KIU-0522,CSD16 - LIS - 006,CSD16 -1,~30,8.085012961,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,A,7,4866-KIU-0523,CSD16 - LIS - 007,CSD16 -1,~30,5.072603502,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,A,8,4866-KIU-0524,CSD16 - LIS - 008,CSD16 -1,~30,65.73802338,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,A,9,4866-KIU-0525,CSD16 - LIS - 009,CSD16 -1,~30,7.593261599,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,A,10,4866-KIU-0526,CSD16 - LIS - 010,CSD16 -1,~30,46.43251632,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,A,11,4866-KIU-0527,CSD16 - LIS - 011,CSD16 -1,~30,38.33127525,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,A,12,4866-KIU-0528,CSD16 - LIS - 012,CSD16 -1,~30,115.6731761,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,B,1,4866-KIU-0529,CSD16 - LIS - 013,CSD16 -1,~30,8.199781282,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,B,2,4866-KIU-0530,CSD16 - LIS - 014,CSD16 -1,~30,79.74390687,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,B,3,4866-KIU-0531,CSD16 - LIS - 015,CSD16 -1,~30,24.52764365,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,B,4,4866-KIU-0532,CSD16 - LIS - 016,CSD16 -1,~30,31.88844522,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,B,5,4866-KIU-0533,CSD16 - LIS - 017,CSD16 -1,~30,70.95855684,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,B,6,4866-KIU-0534,CSD16 - LIS - 018,CSD16 -1,~30,36.08781675,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,B,7,4866-KIU-0535,CSD16 - LIS - 019,CSD16 -1,~30,14.28554663,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,B,8,4866-KIU-0536,CSD16 - LIS - 020,CSD16 -1,~30,24.09057525,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,B,9,4866-KIU-0537,CSD16 - LIS - 021,CSD16 -1,~30,39.2035296,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,B,10,4866-KIU-0538,CSD16 - LIS - 022,CSD16 -1,~30,2.344871396,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,B,11,4866-KIU-0539,CSD16 - LIS - 023,CSD16 -1,~30,76.91813067,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,B,12,4866-KIU-0540,CSD16 - LIS - 024,CSD16 -1,~30,141.8454484,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,C,1,4866-KIU-0541,CSD16 - LIS - 025,CSD16 -1,~30,20.38769499,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,C,2,4866-KIU-0542,CSD16 - LIS - 026,CSD16 -1,~30,108.5474383,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,C,3,4866-KIU-0543,CSD16 - LIS - 027,CSD16 -1,~30,86.94147257,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,C,4,4866-KIU-0544,CSD16 - LIS - 028,CSD16 -1,~30,16.29434312,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,C,5,4866-KIU-0545,CSD16 - LIS - 029,CSD16 -1,~30,33.80834534,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,C,6,4866-KIU-0546,CSD16 - LIS - 030,CSD16 -1,~30,51.19662107,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,C,7,4866-KIU-0547,CSD16 - LIS - 031,CSD16 -1,~30,81.15943162,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,F,7,4866-KIU-0548,CSD16 - LIS - 032,CSD16 -2,~30,-0.05,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,C,8,4866-KIU-0549,CSD16 - LIS - 033,CSD16 -1,~30,49.82424716,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,C,9,4866-KIU-0550,CSD16 - LIS - 034,CSD16 -1,~30,5.197550442,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,C,10,4866-KIU-0551,CSD16 - LIS - 035,CSD16 -1,~30,27.06505422,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,C,11,4866-KIU-0552,CSD16 - LIS - 036,CSD16 -1,~30,204.9704737,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,C,12,4866-KIU-0553,CSD16 - LIS - 037,CSD16 -1,~30,3.837348781,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,D,1,4866-KIU-0554,CSD16 - LIS - 038,CSD16 -1,~30,40.07357104,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,D,2,4866-KIU-0555,CSD16 - LIS - 039,CSD16 -1,~30,7.6606756,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,D,3,4866-KIU-0556,CSD16 - LIS - 040,CSD16 -1,~30,6.002765064,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,D,4,4866-KIU-0557,CSD16 - LIS - 041,CSD16 -1,~30,90.46637846,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,D,5,4866-KIU-0558,CSD16 - LIS - 042,CSD16 -1,~30,85.28664106,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,D,6,4866-KIU-0559,CSD16 - LIS - 043,CSD16 -1,~30,33.94501529,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,D,7,4866-KIU-0560,CSD16 - LIS - 044,CSD16 -1,~30,70.79546739,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,D,8,4866-KIU-0561,CSD16 - LIS - 045,CSD16 -1,~30,70.26700947,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,D,9,4866-KIU-0562,CSD16 - LIS - 046,CSD16 -1,~30,60.70114585,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,D,10,4866-KIU-0563,CSD16 - LIS - 047,CSD16 -1,~30,6.446702217,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,D,11,4866-KIU-0564,CSD16 - LIS - 048,CSD16 -1,~30,25.91287647,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,D,12,4866-KIU-0565,CSD16 - LIS - 049,CSD16 -1,~30,0.829889647,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,E,1,4866-KIU-0566,CSD16 - LIS - 050,CSD16 -1,~30,27.20800804,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,E,2,4866-KIU-0567,CSD16 - LIS - 051,CSD16 -1,~30,95.63280664,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,E,3,4866-KIU-0568,CSD16 - LIS - 052,CSD16 -1,~30,30.67006592,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,E,4,4866-KIU-0569,CSD16 - LIS - 053,CSD16 -1,~30,31.84679257,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,E,5,4866-KIU-0570,CSD16 - LIS - 054,CSD16 -1,~30,39.10548294,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,E,6,4866-KIU-0571,CSD16 - LIS - 056,CSD16 -1,~30,56.46970915,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,E,7,4866-KIU-0572,CSD16 - LIS - 057,CSD16 -1,~30,11.59831984,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,E,8,4866-KIU-0573,CSD16 - LIS - 058,CSD16 -1,~30,119.4946969,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,E,9,4866-KIU-0574,CSD16 - LIS - 059,CSD16 -1,~30,87.55505391,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,E,10,4866-KIU-0575,CSD16 - LIS - 060,CSD16 -1,~30,32.58459969,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,E,11,4866-KIU-0576,CSD16 - LIS - 061,CSD16 -1,~30,16.53312257,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,E,12,4866-KIU-0577,CSD16 - LIS - 062,CSD16 -1,~30,52.90502121,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,F,1,4866-KIU-0578,CSD16 - LIS - 063,CSD16 -1,~30,65.88743459,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,F,2,4866-KIU-0579,CSD16 - LIS - 064,CSD16 -1,~30,30.69408411,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,F,3,4866-KIU-0580,CSD16 - LIS - 065,CSD16 -1,~30,30.76411998,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,F,4,4866-KIU-0581,CSD16 - LIS - 066,CSD16 -1,~30,16.95617796,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,F,5,4866-KIU-0582,CSD16 - LIS - 067,CSD16 -1,~30,44.94399238,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,F,6,4866-KIU-0583,CSD16 - LIS - 068,CSD16 -1,~30,44.31787547,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,F,7,4866-KIU-0584,CSD16 - LIS - 069,CSD16 -1,~30,54.36365614,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,F,8,4866-KIU-0585,CSD16 - LIS - 070,CSD16 -1,~30,51.38859229,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,F,9,4866-KIU-0586,CSD16 - LIS - 071,CSD16 -1,~30,222.55558,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,F,10,4866-KIU-0587,CSD16 - LIS - 072,CSD16 -1,~30,27.77293594,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,F,11,4866-KIU-0588,CSD16 - LIS - 073,CSD16 -1,~30,5.612506586,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,F,12,4866-KIU-0589,CSD16 - LIS - 074,CSD16 -1,~30,51.80202254,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,G,1,4866-KIU-0590,CSD16 - LIS - 075,CSD16 -1,~30,19.19511612,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,G,2,4866-KIU-0591,CSD16 - LIS - 076,CSD16 -1,~30,17.40034069,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,G,3,4866-KIU-0592,CSD16 - LIS - 077,CSD16 -1,~30,69.57166672,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,G,4,4866-KIU-0593,CSD16 - LIS - 078,CSD16 -1,~30,125.9332398,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,G,5,4866-KIU-0594,CSD16 - LIS - 079,CSD16 -1,~30,36.68088748,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,G,6,4866-KIU-0595,CSD16 - LIS - 080,CSD16 -1,~30,74.90438047,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,G,7,4866-KIU-0596,CSD16 - LIS - 081,CSD16 -1,~30,35.88935344,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,G,8,4866-KIU-0597,CSD16 - LIS - 083,CSD16 -1,~30,23.83902322,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,G,9,4866-KIU-0598,CSD16 - LIS - 084,CSD16 -1,~30,13.86462889,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,G,10,4866-KIU-0599,CSD16 - LIS - 085,CSD16 -1,~30,24.18013564,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,G,11,4866-KIU-0600,CSD16 - LIS - 086,CSD16 -1,~30,8.837072634,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,G,12,4866-KIU-0601,CSD16 - LIS - 087,CSD16 -1,~30,48.40109951,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,H,1,4866-KIU-0602,CSD16 - LIS - 088,CSD16 -1,~30,56.63409025,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,H,2,4866-KIU-0603,CSD16 - LIS - 089,CSD16 -1,~30,65.14964693,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,H,3,4866-KIU-0604,CSD16 - LIS - 090,CSD16 -1,~30,38.04332942,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,H,4,4866-KIU-0605,CSD16 - LIS - 091,CSD16 -1,~30,20.36751669,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,H,5,4866-KIU-0606,CSD16 - LIS - 092,CSD16 -1,~30,22.65162228,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,H,6,4866-KIU-0607,CSD16 - LIS - 093,CSD16 -1,~30,118.3082135,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,H,7,4866-KIU-0608,CSD16 - LIS - 094,CSD16 -1,~30,72.37897223,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,H,8,4866-KIU-0609,CSD16 - LIS - 095,CSD16 -1,~30,39.53000984,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,H,9,4866-KIU-0610,CSD16 - LIS - 096,CSD16 -1,~30,43.72038809,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,H,10,4866-KIU-0611,CSD16 - LIS - 097,CSD16 -1,~30,59.88675999,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,H,11,4866-KIU-0612,CSD16 - LIS - 098,CSD16 -1,~30,23.60003047,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+1,H,12,4866-KIU-0613,CSD16 - LIS - 099,CSD16 -1,~30,38.48406877,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,F,8,4866-KIU-0614,CSD16 - LIS - 100,CSD16 -2,~30,-0.03,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,F,9,4866-KIU-0615,CSD16 - LIS - 101,CSD16 -2,~30,-0.15,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,F,10,4866-KIU-0616,CSD16 - LIS - 102,CSD16 -2,~30,0.01,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,F,11,4866-KIU-0617,CSD16 - LIS - 103,CSD16 -2,~30,0.96,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,F,12,4866-KIU-0618,CSD16 - LIS - 104,CSD16 -2,~30,1.04,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,G,1,4866-KIU-0619,CSD16 - LIS - 105,CSD16 -2,~30,-0.12,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,G,2,4866-KIU-0620,CSD16 - LIS - 106,CSD16 -2,~30,0.20,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,G,3,4866-KIU-0621,CSD16 - LIS - 107,CSD16 -2,~30,0.01,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,G,4,4866-KIU-0622,CSD16 - LIS - 108,CSD16 -2,~30,-0.09,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,G,5,4866-KIU-0623,CSD16 - LIS - 109,CSD16 -2,~30,0.05,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,G,6,4866-KIU-0624,CSD16 - LIS - 110,CSD16 -2,~30,-0.10,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,G,7,4866-KIU-0625,CSD16 - LIS - 111,CSD16 -2,~30,0.03,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,G,8,4866-KIU-0626,CSD16 - LIS - 112,CSD16 -2,~30,0.11,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,G,9,4866-KIU-0627,CSD16 - LIS - 113,CSD16 -2,~30,0.08,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,G,10,4866-KIU-0628,CSD16 - LIS - 114,CSD16 -2,~30,0.09,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,G,11,4866-KIU-0629,CSD16 - LIS - 115,CSD16 -2,~30,9.61,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,G,12,4866-KIU-0630,CSD16 - LIS - 116,CSD16 -2,~30,10.08,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,H,1,4866-KIU-0631,CSD16 - LIS - 118,CSD16 -2,~30,0.21,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,H,2,4866-KIU-0632,CSD16 - LIS - 119,CSD16 -2,~30,-0.07,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,H,3,4866-KIU-0633,CSD16 - LIS - 120,CSD16 -2,~30,0.14,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,H,4,4866-KIU-0634,CSD16 - LIS - 121,CSD16 -2,~30,-0.01,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,H,5,4866-KIU-0635,CSD16 - LIS - 122,CSD16 -2,~30,0.02,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,H,6,4866-KIU-0636,CSD16 - LIS - 123,CSD16 -2,~30,-0.07,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,H,7,4866-KIU-0637,CSD16 - LIS - 124,CSD16 -2,~30,0.23,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,H,8,4866-KIU-0638,CSD16 - LIS - 125,CSD16 -2,~30,-0.09,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,H,9,4866-KIU-0639,CSD16 - LIS - 126,CSD16 -2,~30,-0.02,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,H,10,4866-KIU-0640,CSD16 - LIS - 127,CSD16 -2,~30,0.09,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,H,11,4866-KIU-0641,CSD16 - LIS - 128,CSD16 -2,~30,101.94,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+2,H,12,4866-KIU-0642,CSD16 - LIS - 129,CSD16 -2,~30,106.62,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,A,1,4866-KIU-0643,CSD16 - LIS - 130,CSD16 -3,~30,40.79962819,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,A,2,4866-KIU-0644,CSD16 - LIS - 131,CSD16 -3,~30,10.31510582,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,A,3,4866-KIU-0645,CSD16 - LIS - 132,CSD16 -3,~30,43.48,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,A,4,4866-KIU-0646,CSD16 - LIS - 133,CSD16 -3,~30,17.26,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,A,5,4866-KIU-0647,CSD16 - LIS - 134,CSD16 -3,~30,10.62,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,A,6,4866-KIU-0648,CSD16 - LIS - 135,CSD16 -3,~30,1.60,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,A,7,4866-KIU-0649,CSD16 - LIS - 136,CSD16 -3,~30,8.94,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,A,8,4866-KIU-0650,CSD16 - LIS - 137,CSD16 -3,~30,4.43,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,A,9,4866-KIU-0651,CSD16 - LIS - 138,CSD16 -3,~30,4.21,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,A,10,4866-KIU-0652,CSD16 - LIS - 139,CSD16 -3,~30,14.61,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,A,11,4866-KIU-0653,CSD16 - LIS - 140,CSD16 -3,~30,34.75,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,A,12,4866-KIU-0654,CSD16 - LIS - 141,CSD16 -3,~30,1.02,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,B,1,4866-KIU-0655,CSD16 - LIS - 142,CSD16 -3,~30,25.98616449,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,B,2,4866-KIU-0656,CSD16 - LIS - 143,CSD16 -3,~30,31.63243316,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,B,3,4866-KIU-0657,CSD16 - LIS - 144,CSD16 -3,~30,3.43,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,B,4,4866-KIU-0658,CSD16 - LIS - 145,CSD16 -3,~30,18.16,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,B,5,4866-KIU-0659,CSD16 - LIS - 146,CSD16 -3,~30,2.24,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,B,6,4866-KIU-0660,CSD16 - LIS - 147,CSD16 -3,~30,19.21,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,B,7,4866-KIU-0661,CSD16 - LIS - 148,CSD16 -3,~30,7.75,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,B,8,4866-KIU-0662,CSD16 - LIS - 149,CSD16 -3,~30,2.44,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,B,9,4866-KIU-0663,CSD16 - LIS - 150,CSD16 -3,~30,1.79,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,B,10,4866-KIU-0664,CSD16 - LIS - 151,CSD16 -3,~30,15.19,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,B,11,4866-KIU-0665,CSD16 - LIS - 152,CSD16 -3,~30,4.43,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,B,12,4866-KIU-0666,CSD16 - LIS - 153,CSD16 -3,~30,25.78,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,C,1,4866-KIU-0667,CSD16 - LIS - 154,CSD16 -3,~30,4.321774251,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,C,2,4866-KIU-0668,CSD16 - LIS - 155,CSD16 -3,~30,0.194599672,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,C,3,4866-KIU-0669,control_lineA-LIS,CSD16 -3,~30,10.48,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,C,4,4866-KIU-0670,control_lineC-LIS,CSD16 -3,~30,0.06,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,C,5,4866-KIU-0671,control_lineD-LIS,CSD16 -3,~30,0.05,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+3,C,6,4866-KIU-0672,control airport-LIS,CSD16 -3,~30,0.70,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,A,1,4866-KIU-0673,CSD16-SYD-001,CSD16- 9,~30,0.191295028,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,A,2,4866-KIU-0674,CSD16-SYD-002,CSD16- 9,~30,0.043105457,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,A,3,4866-KIU-0675,CSD16-SYD-003,CSD16- 9,~30,0.068735729,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,A,4,4866-KIU-0676,CSD16-SYD-004,CSD16- 9,~30,0.322708421,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,A,5,4866-KIU-0677,CSD16-SYD-005,CSD16- 9,~30,0.264923808,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,A,6,4866-KIU-0678,CSD16-SYD-006,CSD16- 9,~30,0.3301645,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,A,7,4866-KIU-0679,CSD16-SYD-007,CSD16- 9,~30,0.233701477,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,A,8,4866-KIU-0680,CSD16-SYD-008,CSD16- 9,~30,0.05755161,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,A,9,4866-KIU-0681,CSD16-SYD-009,CSD16- 9,~30,0.241623561,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,A,10,4866-KIU-0682,CSD16-SYD-010,CSD16- 9,~30,0.051493546,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,A,11,4866-KIU-0683,CSD16-SYD-011,CSD16- 9,~30,0.085045901,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,A,12,4866-KIU-0684,CSD16-SYD-012,CSD16- 9,~30,0.083647887,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,B,1,4866-KIU-0685,CSD16-SYD-013,CSD16- 9,~30,0.236497507,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,B,2,4866-KIU-0686,CSD16-SYD-014,CSD16- 9,~30,0.067337714,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,B,3,4866-KIU-0687,CSD16-SYD-015,CSD16- 9,~30,0.166130761,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,B,4,4866-KIU-0688,CSD16-SYD-016,CSD16- 9,~30,0.306398248,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,B,5,4866-KIU-0689,CSD16-SYD-017,CSD16- 9,~30,0.166130761,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,B,6,4866-KIU-0690,CSD16-SYD-018,CSD16- 9,~30,0.073395778,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,B,7,4866-KIU-0691,CSD16-SYD-019,CSD16- 9,~30,0.568293024,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,B,8,4866-KIU-0692,CSD16-SYD-020,CSD16- 9,~30,0.053823571,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,B,9,4866-KIU-0693,CSD16-SYD-021,CSD16- 9,~30,0.087841931,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,B,10,4866-KIU-0694,CSD16-SYD-022,CSD16- 9,~30,0.059881635,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,B,11,4866-KIU-0695,CSD16-SYD-023,CSD16- 9,~30,0.104618109,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,B,12,4866-KIU-0696,CSD16-SYD-024,CSD16- 9,~30,0.113472203,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,C,1,4866-KIU-0697,CSD16-SYD-025,CSD16- 9,~30,0.20946922,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,C,2,4866-KIU-0698,CSD16-SYD-026,CSD16- 9,~30,0.071997763,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,C,3,4866-KIU-0699,CSD16-SYD-027,CSD16- 9,~30,0.077589822,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,C,4,4866-KIU-0700,CSD16-SYD-028,CSD16- 9,~30,0.072463768,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,C,5,4866-KIU-0701,CSD16-SYD-029,CSD16- 9,~30,0.313388322,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,C,6,4866-KIU-0702,CSD16-SYD-030,CSD16- 9,~30,0.060813645,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,C,7,4866-KIU-0703,CSD16-SYD-031,CSD16- 9,~30,0.128850366,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,C,8,4866-KIU-0704,CSD16-SYD-032,CSD16- 9,~30,0.382357053,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,C,9,4866-KIU-0705,CSD16-SYD-033,CSD16- 9,~30,0.716482595,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,C,10,4866-KIU-0706,CSD16-SYD-034,CSD16- 9,~30,0.218789319,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,C,11,4866-KIU-0707,CSD16-SYD-035,CSD16- 9,~30,1.06319027,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,C,12,4866-KIU-0708,CSD16-SYD-036,CSD16- 9,~30,0.522158535,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,D,1,4866-KIU-0709,CSD16-SYD-037,CSD16- 9,~30,0.284962021,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,D,2,4866-KIU-0710,CSD16-SYD-038,CSD16- 9,~30,0.197353092,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,D,3,4866-KIU-0711,CSD16-SYD-039,CSD16- 9,~30,0.356726781,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,D,4,4866-KIU-0712,CSD16-SYD-040,CSD16- 9,~30,0.024931264,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,D,5,4866-KIU-0713,CSD16-SYD-041,CSD16- 9,~30,0.041241437,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,D,6,4866-KIU-0714,CSD16-SYD-042,CSD16- 9,~30,0.023067245,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,D,7,4866-KIU-0715,CSD16-SYD-043,CSD16- 9,~30,0.413579384,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,D,8,4866-KIU-0716,CSD16-SYD-044,CSD16- 9,~30,0.090637961,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,D,9,4866-KIU-0717,CSD16-SYD-045,CSD16- 9,~30,0.170324805,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,D,10,4866-KIU-0718,CSD16-SYD-046,CSD16- 9,~30,0.515168461,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,D,11,4866-KIU-0719,CSD16-SYD-047,CSD16- 9,~30,0.269117853,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,D,12,4866-KIU-0720,CSD16-SYD-048,CSD16- 9,~30,0.123258307,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,E,1,4866-KIU-0721,CSD16-SYD-049,CSD16- 9,~30,0.466703947,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,E,2,4866-KIU-0722,CSD16-SYD-050,CSD16- 9,~30,0.063609674,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,E,3,4866-KIU-0723,CSD16-SYD-051,CSD16- 9,~30,0.051493546,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,E,4,4866-KIU-0724,CSD16-SYD-052,CSD16- 9,~30,0.05848362,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,E,5,4866-KIU-0725,CSD16-SYD-053,CSD16- 9,~30,0.275175917,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,E,6,4866-KIU-0726,CSD16-SYD-054,CSD16- 9,~30,0.127452351,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,E,7,4866-KIU-0727,CSD16-SYD-055,CSD16- 9,~30,0.178712894,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,E,8,4866-KIU-0728,CSD16-SYD-056,CSD16- 9,~30,0.346474673,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,E,9,4866-KIU-0729,CSD16-SYD-057,CSD16- 9,~30,0.090171956,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,E,10,4866-KIU-0730,CSD16-SYD-058,CSD16- 9,~30,0.073861783,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,E,11,4866-KIU-0731,CSD16-SYD-059,CSD16- 9,~30,0.605107414,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,E,12,4866-KIU-0732,CSD16-SYD-060,CSD16- 9,~30,0.05755161,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,F,1,4866-KIU-0733,CSD16-SYD-061,CSD16- 9,~30,0.039843422,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,F,2,4866-KIU-0734,CSD16-SYD-062,CSD16- 9,~30,11.70814111,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+8,F3,,4866-KIU-0735,CSD16-DOH-105,CSD16 - 9,~30,0.041781952,,,Pico green,Library prep for shot gun sequencing,
+8,F4,,4866-KIU-0736,CSD16-DOH-106,CSD16 - 9,~30,0.067829111,,,Pico green,Library prep for shot gun sequencing,
+8,F5,,4866-KIU-0737,CSD16-DOH-107,CSD16 - 9,~30,0.142404054,,,Pico green,Library prep for shot gun sequencing,
+8,F6,,4866-KIU-0738,CSD16-DOH-108,CSD16 - 9,~30,0.062528365,,,Pico green,Library prep for shot gun sequencing,
+8,F7,,4866-KIU-0739,CSD16-DOH-109,CSD16 - 9,~30,0.04316099,,,Pico green,Library prep for shot gun sequencing,
+8,F8,,4866-KIU-0740,CSD16-DOH-110,CSD16 - 9,~30,0.081829966,,,Pico green,Library prep for shot gun sequencing,
+8,F9,,4866-KIU-0741,CSD16-DOH-111,CSD16 - 9,~30,0.032156638,,,Pico green,Library prep for shot gun sequencing,
+8,F10,,4866-KIU-0742,CSD16-DOH-112,CSD16 - 9,~30,0.042744977,,,Pico green,Library prep for shot gun sequencing,
+8,F11,,4866-KIU-0743,CSD16-DOH-113,CSD16 - 9,~30,0.042124519,,,Pico green,Library prep for shot gun sequencing,
+8,F12,,4866-KIU-0744,CSD16-DOH-114,CSD16 - 9,~30,0.084001568,,,Pico green,Library prep for shot gun sequencing,
+8,G1,,4866-KIU-0745,CSD16-DOH-081,CSD16 - 9,~30,0.047928428,,,Pico green,Library prep for shot gun sequencing,
+8,G2,,4866-KIU-0746,CSD16-DOH-082,CSD16 - 9,~30,0.067470649,,,Pico green,Library prep for shot gun sequencing,
+8,G3,,4866-KIU-0747,CSD16-DOH-083,CSD16 - 9,~30,0.051402881,,,Pico green,Library prep for shot gun sequencing,
+8,G4,,4866-KIU-0748,CSD16-DOH-084,CSD16 - 9,~30,0.090048836,,,Pico green,Library prep for shot gun sequencing,
+8,G5,,4866-KIU-0749,CSD16-DOH-085,CSD16 - 9,~30,0.066741666,,,Pico green,Library prep for shot gun sequencing,
+8,G6,,4866-KIU-0750,CSD16-DOH-086,CSD16 - 9,~30,0.098027087,,,Pico green,Library prep for shot gun sequencing,
+8,G7,,4866-KIU-0751,CSD16-DOH-087,CSD16 - 9,~30,0.112582627,,,Pico green,Library prep for shot gun sequencing,
+8,G8,,4866-KIU-0752,CSD16-DOH-088,CSD16 - 9,~30,0.118342688,,,Pico green,Library prep for shot gun sequencing,
+8,G9,,4866-KIU-0753,CSD16-DOH-089,CSD16 - 9,~30,0.083854127,,,Pico green,Library prep for shot gun sequencing,
+8,G10,,4866-KIU-0754,CSD16-DOH-090,CSD16 - 9,~30,0.080928329,,,Pico green,Library prep for shot gun sequencing,
+8,G11,,4866-KIU-0755,CSD16-DOH-091,CSD16 - 9,~30,0.061796641,,,Pico green,Library prep for shot gun sequencing,
+8,G12,,4866-KIU-0756,CSD16-DOH-092,CSD16 - 9,~30,0.142536696,,,Pico green,Library prep for shot gun sequencing,
+8,H1,,4866-KIU-0757,CSD16-DOH-093,CSD16 - 9,~30,0.109234239,,,Pico green,Library prep for shot gun sequencing,
+8,H2,,4866-KIU-0758,CSD16-DOH-094,CSD16 - 9,~30,0.083548831,,,Pico green,Library prep for shot gun sequencing,
+8,H3,,4866-KIU-0759,CSD16-DOH-095,CSD16 - 9,~30,0.028996251,,,Pico green,Library prep for shot gun sequencing,
+8,H4,,4866-KIU-0760,CSD16-DOH-096,CSD16 - 9,~30,0.037038083,,,Pico green,Library prep for shot gun sequencing,
+8,H5,,4866-KIU-0761,CSD16-DOH-097,CSD16 - 9,~30,0.046498416,,,Pico green,Library prep for shot gun sequencing,
+8,H6,,4866-KIU-0762,CSD16-DOH-098,CSD16 - 9,~30,0.10107018,,,Pico green,Library prep for shot gun sequencing,
+8,H7,,4866-KIU-0763,CSD16-DOH-099,CSD16 - 9,~30,1.794553183,,,Pico green,Library prep for shot gun sequencing,
+8,H8,,4866-KIU-0764,CSD16-DOH-100,CSD16 - 9,~30,0.339597196,,,Pico green,Library prep for shot gun sequencing,
+8,H9,,4866-KIU-0765,CSD16-DOH-101,CSD16 - 9,~30,0.359287406,,,Pico green,Library prep for shot gun sequencing,
+8,H10,,4866-KIU-0766,CSD16-DOH-102,CSD16 - 9,~30,0.471515133,,,Pico green,Library prep for shot gun sequencing,
+8,H11,,4866-KIU-0767,CSD16-DOH-103,CSD16 - 9,~30,1.094712682,,,Pico green,Library prep for shot gun sequencing,
+8,H12,,4866-KIU-0768,CSD16-DOH-104,CSD16 - 9,~30,0.06167825,,,Pico green,Library prep for shot gun sequencing,
+9,A,1,4866-KIU-0769,CSD16-MEL-0001,CSD16- 10,~30,0.094041566,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,A,2,4866-KIU-0770,CSD16-MEL-0002,CSD16- 10,~30,0.105395666,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,A,3,4866-KIU-0771,CSD16-MEL-0003,CSD16- 10,~30,0.021967715,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,A,4,4866-KIU-0772,CSD16-MEL-0004,CSD16- 10,~30,0.054055388,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,A,5,4866-KIU-0773,CSD16-MEL-0005,CSD16- 10,~30,0.016537493,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,A,6,4866-KIU-0774,CSD16-MEL-0006,CSD16- 10,~30,0.046156884,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,A,7,4866-KIU-0775,CSD16-MEL-0007,CSD16- 10,~30,0.032828158,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,A,8,4866-KIU-0776,CSD16-MEL-0008,CSD16- 10,~30,0.025916967,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,A,9,4866-KIU-0777,CSD16-MEL-0009,CSD16- 10,~30,0.035296441,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,A,10,4866-KIU-0778,CSD16-MEL-0010,CSD16- 10,~30,0.029372563,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,A,11,4866-KIU-0779,CSD16-MEL-0011,CSD16- 10,~30,0.175001234,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,A,12,4866-KIU-0780,CSD16-MEL-0012,CSD16- 10,~30,0.040726662,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,B,1,4866-KIU-0781,CSD16-MEL-0013,CSD16- 10,~30,0.106876635,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,B,2,4866-KIU-0782,CSD16-MEL-0014,CSD16- 10,~30,0.187836304,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,B,3,4866-KIU-0783,CSD16-MEL-0015,CSD16- 10,~30,0.190304586,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,B,4,4866-KIU-0784,CSD16-MEL-0016,CSD16- 10,~30,0.033321815,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,B,5,4866-KIU-0785,CSD16-MEL-0017,CSD16- 10,~30,0.000740485,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,B,6,4866-KIU-0786,CSD16-MEL-0018,CSD16- 10,~30,0.00567705,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,B,7,4866-KIU-0787,CSD16-MEL-0024,CSD16- 10,~30,0.040233006,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,B,8,4866-KIU-0788,CSD16-MEL-0025,CSD16- 10,~30,0.035296441,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,B,9,4866-KIU-0789,CSD16-MEL-0026,CSD16- 10,~30,0.046650541,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,B,10,4866-KIU-0790,CSD16-MEL-0027,CSD16- 10,~30,0.014069211,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,B,11,4866-KIU-0791,CSD16-MEL-0028,CSD16- 10,~30,0.052574419,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,B,12,4866-KIU-0792,CSD16-MEL-0029,CSD16- 10,~30,0.051093449,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,C,1,4866-KIU-0793,CSD16-MEL-0030,CSD16- 10,~30,0.117243422,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,C,2,4866-KIU-0794,CSD16-MEL-0031,CSD16- 10,~30,0.132053117,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,C,3,4866-KIU-0795,CSD16-MEL-0032,CSD16- 10,~30,0.012094585,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,C,4,4866-KIU-0796,CSD16-MEL-0033,CSD16- 10,~30,0.029866219,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,C,5,4866-KIU-0797,CSD16-MEL-0034,CSD16- 10,~30,0.012588241,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,C,6,4866-KIU-0798,CSD16-MEL-0035,CSD16- 10,~30,0.040726662,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,C,7,4866-KIU-0799,CSD16-MEL-0036,CSD16- 10,~30,0.086143062,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,C,8,4866-KIU-0800,CSD16-MEL-0042,CSD16- 10,~30,0.026410623,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,C,9,4866-KIU-0801,CSD16-MEL-0043,CSD16- 10,~30,0.052574419,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,C,10,4866-KIU-0802,CSD16-MEL-0044,CSD16- 10,~30,-0.023448684,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,C,11,4866-KIU-0803,CSD16-MEL-0045,CSD16- 10,~30,0.038752036,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,C,12,4866-KIU-0804,CSD16-MEL-0046,CSD16- 10,~30,0.076763588,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,D,1,4866-KIU-0805,CSD16-MEL-0047,CSD16- 10,~30,0.120205361,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,D,2,4866-KIU-0806,CSD16-MEL-0048,CSD16- 10,~30,0.289035889,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,D,3,4866-KIU-0807,CSD16-MEL-0049,CSD16- 10,~30,-0.008638989,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,D,4,4866-KIU-0808,CSD16-MEL-0050,CSD16- 10,~30,0.077257244,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,D,5,4866-KIU-0809,CSD16-MEL-0051,CSD16- 10,~30,0.046156884,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,D,6,4866-KIU-0810,CSD16-MEL-0052,CSD16- 10,~30,0.057017327,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,D,7,4866-KIU-0811,CSD16-MEL-0053,CSD16- 10,~30,0.117243422,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,D,8,4866-KIU-0812,CSD16-MEL-0054,CSD16- 10,~30,0.046650541,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,D,9,4866-KIU-0813,CSD16-MEL-0055,CSD16- 10,~30,0.030359876,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,D,10,4866-KIU-0814,CSD16-MEL-0058,CSD16- 10,~30,0.036283754,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,D,11,4866-KIU-0815,CSD16-MEL-0059,CSD16- 10,~30,0.143407217,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,D,12,4866-KIU-0816,CSD16-MEL-0060,CSD16- 10,~30,0.089598657,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,E,1,4866-KIU-0817,CSD16-MEL-0061,CSD16- 10,~30,0.014562867,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,E,2,4866-KIU-0818,CSD16-MEL-0062,CSD16- 10,~30,0.012588241,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,E,3,4866-KIU-0819,CSD16-MEL-0063,CSD16- 10,~30,0.003702424,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,E,4,4866-KIU-0820,CSD16-MEL-0064,CSD16- 10,~30,0.008638989,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,E,5,4866-KIU-0821,CSD16-MEL-0065,CSD16- 10,~30,0.034802784,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,E,6,4866-KIU-0822,CSD16-MEL-0066,CSD16- 10,~30,0.015056524,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,E,7,4866-KIU-0823,CSD16-MEL-0067,CSD16- 10,~30,0.065409488,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,E,8,4866-KIU-0824,CSD16-MEL-0068,CSD16- 10,~30,0.047637854,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,E,9,4866-KIU-0825,CSD16-MEL-0069,CSD16- 10,~30,0.071827023,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,E,10,4866-KIU-0826,CSD16-MEL-0070,CSD16- 10,~30,0.062447549,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,E,11,4866-KIU-0827,CSD16-MEL-0071,CSD16- 10,~30,0.037764723,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,E,12,4866-KIU-0828,CSD16-MEL-0072,CSD16- 10,~30,0.083674779,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,F,1,4866-KIU-0829,CSD16-MEL-0073,CSD16- 10,~30,0.006170706,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,F,2,4866-KIU-0830,CSD16-MEL-0078,CSD16- 10,~30,0.031840845,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,F,3,4866-KIU-0831,CSD16-MEL-0079,CSD16- 10,~30,0.115762452,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,F,4,4866-KIU-0832,CSD16-MEL-0080,CSD16- 10,~30,0.098978131,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,F,5,4866-KIU-0833,CSD16-MEL-0081,CSD16- 10,~30,0.131065804,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,F,6,4866-KIU-0834,CSD16-MEL-0082,CSD16- 10,~30,0.085155749,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,F,7,4866-KIU-0835,CSD16-MEL-0083,CSD16- 10,~30,0.074788962,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,F,8,4866-KIU-0836,CSD16-MEL-0084,CSD16- 10,~30,0.136496026,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,F,9,4866-KIU-0837,CSD16-MEL-0085,CSD16- 10,~30,0.096509848,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,F,10,4866-KIU-0838,CSD16-MEL-0086,CSD16- 10,~30,0.11329417,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,F,11,4866-KIU-0839,CSD16-MEL-0087,CSD16- 10,~30,0.110825887,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,F,12,4866-KIU-0840,CSD16-MEL-0088,CSD16- 10,~30,0.083674779,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,G,1,4866-KIU-0841,CSD16-MEL-0089,CSD16- 10,~30,0.032828158,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,G,2,4866-KIU-0842,CSD16-MEL-0092,CSD16- 10,~30,0.081700153,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,G,3,4866-KIU-0843,CSD16-MEL-0093,CSD16- 10,~30,0.366046305,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,G,4,4866-KIU-0844,CSD16-MEL-0094,CSD16- 10,~30,0.968307252,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,G,5,4866-KIU-0845,CSD16-MEL-0095,CSD16- 10,~30,0.11329417,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,G,6,4866-KIU-0846,CSD16-MEL-0096,CSD16- 10,~30,0.112800513,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,G,7,4866-KIU-0847,CSD16-MEL-0097,CSD16- 10,~30,0.129584835,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,G,8,4866-KIU-0848,CSD16-MEL-0098,CSD16- 10,~30,0.094535222,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,G,9,4866-KIU-0849,CSD16-MEL-0099,CSD16- 10,~30,0.122673644,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,G,10,4866-KIU-0850,CSD16-MEL-0100,CSD16- 10,~30,0.104408353,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,G,11,4866-KIU-0851,CSD16-MEL-00N1,CSD16- 10,~30,0.150812065,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,G,12,4866-KIU-0852,CSD16-MEL-00N2,CSD16- 10,~30,0.10194007,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,H,1,4866-KIU-0853,CSD16-MEL-00N3,CSD16- 10,~30,0.008638989,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,H,2,4866-KIU-0854,CSD16-MEL-00PS,CSD16- 10,~30,4.006269438,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,H,3,4866-KIU-0855,CSD16-MEL-00NC,CSD16- 10,~30,0.088611344,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+9,H4,,4866-KIU-0856,CSD16-DOH-117,CSD16 - 10,~30,0.316254399,,,,Pico green,Library prep for shot gun sequencing
+9,H5,,4866-KIU-0857,CSD16-DOH-118,CSD16 - 10,~30,0.213078116,,,,Pico green,Library prep for shot gun sequencing
+9,H6,,4866-KIU-0858,CSD16-DOH-119,CSD16 - 10,~30,0.104278252,,,,Pico green,Library prep for shot gun sequencing
+9,H7,,4866-KIU-0859,CSD16-DOH-120,CSD16 - 10,~30,21.3096793,,,,Pico green,Library prep for shot gun sequencing
+9,H8,,4866-KIU-0860,CSD16-DOH-121,CSD16 - 10,~30,0.046866196,,,,Pico green,Library prep for shot gun sequencing
+9,H9,,4866-KIU-0861,CSD16-DOH-122,CSD16 - 10,~30,0.056862579,,,,Pico green,Library prep for shot gun sequencing
+9,H10,,4866-KIU-0862,CSD16-DOH-123,CSD16 - 10,~30,0.066914868,,,,Pico green,Library prep for shot gun sequencing
+9,H11,,4866-KIU-0863,CSD16-DOH-124,CSD16 - 10,~30,0.124890927,,,,Pico green,Library prep for shot gun sequencing
+9,H12,,4866-KIU-0864,CSD16-DOH-125,CSD16 - 10,~30,0.063926586,,,,Pico green,Library prep for shot gun sequencing
+10,A,1,4866-KIU-0865,CSD16-PAR-0001,CSD16- 11,~30,0.17159957,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,A,2,4866-KIU-0866,CSD16-PAR-0002,CSD16- 11,~30,0.231916585,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,A,3,4866-KIU-0867,CSD16-PAR-0003,CSD16- 11,~30,0.10941226,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,A,4,4866-KIU-0868,CSD16-PAR-0004,CSD16- 11,~30,0.090241736,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,A,5,4866-KIU-0869,CSD16-PAR-0005,CSD16- 11,~30,0.100995932,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,A,6,4866-KIU-0870,CSD16-PAR-0006,CSD16- 11,~30,0.071538785,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,A,7,4866-KIU-0871,CSD16-PAR-0007,CSD16- 11,~30,0.007013606,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,A,8,4866-KIU-0872,CSD16-PAR-0008,CSD16- 11,~30,0.045354655,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,A,9,4866-KIU-0873,CSD16-PAR-0009,CSD16- 11,~30,0.051900687,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,A,10,4866-KIU-0874,CSD16-PAR-0010,CSD16- 11,~30,0.050030392,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,A,11,4866-KIU-0875,CSD16-PAR-0011,CSD16- 11,~30,0.100060785,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,A,12,4866-KIU-0876,CSD16-PAR-0012,CSD16- 11,~30,0.089774162,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,B,1,4866-KIU-0877,CSD16-PAR-0013,CSD16- 11,~30,0.102866227,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,B,2,4866-KIU-0878,CSD16-PAR-0014,CSD16- 11,~30,0.098658063,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,B,3,4866-KIU-0879,CSD16-PAR-0015,CSD16- 11,~30,0.053770982,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,B,4,4866-KIU-0880,CSD16-PAR-0016,CSD16- 11,~30,1.153036892,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,B,5,4866-KIU-0881,CSD16-PAR-0017,CSD16- 11,~30,0.072941507,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,B,6,4866-KIU-0882,CSD16-PAR-0028,CSD16- 11,~30,0.150558751,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,B,7,4866-KIU-0883,CSD16-PAR-0029,CSD16- 11,~30,0.10941226,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,B,8,4866-KIU-0884,CSD16-PAR-0030,CSD16- 11,~30,0.074344228,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,B,9,4866-KIU-0885,CSD16-PAR-0031,CSD16- 11,~30,0.062654884,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,B,10,4866-KIU-0886,CSD16-PAR-0032,CSD16- 11,~30,0.041614065,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,B,11,4866-KIU-0887,CSD16-PAR-0033,CSD16- 11,~30,0.149623603,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,B,12,4866-KIU-0888,CSD16-PAR-0034,CSD16- 11,~30,0.083228129,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,C,1,4866-KIU-0889,CSD16-PAR-0035,CSD16- 11,~30,0.079487539,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,C,2,4866-KIU-0890,CSD16-PAR-0036,CSD16- 11,~30,0.587740216,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,C,3,4866-KIU-0891,CSD16-PAR-0037,CSD16- 11,~30,0.210875766,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,C,4,4866-KIU-0892,CSD16-PAR-0038,CSD16- 11,~30,0.228643569,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,C,5,4866-KIU-0893,CSD16-PAR-0039,CSD16- 11,~30,0.11315285,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,C,6,4866-KIU-0894,CSD16-PAR-0040,CSD16- 11,~30,0.218356946,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,C,7,4866-KIU-0895,CSD16-PAR-0041,CSD16- 11,~30,0.051900687,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,C,8,4866-KIU-0896,CSD16-PAR-0042,CSD16- 11,~30,0.219759667,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,C,9,4866-KIU-0897,CSD16-PAR-0043,CSD16- 11,~30,1.08944686,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,C,10,4866-KIU-0898,CSD16-PAR-0044,CSD16- 11,~30,0.163183242,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,C,11,4866-KIU-0899,CSD16-PAR-0045,CSD16- 11,~30,0.580259036,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,C,12,4866-KIU-0900,CSD16-PAR-0046,CSD16- 11,~30,0.373591434,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,D,1,4866-KIU-0901,CSD16-PAR-0047,CSD16- 11,~30,0.290830879,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,D,2,4866-KIU-0902,CSD16-PAR-0048,CSD16- 11,~30,0.040211343,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,D,3,4866-KIU-0903,CSD16-PAR-0049,CSD16- 11,~30,0.06218731,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,D,4,4866-KIU-0904,CSD16-PAR-0050,CSD16- 11,~30,0.04722495,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,D,5,4866-KIU-0905,CSD16-PAR-0051,CSD16- 11,~30,0.072473933,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,D,6,4866-KIU-0906,CSD16-PAR-0052,CSD16- 11,~30,0.165521111,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,D,7,4866-KIU-0907,CSD16-PAR-0053,CSD16- 11,~30,0.268387338,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,D,8,4866-KIU-0908,CSD16-PAR-0054,CSD16- 11,~30,0.270725207,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,D,9,4866-KIU-0909,CSD16-PAR-0055,CSD16- 11,~30,0.048627671,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,D,10,4866-KIU-0910,CSD16-PAR-0056,CSD16- 11,~30,0.161780521,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,D,11,4866-KIU-0911,CSD16-PAR-0066,CSD16- 11,~30,1.888530416,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,D,12,4866-KIU-0912,CSD16-PAR-0067,CSD16- 11,~30,3.653153785,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,E,1,4866-KIU-0913,CSD16-PAR-0081,CSD16- 11,~30,0.050497966,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,E,2,4866-KIU-0914,CSD16-PAR-0082,CSD16- 11,~30,0.087436293,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,E,3,4866-KIU-0915,CSD16-PAR-0083,CSD16- 11,~30,0.097255342,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,E,4,4866-KIU-0916,CSD16-PAR-0084,CSD16- 11,~30,0.385280778,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,E,5,4866-KIU-0917,CSD16-PAR-0085,CSD16- 11,~30,0.705568803,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,E,6,4866-KIU-0918,CSD16-PAR-0086,CSD16- 11,~30,0.353018189,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,E,7,4866-KIU-0919,CSD16-PAR-0087,CSD16- 11,~30,0.145415439,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,E,8,4866-KIU-0920,CSD16-PAR-0088,CSD16- 11,~30,0.108944686,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,E,9,4866-KIU-0921,CSD16-PAR-0089,CSD16- 11,~30,0.144480292,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,E,10,4866-KIU-0922,CSD16-PAR-0090,CSD16- 11,~30,0.134193669,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,E,11,4866-KIU-0923,CSD16-PAR-0091,CSD16- 11,~30,0.08089026,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,E,12,4866-KIU-0924,CSD16-PAR-0092,CSD16- 11,~30,0.067330621,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,F,1,4866-KIU-0925,CSD16-PAR-0093,CSD16- 11,~30,0.038808622,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,F,2,4866-KIU-0926,CSD16-PAR-0094,CSD16- 11,~30,0.057043999,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,F,3,4866-KIU-0927,CSD16-PAR-0095,CSD16- 11,~30,0.034600458,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,F,4,4866-KIU-0928,CSD16-PAR-0096,CSD16- 11,~30,0.189367373,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,F,5,4866-KIU-0929,CSD16-PAR-0097,CSD16- 11,~30,0.144947866,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,F,6,4866-KIU-0930,CSD16-PAR-0098,CSD16- 11,~30,0.377799598,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,F,7,4866-KIU-0931,CSD16-PAR-0100,CSD16- 11,~30,0.055173704,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,F,8,4866-KIU-0932,CSD16-PAR-0101,CSD16- 11,~30,0.130920653,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,F,9,4866-KIU-0933,CSD16-PAR-0102,CSD16- 11,~30,0.216486651,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,F,10,4866-KIU-0934,CSD16-PAR-0103,CSD16- 11,~30,0.12063403,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,F,11,4866-KIU-0935,CSD16-PAR-0104,CSD16- 11,~30,0.057511572,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,F,12,4866-KIU-0936,CSD16-PAR-0105,CSD16- 11,~30,0.114087997,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,G,1,4866-KIU-0937,CSD16-PAR-0110,CSD16- 11,~30,0.038341048,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,G,2,4866-KIU-0938,CSD16-PAR-0111,CSD16- 11,~30,0.070603638,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,G,3,4866-KIU-0939,CSD16-PAR-0112,CSD16- 11,~30,0.077617244,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,G,4,4866-KIU-0940,CSD16-PAR-air_neg_contr_1,CSD16- 11,~30,0.037405901,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,G,5,4866-KIU-0941,CSD16-PAR-air_neg_contr_2,CSD16- 11,~30,0.030392294,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,G,6,4866-KIU-0942,CSD16-PAR-air_neg_contr_3,CSD16- 11,~30,0.021975967,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,G,7,4866-KIU-0943,CSD16-PAR-ZPC1,CSD16- 11,~30,5.412633843,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,G,8,4866-KIU-0944,CSD16-PAR-ZPC2,CSD16- 11,~30,3.064478421,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,G,9,4866-KIU-0945,CSD16-PAR-CNC,CSD16- 11,~30,0.046757376,metagenome,,DNA,Pico green,Library prep for shot gun sequencing
+10,G10,,4866-KIU-0946,CSD16-MRS-0122,CSD16-11,~30,5.639931938,,,,Pico green,Library prep for shot gun sequencing
+10,G11,,4866-KIU-0947,CSD16-MRS-0123,CSD16-11,~30,0.0724156,,,,Pico green,Library prep for shot gun sequencing
+10,G12,,4866-KIU-0948,CSD16-MRS-0124,CSD16-11,~30,0.087181741,,,,Pico green,Library prep for shot gun sequencing
+10,H1,,4866-KIU-0949,CSD16-MRS-0098,CSD16-11,~30,0.756586425,,,,Pico green,Library prep for shot gun sequencing
+10,H2,,4866-KIU-0950,CSD16-MRS-0099,CSD16-11,~30,0.90033968,,,,Pico green,Library prep for shot gun sequencing
+10,H3,,4866-KIU-0951,CSD16-MRS-0100,CSD16-11,~30,0.682049691,,,,Pico green,Library prep for shot gun sequencing
+10,H4,,4866-KIU-0952,CSD16-MRS-0101,CSD16-11,~30,0.38418899,,,,Pico green,Library prep for shot gun sequencing
+10,H5,,4866-KIU-0953,CSD16-MRS-0102,CSD16-11,~30,0.795008547,,,,Pico green,Library prep for shot gun sequencing
+10,H6,,4866-KIU-0954,CSD16-MRS-0103,CSD16-11,~30,0.167459322,,,,Pico green,Library prep for shot gun sequencing
+10,H7,,4866-KIU-0955,CSD16-MRS-0104,CSD16-11,~30,0.284409913,,,,Pico green,Library prep for shot gun sequencing
+10,H8,,4866-KIU-0956,CSD16-MRS-0105,CSD16-11,~30,0.548563265,,,,Pico green,Library prep for shot gun sequencing
+10,H9,,4866-KIU-0957,CSD16-MRS-0106,CSD16-11,~30,0.080887325,,,,Pico green,Library prep for shot gun sequencing
+10,H10,,4866-KIU-0958,CSD16-MRS-0107,CSD16-11,~30,0.246153063,,,,Pico green,Library prep for shot gun sequencing
+10,H11,,4866-KIU-0959,CSD16-MRS-0108,CSD16-11,~30,0.165369374,,,,Pico green,Library prep for shot gun sequencing
+10,H12,,4866-KIU-0960,CSD16-MRS-0121,CSD16-11,~30,0.069755914,,,,Pico green,Library prep for shot gun sequencing
