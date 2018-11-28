@@ -1,6 +1,6 @@
 from .parsing import parse_csv
 from .constants import *
-from .utils import getOrNone, remove_leading_char, remove_trailing_char
+from .utils import getOrNone, remove_leading_char, remove_trailing_char, clean_ha_id
 from .table_mapper import (
     Table,
     token_mapper,
@@ -700,7 +700,15 @@ class HAUIDSplitter:
         sample[SL_NAME] = sl_name
 
 
+class HARemap:
+
+    def map(self, sample):
+        if sample[HA_ID]:
+            sample[HA_ID] = clean_ha_id(sample[HA_ID])
+
+
 MAPPERS = [
+    HARemap(),
     HAUIDSplitter(),
     #ha_name_to_pos,
     haid_to_barcode_4959DB,
