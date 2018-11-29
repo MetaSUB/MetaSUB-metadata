@@ -68,7 +68,7 @@ ha_filename_tables = [
 ]
 HA_FILENAME_TABLES = [
     ha_filename_table(
-        mdata_dir(filename),
+        mdata_dir('hudson_alpha_filename_files/' + filename),
         **kwargs
     )
     for filename, kwargs in ha_filename_tables
