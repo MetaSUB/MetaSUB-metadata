@@ -16,6 +16,9 @@ from .ha_filename_tables import ha_filename_tables
 from sys import stderr
 
 
+################################################################################
+
+
 haid_to_barcode_4959DB = Table(
     mdata_dir('4959DB_barcodes.csv'),
     {HA_ID: 0, BC: 1},
@@ -23,6 +26,9 @@ haid_to_barcode_4959DB = Table(
     name_func=lambda x, y: remove_trailing_char('R')(x.lower()),
     skip=1,
 )
+
+
+################################################################################
 
 
 def normalize_plate_num(raw):
@@ -44,6 +50,9 @@ ha_name_to_pos = Table(
 )
 
 
+################################################################################
+
+
 def airsample_ha_to_msub_mapper(sample, sample_id, vec):
     sample[METASUB_NAME] = vec[METASUB_NAME]
     sample[PROJECT] = CSD17_CODE
@@ -59,6 +68,10 @@ airsample_ha_to_msub = Table(
 
 )
 
+
+################################################################################
+
+
 olympiome_metadata = Table(
     mdata_dir('samples_oly_meta_all_information_e.csv'),
     {
@@ -72,6 +85,9 @@ olympiome_metadata = Table(
     token_mapper(PROJECT, STATION, LAT, LON, SURFACE),
     name_func=lambda x, y: x.upper()
 )
+
+
+################################################################################
 
 
 bc_to_meta = Table(
@@ -99,6 +115,10 @@ bc_to_meta = Table(
     val_func=token_specific_val_func(**{METASUB_NAME: remove_leading_char('g')}),
 )
 
+
+################################################################################
+
+
 positions = {
     HA_ID: 0,
     CONTROL_STATUS: 1,
@@ -110,6 +130,10 @@ promega_conrol_plate = Table(
     token_mapper(*list(positions.keys())),
 )
 
+
+################################################################################
+
+
 positions = {
     HA_ID: 3,
     METASUB_NAME: 4,
@@ -119,6 +143,10 @@ kiu_samples = Table(
     positions,
     token_mapper(*list(positions.keys())),
 )
+
+
+################################################################################
+
 
 positions = {
     CITY: 0,
@@ -140,6 +168,9 @@ ben_young_master_metadata = Table(
     positions,
     token_mapper(*list(positions.keys())),
 )
+
+
+################################################################################
 
 
 def csd16_metadata_name_func(name, name_type):
@@ -166,6 +197,9 @@ csd16_metadata = Table(
 )
 
 
+################################################################################
+
+
 akl_metadata_csd16 = Table(
     mdata_dir('auckland_csd16.csv'),
     {
@@ -180,6 +214,9 @@ akl_metadata_csd16 = Table(
     name_func=lambda x, y: x.upper(),
     skip=1
 )
+
+
+################################################################################
 
 
 def fairbanks_metadata_csd16_val_func(val, token):
@@ -200,6 +237,9 @@ fairbanks_metadata_csd16 = Table(
     val_func=fairbanks_metadata_csd16_val_func,
     skip=1
 )
+
+
+################################################################################
 
 
 oslo_air_metadata_csd16 = Table(
@@ -231,6 +271,10 @@ oslo_air_metadata_csd16 = Table(
     skip=1
 )
 
+
+################################################################################
+
+
 tigress_metadata = Table(
     mdata_dir('metadata.MetaSUB_UK2017.csv'),
     {
@@ -252,6 +296,9 @@ tigress_metadata = Table(
 )
 
 
+################################################################################
+
+
 tokyo_metadata = Table(
     mdata_dir('Tokyo_MetaSUB_2016_SA_HS_NM_.csv'),
     {
@@ -265,6 +312,9 @@ tokyo_metadata = Table(
         METASUB_NAME, LAT, LON, SURFACE_MATERIAL, TEMPERATURE
     )
 )
+
+
+################################################################################
 
 
 boston_metadata = Table(
@@ -283,6 +333,9 @@ boston_metadata = Table(
 )
 
 
+################################################################################
+
+
 zurich_metadata = Table(
     mdata_dir('Zurich_MetaSUB_2016_SA.csv'),
     {
@@ -297,6 +350,9 @@ zurich_metadata = Table(
         METASUB_NAME, LINE, LAT, LON, SURFACE_MATERIAL, TEMPERATURE
     )
 )
+
+
+################################################################################
 
 
 csd16_metadata_bgy = Table(
@@ -315,6 +371,10 @@ csd16_metadata_bgy = Table(
     )
 )
 
+
+################################################################################
+
+
 positions = {
     HA_ID: 1,
     METASUB_NAME: 2,
@@ -327,6 +387,10 @@ haid_to_csdid = Table(
     name_func=lambda x, y: x.upper(),
 )
 
+
+################################################################################
+
+
 positions = {
     METASUB_NAME: 0,
     SURFACE: 2,
@@ -337,6 +401,9 @@ pathomap_winter = Table(
     positions,
     token_mapper(*list(positions.keys()), last_resort=True),
 )
+
+
+################################################################################
 
 
 SIMPLE_TABLES = [
