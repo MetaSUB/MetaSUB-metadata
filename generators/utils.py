@@ -1,4 +1,11 @@
 
+from os.path import join
+from .constants import METADATA_DIR
+
+
+def mdata_dir(fname):
+    return join(METADATA_DIR, fname)
+
 
 def getOrNone(tbl, key, default=None):
     if key is None:
