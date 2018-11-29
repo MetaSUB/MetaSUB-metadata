@@ -30,6 +30,33 @@ def case_hauid(sample):
     sample[HAUID] = f'{haib}_{flow}_{sl}'
 
 
+def case_uuid(sample):
+    if not isinstance(sample[GENERIC_UID], str) or 'haib' not in sample[GENERIC_UID]:
+        return
+    hauid = sample[HAUID].split('_')
+    haib = 'haib' + hauid[0].split('haib')[1].upper()
+    flow = hauid[1].upper()
+    sl = hauid[2].upper()
+    sample[HAUID] = f'{haib}_{flow}_{sl}'
+
+
+def clean_metasub_name(sample):
+    if not isinstance(sample[METASUB_NAME], str):
+        return
+    msub = sample[METASUB_NAME]
+    msub = msub.upper()
+    msub = ''.join(msub.split(' '))
+    msub = '-'.join(msub.split('_'))
+    if msub[:4] == 'GCSD':
+        msub = msub[1:]
+
+    if 'CSD-DENVER.METASUB-06/21/16' in msub:
+        snum = msub.split('-')[-1]
+        msub = f'CSD-DEN-{snum}'
+
+    sample[METASUB_NAME] = msub
+
+
 CLEANERS = [
     turn_off_checking,
     uppercase_token(SL_NAME),
@@ -37,4 +64,6 @@ CLEANERS = [
     uppercase_token(INDEX_SEQ),
     case_hauid,
     case_ha_proj,
+    clean_metasub_name,
+    case_uuid,
 ]

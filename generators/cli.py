@@ -42,7 +42,41 @@ def best_effort(csv, sample_names):
 
     if csv:
         tbl = pd.DataFrame([sample.to_son() for sample in samples])
-        tbl = tbl.set_index(HAUID)
+        tbl = tbl.sort_values(by=['project', 'city', 'metasub_name', 'uuid'])
+        tbl = tbl[[
+            'uuid',
+            'metasub_name',
+            'project',
+            'city',
+            'city_code',
+            'latitude',
+            'longitude',
+            'surface_material',
+            'control_type',
+
+            'elevation',
+            'line',
+            'station',
+            'surface',
+            'temperature',
+            'traffic',
+            'setting',
+
+            'barcode',
+            'ha_id',
+            'hudson_alpha_flowcell',
+            'hudson_alpha_project',
+            'index_sequence',
+            'location_type',
+            'hudson_alpha_uid',
+            'other_project_uid',
+            'plate_number',
+            'plate_pos',
+            'sample_type',
+            'sl_name',
+
+        ]]
+        tbl = tbl.set_index(GENERIC_UID)
         print(tbl.to_csv())
     else:
         stdout.write(dumps([sample.to_son() for sample in samples]))

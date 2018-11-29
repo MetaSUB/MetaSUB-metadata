@@ -10,6 +10,15 @@ from .simple_tables import SIMPLE_TABLES
 from sys import stderr
 
 
+class MapUUID:
+
+    def map(self, sample):
+        if sample[HAUID] and not sample[OTHER_PROJ_UID]:
+            sample[GENERIC_UID] = sample[HAUID]
+        elif sample[OTHER_PROJ_UID] and not sample[HAUID]:
+            sample[GENERIC_UID] = sample[OTHER_PROJ_UID]
+
+
 class MSubToCity:
     """Guess the city or city code from the MetaSUB name."""
 
@@ -36,7 +45,7 @@ class MSubToCity:
 
 
         tkns = sample[METASUB_NAME].split('_')
-        if len(tkns) == 3:
+        if 'INBOUNDCONTROL' not in sample[METASUB_NAME] and len(tkns) == 3:
             sample[CITY] = 'berlin'
 
 
@@ -324,4 +333,5 @@ MAPPERS = [
     OtherProjUidToCity(),
     GuessProj(),
     AirSamplingProj(),
+    MapUUID(),
 ] + HA_FILENAME_TABLES + SIMPLE_TABLES

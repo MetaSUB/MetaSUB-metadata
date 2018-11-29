@@ -55,7 +55,7 @@ ha_name_to_pos = Table(
 
 def airsample_ha_to_msub_mapper(sample, sample_id, vec):
     sample[METASUB_NAME] = vec[METASUB_NAME]
-    sample[PROJECT] = CSD17_CODE
+    sample[PROJECT] = CSD17_AIR_CODE
 
 
 airsample_ha_to_msub = Table(
@@ -140,6 +140,45 @@ positions = {
 }
 kiu_samples = Table(
     mdata_dir('KIU_samples_Shipment_Finallistwith_ID_June2017.csv'),
+    positions,
+    token_mapper(*list(positions.keys())),
+)
+
+
+################################################################################
+
+
+positions = {
+    METASUB_NAME: 0,
+    CITY: 14,
+    LAT: 19,
+    LON: 20,
+    SURFACE: 21,
+    SURFACE_MATERIAL: 22,
+}
+csd16_benyoung = Table(
+    mdata_dir('CSD16_benyoung__MASTER_MetaSUB_Metadata_W_YIELDS.csv'),
+    positions,
+    token_mapper(*list(positions.keys())),
+)
+
+
+################################################################################
+
+
+positions = {
+    CITY: 0,
+    BC: 1,
+    SETTING: 2,
+    ELEVATION: 3,
+    TRAFFIC_LEVEL: 4,
+    LAT: 5,
+    LON: 6,
+    SURFACE_MATERIAL: 7,
+    SURFACE: 8,
+}
+csd17_benyoung = Table(
+    mdata_dir('CSD17_benyoung__MASTER_MetaSUB_Metadata_W_YIELDS.csv'),
     positions,
     token_mapper(*list(positions.keys())),
 )
@@ -375,16 +414,28 @@ csd16_metadata_bgy = Table(
 ################################################################################
 
 
+def handle_msub_name(msub_name, position):
+    if position != METASUB_NAME:
+        return msub_name.upper()
+    msub_name = msub_name.upper()
+    msub_name = '-'.join(msub_name.split('_'))
+    if 'CSD' not in msub_name:
+        return ''
+    return msub_name
+
+
 positions = {
     HA_ID: 1,
     METASUB_NAME: 2,
+    MAYBE_METASUB_NAME: 2,
     CITY: 3,
 }
 haid_to_csdid = Table(
     mdata_dir('collated_sample_sheets_ea_v3.csv'),
     positions,
     token_mapper(*list(positions.keys())),
-    name_func=lambda x, y: x.upper(),
+    name_func=handle_msub_name,
+    val_func=handle_msub_name,
 )
 
 
@@ -411,6 +462,8 @@ SIMPLE_TABLES = [
     airsample_ha_to_msub,
     bc_to_meta,
     csd16_metadata,
+    csd16_benyoung,
+    csd17_benyoung,
     akl_metadata_csd16,
     fairbanks_metadata_csd16,
     oslo_air_metadata_csd16,
