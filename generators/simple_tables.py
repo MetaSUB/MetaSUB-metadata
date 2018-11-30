@@ -439,6 +439,8 @@ def handle_msub_name(msub_name, position):
         return msub_name.upper()
     msub_name = msub_name.upper()
     msub_name = '-'.join(msub_name.split('_'))
+    if 'CSD-DENVER' in msub_name:
+        return 'CSD16-DEN' + msub_name.split('CSD-DENVER')[-1]
     if 'CSD' not in msub_name:
         return ''
     return msub_name
@@ -454,6 +456,24 @@ haid_to_csdid = Table(
     mdata_dir('collated_sample_sheets_ea_v3.csv'),
     positions,
     token_mapper(*list(positions.keys())),
+    name_func=handle_msub_name,
+    val_func=handle_msub_name,
+)
+
+
+def map_func(sample, sample_id, vec):
+    if sample[PROJECT]:
+        return
+    sample[PROJECT] = vec[PROJECT]
+
+positions = {
+    HA_ID: 1,
+    PROJECT: 4,
+}
+haid_to_csdid_2 = Table(
+    mdata_dir('collated_sample_sheets_ea_v3.csv'),
+    positions,
+    map_func,
     name_func=handle_msub_name,
     val_func=handle_msub_name,
 )
@@ -498,5 +518,6 @@ SIMPLE_TABLES = [
     csd16_metadata_bgy,
     ben_young_master_metadata,
     haid_to_csdid,
+    haid_to_csdid_2,
     pathomap_winter,
 ]

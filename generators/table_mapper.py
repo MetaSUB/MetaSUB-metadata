@@ -19,7 +19,7 @@ def token_mapper(*tokens, strict=False, last_resort=False):
     def map_func(sample, sample_id, vec):
         for tkn in tokens:
             try:
-                if last_resort and sample[tkn]:
+                if last_resort and sample[tkn] and len(sample[tkn]):
                     return
                 sample[tkn] = vec[tkn]
             except KeyError:

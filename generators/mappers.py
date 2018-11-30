@@ -71,7 +71,6 @@ class ControlAsCity:
             sample[CONTROL_STATUS] = POSITIVE_CONTROL
 
 
-
 class MapUUID:
 
     def map(self, sample):
@@ -120,6 +119,7 @@ class MetaSUBNameToProject:
             'CSD16': CSD16_CODE,
             'CSD17': CSD17_CODE,
             'CSD-17': CSD17_CODE,
+            'WINTER_NYC': PATHOMAP_WINTER_CODE,
         }
         if sample[METASUB_NAME]:
             for key, val in code_map.items():
