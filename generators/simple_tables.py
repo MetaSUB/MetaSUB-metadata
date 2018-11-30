@@ -30,6 +30,24 @@ haid_to_barcode_4959DB = Table(
 
 ################################################################################
 
+positions = {
+    METASUB_NAME: 3,
+    SETTING: 7,
+    SURFACE_MATERIAL: 8,
+    SURFACE: 9,
+    LINE: 10,
+    LON: 27,
+    LAT: 28,
+}
+barcelona_csd16 = Table(
+    mdata_dir('barcelona_csd16_metadata.csv'),
+    positions,
+    token_mapper(*list(positions.keys())),
+)
+
+
+################################################################################
+
 
 def normalize_plate_num(raw):
     raw = raw.lower()
@@ -415,6 +433,8 @@ csd16_metadata_bgy = Table(
 
 
 def handle_msub_name(msub_name, position):
+    if position == HA_ID:
+        return remove_trailing_char('R')(msub_name.lower())
     if position != METASUB_NAME:
         return msub_name.upper()
     msub_name = msub_name.upper()
@@ -458,6 +478,7 @@ pathomap_winter = Table(
 
 
 SIMPLE_TABLES = [
+    barcelona_csd16,
     haid_to_barcode_4959DB,
     airsample_ha_to_msub,
     bc_to_meta,

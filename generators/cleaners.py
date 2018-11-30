@@ -6,6 +6,14 @@ def turn_off_checking(sample):
     sample.check_overwrite = False
 
 
+def lowercase_token(token):
+    def do_the_case(sample):
+        if not isinstance(sample[token], str):
+            return
+        sample[token] = sample[token].lower()
+    return do_the_case
+
+
 def uppercase_token(token):
     def do_the_case(sample):
         if not isinstance(sample[token], str):
@@ -31,13 +39,13 @@ def case_hauid(sample):
 
 
 def case_uuid(sample):
-    if not isinstance(sample[GENERIC_UID], str) or 'haib' not in sample[GENERIC_UID]:
+    if not isinstance(sample[GENERIC_UID], str) or 'haib' not in sample[GENERIC_UID].lower():
         return
-    hauid = sample[HAUID].split('_')
+    hauid = sample[GENERIC_UID].split('_')
     haib = 'haib' + hauid[0].split('haib')[1].upper()
     flow = hauid[1].upper()
     sl = hauid[2].upper()
-    sample[HAUID] = f'{haib}_{flow}_{sl}'
+    sample[GENERIC_UID] = f'{haib}_{flow}_{sl}'
 
 
 def clean_metasub_name(sample):
@@ -62,6 +70,7 @@ CLEANERS = [
     uppercase_token(SL_NAME),
     uppercase_token(HA_FLOWCELL),
     uppercase_token(INDEX_SEQ),
+    lowercase_token(CITY),
     case_hauid,
     case_ha_proj,
     clean_metasub_name,

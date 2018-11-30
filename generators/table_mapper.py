@@ -87,7 +87,7 @@ class Table:
             for name, index in col_inds.items():
                 try:
                     vec[name] = val_func(tkns[index], name)
-                    if 'n/a' in vec[name].lower():
+                    if 'n/a' in vec[name].lower() or vec[name].lower() == 'nan':
                         del vec[name]
                 except IndexError:
                     if strict:

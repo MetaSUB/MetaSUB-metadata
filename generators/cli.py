@@ -42,10 +42,11 @@ def best_effort(csv, sample_names):
 
     if csv:
         tbl = pd.DataFrame([sample.to_son() for sample in samples])
-        tbl = tbl.sort_values(by=['project', 'city', 'metasub_name', 'uuid'])
+        tbl = tbl.sort_values(by=['core_project', 'project', 'city', 'metasub_name', 'uuid'])
         tbl = tbl[[
             'uuid',
             'metasub_name',
+            'core_project',
             'project',
             'city',
             'city_code',
@@ -61,6 +62,16 @@ def best_effort(csv, sample_names):
             'temperature',
             'traffic',
             'setting',
+
+            CITY_LAT,
+            CITY_LON,
+            CITY_COASTAL,
+            CITY_POP,
+            CITY_DENSITY,
+            CITY_AREA,
+            CITY_TEMP,
+            CITY_ELEV,
+            CITY_CONTINENT,
 
             'barcode',
             'ha_id',

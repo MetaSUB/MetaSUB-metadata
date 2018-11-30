@@ -8,6 +8,68 @@ from .utils import (
 from .ha_filename_tables import HA_FILENAME_TABLES
 from .simple_tables import SIMPLE_TABLES
 from sys import stderr
+import pandas as pd
+
+
+class CityMetadataMapper:
+
+    def __init__(self):
+        self.tbl = pd.read_csv(mdata_dir('city_metadata.csv'), index_col=0)
+
+    def map(self, sample):
+        if not sample[CITY]:
+            return
+        city_name = sample[CITY].lower()
+        if city_name not in self.tbl.index:
+            return
+
+        sample[CITY_LAT] = self.tbl['latitude'][city_name]
+        sample[CITY_LON] = self.tbl['longitude'][city_name]
+        sample[CITY_COASTAL] = self.tbl['coastal'][city_name]
+        sample[CITY_POP] = self.tbl['total_population'][city_name]
+        sample[CITY_DENSITY] = self.tbl['population_density_km2'][city_name]
+        sample[CITY_AREA] = self.tbl['land_area_km2'][city_name]
+        sample[CITY_TEMP] = self.tbl['ave_june_temp_celsius'][city_name]
+        sample[CITY_ELEV] = self.tbl['elevation_meters'][city_name]
+        sample[CITY_CONTINENT] = self.tbl['continent'][city_name]
+
+
+class CoreProjMapper:
+
+    def map(self, sample):
+        if not sample[PROJECT]:
+            return
+        proj = sample[PROJECT]
+        if proj in [CSD16_CODE, CSD17_CODE, PILOT_CODE]:
+            sample[CORE_PROJECT] = 'core'
+        else:
+            sample[CORE_PROJECT] = 'not_core'
+
+
+class OtherProjToBarcelona:
+
+    def map(self, sample):
+        if not sample[OTHER_PROJ_UID]:
+            return
+        if 'sossowski' in sample[OTHER_PROJ_UID].lower():
+            sample[CITY] = 'barcelona'
+            if 'ms0' in  sample[OTHER_PROJ_UID].lower():
+                sample[PROJECT] = PILOT_CODE
+
+
+class ControlAsCity:
+
+    def map(self, sample):
+        if sample[CITY]:
+            return
+        if sample[CONTROL_STATUS]:
+            sample[CITY] = 'other_control'
+        elif sample[METASUB_NAME] and 'control' in sample[METASUB_NAME].lower():
+            sample[CITY] = 'other_control'
+        elif sample[HA_ID] and sample[HA_ID].upper() == '4959-DB_PC':
+            sample[CITY] = 'other_control'
+            sample[CONTROL_STATUS] = POSITIVE_CONTROL
+
 
 
 class MapUUID:
@@ -37,6 +99,7 @@ class MSubToCity:
         if 'csd' in sample[METASUB_NAME].lower():
             if 'csd_denver' in sample[METASUB_NAME].lower():
                 sample[CITY_CODE] = 'DEN'
+                sample[PROJECT] = CSD16_CODE
                 return
             tkns = sample[METASUB_NAME].split('-')
             if len(tkns) == 3:
@@ -320,6 +383,10 @@ class HARemap:
 
 
 MAPPERS = [
+    OtherProjToBarcelona(),
+    ControlAsCity(),
+    CityMetadataMapper(),
+    CoreProjMapper(),
     HARemap(),
     HAUIDSplitter(),
     PosToBC(),
