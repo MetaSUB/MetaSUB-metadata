@@ -1,4 +1,11 @@
 
+from os.path import join
+from .constants import METADATA_DIR
+
+
+def mdata_dir(fname):
+    return join(METADATA_DIR, fname)
+
 
 def getOrNone(tbl, key, default=None):
     if key is None:
@@ -35,3 +42,7 @@ def remove_trailing_char(char, ignore_case=True):
             return val[:-1]
         return val
     return remover
+
+
+def clean_ha_id(ha_id):
+    return ha_id.lower().split('r')[0]

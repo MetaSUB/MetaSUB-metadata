@@ -1,0 +1,106 @@
+﻿city,hospital_name,latitude,longitude
+london,Cromwell Hospital,51.4949°N ,0.1914°W
+london,Highgate Private Hospital,51.5764°N,0.15672°W
+london,Hospital of St John and St Elizabeth,51°31′58″N ,0°10′27″W
+london,King Edward VII's Hospital,51°31′15.3″N ,0°9′1.5″W
+london,Lister Hospital  Chelsea,51.4863°N ,0.1502°W
+london,London Bridge Hospital,51.5064°N,0.0859°W
+london,The London Clinic,51.5229° N ,0.1502° W
+london,London Welbeck Hospital,51.5182° N  ,0.1495° W
+london,Nightingale Hospital,51.5219° N  ,0.1651° W
+london,Portland Hospital,51.5230° N ,0.1441° W
+london,The Princess Grace Hospital,51.5224° N  ,0.1529° W
+london,Priory Hospital,51.6322° N  ,0.1181° W
+london,Royal Hospital for Neuro-disability,51.4517° N  ,0.2142° W
+london,St. Anthony's Hospital  North Cheam,51°22′46.69″N,0°13′14.49″W
+london,St Luke's Hospital for the Clergy,51.5234°N ,0.1403°W
+london,Wellington Hospital  London,51.5316° N  ,0.1714° W
+london,Weymouth Street Hospital,51.5202° N  ,0.1505° W
+new_york_city,Bellevue Hospital Center,40.7393°N,73.9753°W
+new_york_city,Coler Specialty Hospital,40°46′13″N,73°56′32″W
+new_york_city,Gracie Square Hospital,40.769794°N ,73.952856°W
+new_york_city,Harlem Hospital Center,40.8144° N  ,73.9394° W
+new_york_city,Hospital for Special Surgery,40.7650° N  ,73.9528° W
+new_york_city,Lenox Hill Hospital,40.7736°N ,73.9609°W
+new_york_city,Manhattan Eye  Ear and Throat Hospital,40.7642° N  ,73.9635° W
+new_york_city,Manhattan Psychiatric Center,40.7883° N  ,73.9324° W
+new_york_city,Memorial Sloan Kettering Cancer Center,40.7641° N  ,73.9560° W
+new_york_city,Metropolitan Hospital Center,40°47′5.74″N ,73°56′40.94″W
+new_york_city,Mount Sinai Beth Israel,40.7335°N ,73.9826°W
+new_york_city,Mount Sinai Hospital (Manhattan),40.790066°N ,73.953249°W
+new_york_city,St. Luke's–Roosevelt Hospital Center,40.8031° N  ,73.9686° W
+new_york_city,NewYork–Presbyterian Hospital,40.8394° N  ,73.9387° W
+new_york_city,Lower Manhattan Hospital,40.7103° N  ,74.0051° W
+new_york_city,New York Eye and Ear Infirmary,40.7319° N  ,73.9846° W
+new_york_city,NYU Langone Medical Center,40°44′31.09″N ,73°58′26.52″W
+new_york_city,Rockefeller University,40°45′45″N ,73°57′20″W
+new_york_city,Bronx-Lebanon Hospital Center,40.843546°N,73.910834°W
+new_york_city,Calvary Hospital (Bronx),40.8480° N  ,73.8440° W
+new_york_city,Jacobi Medical Center,40.8560°N ,73.8463°W
+new_york_city,James J. Peters VA Medical Center,40.86732525°N ,73.90614128°W
+new_york_city,Lincoln Hospital (Bronx),40°49′N ,73°55′W
+new_york_city,Montefiore Medical Center,40°52′49.35″N ,73°52′44.67″W
+new_york_city,NYC Health + Hospitals,40.7849° N  ,73.9444° W
+new_york_city,St Barnabas Hospital (Bronx),40.8539° N  ,73.8904° W
+new_york_city,Brookdale University Hospital and Medical Center,40.6550° N  ,73.9124° W
+new_york_city,Brooklyn Hospital Center,40.6901°N ,73.9772°W
+new_york_city,Coney Island Hospital,40.5854°N ,73.9655°W
+new_york_city,Interfaith Medical Center,40.6784°N ,73.9378°W
+new_york_city,Kingsbrook Jewish Medical Center,40.658777°N ,73.933197°W
+new_york_city,Kings County Hospital Center,40°39′24″N ,73°56′42″W
+new_york_city,Maimonides Medical Center,40.6392° N  ,73.9984° W
+new_york_city,New York-Presbyterian Brooklyn Methodist Hospital,40°40′03″N,73°58′43″W
+new_york_city,NYU Langone Hospital – Brooklyn,40.646578°N, 74.020658°W
+new_york_city,SUNY Downstate Medical Center,40.6554°N ,73.9457°W
+new_york_city,Woodhull Medical Center,40.7004° N  ,73.9418° W
+new_york_city,Wyckoff Heights Medical Center,40°42′15″N ,73°55′2″W
+new_york_city,Creedmoor Psychiatric Center,40.7415° N  ,73.7315° W
+new_york_city,Elmhurst Hospital Center ,40.7450° N ,73.8860° W
+new_york_city,Floating Hospital,40.7553° N ,73.9444° W
+new_york_city,Long Island Jewish Forest Hills,40.7290° N  ,73.8514° W
+new_york_city,Long Island Jewish Medical Center,40.7544° N  ,73.7077° W
+new_york_city,NewYork–Presbyterian/Queens,40.747156°N,73.825599°W
+new_york_city,Queens Hospital Center,40.716995°N ,73.804381°W
+new_york_city,Bayley Seton Hospital,40.6224° N  ,74.0755° W
+new_york_city,Halloran General Hospital ,40-35'58'' N,074-09'01'' W
+new_york_city,Seaview Hospital,40°35′30″N ,74°7′58″W
+hong_kong,Grantham Hospital,22°15′04″N, 114°10′23″E
+hong_kong,MacLehose Medical Rehabilitation Centre,22°16′12″N ,114°07′27″E
+hong_kong,Queen Mary Hospital (Hong Kong),22°16′12″N ,114°07′52″E
+hong_kong,The Duchess of Kent Children's Hospital at Sandy Bay,22°16′16″N ,114°07′26″E
+hong_kong,Tsan Yuk Hospital,22.28579°N ,114.14350°E
+hong_kong,Tung Wah Group of Hospitals Fung Yiu King Hospital,22°16′18″N ,114°07′29″E
+hong_kong,Tung Wah Hospital,22°17′07″N ,114°08′48″E
+hong_kong,Cheshire Home  Chung Hom Kok,22°12′44″N ,114°11′50″E
+hong_kong,Pamela Youde Nethersole Eastern Hospital,22°16′10″N,114°14′11″E
+hong_kong,Ruttonjee Hospital,22°16′34″N ,114°10′31″E
+hong_kong,St. John Hospital (Hong Kong),22°12′29″N,114°01′53″E
+hong_kong,Tang Shiu Kin Hospital,22°16′31″N ,114°10′40″E
+hong_kong,Tung Wah Eastern Hospital,22°16′29″N ,114°11′25″E
+hong_kong,Hong Kong Buddhist Hospital,22°20′08″N ,114°11′19″E
+hong_kong,Hong Kong Children's Hospital,22°18′56″N,114°12′32″E
+hong_kong,Hong Kong Eye Hospital,22°19′30″N,114°11′5″E
+hong_kong,Kowloon Hospital,22°19′27″N ,114°10′47″E
+hong_kong,Queen Elizabeth Hospital (Hong Kong),22°18′34″N ,114°10′32″E
+hong_kong,Caritas Medical Centre,22.3411111°N, 114.1527778°E
+hong_kong,Kwai Chung Hospital,22.34163°N,114.13448°E
+hong_kong,Kwong Wah Hospital,22.3150°N ,114.1722°E
+hong_kong,North Lantau Hospital,22.2825000°N ,113.9391667°E
+hong_kong,Our Lady of Maryknoll Hospital,22.34526°N ,114.19659°E
+hong_kong,Princess Margaret Hospital (Hong Kong),22.34016°N ,114.13467°E
+hong_kong,Tung Wah Group of Hospitals Wong Tai Sin Hospital,22.34722°N ,114.19635°E
+hong_kong,Yan Chai Hospital,22.3697°N ,114.1197°E
+hong_kong,Haven of Hope Hospital,22°18′50″N ,114°15′23″E 
+hong_kong,Tseung Kwan O Hospital,22°19′5″N ,114°16′13″E
+hong_kong,United Christian Hospital,22°19′23″N,114°13′37″E
+hong_kong,Alice Ho Miu Ling Nethersole Hospital,22.45937°N ,114.17421°E
+hong_kong,Bradbury Hospice,22°23′54″N,114°12′54″E
+hong_kong,North District Hospital,22°29′49″N ,114°07′28″E
+hong_kong,Prince of Wales Hospital,22.37970°N ,114.20170°E 
+hong_kong,Shatin Hospital,22°23′53″N,114°12′46″E
+hong_kong,Tai Po Hospital,22°27′40″N ,114°10′29″E
+hong_kong,Castle Peak Hospital,22°24′29″N ,113°58′27″E
+hong_kong,Pok Oi Hospital,22°26′43″N ,114°02′29″E
+hong_kong,Siu Lam Hospital,22°24′35″N,113°58′29″E
+hong_kong,Tin Shui Wai Hospital,22°27′31″N ,113°59′44″E 
+hong_kong,Tuen Mun Hospital,22.40768°N ,113.97600°E

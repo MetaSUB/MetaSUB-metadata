@@ -7,6 +7,10 @@ def guess_name_kind(name):
         return HAUID
     if name[:2] == 'SL':
         return SL_NAME
+    if name[:6].lower() == 'pilot_':
+        return OTHER_PROJ_UID
+    if name[:10].lower() == 'sossowski_':
+        return OTHER_PROJ_UID
     if 'cem' in name.lower():
         return HA_ID
     if 'db' in name.lower():
@@ -59,6 +63,8 @@ class Sample:
         if self.check_overwrite and (key in self.props) and (key not in self.no_check):
             assert self.props[key].lower() == val.lower(), \
                 f'{self.props[HAUID]} {key} CUR: {self.props[key]} NEW: {val}'
+        if val is None:
+            return
         val = str(val).strip()
         if val:
             self.props[key] = val
