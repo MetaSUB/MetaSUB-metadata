@@ -61,6 +61,8 @@ CORE_PROJECT = 'core_project'
 POSITIVE_CONTROL = 'positive_control'
 NEGATIVE_CONTROL = 'negative_control'
 
+READ_COUNTS = 'num_reads'
+
 CITY_LAT = 'city_latitude'
 CITY_LON = 'city_longitude'
 CITY_COASTAL = 'coastal_city'

@@ -45,6 +45,19 @@ barcelona_csd16 = Table(
     token_mapper(*list(positions.keys())),
 )
 
+################################################################################
+
+positions = {
+    HAUID: 0,
+    READ_COUNTS: 1,
+}
+read_counts = Table(
+    mdata_dir('read_counts.csv'),
+    positions,
+    token_mapper(*list(positions.keys())),
+    name_func=lambda x, y: x.lower(),
+)
+
 
 ################################################################################
 
@@ -520,4 +533,5 @@ SIMPLE_TABLES = [
     haid_to_csdid,
     haid_to_csdid_2,
     pathomap_winter,
+    read_counts,
 ]

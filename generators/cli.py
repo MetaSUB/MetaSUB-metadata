@@ -63,6 +63,8 @@ def best_effort(csv, sample_names):
             'traffic',
             'setting',
 
+            READ_COUNTS,
+
             CITY_LAT,
             CITY_LON,
             CITY_COASTAL,
