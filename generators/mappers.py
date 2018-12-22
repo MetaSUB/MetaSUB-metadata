@@ -166,6 +166,12 @@ class CityCodeToCity:
             'SHG': 'shanghai',
             'BCN': 'barcelona',
             'LIS': 'lisbon',
+            'BOS': 'boston',
+            'MEL': 'melbourne',
+            'NAP': 'naples',
+            'PAR': 'paris',
+            'PXO': 'porto',
+            'RAO': 'sao_paulo',
         }
         city_map = {v: k for k, v in code_map.items()}
         if sample[CITY_CODE]:  #and not sample[CITY]:
@@ -173,7 +179,7 @@ class CityCodeToCity:
                 sample[CITY] = code_map[sample[CITY_CODE].strip().upper()]
             except KeyError:
                 if sample[CITY_CODE].lower() != 'csd':
-                    raise
+                    pass #raise
         elif sample[CITY] and not sample[CITY_CODE]:
             try:
                 sample[CITY_CODE] = city_map[sample[CITY]]
