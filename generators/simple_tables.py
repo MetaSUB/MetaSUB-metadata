@@ -178,57 +178,41 @@ kiu_samples = Table(
 
 ################################################################################
 
+
 positions = {
-    METASUB_NAME: 1,
-    BC: 2,
-    CITY_CODE: 8,
-    CITY: 9,
-    LAT: 14,
-    LON: 15,
-    SURFACE: 16,
-    SURFACE_MATERIAL: 17,
-    TEMPERATURE: 18
+    METASUB_NAME: 0,
+    CITY: 14,
+    LAT: 19,
+    LON: 20,
+    SURFACE: 21,
+    SURFACE_MATERIAL: 22,
 }
 csd16_benyoung = Table(
-    mdata_dir('CSD16&CSD17_MetaData_Final_V2.csv'),
+    mdata_dir('CSD16_benyoung__MASTER_MetaSUB_Metadata_W_YIELDS.csv'),
     positions,
     token_mapper(*list(positions.keys())),
 )
 
-# positions = {
-#     METASUB_NAME: 0,
-#     CITY: 14,
-#     LAT: 19,
-#     LON: 20,
-#     SURFACE: 21,
-#     SURFACE_MATERIAL: 22,
-# }
-# csd16_benyoung = Table(
-#     mdata_dir('CSD16_benyoung__MASTER_MetaSUB_Metadata_W_YIELDS.csv'),
-#     positions,
-#     token_mapper(*list(positions.keys())),
-# )
-# 
-# 
-# ################################################################################
-# 
-# 
-# positions = {
-#     CITY: 0,
-#     BC: 1,
-#     SETTING: 2,
-#     ELEVATION: 3,
-#     TRAFFIC_LEVEL: 4,
-#     LAT: 5,
-#     LON: 6,
-#     SURFACE_MATERIAL: 7,
-#     SURFACE: 8,
-# }
-# csd17_benyoung = Table(
-#     mdata_dir('CSD17_benyoung__MASTER_MetaSUB_Metadata_W_YIELDS.csv'),
-#     positions,
-#     token_mapper(*list(positions.keys())),
-# )
+
+################################################################################
+
+
+positions = {
+    CITY: 0,
+    BC: 1,
+    SETTING: 2,
+    ELEVATION: 3,
+    TRAFFIC_LEVEL: 4,
+    LAT: 5,
+    LON: 6,
+    SURFACE_MATERIAL: 7,
+    SURFACE: 8,
+}
+csd17_benyoung = Table(
+    mdata_dir('CSD17_benyoung__MASTER_MetaSUB_Metadata_W_YIELDS.csv'),
+    positions,
+    token_mapper(*list(positions.keys())),
+)
 
 
 ################################################################################
@@ -441,21 +425,21 @@ zurich_metadata = Table(
 ################################################################################
 
 
-#csd16_metadata_bgy = Table(
-#    mdata_dir('MASTER_MetaSUB_Metadata_BGY_csd16.csv'),
-#    {
-#        METASUB_NAME: 0,
-#        LINE: 8,
-#        LAT: 10,
-#        LON: 11,
-#        SURFACE: 12,
-#        SURFACE_MATERIAL: 13,
-#        TEMPERATURE: 14,
-#    },
-#    token_mapper(
-#        METASUB_NAME, LINE, LAT, LON, SURFACE_MATERIAL, TEMPERATURE
-#    )
-#)
+csd16_metadata_bgy = Table(
+    mdata_dir('MASTER_MetaSUB_Metadata_BGY_csd16.csv'),
+    {
+        METASUB_NAME: 0,
+        LINE: 8,
+        LAT: 10,
+        LON: 11,
+        SURFACE: 12,
+        SURFACE_MATERIAL: 13,
+        TEMPERATURE: 14,
+    },
+    token_mapper(
+        METASUB_NAME, LINE, LAT, LON, SURFACE_MATERIAL, TEMPERATURE
+    )
+)
 
 
 ################################################################################
@@ -533,7 +517,7 @@ SIMPLE_TABLES = [
     bc_to_meta,
     csd16_metadata,
     csd16_benyoung,
-    #csd17_benyoung,
+    csd17_benyoung,
     akl_metadata_csd16,
     fairbanks_metadata_csd16,
     oslo_air_metadata_csd16,
@@ -544,8 +528,8 @@ SIMPLE_TABLES = [
     boston_metadata,
     tokyo_metadata,
     zurich_metadata,
-    #csd16_metadata_bgy,
-    #ben_young_master_metadata,
+    csd16_metadata_bgy,
+    ben_young_master_metadata,
     haid_to_csdid,
     haid_to_csdid_2,
     pathomap_winter,
