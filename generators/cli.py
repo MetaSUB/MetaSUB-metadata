@@ -42,7 +42,6 @@ def best_effort(csv, sample_names):
 
     if csv:
         tbl = pd.DataFrame([sample.to_son() for sample in samples])
-        print(tbl.to_csv())
         tbl = tbl.sort_values(by=['core_project', 'project', 'city', 'metasub_name', 'uuid'])
         tbl = tbl[[
             'uuid',
@@ -88,6 +87,10 @@ def best_effort(csv, sample_names):
             'plate_pos',
             'sample_type',
             'sl_name',
+
+            R1_URI,
+            R2_URI,
+            CONTIG_URI,
 
         ]]
         tbl = tbl.set_index(GENERIC_UID)

@@ -50,13 +50,16 @@ SL_NAME = 'sl_name'
 PROJECT = 'project'
 SAMPLE_TYPE = 'sample_type'
 LOCATION_TYPE = 'location_type'
-IDS = set([HAUID, HA_ID, BC, METASUB_NAME, SL_NAME, OTHER_PROJ_UID])
+IDS = set([GENERIC_UID, HAUID, HA_ID, BC, METASUB_NAME, SL_NAME, OTHER_PROJ_UID])
 CONTROL_STATUS = 'control_type'
 STATION = 'station'
 LINE = 'line'
 INDEX_SEQ = 'index_sequence'
 TEMPERATURE = 'temperature'
 CORE_PROJECT = 'core_project'
+R1_URI = 'read_1_uri'
+R2_URI = 'read_2_uri'
+CONTIG_URI = 'contig_uri'
 
 POSITIVE_CONTROL = 'positive_control'
 NEGATIVE_CONTROL = 'negative_control'

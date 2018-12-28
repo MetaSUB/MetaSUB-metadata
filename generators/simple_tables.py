@@ -525,6 +525,32 @@ pathomap_winter = Table(
 ################################################################################
 
 
+positions = {
+    HAUID: 0,
+    R1_URI: 1,
+    R2_URI: 2,
+}
+wasabi_fastqs = Table(
+    mdata_dir('wasabi_raw_fastq_uris.csv'),
+    positions,
+    token_mapper(*list(positions.keys())),
+)
+
+
+positions = {
+    HAUID: 0,
+    CONTIG_URI: 1,
+}
+wasabi_contigs = Table(
+    mdata_dir('wasabi_contig_uris.csv'),
+    positions,
+    token_mapper(*list(positions.keys())),
+)
+
+
+################################################################################
+
+
 SIMPLE_TABLES = [
     barcelona_csd16,
     haid_to_barcode_4959DB,
@@ -549,4 +575,6 @@ SIMPLE_TABLES = [
     haid_to_csdid_2,
     pathomap_winter,
     read_counts,
+    wasabi_contigs,
+    wasabi_fastqs,
 ]
