@@ -1,15 +1,18 @@
-# Overview
+# MetaSUB Reproducible Metadata
 
-This repository is a collection of raw MetaSUB metadata with annotation and scripts to produce cleaned metadata.
+This repository is a collection of raw MetaSUB metadata with annotation and scripts to produce cleaned metadata. It is reproducible in the sense that it generates metadata directly from documentary files without relying on a person to collate files.
 
-To build a clean metadata table run the following commands
+A metadata table can be generated with this command: `metasub-generator best-effort > metadata.csv`
 
-`python setup.py develop` to install
+[This file](https://github.com/MetaSUB/MetaSUB-metadata/blob/ba04acb5bf6df79d2a9cdd30178f80386b6475c0/complete_metadata.csv) is the most recent, complete, and stable version of the metadata (v1.0.1).
 
-`metasub-generator best-effort --sample-names <list of names> > metadata.csv`
-to generate a metadata table.
+## Installation
 
-`--sample-names` may be omitted to use a default list of sample names `spreadsheets/sample_names.txt`
+```
+git clone git@github.com:MetaSUB/MetaSUB-metadata.git
+cd MetaSUB-metadata
+python setup.py develop
+```
 
 ## Spreadsheets
 
@@ -68,36 +71,5 @@ to generate a metadata table.
 
 `map_collate` (`mappers.py`, `sample_wise.py`, `sample.py`) a miniature package that defined a best-effort approach to matching metadata with variosu forms of identification. The key insight is that this package is intended to deal with many layers of indirection that may originate in many different places. Relies on a large number of metadata files many of which were themselves edited and cleaned.
 
-## Known Unknowns
-
- - Metadata for NYC Winter
- - Metadata for PathoMAP
- - Metadata for Pilot
- - Metadata for many gCSD16 samples
- - Metadata for Olympiome
-
-## What are the MetaSUB sample collection projects?
- - CSD-2016
- - CSD-2017
- - Tigress
- - Pilot (Early 2016)
- - NYC Winter
- - Olympiome 2016
- 
-## Known Irregularities
-
-London did not use the Kobo Toolbox app in gCSD17
-
-## What are the MetaSUB sample extraction and sequencing batches?
-
-N.B. these were largely informal and are ongoing
-
- - ~5k samples extracted at qiagen, then shipped to hudsonalpha (we have an inventory?)
- - Some samples were sent to Hong Kong for extraction, library prep and sequencing (Hong Kong and Shanghai)
- -  Some samples have been kept in Moscow for extraction, library prep and sequencing
- -  London has shipped barcoded tubes from csd2017 to Shanghai. Then Shanghai has sent WCM the samples
- -  UK sent samples to Zymo. Zymo does not have barcode reader so they're labeling by position (this is resolved)
- -  Stockholm extracted samples from Stockholm and other cities and sent the extracted samples to hudsonalpha
- -  We have <a number> of samples in our freezers
 
 
