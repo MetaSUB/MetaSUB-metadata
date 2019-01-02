@@ -1,9 +1,9 @@
 import setuptools
 
 setuptools.setup(
-    name="metasub-scripts",
+    name="metasub-metadata",
     version="0.9.0",
-    url="https://github.com/MetaSUB/metasub-scripts",
+    url="https://github.com/MetaSUB/metasub-metadata",
 
     author="David C. Danko",
     author_email="dcdanko@gmail.com",
