@@ -58,6 +58,10 @@ INDEX_SEQ = 'index_sequence'
 TEMPERATURE = 'temperature'
 CORE_PROJECT = 'core_project'
 
+
+POST_PCR_QUBIT = 'library_post_PCR_Qubit'
+QC_DNA_CONCENTRATION = 'library_QC_concentration'
+
 POSITIVE_CONTROL = 'positive_control'
 NEGATIVE_CONTROL = 'negative_control'
 

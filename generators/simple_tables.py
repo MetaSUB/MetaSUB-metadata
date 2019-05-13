@@ -524,6 +524,80 @@ pathomap_winter = Table(
 
 ################################################################################
 
+pilot_sample_names = {}
+with open(SAMPLE_NAMES_FILE) as snf:
+    for line in snf:
+        sample_name = line.strip()
+        if 'pilot_' not in sample_name:
+            continue
+        original = sample_name.split('_')[2]
+        pilot_sample_names[original] = sample_name
+
+
+def pilot_name_func(name, name_type):
+    if name_type == METASUB_NAME and 'CSD16-HON' in name.upper():
+        return 'HKG'.join(name.upper().split('HON')).lower()
+    if name_type != OTHER_PROJ_UID:
+        return name
+    if 'pilot_' in name:
+        return name
+    name = name.upper()
+    val = pilot_sample_names.get(name, name)
+    return val
+
+
+positions = {
+    OTHER_PROJ_UID: 0,
+    METASUB_NAME: 1,
+    LINE: 12,
+    LAT: 14,
+    LON: 15,
+    SURFACE: 16,
+    SURFACE_MATERIAL: 17,
+}
+pilot_metadata = Table(
+    mdata_dir('pilot_study_metadata_010219.csv'),
+    positions,
+    token_mapper(*list(positions.keys())),
+    val_func=pilot_name_func,
+    name_func=pilot_name_func,
+)
+
+
+################################################################################
+
+
+positions = {
+    LAT: 0,
+    LON: 1,
+    METASUB_NAME: 5,
+    SETTING: 8,
+    SURFACE_MATERIAL: 9
+}
+porto_metadata = Table(
+    mdata_dir('porto_metasub.csv'),
+    positions,
+    token_mapper(*list(positions.keys()))
+)
+
+
+################################################################################
+
+
+positions = {
+    HAUID: 5,
+    QC_DNA_CONCENTRATION: 16,
+    POST_PCR_QUBIT: 17,
+}
+yield_metadata = Table(
+    mdata_dir('MetaSub_Complete_CSD16_17_with_HudsonAlpha_ID_v1_2_counts.csv'),
+    positions,
+    token_mapper(*list(positions.keys()))
+)
+
+
+################################################################################
+
 
 SIMPLE_TABLES = [
     barcelona_csd16,
@@ -549,4 +623,7 @@ SIMPLE_TABLES = [
     haid_to_csdid_2,
     pathomap_winter,
     read_counts,
+    porto_metadata,
+    pilot_metadata,
+    yield_metadata,
 ]
