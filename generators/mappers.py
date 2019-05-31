@@ -41,7 +41,8 @@ class CoreProjMapper:
             return
         proj = sample[PROJECT]
         if proj in [CSD16_CODE, CSD17_CODE, PILOT_CODE]:
-            sample[CORE_PROJECT] = 'core'
+            if sample[CITY] != 'antarctica':
+                sample[CORE_PROJECT] = 'core'
         else:
             sample[CORE_PROJECT] = 'not_core'
 
@@ -388,7 +389,15 @@ class HARemap:
             sample[HA_ID] = clean_ha_id(sample[HA_ID])
 
 
+class CleanCityName:
+
+    def map(self, sample):
+        if sample[CITY]:
+            sample[CITY] = '_'.join(sample[CITY].lower().split())
+
+
 MAPPERS = [
+    CleanCityName(),
     OtherProjToBarcelona(),
     ControlAsCity(),
     CityMetadataMapper(),
