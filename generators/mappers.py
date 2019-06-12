@@ -190,7 +190,7 @@ class CityCodeToCity:
 
 class Handle5106HANames:
     """HA IDs matching 5106-CEM come from either London gCSD17
-    or NYC winter pathomap.
+    or NYC winter   ap.
     """
 
     def __init__(self):
@@ -200,6 +200,9 @@ class Handle5106HANames:
                 mdata_dir('Conversion Tables-Table 1.csv')
             )
         }
+        self.pathomap_winter_coversion = [
+            tkns[0] for tkns in parse_csv(mdata_dir('winter_pathomap_conversion.csv'))
+        ]
 
         self.mdata_tbl = {
             tkns[0]: [
@@ -222,6 +225,13 @@ class Handle5106HANames:
             if '5106-cem' in sample[HA_ID].lower():
                 sample[CITY] = 'new_york_city'
                 sample[PROJECT] = PATHOMAP_WINTER_CODE
+                snum = int(sample[HA_ID].split('-')[2])
+                code = self.pathomap_winter_coversion[snum - 1]
+                sample[METASUB_NAME] = code
+                if code == 'pos':
+                    sample[CONTROL_STATUS] = 'positive_control'
+                elif code == 'neg':
+                    sample[CONTROL_STATUS] = 'negative_control'
             return
 
         internal_name, pos = self.conv_tbl[sample[HA_ID].lower()]

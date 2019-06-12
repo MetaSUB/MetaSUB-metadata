@@ -518,7 +518,7 @@ positions = {
 pathomap_winter = Table(
     mdata_dir('PathoMAP_Winter2014_metadata.csv'),
     positions,
-    token_mapper(*list(positions.keys()), last_resort=True),
+    token_mapper(*list(positions.keys()), last_resort=False),
 )
 
 
