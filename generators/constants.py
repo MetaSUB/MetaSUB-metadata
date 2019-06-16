@@ -59,6 +59,7 @@ TEMPERATURE = 'temperature'
 CORE_PROJECT = 'core_project'
 
 
+
 POST_PCR_QUBIT = 'library_post_PCR_Qubit'
 QC_DNA_CONCENTRATION = 'library_QC_concentration'
 
@@ -76,3 +77,4 @@ CITY_AREA = 'city_land_area_km2'
 CITY_TEMP = 'city_ave_june_temp_c'
 CITY_ELEV = 'city_elevation_meters'
 CITY_CONTINENT = 'continent'
+CITY_KOPPEN_CLIMATE = 'city_koppen_climate'

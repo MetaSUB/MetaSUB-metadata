@@ -76,6 +76,7 @@ def best_effort(csv, sample_names):
             CITY_TEMP,
             CITY_ELEV,
             CITY_CONTINENT,
+            CITY_KOPPEN_CLIMATE,
 
             'barcode',
             'ha_id',

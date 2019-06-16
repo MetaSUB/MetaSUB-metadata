@@ -32,6 +32,7 @@ class CityMetadataMapper:
         sample[CITY_TEMP] = self.tbl['ave_june_temp_celsius'][city_name]
         sample[CITY_ELEV] = self.tbl['elevation_meters'][city_name]
         sample[CITY_CONTINENT] = self.tbl['continent'][city_name]
+        sample[CITY_KOPPEN_CLIMATE] = self.tbl['koppen_climate'][city_name]
 
 
 class CoreProjMapper:
@@ -406,6 +407,75 @@ class CleanCityName:
             sample[CITY] = '_'.join(sample[CITY].lower().split())
 
 
+class FindControls:
+    cntrls = {
+        'haib17CEM5106_HCCGHCCXY_SL270259',
+        'haib17CEM5106_HCCGHCCXY_SL270260',
+        'haib17CEM5106_HCCGHCCXY_SL270261',
+        'haib17CEM5106_HCCGHCCXY_SL270315',
+        'haib17CEM5106_HCCGHCCXY_SL270317',
+        'haib17CEM5106_HCCGHCCXY_SL270318',
+        'haib17CEM5106_HCCGHCCXY_SL270320',
+        'haib17CEM5106_HCCGHCCXY_SL270322',
+        'haib17CEM5106_HCCGHCCXY_SL270323',
+        'haib17CEM5106_HCCGHCCXY_SL270329',
+        'haib17CEM5106_HCCGHCCXY_SL270331',
+        'haib17CEM5106_HCCGHCCXY_SL270346',
+        'haib17CEM5106_HCCGHCCXY_SL270347',
+        'haib17CEM5106_HCCGHCCXY_SL270348',
+        'haib17CEM5106_HCCGHCCXY_SL270385',
+        'haib17CEM5106_HCCGHCCXY_SL270396',
+        'haib17CEM5106_HCCGHCCXY_SL270469',
+        'haib17CEM5106_HCCGHCCXY_SL270470',
+        'haib17CEM5106_HCCGHCCXY_SL270482',
+        'haib17CEM5106_HCCGHCCXY_SL270510',
+        'haib17CEM5106_HCCGHCCXY_SL270511',
+        'haib17CEM5106_HCCGHCCXY_SL270512',
+        'haib17CEM5106_HCCGHCCXY_SL270523',
+        'haib17CEM5106_HCCGHCCXY_SL270535',
+        'haib17CEM5106_HCCGHCCXY_SL270558',
+        'haib17CEM5106_HCCGHCCXY_SL270562',
+        'haib17CEM5106_HCCGHCCXY_SL270567',
+        'haib17CEM5106_HCV72CCXY_SL269808',
+        'haib17CEM5106_HCV72CCXY_SL269809',
+        'haib17CEM5106_HCVMTCCXY_SL269616',
+        'haib17CEM5106_HCVMTCCXY_SL269617',
+        'haib17CEM5106_HCY5HCCXY_SL270995',
+        'haib17CEM5106_HCY5HCCXY_SL270996',
+        'haib17CEM5106_HCY5HCCXY_SL271131',
+        'haib17CEM5106_HCY5HCCXY_SL271132',
+        'haib17CEM5106_HCY5HCCXY_SL271138',
+        'haib17DB4959_H3MGVCCXY_SL259929',
+        'haib17DB4959_H3MGVCCXY_SL259941',
+        'haib17DB4959_H3MGVCCXY_SL259983',
+        'haib18CEM5453_HMGW3CCXY_SL342291',
+        'haib18CEM5526_HMGTJCCXY_SL342622',
+        'haib18CEM5526_HMGTJCCXY_SL342623',
+        'sossowski_BarcelonaNov2018_C--29786-TCGACGTC-GAGCCTTA',
+        'sossowski_BarcelonaNov2018_CSD16-BCN-244-29786-AGGCAGAA-AAGGAGTA',
+        'sossowski_BarcelonaNov2018_CSD16-BCN-248-29786-TCCTGAGC-CTCTCTAT',
+        'sossowski_BarcelonaNov2018_CSD16-BCN-251-29786-TCCTGAGC-ACTGCATA',
+        'sossowski_BarcelonaNov2018_CSD16-BCN-257-29786-GGACTCCT-CTCTCTAT',
+        'sossowski_BarcelonaNov2018_MS036-29786-GGACTCCT-TCTCTCCG',
+        'sossowski_BarcelonaNov2018_MS037-29786-TAGGCATG-CTCTCTAT',
+        'sossowski_BarcelonaNov2018_MS038-29786-TAGGCATG-TATCCTCT',
+        'sossowski_BarcelonaNov2018_MS042-29786-TAGGCATG-CTAAGCCT',
+        'sossowski_BarcelonaNov2018_MS043-29786-TAGGCATG-CGTCTAAT',
+        'sossowski_BarcelonaNov2018_MS044-29786-TAGGCATG-TCTCTCCG',
+        'sossowski_BarcelonaNov2018_MS048-29786-CTCTCTAC-ACTGCATA',
+        'sossowski_BarcelonaNov2018_MS049-29786-CTCTCTAC-AAGGAGTA',
+        'sossowski_BarcelonaNov2018_MS050-29786-CTCTCTAC-CTAAGCCT',
+        'sossowski_BarcelonaNov2018_MS058-29786-CGAGGCTG-CTAAGCCT',
+        'sossowski_BarcelonaNov2018_MS059-29786-CGAGGCTG-CGTCTAAT',
+        'sossowski_BarcelonaNov2018_MS060-29786-CGAGGCTG-TCTCTCCG'
+    }
+
+    def map(self, sample):
+        if sample[HAUID] and sample[HAUID] in self.cntrls:
+            sample[CONTROL_STATUS] = POSITIVE_CONTROL
+
+
+
 MAPPERS = [
     CleanCityName(),
     OtherProjToBarcelona(),
@@ -420,6 +490,7 @@ MAPPERS = [
     Handle5106HANames(),
     GuessProjFromMSUBName(),
     SampleType(),
+    FindControls(),
     MetaSUBNameToProject(),
     OtherProjUidToMetaSubName(),
     OtherProjUidToCity(),
