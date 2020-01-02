@@ -586,6 +586,7 @@ porto_metadata = Table(
 
 positions = {
     HAUID: 5,
+    #BC: 2,
     QC_DNA_CONCENTRATION: 16,
     POST_PCR_QUBIT: 17,
 }
@@ -599,6 +600,44 @@ yield_metadata = Table(
 ################################################################################
 
 
+positions = {
+    HAUID: 0,
+    INDEX_SEQ: 2,
+    BC: 8,
+    METASUB_NAME: 6,
+    HA_ID: 3,
+}
+dec13_metadata = Table(
+    mdata_dir('Dec13_batch_with_uuids.csv'),
+    positions,
+    token_mapper(*list(positions.keys())),
+    name_func=lambda x, y: x.lower(),
+    debug=False
+)
+
+
+positions = {
+    BC: 0,
+    HAUID: 1,
+    CITY: 2,
+    LINE: 3,
+    LAT: 4,
+    LON: 5,
+    SURFACE: 6,
+    SURFACE_MATERIAL: 7,
+}
+dec13_metadata_inbounds = Table(
+    mdata_dir('Dec13_metadata_for_inbounds.csv'),
+    positions,
+    token_mapper(*list(positions.keys())),
+    name_func=lambda x, y: x.lower(),
+    debug=False
+)
+
+
+################################################################################
+
+
 SIMPLE_TABLES = [
     barcelona_csd16,
     haid_to_barcode_4959DB,
@@ -606,6 +645,8 @@ SIMPLE_TABLES = [
     bc_to_meta,
     csd16_metadata,
     csd16_benyoung,
+    dec13_metadata,
+    dec13_metadata_inbounds,
     #csd17_benyoung,
     akl_metadata_csd16,
     fairbanks_metadata_csd16,
