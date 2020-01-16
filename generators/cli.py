@@ -9,6 +9,7 @@ from .mappers import MAPPERS
 from .cleaners import CLEANERS
 from .sample import Sample
 from .constants import *
+from .metadata_ontology import add_ontology, clean_city_names
 
 
 @click.group()
@@ -42,7 +43,6 @@ def best_effort(csv, sample_names):
 
     if csv:
         tbl = pd.DataFrame([sample.to_son() for sample in samples])
-        '''
         tbl = tbl.sort_values(by=['core_project', 'project', 'city', 'metasub_name', 'uuid'])
         tbl = tbl[[
             'uuid',
@@ -93,8 +93,9 @@ def best_effort(csv, sample_names):
             'sl_name',
 
         ]]
-        '''
         tbl = tbl.set_index(GENERIC_UID)
+        tbl = add_ontology(tbl)
+        tbl = clean_city_names(tbl)
         print(tbl.to_csv())
     else:
         stdout.write(dumps([sample.to_son() for sample in samples]))
