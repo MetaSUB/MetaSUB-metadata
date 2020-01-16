@@ -9,3 +9,6 @@ complete:
 
 columns:
 	head -1 complete_metadata.csv | tr ',' '\n'
+
+cities:
+	cat complete_metadata.csv | cut -d ',' -f5 | sort | uniq -c

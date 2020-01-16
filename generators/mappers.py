@@ -27,7 +27,9 @@ class CityMetadataMapper:
             sample[CITY] = 'santiago'
             city_name = 'santiago'
         if city_name not in self.tbl.index:
-            if city_name in ['other', 'pos_control', 'neg_control', 'other_control', 'control']:
+            if city_name in ['other', 'pos_control', 'neg_control', 'other_control', 'control', 'na', 'ctrl']:
+                return
+            if sample[CONTROL_STATUS]:
                 return
             assert False, f'{city_name} not found in cities table.'
 
@@ -182,6 +184,7 @@ class CityCodeToCity:
             'PAR': 'paris',
             'PXO': 'porto',
             'RAO': 'sao_paulo',
+            'SYD': 'sydney',
         }
         city_map = {v: k for k, v in code_map.items()}
         if sample[CITY_CODE]:  #and not sample[CITY]:

@@ -589,6 +589,7 @@ positions = {
     #BC: 2,
     QC_DNA_CONCENTRATION: 16,
     POST_PCR_QUBIT: 17,
+    CITY: 31,
 }
 yield_metadata = Table(
     mdata_dir('MetaSub_Complete_CSD16_17_with_HudsonAlpha_ID_v1_2_counts.csv'),
