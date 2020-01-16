@@ -96,6 +96,7 @@ def best_effort(csv, sample_names):
         tbl = tbl.set_index(GENERIC_UID)
         tbl = add_ontology(tbl)
         tbl = clean_city_names(tbl)
+        tbl.to_json().encode()
         print(tbl.to_csv())
     else:
         stdout.write(dumps([sample.to_son() for sample in samples]))
