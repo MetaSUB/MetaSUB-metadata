@@ -20,8 +20,16 @@ class CityMetadataMapper:
         if not sample[CITY]:
             return
         city_name = sample[CITY].lower()
+        if city_name == 'antarctica':
+            sample[CITY] = 'honolulu'
+            city_name = 'honolulu'
+        if city_name == 'SCL':
+            sample[CITY] = 'santiago'
+            city_name = 'santiago'
         if city_name not in self.tbl.index:
-            return
+            if city_name in ['other', 'pos_control', 'neg_control', 'other_control', 'control']:
+                return
+            assert False, f'{city_name} not found in cities table.'
 
         sample[CITY_LAT] = self.tbl['latitude'][city_name]
         sample[CITY_LON] = self.tbl['longitude'][city_name]
