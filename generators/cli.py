@@ -12,6 +12,25 @@ from .constants import *
 from .metadata_ontology import add_ontology, clean_city_names
 
 
+# MetaSub_Complete_CSD16_17_with_HudsonAlpha_ID_v1_2_counts.csv
+# MetaSub_Complete_CSD16_17_with_HudsonAlpha_ID_v1_2_counts.csv
+
+PROBLEM_SAMPLES = [
+    'haib17CEM4890_HKC32ALXX_SL254736',
+    'haib17DB4959_HMCMJCCXY_SL336179',
+    'haib18CEM5453_HMCMJCCXY_SL336413',
+    'haib18CEM5453_HMCMJCCXY_SL336414',
+    'haib17CEM5106_HCCGHCCXY_SL270236',
+    'haib17CEM5106_HCCGHCCXY_SL270261',
+    'haib17CEM5106_HCCGHCCXY_SL270317',
+    'haib17CEM5106_HCCGHCCXY_SL270318',
+    'haib17CEM5106_HCCGHCCXY_SL270512',
+    'haib18CEM5453_HMC2KCCXY_SL336780',
+    'haib17CEM5080_H7VL7CCXY_SL267191',
+    'haib17CEM5080_H7VL7CCXY_SL267266',
+]
+
+
 @click.group()
 def main():
     pass
@@ -26,16 +45,35 @@ def best_effort(csv, sample_names):
     if not sample_names:
         sample_names = SAMPLE_NAMES_FILE
     with open(sample_names) as f:
-        samples = [Sample.from_name(line.strip()) for line in f]
+        samples = [
+            Sample.from_name(line.strip(), setter=SAMPLE_NAMES_FILE)
+            for line in f if line.strip() not in PROBLEM_SAMPLES
+        ]
 
-    for _ in range(10):
+    N = 5
+    bad, bad_explicit = {}, {i: '' for i in range(N)}
+    for i in range(N):
+        print(f'Iteration {i}', file=stderr)
         for mapper in MAPPERS:
+            mapper_name = mapper.__class__.__name__
+            if mapper_name == 'Table':
+                mapper_name = mapper.filename
             for sample in samples:
                 try:
+                    sample.set_current_setter(mapper_name)
                     mapper.map(sample)
-                except:
-                    print(f'\nMapper: {mapper.__class__.__name__}\nSample: {sample}', file=stderr)
-                    raise
+                except Exception as e:
+                    bad[i] = 1 + bad.get(i, 0)
+                    bad_explicit[i] += f'\nMapper: {mapper_name}\nSample: {sample}\n' + str(e) + '\n\n'
+                    # mapper_name = mapper.__class__.__name__
+                    # if mapper_name == 'Table':
+                    #     mapper_name = mapper.filename
+                    # print(f'\nMapper: {mapper_name}\nSample: {sample}', file=stderr)
+                    # raise
+    if bad:
+        print(bad, file=stderr)
+        print(bad_explicit[1])
+        assert False
 
     for cleaner in CLEANERS:
         for sample in samples:

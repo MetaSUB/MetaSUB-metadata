@@ -1,6 +1,6 @@
 from .parsing import parse_csv
 from .constants import *
-from sys import stderr
+from sys import stderr, exc_info
 from .utils import remove_leading_char
 
 
@@ -14,14 +14,19 @@ def token_specific_val_func(**tokens):
     return val_func
 
 
-def token_mapper(*tokens, strict=False, last_resort=False):
+def token_mapper(*tokens, strict=False, last_resort=False, setter='unknown'):
 
     def map_func(sample, sample_id, vec):
         for tkn in tokens:
             try:
                 if last_resort and sample[tkn] and len(sample[tkn]):
                     return
-                sample[tkn] = vec[tkn]
+                try:
+                    sample.setitem(tkn, vec[tkn], setter=f'{setter}::{sample_id}')
+                except Exception as e:
+                    raise type(e)(
+                        f'New: {setter}::{sample_id}\n' + str(e)
+                    ).with_traceback(exc_info()[2])
             except KeyError:
                 if strict:
                     print(
@@ -56,7 +61,7 @@ def ha_filename_table(filename, description_key=None, strict=False, token_val_fu
     my_tokens = [INDEX_SEQ, SL_NAME, HA_ID]
     if description_key in IDS:
         my_tokens.append(description_key)
-    my_token_mapper = token_mapper(*my_tokens, strict=strict)
+    my_token_mapper = token_mapper(*my_tokens, strict=strict, setter=filename)
 
     return Table(
         filename,
@@ -93,8 +98,15 @@ class Table:
                     if strict:
                         raise
 
+            count = 0
             for id_token in IDS:
                 if id_token in vec:
+                    count += 1
+
+            for id_token in IDS:
+                if id_token in vec:
+                    if id_token == METASUB_NAME and count > 1:
+                        continue  # 'only use metasub name as a last resort'
                     key = self.name_func(vec[id_token], id_token)
                     self.store[key] = vec
         if self.debug:

@@ -75,12 +75,12 @@ class ControlAsCity:
         if sample[CITY]:
             return
         if sample[CONTROL_STATUS]:
-            sample[CITY] = 'other_control'
+            sample.setitem(CITY, 'other_control', setter='Mapper::ControlAsCity')
         elif sample[METASUB_NAME] and 'control' in sample[METASUB_NAME].lower():
-            sample[CITY] = 'other_control'
+            sample.setitem(CITY, 'other_control', setter='Mapper::ControlAsCity')
         elif sample[HA_ID] and sample[HA_ID].upper() == '4959-DB_PC':
-            sample[CITY] = 'other_control'
-            sample[CONTROL_STATUS] = POSITIVE_CONTROL
+            sample.setitem(CITY, 'other_control', setter='Mapper::ControlAsCity')
+            # sample[CONTROL_STATUS] = POSITIVE_CONTROL
 
 
 class MapUUID:
@@ -103,24 +103,22 @@ class MSubToCity:
             'porto': 'porto',
         }
         for code, city_name in codes.items():
-            if code in sample[METASUB_NAME].lower():
-                sample[CITY] = city_name
+            if code in str(sample[METASUB_NAME]).lower():
+                sample.setitem(CITY, city_name, setter='Mapper::MSubToCity')
                 return
 
         if 'csd' in sample[METASUB_NAME].lower():
-            if 'csd_denver' in sample[METASUB_NAME].lower():
-                sample[CITY_CODE] = 'DEN'
-                sample[PROJECT] = CSD16_CODE
+            if 'csd_denver' in str(sample[METASUB_NAME]).lower():
+                sample.setitem(CITY_CODE, 'DEN', setter='Mapper::MSubToCity')
+                sample.setitem(PROJECT, CSD16_CODE, setter='Mapper::MSubToCity')
                 return
             tkns = sample[METASUB_NAME].split('-')
             if len(tkns) == 3:
-                sample[CITY_CODE] = tkns[1]
+                sample.setitem(CITY_CODE, tkns[1], setter='Mapper::MSubToCity')
             return
-
-
         tkns = sample[METASUB_NAME].split('_')
         if 'INBOUNDCONTROL' not in sample[METASUB_NAME] and len(tkns) == 3:
-            sample[CITY] = 'berlin'
+            sample.setitem(CITY, 'berlin', setter='Mapper::MSubToCity')
 
 
 class MetaSUBNameToProject:
@@ -136,7 +134,7 @@ class MetaSUBNameToProject:
         if sample[METASUB_NAME]:
             for key, val in code_map.items():
                 if key.lower() in sample[METASUB_NAME].lower():
-                    sample[PROJECT] = val
+                    sample.setitem(PROJECT, val, setter='Mapper::MetaSUBNameToProject')
                     break
 
 
@@ -183,19 +181,23 @@ class CityCodeToCity:
             'NAP': 'naples',
             'PAR': 'paris',
             'PXO': 'porto',
-            'RAO': 'sao_paulo',
+            'RAO': 'ribeirao_preto',
             'SYD': 'sydney',
         }
         city_map = {v: k for k, v in code_map.items()}
         if sample[CITY_CODE]:  #and not sample[CITY]:
             try:
-                sample[CITY] = code_map[sample[CITY_CODE].strip().upper()]
+                sample.setitem(CITY, code_map[sample[CITY_CODE].strip().upper()], setter='Mapper::CityCodeToCity')
+
             except KeyError:
                 if sample[CITY_CODE].lower() != 'csd':
-                    pass #raise
+                    pass  #raise
         elif sample[CITY] and not sample[CITY_CODE]:
             try:
-                sample[CITY_CODE] = city_map[sample[CITY]]
+                code = city_map[sample[CITY]]
+                if code == 'LSB':
+                    code = 'LIS'
+                sample.setitem(CITY_CODE, code, setter='Mapper::CityCodeToCity')
             except KeyError:
                 pass
 
@@ -235,27 +237,27 @@ class Handle5106HANames:
             return
         if sample[HA_ID].lower() not in self.conv_tbl:
             if '5106-cem' in sample[HA_ID].lower():
-                sample[CITY] = 'new_york_city'
-                sample[PROJECT] = PATHOMAP_WINTER_CODE
+                sample.setitem(CITY, 'new_york_city', setter='Mapper::Handle5106HANames')
+                sample.setitem(PROJECT, PATHOMAP_WINTER_CODE, setter='Mapper::Handle5106HANames')
                 snum = int(sample[HA_ID].split('-')[2])
                 code = self.pathomap_winter_coversion[snum - 1]
-                sample[METASUB_NAME] = code
+                sample.setitem(METASUB_NAME, code, setter='Mapper::Handle5106HANames')
                 if code == 'pos':
-                    sample[CONTROL_STATUS] = 'positive_control'
+                    sample.setitem(CONTROL_STATUS, POSITIVE_CONTROL, setter='Mapper::Handle5106HANames')
                 elif code == 'neg':
-                    sample[CONTROL_STATUS] = 'negative_control'
+                    sample.setitem(CONTROL_STATUS, 'negative_control', setter='Mapper::Handle5106HANames')
             return
 
         internal_name, pos = self.conv_tbl[sample[HA_ID].lower()]
         if '_pos' in internal_name.lower():
-            sample[CONTROL_STATUS] = POSITIVE_CONTROL
+            sample.setitem(CONTROL_STATUS, POSITIVE_CONTROL, setter='Mapper::Handle5106HANames')
         elif '_neg' in internal_name.lower():
-            sample[CONTROL_STATUS] = NEGATIVE_CONTROL
+            sample.setitem(CONTROL_STATUS, NEGATIVE_CONTROL, setter='Mapper::Handle5106HANames')
 
         sample[PLATE_NUM] = pos[0]
         sample[PLATE_POS] = pos[1]
         for k, v in self.mdata_tbl[internal_name]:
-            sample[k] = v
+            sample.setitem(k, v, setter='Mapper::Handle5106HANames')
 
 
 class OtherProjUidToMetaSubName:
@@ -267,7 +269,7 @@ class OtherProjUidToMetaSubName:
         if 'csd16' in uid.lower():
             msub = 'csd16' + uid.split('csd16')[1].split('_')[0]
             msub = '-'.join(msub.split('-')[:3])
-            sample[METASUB_NAME] = msub
+            sample.setitem(METASUB_NAME, msub, setter='Mapper::OtherProjUidToMetaSubName')
 
 
 class OtherProjUidToCity:
@@ -280,7 +282,7 @@ class OtherProjUidToCity:
             return
         pilot_cities = [
             ('hong_kong', 'HKG'),
-            ('lisbon', 'LSB'),
+            ('lisbon', 'LIS'),
             ('mexico_city', 'MXC'),
             ('montevideo', 'MVD'),
             ('oslo', 'OSL'),
@@ -314,7 +316,7 @@ class PosToBC:
             (sample[PLATE_NUM], sample[PLATE_POS])
         )
         if bc:
-            sample[BC] = bc
+            sample.setitem(BC, bc, setter='CSD2017_DAVID.csv')
 
 
 class GuessProjFromMSUBName:
@@ -330,10 +332,10 @@ class GuessProjFromMSUBName:
         }
         for key, code in codes.items():
             if code in sample[METASUB_NAME].lower():
-                sample[PROJECT] = code
+                sample.setitem(PROJECT, code, setter='Mapper::GuessProjFromMSUBName')
 
         if len(sample[METASUB_NAME].split('_')) == 3:
-            sample[PROJECT] = CSD16_CODE
+            sample.setitem(PROJECT, CSD16_CODE, setter='Mapper::GuessProjFromMSUBName')
             return
 
 
@@ -344,21 +346,21 @@ class GuessProj:
         if sample[PROJECT]:
             return  # use this as a last resort
         if sample[OTHER_PROJ_UID] and 'pilot_' in sample[OTHER_PROJ_UID]:
-            sample[PROJECT] = PILOT_CODE
+            sample.setitem(PROJECT, PILOT_CODE, setter='Mapper::GuessProj_A')
             return
         if sample[METASUB_NAME] and 'porto_' in sample[METASUB_NAME].lower():
-            sample[PROJECT] = PILOT_CODE
+            sample.setitem(PROJECT, PILOT_CODE, setter='Mapper::GuessProj_B')
             return
         if sample[METASUB_NAME] and 'csd_denver' in sample[METASUB_NAME].lower():
-            sample[PROJECT] = CSD16_CODE
+            sample.setitem(PROJECT, CSD16_CODE, setter='Mapper::GuessProj_C')
             return
         if sample[HA_ID] and '5080-cem' in sample[HA_ID]:
             ha_num = int(sample[HA_ID].split('-')[2])
             if 1 <= ha_num <= 79:
-                sample[PROJECT] = TIGRESS_CODE
+                sample.setitem(PROJECT, TIGRESS_CODE, setter='Mapper::GuessProj_D')
                 return
         if sample[BC]:
-            sample[PROJECT] = CSD17_CODE
+            sample.setitem(PROJECT, CSD17_CODE, setter='Mapper::GuessProj_E')
             return
 
 class AirSamplingProj:
@@ -367,7 +369,7 @@ class AirSamplingProj:
     def map(self, sample):
         msub = sample[METASUB_NAME]
         if msub and 'csd17' in msub.lower() and '-as' in msub.lower():
-            sample[PROJECT] = CSD17_AIR_CODE
+            sample.setitem(PROJECT, CSD17_AIR_CODE, setter='Mapper::AirSamplingProj')
 
 class SampleType:
 
@@ -386,11 +388,11 @@ class SampleType:
 
     def map(self, sample):
         if sample[HA_ID] and sample[HA_ID].lower() in self.stype_map:
-            sample[SAMPLE_TYPE] = self.stype_map[sample[HA_ID].lower()]
+            sample.setitem(SAMPLE_TYPE, self.stype_map[sample[HA_ID].lower()], setter='Mapper::SampleType')
         elif sample[METASUB_NAME] and sample[METASUB_NAME].lower() in self.stype_map:
-            sample[SAMPLE_TYPE] = self.stype_map[sample[METASUB_NAME].lower()]
+            sample.setitem(SAMPLE_TYPE, self.stype_map[sample[METASUB_NAME].lower()], setter='Mapper::SampleType')
         elif sample[SL_NAME] and  sample[SL_NAME].lower() in self.stype_map:
-            sample[SAMPLE_TYPE] = self.stype_map[sample[SL_NAME].lower()]
+            sample.setitem(SAMPLE_TYPE, self.stype_map[sample[SL_NAME].lower()], setter='Mapper::SampleType')
 
 
 class HAUIDSplitter:
@@ -418,7 +420,7 @@ class CleanCityName:
 
     def map(self, sample):
         if sample[CITY]:
-            sample[CITY] = '_'.join(sample[CITY].lower().split())
+            sample.setitem(CITY, '_'.join(sample[CITY].lower().split()), setter='Mapper::CleanCityName')
 
 
 class FindControls:
@@ -486,7 +488,7 @@ class FindControls:
 
     def map(self, sample):
         if sample[HAUID] and sample[HAUID] in self.cntrls:
-            sample[CONTROL_STATUS] = POSITIVE_CONTROL
+            sample.setitem(CONTROL_STATUS, POSITIVE_CONTROL, setter='MAPPER::FindControls')
 
 
 

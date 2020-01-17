@@ -22,8 +22,8 @@ from sys import stderr
 haid_to_barcode_4959DB = Table(
     mdata_dir('4959DB_barcodes.csv'),
     {HA_ID: 0, BC: 1},
-    token_mapper(BC),
-    name_func=lambda x, y: remove_trailing_char('R')(x.lower()),
+    token_mapper(BC, setter='4959DB_barcodes.csv'),
+    name_func=lambda x, y: remove_trailing_char('R')(str(x).lower()),
     skip=1,
 )
 
@@ -42,7 +42,7 @@ positions = {
 barcelona_csd16 = Table(
     mdata_dir('barcelona_csd16_metadata.csv'),
     positions,
-    token_mapper(*list(positions.keys())),
+    token_mapper(*list(positions.keys()), setter='barcelona_csd16_metadata.csv'),
 )
 
 ################################################################################
@@ -54,8 +54,8 @@ positions = {
 read_counts = Table(
     mdata_dir('read_counts.csv'),
     positions,
-    token_mapper(*list(positions.keys())),
-    name_func=lambda x, y: x.lower(),
+    token_mapper(READ_COUNTS, setter='read_counts.csv'),
+    name_func=lambda x, y: str(x).lower(),
 )
 
 
@@ -75,7 +75,7 @@ def normalize_plate_num(raw):
 ha_name_to_pos = Table(
     mdata_dir('HA Submissions-Grid view.csv'),
     {HA_ID: 0, PLATE_NUM: 8, PLATE_POS: 14},
-    token_mapper(PLATE_NUM, PLATE_POS),
+    token_mapper(PLATE_NUM, PLATE_POS, setter='HA Submissions-Grid view.csv'),
     val_func=token_specific_val_func(**{PLATE_NUM: normalize_plate_num}),
     assert_len=15
 )
@@ -85,8 +85,8 @@ ha_name_to_pos = Table(
 
 
 def airsample_ha_to_msub_mapper(sample, sample_id, vec):
-    sample[METASUB_NAME] = vec[METASUB_NAME]
-    sample[PROJECT] = CSD17_AIR_CODE
+    sample.setitem(METASUB_NAME, vec[METASUB_NAME], setter='airsamples_ha_id_to_msub_name.csv')
+    sample.setitem(PROJECT, CSD17_AIR_CODE, setter='airsamples_ha_id_to_msub_name.csv')
 
 
 airsample_ha_to_msub = Table(
@@ -113,8 +113,8 @@ olympiome_metadata = Table(
         LON: 8,
         SURFACE: 9,
     },
-    token_mapper(PROJECT, STATION, LAT, LON, SURFACE),
-    name_func=lambda x, y: x.upper()
+    token_mapper(PROJECT, STATION, LAT, LON, SURFACE, setter='samples_oly_meta_all_information_e.csv'),
+    name_func=lambda x, y: str(x).upper()
 )
 
 
@@ -140,7 +140,7 @@ bc_to_meta = Table(
     token_mapper(
         CITY, SURFACE_MATERIAL, SURFACE, SETTING,
         ELEVATION, TRAFFIC_LEVEL, LAT, LON, METASUB_NAME,
-        STATION, LINE, strict=False
+        STATION, LINE, strict=False, setter='cleaned_simplified_metadata.csv'
     ),
     name_func=token_specific_val_func(**{METASUB_NAME: remove_leading_char('g')}),
     val_func=token_specific_val_func(**{METASUB_NAME: remove_leading_char('g')}),
@@ -158,41 +158,41 @@ positions = {
 promega_conrol_plate = Table(
     mdata_dir('CSD17_control_plate_promega.csv'),
     positions,
-    token_mapper(*list(positions.keys())),
+    token_mapper(*list(positions.keys()), setter='CSD17_control_plate_promega.csv'),
 )
 
 
 ################################################################################
 
 
-positions = {
-    HA_ID: 3,
-    METASUB_NAME: 4,
-}
-kiu_samples = Table(
-    mdata_dir('KIU_samples_Shipment_Finallistwith_ID_June2017.csv'),
-    positions,
-    token_mapper(*list(positions.keys())),
-)
+# positions = {
+#     HA_ID: 3,
+#     METASUB_NAME: 4,
+# }
+# kiu_samples = Table(
+#     mdata_dir('KIU_samples_Shipment_Finallistwith_ID_June2017.csv'),
+#     positions,
+#     token_mapper(*list(positions.keys())),
+# )
 
 
 ################################################################################
 
-positions = {
-    BC: 2,
-    CITY_CODE: 8,
-    CITY: 9,
-    LAT: 14,
-    LON: 15,
-    SURFACE: 16,
-    SURFACE_MATERIAL: 17,
-    TEMPERATURE: 18
-}
-csd16_benyoung = Table(
-    mdata_dir('CSD16&CSD17_MetaData_Final_V2.csv'),
-    positions,
-    token_mapper(*list(positions.keys())),
-)
+# positions = {
+#     BC: 2,
+#     CITY_CODE: 8,
+#     CITY: 9,
+#     LAT: 14,
+#     LON: 15,
+#     SURFACE: 16,
+#     SURFACE_MATERIAL: 17,
+#     TEMPERATURE: 18
+# }
+# csd16_benyoung = Table(
+#     mdata_dir('CSD16&CSD17_MetaData_Final_V2.csv'),
+#     positions,
+#     token_mapper(*list(positions.keys())),
+# )
 
 # positions = {
 #     METASUB_NAME: 0,
@@ -233,33 +233,33 @@ csd16_benyoung = Table(
 ################################################################################
 
 
-positions = {
-    CITY: 0,
-    BC: 1,
-    HAUID: 2,
-    SL_NAME: 8,
-    INDEX_SEQ: 6,
-    STATION: 9,
-    SETTING: 10,
-    ELEVATION: 11,
-    TRAFFIC_LEVEL: 12,
-    LAT: 13,
-    LON: 14,
-    SURFACE_MATERIAL: 15,
-    SURFACE: 16,
-}
-ben_young_master_metadata = Table(
-    mdata_dir('MASTER_MetaSUB_Metadata_W_YIELDS.csv'),
-    positions,
-    token_mapper(*list(positions.keys())),
-)
+# positions = {
+#     CITY: 0,
+#     BC: 1,
+#     HAUID: 2,
+#     SL_NAME: 8,
+#     INDEX_SEQ: 6,
+#     STATION: 9,
+#     SETTING: 10,
+#     ELEVATION: 11,
+#     TRAFFIC_LEVEL: 12,
+#     LAT: 13,
+#     LON: 14,
+#     SURFACE_MATERIAL: 15,
+#     SURFACE: 16,
+# }
+# ben_young_master_metadata = Table(
+#     mdata_dir('MASTER_MetaSUB_Metadata_W_YIELDS.csv'),
+#     positions,
+#     token_mapper(*list(positions.keys())),
+# )
 
 
 ################################################################################
 
 
 def csd16_metadata_name_func(name, name_type):
-    name = name.lower()
+    name = str(name).lower()
     name = '-'.join(name.split('_'))
     if 'csd2016' in name:
         name = 'csd16'.join(name.split('csd2016'))
@@ -277,7 +277,7 @@ csd16_metadata = Table(
         LAT: 17,
         LON: 20,
     },
-    token_mapper(CITY, SURFACE, SURFACE_MATERIAL, TRAFFIC_LEVEL, LAT, LON),
+    token_mapper(CITY, SURFACE, SURFACE_MATERIAL, TRAFFIC_LEVEL, LAT, LON, setter='collated_metadata_csd16.csv'),
     name_func=csd16_metadata_name_func,
 )
 
@@ -295,8 +295,8 @@ akl_metadata_csd16 = Table(
         LAT: 30,
         LON: 29,
     },
-    token_mapper(CITY, SURFACE_MATERIAL, SETTING, LAT, LON),
-    name_func=lambda x, y: x.upper(),
+    token_mapper(CITY, SURFACE_MATERIAL, SETTING, LAT, LON, setter='auckland_csd16.csv'),
+    name_func=lambda x, y: str(x).upper(),
     skip=1
 )
 
@@ -317,8 +317,8 @@ fairbanks_metadata_csd16 = Table(
         SURFACE_MATERIAL: 5,
         SURFACE: 4,
     },
-    token_mapper(SURFACE, SURFACE_MATERIAL),
-    name_func=lambda x, y: x.upper(),
+    token_mapper(SURFACE, SURFACE_MATERIAL, setter='Fairbanks_corralled_CSD16.csv'),
+    name_func=lambda x, y: str(x).upper(),
     val_func=fairbanks_metadata_csd16_val_func,
     skip=1
 )
@@ -350,6 +350,7 @@ oslo_air_metadata_csd16 = Table(
         ELEVATION,
         SETTING,
         TRAFFIC_LEVEL,
+        setter='oslo_air_sample_metadata.csv'
     ),
     name_func=token_specific_val_func(**{METASUB_NAME: remove_leading_char('g')}),
     val_func=token_specific_val_func(**{METASUB_NAME: remove_leading_char('g')}),
@@ -375,9 +376,9 @@ tigress_metadata = Table(
     },
     token_mapper(
         CITY, LOCATION_TYPE, LAT, LON, SETTING, ELEVATION, SURFACE,
-        SURFACE_MATERIAL
+        SURFACE_MATERIAL, setter='metadata.MetaSUB_UK2017.csv'
     ),
-    name_func=lambda x, y: '-'.join(x.lower().split('_')),
+    name_func=lambda x, y: '-'.join(str(x).lower().split('_')),
 )
 
 
@@ -394,7 +395,7 @@ tokyo_metadata = Table(
         TEMPERATURE: 12,
     },
     token_mapper(
-        METASUB_NAME, LAT, LON, SURFACE_MATERIAL, TEMPERATURE
+        METASUB_NAME, LAT, LON, SURFACE_MATERIAL, TEMPERATURE, setter='Tokyo_MetaSUB_2016_SA_HS_NM_.csv'
     )
 )
 
@@ -413,7 +414,7 @@ boston_metadata = Table(
         TEMPERATURE: 15,
     },
     token_mapper(
-        METASUB_NAME, LINE, LAT, LON, SURFACE_MATERIAL, TEMPERATURE
+        METASUB_NAME, LINE, LAT, LON, SURFACE_MATERIAL, TEMPERATURE, setter='Boston_MetaSUB_2016_SA_TH_BGY_TH.csv'
     )
 )
 
@@ -432,7 +433,7 @@ zurich_metadata = Table(
         TEMPERATURE: 14,
     },
     token_mapper(
-        METASUB_NAME, LINE, LAT, LON, SURFACE_MATERIAL, TEMPERATURE
+        METASUB_NAME, LINE, LAT, LON, SURFACE_MATERIAL, TEMPERATURE, setter='Zurich_MetaSUB_2016_SA.csv'
     )
 )
 
@@ -461,11 +462,12 @@ zurich_metadata = Table(
 
 
 def handle_msub_name(msub_name, position):
+    msub_name = str(msub_name)
     if position == HA_ID:
         return remove_trailing_char('R')(msub_name.lower())
     if position != METASUB_NAME:
-        return msub_name.upper()
-    msub_name = msub_name.upper()
+        return str(msub_name).upper()
+    msub_name = str(msub_name).upper()
     msub_name = '-'.join(msub_name.split('_'))
     if 'CSD-DENVER' in msub_name:
         return 'CSD16-DEN' + msub_name.split('CSD-DENVER')[-1]
@@ -483,7 +485,7 @@ positions = {
 haid_to_csdid = Table(
     mdata_dir('collated_sample_sheets_ea_v3.csv'),
     positions,
-    token_mapper(*list(positions.keys())),
+    token_mapper(*list(positions.keys()), setter='collated_sample_sheets_ea_v3.csv'),
     name_func=handle_msub_name,
     val_func=handle_msub_name,
 )
@@ -492,7 +494,7 @@ haid_to_csdid = Table(
 def map_func(sample, sample_id, vec):
     if sample[PROJECT]:
         return
-    sample[PROJECT] = vec[PROJECT]
+    sample.setitem(PROJECT, vec[PROJECT], setter='collated_sample_sheets_ea_v3.csv')
 
 positions = {
     HA_ID: 1,
@@ -518,7 +520,7 @@ positions = {
 pathomap_winter = Table(
     mdata_dir('PathoMAP_Winter2014_metadata.csv'),
     positions,
-    token_mapper(*list(positions.keys()), last_resort=False),
+    token_mapper(*list(positions.keys()), last_resort=False, setter='PathoMAP_Winter2014_metadata.csv'),
 )
 
 
@@ -558,7 +560,7 @@ positions = {
 pilot_metadata = Table(
     mdata_dir('pilot_study_metadata_010219.csv'),
     positions,
-    token_mapper(*list(positions.keys())),
+    token_mapper(*list(positions.keys()), setter='pilot_study_metadata_010219.csv'),
     val_func=pilot_name_func,
     name_func=pilot_name_func,
 )
@@ -577,24 +579,34 @@ positions = {
 porto_metadata = Table(
     mdata_dir('porto_metasub.csv'),
     positions,
-    token_mapper(*list(positions.keys()))
+    token_mapper(*list(positions.keys()), setter='porto_metasub.csv')
 )
 
 
 ################################################################################
 
-
 positions = {
+    BC: 3,
+    HA_ID: 4,
     HAUID: 5,
-    #BC: 2,
     QC_DNA_CONCENTRATION: 16,
     POST_PCR_QUBIT: 17,
+    INDEX_SEQ: 18,
     CITY: 31,
+    LOCATION_TYPE: 32,
+    LINE: 33,
+    LAT: 36,
+    LON: 37,
+    SURFACE: 38,
+    SURFACE_MATERIAL: 39,
+    TEMPERATURE: 40,
+    PROJECT: 44,
+    METASUB_NAME: 2,
 }
 yield_metadata = Table(
     mdata_dir('MetaSub_Complete_CSD16_17_with_HudsonAlpha_ID_v1_2_counts.csv'),
     positions,
-    token_mapper(*list(positions.keys()))
+    token_mapper(*list(positions.keys()), setter='MetaSub_Complete_CSD16_17_with_HudsonAlpha_ID_v1_2_counts.csv')
 )
 
 
@@ -611,8 +623,8 @@ positions = {
 dec13_metadata = Table(
     mdata_dir('Dec13_batch_with_uuids.csv'),
     positions,
-    token_mapper(*list(positions.keys())),
-    name_func=lambda x, y: x.lower(),
+    token_mapper(*list(positions.keys()), setter='Dec13_batch_with_uuids.csv'),
+    name_func=lambda x, y: str(x).lower(),
     debug=False
 )
 
@@ -630,8 +642,8 @@ positions = {
 dec13_metadata_inbounds = Table(
     mdata_dir('Dec13_metadata_for_inbounds.csv'),
     positions,
-    token_mapper(*list(positions.keys())),
-    name_func=lambda x, y: x.lower(),
+    token_mapper(*list(positions.keys()), setter='Dec13_metadata_for_inbounds.csv'),
+    name_func=lambda x, y: str(x).lower(),
     debug=False
 )
 
@@ -644,8 +656,8 @@ SIMPLE_TABLES = [
     haid_to_barcode_4959DB,
     airsample_ha_to_msub,
     bc_to_meta,
-    csd16_metadata,
-    csd16_benyoung,
+    #csd16_metadata,
+    #csd16_benyoung,
     dec13_metadata,
     dec13_metadata_inbounds,
     #csd17_benyoung,
@@ -654,15 +666,15 @@ SIMPLE_TABLES = [
     oslo_air_metadata_csd16,
     promega_conrol_plate,
     olympiome_metadata,
-    kiu_samples,
+    # kiu_samples,
     tigress_metadata,
     boston_metadata,
     tokyo_metadata,
     zurich_metadata,
     #csd16_metadata_bgy,
     #ben_young_master_metadata,
-    haid_to_csdid,
-    haid_to_csdid_2,
+    #haid_to_csdid,
+    #haid_to_csdid_2,
     pathomap_winter,
     read_counts,
     porto_metadata,
