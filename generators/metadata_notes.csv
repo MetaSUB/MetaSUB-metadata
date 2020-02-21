@@ -1,0 +1,12 @@
+
+
+
+List of 8,251 CSD16 samples sent to qiagen. Identified by MetaSUB ID    https://www.dropbox.com/s/vcbpevqlahf9fbu/master_CSD16.xlsx?dl=0
+
+Table of 12,753 smaples with hudson alpha IDs, hudson alpha projects, MetaSUB IDs (sometimes), and other metadata   https://www.dropbox.com/s/geep4lpb2vz745x/collated_sample_sheets_ea_v3.csv?dl=0
+
+Table of 13,153 samples collated from H.A. filename sheets. Lists barcode, HA-IDs, HA-projects, and plate positions. https://www.dropbox.com/s/m4duhit8b3cb0ey/collated_sample_sheets.csv?dl=0
+
+List of 5,569 unique MetaSUB-IDs from CSD16. These are 'cleaned ids' so it's not clear how far they'll go   https://www.dropbox.com/s/8tzcy3cr7fp3mya/csd16_metasub_ids.txt?dl=0
+
+List of 5,622 unique MetaSUB-IDs from CSD16. These are dirty ids so don't always look like MetaSUB IDs  https://www.dropbox.com/s/f0vs1j2u43vegsh/dirty_csd16_metasub_ids.txt?dl=0

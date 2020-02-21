@@ -86,6 +86,20 @@ class Sample:
                     test = abs(val - current) < 0.1
                     if key in ['latitude', 'longitude'] and current == 0.01:
                         test = True
+                    if key == 'latitude':
+                        city_lat = float(self.props.get('city_latitude', current))
+                        if abs(current - city_lat) > 1:
+                            test = True
+                        elif abs(val - city_lat) > 1:
+                            test = True
+                            val = current
+                    if key == 'longitude':
+                        city_lat = float(self.props.get('city_longitude', current))
+                        if abs(current - city_lat) > 1:
+                            test = True
+                        elif abs(val - city_lat) > 1:
+                            test = True
+                            val = current
                 except ValueError:
                     test = current == val
                     if val in current:

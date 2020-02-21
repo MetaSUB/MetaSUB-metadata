@@ -194,19 +194,19 @@ promega_conrol_plate = Table(
 #     token_mapper(*list(positions.keys())),
 # )
 
-# positions = {
-#     METASUB_NAME: 0,
-#     CITY: 14,
-#     LAT: 19,
-#     LON: 20,
-#     SURFACE: 21,
-#     SURFACE_MATERIAL: 22,
-# }
-# csd16_benyoung = Table(
-#     mdata_dir('CSD16_benyoung__MASTER_MetaSUB_Metadata_W_YIELDS.csv'),
-#     positions,
-#     token_mapper(*list(positions.keys())),
-# )
+positions = {
+    METASUB_NAME: 0,
+    CITY: 14,
+    LAT: 19,
+    LON: 20,
+    SURFACE: 21,
+    SURFACE_MATERIAL: 22,
+}
+csd16_benyoung = Table(
+    mdata_dir('CSD16_benyoung__MASTER_MetaSUB_Metadata_W_YIELDS.csv'),
+    positions,
+    token_mapper(*list(positions.keys())),
+)
 # 
 # 
 # ################################################################################
@@ -606,7 +606,8 @@ positions = {
 yield_metadata = Table(
     mdata_dir('MetaSub_Complete_CSD16_17_with_HudsonAlpha_ID_v1_2_counts.csv'),
     positions,
-    token_mapper(*list(positions.keys()), setter='MetaSub_Complete_CSD16_17_with_HudsonAlpha_ID_v1_2_counts.csv')
+    token_mapper(*list(positions.keys()), setter='MetaSub_Complete_CSD16_17_with_HudsonAlpha_ID_v1_2_counts.csv'),
+    name_func=lambda x, y: str(x).lower(),
 )
 
 
@@ -657,7 +658,7 @@ SIMPLE_TABLES = [
     airsample_ha_to_msub,
     bc_to_meta,
     #csd16_metadata,
-    #csd16_benyoung,
+    csd16_benyoung,
     dec13_metadata,
     dec13_metadata_inbounds,
     #csd17_benyoung,

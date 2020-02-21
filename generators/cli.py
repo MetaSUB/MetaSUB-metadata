@@ -50,7 +50,7 @@ def best_effort(csv, sample_names):
             for line in f if line.strip() not in PROBLEM_SAMPLES
         ]
 
-    N = 5
+    N = 1
     bad, bad_explicit = {}, {i: '' for i in range(N)}
     for i in range(N):
         print(f'Iteration {i}', file=stderr)
@@ -64,7 +64,7 @@ def best_effort(csv, sample_names):
                     mapper.map(sample)
                 except Exception as e:
                     bad[i] = 1 + bad.get(i, 0)
-                    bad_explicit[i] += f'\nMapper: {mapper_name}\nSample: {sample}\n' + str(e) + '\n\n'
+                    bad_explicit[i] += f'{sample["hudson_alpha_uid"]}\n' #f'\nMapper: {mapper_name}\nSample: {sample}\n' + str(e) + '\n\n'
                     # mapper_name = mapper.__class__.__name__
                     # if mapper_name == 'Table':
                     #     mapper_name = mapper.filename
@@ -72,7 +72,9 @@ def best_effort(csv, sample_names):
                     # raise
     if bad:
         print(bad, file=stderr)
-        print(bad_explicit[1])
+        print('Details', file=stderr)
+        for i in range(N):
+            print(bad_explicit[i], file=stderr)
         assert False
 
     for cleaner in CLEANERS:
@@ -136,7 +138,7 @@ def best_effort(csv, sample_names):
         tbl = clean_city_names(tbl)
         tbl.to_json().encode()
         print(tbl.to_csv())
-    else:
+    elif False:
         stdout.write(dumps([sample.to_son() for sample in samples]))
 
 
