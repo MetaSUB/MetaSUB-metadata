@@ -652,23 +652,54 @@ dec13_metadata_inbounds = Table(
 ################################################################################
 
 
+positions = {
+    BC: 0,
+    HA_ID: 4,
+    PROJECT: 17,
+    CITY_CODE: 26,
+    CITY: 27,
+    LAT: 32,
+    LON: 33,
+    # ELEVATION: 34,
+    LOCATION_TYPE: 36,
+    SURFACE: 41,
+    SURFACE_MATERIAL: 45,
+    # TRAFFIC_LEVEL: 47,
+    TEMPERATURE: 52,
+    POST_PCR_QUBIT: 113,
+    QC_DNA_CONCENTRATION: 102,
+    HAUID: 122,
+}
+master_allsamples_v2 = Table(
+    mdata_dir('MetaSUB_master_allsamples_v2.csv'),
+    positions,
+    token_mapper(*list(positions.keys()), setter='MetaSUB_master_allsamples_v2.csv'),
+    name_func=lambda x, y: str(x).lower(),
+    debug=False
+)
+
+
+################################################################################
+
+
 SIMPLE_TABLES = [
     barcelona_csd16,
     haid_to_barcode_4959DB,
     airsample_ha_to_msub,
-    bc_to_meta,
+    # bc_to_meta,
+    master_allsamples_v2,
     #csd16_metadata,
     csd16_benyoung,
-    dec13_metadata,
-    dec13_metadata_inbounds,
+    # dec13_metadata,
+    # dec13_metadata_inbounds,
     #csd17_benyoung,
     akl_metadata_csd16,
     fairbanks_metadata_csd16,
-    oslo_air_metadata_csd16,
+    # oslo_air_metadata_csd16,
     promega_conrol_plate,
     olympiome_metadata,
     # kiu_samples,
-    tigress_metadata,
+    # tigress_metadata,
     boston_metadata,
     tokyo_metadata,
     zurich_metadata,

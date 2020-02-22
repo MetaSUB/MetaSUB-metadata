@@ -25,7 +25,7 @@ def token_mapper(*tokens, strict=False, last_resort=False, setter='unknown'):
                     sample.setitem(tkn, vec[tkn], setter=f'{setter}::{sample_id}')
                 except Exception as e:
                     raise type(e)(
-                        f'New: {setter}::{sample_id}\n' + str(e)
+                        f'[TOKEN MAPPER]\nSetter File: {setter}\nSample ID: {sample_id}\n' + str(e)
                     ).with_traceback(exc_info()[2])
             except KeyError:
                 if strict:

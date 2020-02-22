@@ -23,13 +23,13 @@ def uppercase_token(token):
 
 
 def case_ha_proj(sample):
-    if not isinstance(sample[HA_PROJ], str):
+    if not isinstance(sample[HA_PROJ], str) or 'haib' not in sample[HAUID]:
         return
     sample[HA_PROJ] = 'haib' + sample[HA_PROJ].split('haib')[1].upper()
 
 
 def case_hauid(sample):
-    if not isinstance(sample[HAUID], str):
+    if not isinstance(sample[HAUID], str) or 'haib' not in sample[HAUID]:
         return
     hauid = sample[HAUID].split('_')
     haib = 'haib' + hauid[0].split('haib')[1].upper()
@@ -65,6 +65,30 @@ def clean_metasub_name(sample):
     sample[METASUB_NAME] = msub
 
 
+def clean_city_code(sample):
+    if not isinstance(sample[CITY_CODE], str):
+        return
+    for cur, fixed in [('swe', 'sto'), ('bar', 'bcn'), ('hok', 'hkg'), ('sat', 'scl'), ('auk', 'akl'), ('ilo', 'ilr')]:
+        if sample[CITY_CODE] == cur:
+            sample[CITY_CODE] = fixed
+
+
+def clean_city(sample):
+    if isinstance(sample[CITY], float):
+        sample[CITY] = None
+    if not isinstance(sample[CITY], str):
+        return
+    if sample[CITY] == 'nan':
+        sample[CITY] = None
+    if sample[CITY] == 'são_paulo':
+        sample[CITY] = 'sao_paulo'
+    if sample[CITY] == 'bogotá':
+        sample[CITY] = 'bogota'
+    for cur, fixed in [('sweden', 'stockholm')]:
+        if sample[CITY] == cur:
+            sample[CITY] = fixed
+
+
 CLEANERS = [
     turn_off_checking,
     uppercase_token(SL_NAME),
@@ -75,4 +99,6 @@ CLEANERS = [
     case_ha_proj,
     clean_metasub_name,
     case_uuid,
+    clean_city_code,
+    clean_city,
 ]

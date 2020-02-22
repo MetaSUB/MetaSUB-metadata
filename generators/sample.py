@@ -42,7 +42,7 @@ class Sample:
         self.check_overwrite = True
         self.no_check = set([CITY, HA_ID])
         self.current_setter = 'unknown'
-        self.unchangeable = set()
+        self.unchangeable = set([SL_NAME, PROJECT])
 
     def to_son(self):
         rough = {k: v for k, v in self.props.items() if v}
@@ -72,9 +72,16 @@ class Sample:
 
     def setitem(self, key, val, setter='unknown'):
         val = str(val).strip()
-        if not val or val in ['na', 'other', 'inbetween', 'nan']:
+        if not val or val in ['na', 'other', 'inbetween', 'nan', '/na', 'no barcode', '0000000000']:
             return
-        if key in self.unchangeable:
+        if (key in self.props) and (key in self.unchangeable):
+            return
+        if (key in self.props) and (key == HA_ID) and (val.lower() == '5332-cem-0144'):
+            return
+        if (key in self.props) and (key == HA_ID) and (val.lower() == '5332-cem-0087'):
+            return
+        samps = ['csd17-osl-as7', 'csd17-osl-as9']
+        if (key in self.props) and (key == METASUB_NAME) and (val.lower() in samps):
             return
 
         if self.check_overwrite and (key in self.props) and (key not in self.no_check):
@@ -83,7 +90,7 @@ class Sample:
             if current not in ['other']:
                 try:
                     current, val = float(current), float(val)
-                    test = abs(val - current) < 0.1
+                    test = abs(val - current) < 0.5
                     if key in ['latitude', 'longitude'] and current == 0.01:
                         test = True
                     if key == 'latitude':
@@ -123,6 +130,15 @@ class Sample:
                     ('shrine', 'church'),
                     ('winter2014', 'pathomap_winter'),
                     ('winter_nyc', 'pathomap_winter'),
+                    ('bcn', 'bar'),
+                    ('swe', 'sto'),
+                    ('hok', 'hkg'),
+                    ('sat', 'scl'),
+                    ('auk', 'akl'),
+                    ('ilo', 'ilr'),
+                    ('station', 'bus/subway interchange'),
+                    ('bus_line', 'sub_line'),
+                    ('plastic', 'metal'),
                 ]:
                     if tuple(sorted((current, val))) == tuple(sorted(allowed_pair)):
                         test = True
@@ -138,11 +154,30 @@ class Sample:
                     except ValueError:
                         pass
                     try:
-                        int(current) # current is actually a barcode, common swap
+                        int(current)  # current is actually a barcode, common swap
                         test = True
                     except ValueError:
                         pass
-
+                if key == TEMPERATURE and (current > 50 or current < 1):
+                    test = True
+                if key == TEMPERATURE and (val > 50 or val < 1):
+                    test = True
+                    val = current
+                if key == TEMPERATURE and abs(val - current) < 5:
+                    test = True
+                if key == POST_PCR_QUBIT and abs(val - current) < 5:
+                    test = True
+                if key == SURFACE_MATERIAL and (val not in ['glass', 'metal', 'plastic']):
+                    test = True
+                    val = current
+                if key == SURFACE_MATERIAL and (current not in ['glass', 'metal', 'plastic']):
+                    test = True
+                if key == SURFACE_MATERIAL and 'MetaSUB_master_allsamples_v2.csv' in self.setby[key]:
+                    test = True
+                    val = current
+                if key == LOCATION_TYPE and 'MetaSUB_master_allsamples_v2.csv' in self.setby[key]:
+                    test = True
+                    val = current
                 if key == INDEX_SEQ and current != val:
                     test = True
                     val = f'{current};{val}'
@@ -156,7 +191,7 @@ class Sample:
                     test = True
                     val = PILOT_CODE
                 try:
-                    msg = f'{self.props[GENERIC_UID]} {key}\n\tSetter: {self.setby[key]}\n\tCUR: [{current}]\n\tNEW: [{val}]'
+                    msg = f'[SAMPLE]\nGeneric UID: {self.props[GENERIC_UID]}\nKEY: {key}\n\tSetter: {self.setby[key]}\n\tCUR: [{current}]\n\tNEW: [{val}]'
                 except KeyError:
                     raise
                 assert test, msg

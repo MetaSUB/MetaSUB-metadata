@@ -19,6 +19,16 @@ class CityMetadataMapper:
     def map(self, sample):
         if not sample[CITY]:
             return
+        if sample[CITY] == 'são_paulo':
+            sample[CITY] = 'sao_paulo'
+        elif sample[CITY].lower() == 'sweden':
+            sample[CITY] = 'stockholm'
+        elif sample[CITY] == 'john_o\'_groats':
+            sample[CITY] = 'john_o_groats'
+        elif sample[CITY] == 'ofa':
+            sample[CITY] = 'offa'
+        elif sample[CITY] == 'bogotá':
+            sample[CITY] = 'bogota'
         city_name = sample[CITY].lower()
         if city_name == 'antarctica':
             sample[CITY] = 'honolulu'
@@ -102,6 +112,8 @@ class MSubToCity:
             'oly': 'rio_de_janeiro',
             'porto': 'porto',
         }
+        if sample[CITY_CODE] and sample[CITY]:
+            return
         for code, city_name in codes.items():
             if code in str(sample[METASUB_NAME]).lower():
                 sample.setitem(CITY, city_name, setter='Mapper::MSubToCity')
@@ -185,10 +197,17 @@ class CityCodeToCity:
             'SYD': 'sydney',
         }
         city_map = {v: k for k, v in code_map.items()}
+        if sample[CITY] and sample[CITY] == 'são_paulo':
+            sample[CITY] = 'sao_paulo'
+        if sample[CITY] and sample[CITY] == 'sweden':
+            sample[CITY] = 'stockholm'
+        if sample[CITY_CODE] and sample[CITY_CODE].upper() == 'SWE':
+            sample[CITY_CODE] = 'SWE'        
+        if sample[CITY_CODE] and sample[CITY_CODE].upper() == 'BAR':
+            sample[CITY_CODE] = 'BCN'
         if sample[CITY_CODE]:  #and not sample[CITY]:
             try:
-                sample.setitem(CITY, code_map[sample[CITY_CODE].strip().upper()], setter='Mapper::CityCodeToCity')
-
+                sample.setitem(CITY, code_map[sample[CITY_CODE].strip().upper()], setter='Mapper::CityCodeToCity::A')
             except KeyError:
                 if sample[CITY_CODE].lower() != 'csd':
                     pass  #raise
@@ -197,7 +216,9 @@ class CityCodeToCity:
                 code = city_map[sample[CITY]]
                 if code == 'LSB':
                     code = 'LIS'
-                sample.setitem(CITY_CODE, code, setter='Mapper::CityCodeToCity')
+                if code == 'BAR':
+                    code = 'BCN'
+                sample.setitem(CITY_CODE, code, setter=f'Mapper::CityCodeToCity::B::{code}')
             except KeyError:
                 pass
 

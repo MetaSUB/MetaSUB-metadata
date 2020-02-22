@@ -28,6 +28,7 @@ PROBLEM_SAMPLES = [
     'haib18CEM5453_HMC2KCCXY_SL336780',
     'haib17CEM5080_H7VL7CCXY_SL267191',
     'haib17CEM5080_H7VL7CCXY_SL267266',
+    'haib18CEM5332_HMCMJCCXY_SL335752',
 ]
 
 
@@ -50,7 +51,7 @@ def best_effort(csv, sample_names):
             for line in f if line.strip() not in PROBLEM_SAMPLES
         ]
 
-    N = 1
+    N = 3
     bad, bad_explicit = {}, {i: '' for i in range(N)}
     for i in range(N):
         print(f'Iteration {i}', file=stderr)
@@ -64,7 +65,7 @@ def best_effort(csv, sample_names):
                     mapper.map(sample)
                 except Exception as e:
                     bad[i] = 1 + bad.get(i, 0)
-                    bad_explicit[i] += f'{sample["hudson_alpha_uid"]}\n' #f'\nMapper: {mapper_name}\nSample: {sample}\n' + str(e) + '\n\n'
+                    bad_explicit[i] += f'\n[CLI]\nMapper: {mapper_name}\nSample: {sample}\n' + str(e) + '\n\n'
                     # mapper_name = mapper.__class__.__name__
                     # if mapper_name == 'Table':
                     #     mapper_name = mapper.filename
@@ -101,7 +102,7 @@ def best_effort(csv, sample_names):
             'station',
             'surface',
             'temperature',
-            'traffic',
+            # 'traffic',
             'setting',
 
             READ_COUNTS,
@@ -127,8 +128,6 @@ def best_effort(csv, sample_names):
             'location_type',
             'hudson_alpha_uid',
             'other_project_uid',
-            'plate_number',
-            'plate_pos',
             'sample_type',
             'sl_name',
 
